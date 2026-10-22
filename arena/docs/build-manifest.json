@@ -2,7 +2,7 @@
   "version": 5,
   "base": "/Garbage2026/arena/",
   "specificationSha256": "706eeaf77aff881c0761bb8e2eb0ae3296bf51c1a8df2f48591c5ed3a6134c8c",
-  "htmlSha256": "785c05716ae792addb5d2dc98eed422676533e222419f06b18c507da190784a0",
+  "htmlSha256": "57eb3ded550de57958ebf375a3175cbfb3f084fe5fbd1ca59882733f35b95c69",
   "assets": [
     "arena-background",
     "algorithm-arena",
@@ -373,7 +373,7 @@
   "files": {
     "html": "index.html",
     "css": "style.30db20bea69b.css",
-    "app": "app.9d1038a4c32e.js",
+    "app": "app.26a9f2906518.js",
     "dragscroll": "dragscroll.4fe3a562b06c.js",
     "worker": "qualifier-worker.0e4cd4c1c473.js"
   },
@@ -382,9 +382,9 @@
     "index.html",
     "style.30db20bea69b.css",
     "dragscroll.4fe3a562b06c.js",
-    "app.9d1038a4c32e.js",
+    "app.26a9f2906518.js",
     "assets/arena-background.jpg",
     "assets/void-knight.webp"
   ],
-  "initialUncompressedBytes": 793733
+  "initialUncompressedBytes": 793521
 }
