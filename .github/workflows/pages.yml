@@ -18,7 +18,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Stage packaged public resources
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build all four applications
         run: bash build.sh
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
