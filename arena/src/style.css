@@ -39,3 +39,4 @@ dialog[open]{display:flex;flex-direction:column}.modal-top,.modal-bottom{flex-sh
 @media(max-width:760px){.algorithm-hero-copy{padding:20px}.algorithm-hero{min-height:280px}}
 .character-label{display:block;color:var(--muted);font-size:12px;margin-bottom:10px}.awaiting-challenger{display:grid;place-items:center;font-size:48px;color:var(--muted)}.sprite.enemy.challenger{filter:none;transform:none}
 .profile-portrait{width:100%;height:160px;object-fit:contain;image-rendering:pixelated}
+.runline{flex-wrap:wrap}.stages{max-width:100%;overflow-x:auto;padding-bottom:4px}.stage,.stage-line{flex-shrink:0}

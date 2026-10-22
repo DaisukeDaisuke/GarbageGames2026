@@ -1,6 +1,6 @@
 // GPT6 Pro extension point: pure decisions; the engine remains authoritative.
-import {skills,items,enemies,clone,routes,learnable,availableActions,operation} from '../engine.js';
-export const STRATEGY_VERSION='1.1';
+import {skills,items,enemies,clone,routes,learnable,availableActions,operation,itemAvailable} from '../engine.js';
+export const STRATEGY_VERSION='1.2';
 export const STRATEGIES=[
  {name:'技ランク優先型',tag:'RANK',description:'技の評価を基準に、確実な一手を積み重ねる。',weights:[4,1],gear:[1,5],depth:1},
  {name:'相性重視型',tag:'SYNERGY',description:'Focus・Burn・Bankと敵の予告を組み合わせる。',weights:[4,1.3],gear:[2,3,4],depth:2},
@@ -57,9 +57,9 @@ export function chooseTournamentOperation(r,index,rng,trial){
    else op='leave-booth';
   }else if(r.screen===3){
    const gear=[...STRATEGIES[index].gear];if(index===4)gear.sort((a,b)=>((a+trial)%5)-((b+trial)%5));
-   let buy=gear.find(id=>!r.owned[id]&&r.gold>=items[id].price&&(!items[id].second||r.bout===3)&&((items[id].charm?r.preview_charm:r.preview_armor)<0));
+   let buy=gear.find(id=>!r.owned[id]&&r.gold>=items[id].price&&itemAvailable(r,id)&&((items[id].charm?r.preview_charm:r.preview_armor)<0));
    // The second shop may replace a slower charm with the purchased quick pin.
-   if(buy===undefined&&r.bout===3&&[0,2,3].includes(index)&&!r.owned[5]&&r.gold>=100)buy=5;
+   if(buy===undefined&&itemAvailable(r,5)&&[0,2,3].includes(index)&&!r.owned[5]&&r.gold>=100)buy=5;
    op=buy===undefined?'leave-shop':'buy '+buy;
   }else return null;
   return op;

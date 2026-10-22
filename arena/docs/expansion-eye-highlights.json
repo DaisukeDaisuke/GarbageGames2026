@@ -1,0 +1,21 @@
+{
+  "scope": "New additions only; all existing approved images retained",
+  "edits": [
+    {
+      "id": "crystal-sorceress",
+      "prompt": "Edit target: the provided pink-haired crystal sorceress sprite. Change ONLY the visible green eye: add a clearly visible PURE WHITE SQUARE CATCHLIGHT INSIDE THE DARK PUPIL, at its upper-left, plus one smaller white pixel glint lower-right. The large white area on the right edge of the eye is the sclera and does NOT count as a catchlight. Make the two white catchlights clearly separated from that sclera by dark iris pixels. Preserve the entire sprite exactly: same coarse large 16-bit pixel grid, pink braids, green outfit, crown, shield, staff, pose, expression, outline, transparency and dimensions. Do not redraw or embellish any other part. Transparent background."
+    },
+    {
+      "id": "ember-witch",
+      "prompt": "Edit target: the provided sprite. Change ONLY the visible eye: add a clearly visible PURE WHITE SQUARE CATCHLIGHT INSIDE THE DARK PUPIL, at its upper-left, plus one smaller white pixel glint lower-right. The large white area on the right edge of the eye is sclera and does NOT count as a catchlight. Separate the two white catchlights from that sclera by dark iris pixels. Preserve EVERYTHING else exactly: coarse large 16-bit pixel grid, same eye color, hair, outfit, objects, pose, expression, outline, size and transparency. No new ornament or detail. Actual alpha-transparent background."
+    },
+    {
+      "id": "storm-mage",
+      "prompt": "Edit target: the provided sprite. Change ONLY the visible eye: add a clearly visible PURE WHITE SQUARE CATCHLIGHT INSIDE THE DARK PUPIL, at its upper-left, plus one smaller white pixel glint lower-right. The large white area on the right edge of the eye is sclera and does NOT count as a catchlight. Separate the two white catchlights from that sclera by dark iris pixels. Preserve EVERYTHING else exactly: coarse large 16-bit pixel grid, same eye color, hair, outfit, objects, pose, expression, outline, size and transparency. No new ornament or detail. Actual alpha-transparent background."
+    },
+    {
+      "id": "lunar-oracle",
+      "prompt": "Edit target: the provided sprite. Change ONLY the visible eye: add a clearly visible PURE WHITE SQUARE CATCHLIGHT INSIDE THE DARK PUPIL, at its upper-left, plus one smaller white pixel glint lower-right. The large white area on the right edge of the eye is sclera and does NOT count as a catchlight. Separate the two white catchlights from that sclera by dark iris pixels. Preserve EVERYTHING else exactly: coarse large 16-bit pixel grid, same eye color, hair, outfit, objects, pose, expression, outline, size and transparency. No new ornament or detail. Actual alpha-transparent background."
+    }
+  ]
+}

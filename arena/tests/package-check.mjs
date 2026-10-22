@@ -13,16 +13,17 @@ assert.equal(manifest.version,5);assert.ok(Buffer.byteLength(html)<4096);
 assert.ok(Buffer.byteLength(app)<256*1024);assert.ok(Buffer.byteLength(css)<40*1024);
 assert.ok(!/<style|<script\s*>/.test(html));assert.ok(!/(data:image|data:audio|;base64,)/.test(html+app+css));
 assert.ok(!app.includes('scaleFontCss'));assert.ok(!css.includes('font-size:35px'));
-assert.equal(Object.keys(manifest.assetFiles).length,54);
+assert.equal(Object.keys(manifest.assetFiles).length,64);
 const imageFiles=Object.values(manifest.assetFiles);
 const shippedMedia=fs.readdirSync(path.join(root,'assets'),{recursive:true}).filter(file=>fs.statSync(path.join(root,'assets',file)).isFile()).map(file=>'assets/'+file.replaceAll(path.sep,'/'));
 assert.deepEqual(shippedMedia.sort(),Object.keys(manifest.media).sort(),'Publish directory contains obsolete or unexpected media');
 assert.equal(imageFiles.filter(file=>file.endsWith('.jpg')).length,33);
-assert.equal(imageFiles.filter(file=>file.endsWith('.webp')).length,21);
+assert.equal(imageFiles.filter(file=>file.endsWith('.webp')).length,31);
 for(const file of imageFiles.filter(x=>x.endsWith('.jpg')))assert.ok(manifest.media[file].bytes<=80000,file+' exceeds 80KB');
 const compression=JSON.parse(fs.readFileSync(path.join(project,'docs/image-conversion.json'),'utf8'));
 const decoded=JSON.parse(fs.readFileSync(path.join(project,'docs/image-quality-check.json'),'utf8'));
 const originals=[...JSON.parse(fs.readFileSync(path.join(project,'docs/image-conversion-lossless.json'),'utf8')).images,JSON.parse(fs.readFileSync(path.join(project,'docs/algorithm-arena-source.json'),'utf8')),...JSON.parse(fs.readFileSync(path.join(project,'docs/challenger-art.json'),'utf8')).images,JSON.parse(fs.readFileSync(path.join(project,'docs/meditation-art.json'),'utf8'))];
+originals.push(...JSON.parse(fs.readFileSync(path.join(project,'docs/expansion-art.json'),'utf8')).images);
 for(const original of originals)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(project,original.original))).digest('hex'),original.originalSha256,'Original retained: '+original.original);
 for(const image of compression.images){
  assert.ok(imageFiles.includes(image.file));assert.equal(manifest.media[image.file].sha256,image.sha256);
@@ -64,5 +65,5 @@ try{
  assert.equal(total,manifest.initialUncompressedBytes);assert.equal(requests.length,6);
  assert.ok(total<1000000,'Initial resource budget exceeds 1MB with original-resolution character');
  assert.ok(!requests.some(x=>x.endsWith('.png')||x.endsWith('.mp3')||x.includes('qualifier-worker')||x.includes('skills/')||x.includes('items/')));
- console.log(`PASS rebuilt app UI handlers and CSS / HTTP subdirectory links / 54 preserved PNG originals / 33 JPEG <= 80KB + 21 full-resolution lossless WebP / home resource model: ${requests.length} files, ${total} bytes, no skill/equipment/audio preloads`);
+ console.log(`PASS rebuilt app UI handlers and CSS / HTTP subdirectory links / 64 preserved PNG originals / 33 JPEG <= 80KB + 31 full-resolution lossless WebP / home resource model: ${requests.length} files, ${total} bytes, no skill/equipment/audio preloads`);
 }finally{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));}

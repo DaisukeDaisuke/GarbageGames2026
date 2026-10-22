@@ -4,9 +4,9 @@ import {STRATEGY_VERSION,STRATEGIES,chooseBattleAction,chooseTournamentOperation
 export const POLICY_VERSION=STRATEGY_VERSION;
 export const POLICIES=STRATEGIES;
 export const policyAction=chooseBattleAction;
-export function runTrial(index,trial,seed){
+export function runTrial(index,trial,seed,campaign=10){
  const policySeed=seedText(BigInt('0x'+seed)^BigInt((index+1)*100003+trial*7919));const rng=new Lcg64(BigInt('0x'+policySeed));
- const s=new Session(seed,true);let count=0,stalled=0,last='';
+ const s=new Session(seed,true,campaign);let count=0,stalled=0,last='';
  while(s.run.screen!==5&&count++<512){
   const r=s.run,op=chooseTournamentOperation(r,index,rng,trial);
   if(op===null)return {policy:index,trial,seed,policySeed,status:'error',reason:'未知の画面'};

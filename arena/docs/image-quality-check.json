@@ -1,7 +1,7 @@
 {
   "date": "2026-10-22",
   "allDecoded": true,
-  "losslessCharacters": 21,
+  "losslessCharacters": 31,
   "checks": [
     {
       "file": "assets/arena-background.jpg",
@@ -455,6 +455,96 @@
       "height": 416,
       "bytes": 78410,
       "decoded": true
+    },
+    {
+      "file": "assets/ember-witch.webp",
+      "sha256": "29d1b4faf9a2e9da470da5e02ec5db08067ecb4172db8171ee5c458846a39b8b",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 454082,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/moss-troll.webp",
+      "sha256": "302ac22f1c2bed1dfa17cff348910d599c978a7b158a1f11ae006248bbe19271",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 613626,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/abyss-jelly.webp",
+      "sha256": "866ce58978becf8a123bc018c4f63f2fd7564130d95593728e987211395b7f5f",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 474818,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/storm-mage.webp",
+      "sha256": "5cf3ab95f8b0fd6d328f628597708a63afd5afd9e08c44a00bf80f39508de84b",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 597288,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/thunder-griffin.webp",
+      "sha256": "e7f2cddd19aa68e6c6604498d4eac12a8461be1a6d2fdc4384afac3c7f82b2b3",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 637808,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/lunar-oracle.webp",
+      "sha256": "995880563d52a6e0c8604a5fc661c4f46a9c48956d864f7a3bebd43e671375cf",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 397622,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/brass-chimera.webp",
+      "sha256": "f3b57bf9360f3c8274ed0f0df408b566ea11037c2eb9d0515dfa45ece57932de",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 726290,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/crystal-sorceress.webp",
+      "sha256": "146b52df0a212fc18a8d15e86608d445b3cf018e31f78b58761dde274671ee91",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 663958,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/crystal-basilisk.webp",
+      "sha256": "9642bcbe0064260f99ab2b12a7cbda5040bafe5259a18474f9203a716a13c14b",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 522178,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/astral-dragon.webp",
+      "sha256": "5aa16e008b91c4e93df6af7fa0b239f1fc83142744461cc70267eda15239b827",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 692890,
+      "decoded": true,
+      "rgbaPixelsEqual": true
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 5,
   "base": "/Garbage2026/arena/",
-  "specificationSha256": "706eeaf77aff881c0761bb8e2eb0ae3296bf51c1a8df2f48591c5ed3a6134c8c",
-  "htmlSha256": "785c05716ae792addb5d2dc98eed422676533e222419f06b18c507da190784a0",
+  "specificationSha256": "531e88e35fd84d23becde1d95d2d5f3146623ea5f62bd9fd65b384e59afabf6c",
+  "htmlSha256": "b5594eb4c0b05d913b8756f5b4641cfbd40f3584b45a352e9a3cb9c9c7bcff7d",
   "assets": [
     "arena-background",
     "algorithm-arena",
@@ -18,6 +18,16 @@
     "frost-witch",
     "blade-dancer",
     "void-knight",
+    "ember-witch",
+    "moss-troll",
+    "abyss-jelly",
+    "storm-mage",
+    "thunder-griffin",
+    "lunar-oracle",
+    "brass-chimera",
+    "crystal-sorceress",
+    "crystal-basilisk",
+    "astral-dragon",
     "challengers/violet-mage",
     "challengers/blue-swordsman",
     "challengers/green-ranger",
@@ -74,6 +84,16 @@
     "frost-witch": "assets/frost-witch.webp",
     "blade-dancer": "assets/blade-dancer.webp",
     "void-knight": "assets/void-knight.webp",
+    "ember-witch": "assets/ember-witch.webp",
+    "moss-troll": "assets/moss-troll.webp",
+    "abyss-jelly": "assets/abyss-jelly.webp",
+    "storm-mage": "assets/storm-mage.webp",
+    "thunder-griffin": "assets/thunder-griffin.webp",
+    "lunar-oracle": "assets/lunar-oracle.webp",
+    "brass-chimera": "assets/brass-chimera.webp",
+    "crystal-sorceress": "assets/crystal-sorceress.webp",
+    "crystal-basilisk": "assets/crystal-basilisk.webp",
+    "astral-dragon": "assets/astral-dragon.webp",
     "challengers/violet-mage": "assets/challengers/violet-mage.webp",
     "challengers/blue-swordsman": "assets/challengers/blue-swordsman.webp",
     "challengers/green-ranger": "assets/challengers/green-ranger.webp",
@@ -180,6 +200,46 @@
     "assets/void-knight.webp": {
       "bytes": 518608,
       "sha256": "cbc5a3c81c47eb6931fcb64412a96ded1adc36fd9f873cd936a8039ad70e1382"
+    },
+    "assets/ember-witch.webp": {
+      "bytes": 454082,
+      "sha256": "29d1b4faf9a2e9da470da5e02ec5db08067ecb4172db8171ee5c458846a39b8b"
+    },
+    "assets/moss-troll.webp": {
+      "bytes": 613626,
+      "sha256": "302ac22f1c2bed1dfa17cff348910d599c978a7b158a1f11ae006248bbe19271"
+    },
+    "assets/abyss-jelly.webp": {
+      "bytes": 474818,
+      "sha256": "866ce58978becf8a123bc018c4f63f2fd7564130d95593728e987211395b7f5f"
+    },
+    "assets/storm-mage.webp": {
+      "bytes": 597288,
+      "sha256": "5cf3ab95f8b0fd6d328f628597708a63afd5afd9e08c44a00bf80f39508de84b"
+    },
+    "assets/thunder-griffin.webp": {
+      "bytes": 637808,
+      "sha256": "e7f2cddd19aa68e6c6604498d4eac12a8461be1a6d2fdc4384afac3c7f82b2b3"
+    },
+    "assets/lunar-oracle.webp": {
+      "bytes": 397622,
+      "sha256": "995880563d52a6e0c8604a5fc661c4f46a9c48956d864f7a3bebd43e671375cf"
+    },
+    "assets/brass-chimera.webp": {
+      "bytes": 726290,
+      "sha256": "f3b57bf9360f3c8274ed0f0df408b566ea11037c2eb9d0515dfa45ece57932de"
+    },
+    "assets/crystal-sorceress.webp": {
+      "bytes": 663958,
+      "sha256": "146b52df0a212fc18a8d15e86608d445b3cf018e31f78b58761dde274671ee91"
+    },
+    "assets/crystal-basilisk.webp": {
+      "bytes": 522178,
+      "sha256": "9642bcbe0064260f99ab2b12a7cbda5040bafe5259a18474f9203a716a13c14b"
+    },
+    "assets/astral-dragon.webp": {
+      "bytes": 692890,
+      "sha256": "5aa16e008b91c4e93df6af7fa0b239f1fc83142744461cc70267eda15239b827"
     },
     "assets/challengers/violet-mage.webp": {
       "bytes": 739650,
@@ -372,19 +432,19 @@
   },
   "files": {
     "html": "index.html",
-    "css": "style.30db20bea69b.css",
-    "app": "app.9d1038a4c32e.js",
+    "css": "style.d5fd03cfd932.css",
+    "app": "app.e08a635c7c4a.js",
     "dragscroll": "dragscroll.4fe3a562b06c.js",
-    "worker": "qualifier-worker.0e4cd4c1c473.js"
+    "worker": "qualifier-worker.2feb34b1f6cd.js"
   },
   "htmlBytes": 1238,
   "initialFiles": [
     "index.html",
-    "style.30db20bea69b.css",
+    "style.d5fd03cfd932.css",
     "dragscroll.4fe3a562b06c.js",
-    "app.9d1038a4c32e.js",
+    "app.e08a635c7c4a.js",
     "assets/arena-background.jpg",
     "assets/void-knight.webp"
   ],
-  "initialUncompressedBytes": 793733
+  "initialUncompressedBytes": 803142
 }

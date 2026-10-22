@@ -5,7 +5,7 @@ import {skills,clone,newRun,Lcg64,operation,chooseAction,availableActions,Sessio
 import {runTrial,createDuel,duelForecast,TRIAL_SEEDS} from '../src/policies.js';
 const command=id=>id<0?'next':'use '+skills[id].name;
 const use=(r,op)=>assert.equal(operation(r,op),'',op);
-const finalFixture=()=>{const r=newRun(1n);r.bout=4;use(r,'route 9');r.you.slots=[9,10,19];r.registered[9]=r.registered[10]=true;return r;};
+const finalFixture=()=>{const r=newRun(1n,true,5);r.bout=4;use(r,'route 9');r.you.slots=[9,10,19];r.registered[9]=r.registered[10]=true;return r;};
 const rng=new Lcg64(1n);assert.deepEqual(Array.from({length:5},()=>rng.percent()),[36,88,24,24,45]);
 assert.deepEqual(stats(1,3),[196,32,0]);assert.deepEqual(stats(7,9),[54,88,120]);
 let r=finalFixture(),before=clone(r);assert.ok(operation(r,'use eclipse'));assert.ok(operation(r,'use reprise'));assert.deepEqual(r,before);
@@ -23,11 +23,12 @@ assert.ok(availableActions(r).includes(2));use(r,'use wait');assert.equal(r.you.
 r=finalFixture();r.you.hp=95;r.you.mp=31;r.enemy.rest=true;r.forecast={skill:0,stage:2};use(r,'use wait');assert.equal(r.you.hp,96);assert.equal(r.you.mp,32);
 r=finalFixture();r.you.hp=20;r.you.mp=0;r.you.burn=2;r.forecast={skill:0,stage:0};use(r,'use wait');assert.equal(r.you.hp,20);assert.equal(r.you.mp,6);assert.equal(r.you.burn,1);assert.equal(r.you.bank,0);
 r=finalFixture();r.you.hp=10;r.you.mp=0;r.you.spd=1;r.forecast={skill:0,stage:0};use(r,'use wait');assert.equal(r.you.hp,0);assert.equal(r.you.mp,0);assert.equal(r.screen,5);
-const fresh=new Session('0000000000000001');assert.equal(fresh.record().version,'VOID-PIT-WEB-2');assert.throws(()=>Session.restore({...fresh.record(),version:'VOID-PIT-WEB-1'}));
+const fresh=new Session('0000000000000001');assert.equal(fresh.record().version,'VOID-PIT-WEB-3');assert.throws(()=>Session.restore({...fresh.record(),version:'VOID-PIT-WEB-1'}));
+const legacy=new Session('0000000000000001',true,5);assert.equal(legacy.record().version,'VOID-PIT-WEB-2');assert.deepEqual(Session.restore(legacy.record()).run,legacy.run);
 console.log('PASS LCG / defense / effects / reservations / BUG-01 / BUG-02 / meditation HP+15 MP+6 / caps / lethal turn order / record version');
 const witnesses=[];
 for(let policy=0;policy<5;policy++){
- const results=TRIAL_SEEDS.map((seed,i)=>runTrial(policy,i+1,seed));
+ const results=TRIAL_SEEDS.map((seed,i)=>runTrial(policy,i+1,seed,process.env.ARENA_ORACLE?5:10));
  assert.ok(results.every(x=>['winner','defeat'].includes(x.status)));
  const winners=results.filter(x=>x.status==='winner');witnesses.push(...winners);
  for(const x of winners)assert.deepEqual(Session.restore(x.record).run,x.snapshot);
@@ -44,10 +45,10 @@ console.log('PASS duel full HP/MP / preserved builds and original records / rema
 if(process.env.ARENA_ORACLE){
  const lines=[],expected=[];let actions=0;
  const add=(s,op)=>{lines.push(op);const ok=!operation(s,op);expected.push({ok:ok?1:0,state:clone(s)});actions++;};
- for(let seed=0;seed<128;seed++){let s=newRun(BigInt(seed));lines.push('seed '+s.seed);expected.push({ok:1,state:clone(s)});const pick=new Lcg64(BigInt(seed+41));for(let n=0;n<100&&s.screen!==5;n++){
+ for(let seed=0;seed<128;seed++){let s=newRun(BigInt(seed),true,5);lines.push('seed '+s.seed);expected.push({ok:1,state:clone(s)});const pick=new Lcg64(BigInt(seed+41));for(let n=0;n<100&&s.screen!==5;n++){
   let op;if(s.screen===0)op='route '+routes(s)[0];else if(s.screen===1){if(n%11===0)add(s,'use missing');const ids=availableActions(s,'you',true);op=command(ids[Math.floor(pick.percent()*ids.length/100)]);}else if(s.screen===2||s.screen===4)op='leave-booth';else op='leave-shop';add(s,op);
  }}
- for(const w of witnesses){let s=newRun(w.seed);lines.push('seed '+s.seed);expected.push({ok:1,state:clone(s)});for(const op of w.record.operations)add(s,op);}
+ for(const w of witnesses){let s=newRun(w.seed,true,5);lines.push('seed '+s.seed);expected.push({ok:1,state:clone(s)});for(const op of w.record.operations)add(s,op);}
  const out=spawnSync(process.env.ARENA_ORACLE,[],{input:lines.join('\n')+'\n',encoding:'utf8',maxBuffer:128*1024*1024});assert.equal(out.status,0,out.stderr);
  const actual=out.stdout.trim().split('\n').map(JSON.parse);assert.equal(actual.length,expected.length);
  const numeric=x=>JSON.parse(JSON.stringify(x,(_,v)=>typeof v==='boolean'?+v:v));

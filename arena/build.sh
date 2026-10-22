@@ -27,6 +27,7 @@ import crypto from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 const previous=JSON.parse(fs.readFileSync('docs/image-conversion-lossless.json','utf8'));
 const sources=[...previous.images.filter(image=>image.original!=='originals/skills/wait.png'),JSON.parse(fs.readFileSync('docs/algorithm-arena-source.json','utf8')),...JSON.parse(fs.readFileSync('docs/challenger-art.json','utf8')).images,JSON.parse(fs.readFileSync('docs/meditation-art.json','utf8'))];
+sources.push(...JSON.parse(fs.readFileSync('docs/expansion-art.json','utf8')).images);
 const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const temp=fs.mkdtempSync(path.join(os.tmpdir(),'arena-images-'));
 const executable=process.env.ARENA_MOGRIFY_BIN,subcommand=process.env.ARENA_MOGRIFY_SUBCOMMAND;
@@ -70,6 +71,7 @@ IMAGES
   node tests/image-check.mjs
 fi
 if [[ "$verify" == 1 ]]; then
+  node tests/all-routes.mjs
   command -v g++ >/dev/null || { echo 'g++ is required for --verify.' >&2; exit 1; }
   verify_dir="$(mktemp -d)"
   trap 'rm -rf -- "$verify_dir"' EXIT
@@ -100,6 +102,7 @@ import vm from 'node:vm';
 import crypto from 'node:crypto';
 import {REQUIREMENTS} from './src/requirements.js';
 import {CHALLENGER_CHARACTERS} from './src/arena/characters.js';
+import {EXTRA_ENEMIES} from './src/engine.js';
 const read=p=>fs.readFileSync(p,'utf8'),sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const strip=s=>s.replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'');
 const out=path.join(process.env.ARENA_OUTPUT_ROOT,'arena');fs.mkdirSync(out,{recursive:true});
@@ -111,6 +114,7 @@ new vm.Script(worker);
 const workerFile=writeHashed('qualifier-worker','js',worker);
 const gameData=JSON.parse(read('src/data.json')),details=JSON.parse(read('src/details.json'));
 const assetNames=['arena-background','algorithm-arena','dialogue-frame','player','iron-hound','hex-mage','stone-golem','ash-wisp','shade','iron-monk','bone-archer','frost-witch','blade-dancer','void-knight'];
+for(const enemy of EXTRA_ENEMIES)assetNames.push(enemy.name.toLowerCase().replaceAll(' ','-'));
 for(const character of CHALLENGER_CHARACTERS)assetNames.push('challengers/'+character.id);
 for(const [kind,list] of [['skills',gameData.skills],['items',gameData.items]])for(const entry of list)assetNames.push(kind+'/'+entry.name);
 const imageManifest=JSON.parse(read('docs/image-conversion.json'));
