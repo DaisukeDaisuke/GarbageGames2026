@@ -1,0 +1,162 @@
+[
+  {
+    "file": "assets/skills/attack.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-a9f85c9a-f682-4e4a-a83b-b60ff5efb277.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: the little teal-hood adventurer slashing a simple silver short sword in a bright pale arc, standing on old mossy stone arena tiles. A few tiny white impact sparks, dynamic but cute low stance, dusk teal ruins behind. This depicts a normal physical sword attack.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/attack.png"
+  },
+  {
+    "file": "assets/skills/drain.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-cc64800e-7b1d-458b-b112-9abee7d7a96d.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: a cute small teal-hood mage-adventurer drawing luminous violet ribbons from a faint dark training dummy silhouette into a glowing green orb at their chest. Dark mossy dungeon stone floor. Visual story of taking magical energy and restoring health, no horror or gore.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/drain.png"
+  },
+  {
+    "file": "assets/skills/fire.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-7ba211e6-b052-433c-ad26-6f3ca2976ec2.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: the tiny teal-hood adventurer casting a compact orange-red fireball from a hand, a small bright flame trail curling to the right over charcoal stone tiles. Pixel embers and warm highlights, dark teal arena background. This depicts a first fire spell that leaves a burn.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/fire.png"
+  },
+  {
+    "file": "assets/skills/flare.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-5230d321-98b3-4748-82df-32840692c2c9.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: a vivid orange-red pillar of magical flame flaring up from already glowing embers on cracked dark arena stone, with a small teal-hood adventurer raising a hand at the left. Bright larger layered flame burst distinct from a small fireball. Cozy Japanese RPG pixels, no injury.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/flare.png"
+  },
+  {
+    "file": "assets/skills/focus.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-6f471872-00ef-4e4a-9100-abaac6ead240.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: the tiny teal-hood adventurer standing steadily with closed pixel eyes, holding a short sword upright, a concentrated golden aura and small diamond sparks gathering around the blade. Indigo cobblestone floor and quiet dusk ruins. Visual story of concentration for the next attack.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/focus.png"
+  },
+  {
+    "file": "assets/skills/guard.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-eea8967c-33af-493f-a11b-a77850502571.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: the little teal-hood adventurer crouching safely behind a big round iron buckler. An orange spark glances from the shield rim and small turquoise energy motes accumulate around the shield. Cobblestone floor and quiet stone columns behind. This depicts a defensive guard.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/guard.png"
+  },
+  {
+    "file": "assets/skills/healing-rain.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-ff33a3ba-d5e4-4159-83dc-cd8f415bffae.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: the tiny teal-hood adventurer beneath gentle glowing mint-green and pale blue raindrops, with little circular healing ripples spreading on mossy stone tiles and small fresh grass. A few luminous leaves, tranquil restorative atmosphere, lovely cool pixel light.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/healing-rain.png"
+  },
+  {
+    "file": "assets/skills/pierce.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-d99d157f-b3de-4c13-9755-69f79f711392.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: the tiny teal-hood adventurer lunging with a narrow straight silver sword, a thin cyan thrust line punching through a floating dark iron shield silhouette. Worn bluish stone floor, focused clean diagonal composition, crisp white contact sparks. This depicts an armor-piercing thrust.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/pierce.png"
+  },
+  {
+    "file": "assets/skills/smash.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-21ee2283-445c-4740-b5cb-c28ce85f1e92.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: the tiny teal-hood adventurer executing a powerful overhead short-sword strike, a broad orange-white arc and a star-shaped stone impact burst on cracked sandstone tiles. Cute compact proportions, exaggerated physical force without gore, warm arena torchlight.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/smash.png"
+  },
+  {
+    "file": "assets/skills/wait.webp",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-77371cf4-7326-4cfd-a544-78ad64b336f4.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: square 1024x1024 game skill-card illustration. Style: authentic Japanese 32-bit-era JRPG pixel art, visible chunky square pixel clusters, crisp stepped edges, discrete limited-color shading, charming cute atmosphere. Character if present: tiny three-head-tall chibi adventurer with teal hood, short cape, compact silver armor, short limbs, simple pixel eyes. All figures fully clothed. Place action subject left of center, readable at small size, scenic floor and background. No letters, numbers, UI, borders, watermark, smooth gradients, photorealism, muscles, tall adult anatomy, western movie animation, or Disney style. Subject: the little teal-hood adventurer calmly sitting on a low stone beside the arena, sword resting safely on the ground, a tiny blue magical orb floating above their relaxed hand to represent mana recovery. Quiet evening grass and cobbled floor, peaceful posture, no sleeping symbols.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/wait.png"
+  }
+]

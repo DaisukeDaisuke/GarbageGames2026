@@ -1,0 +1,86 @@
+assets/arena-background.jpg: 79103 bytes, 512x341, quality 83
+assets/ash-wisp.webp: 344226 bytes, 1254x1254, quality 100
+assets/blade-dancer.webp: 727396 bytes, 1254x1254, quality 100
+assets/bone-archer.webp: 356986 bytes, 1254x1254, quality 100
+assets/dialogue-frame.jpg: 42299 bytes, 1024x341, quality 92
+assets/frost-witch.webp: 561688 bytes, 1254x1254, quality 100
+assets/hex-mage.webp: 692512 bytes, 1254x1254, quality 100
+assets/iron-hound.webp: 497550 bytes, 1254x1254, quality 100
+assets/iron-monk.webp: 479898 bytes, 1254x1254, quality 100
+assets/player.webp: 508702 bytes, 1254x1254, quality 100
+assets/shade.webp: 377204 bytes, 1254x1254, quality 100
+assets/stone-golem.webp: 566430 bytes, 1254x1254, quality 100
+assets/void-knight.webp: 518608 bytes, 1254x1254, quality 100
+assets/skills/attack.jpg: 77828 bytes, 480x480, quality 82
+assets/skills/bank-shot.jpg: 79855 bytes, 416x416, quality 81
+assets/skills/barrier.jpg: 79558 bytes, 416x416, quality 81
+assets/skills/counter.jpg: 79262 bytes, 480x480, quality 82
+assets/skills/drain.jpg: 78953 bytes, 480x480, quality 80
+assets/skills/eclipse.jpg: 77122 bytes, 448x448, quality 82
+assets/skills/feint.jpg: 78317 bytes, 448x448, quality 83
+assets/skills/fire.jpg: 79478 bytes, 480x480, quality 82
+assets/skills/flare.jpg: 79408 bytes, 416x416, quality 80
+assets/skills/focus.jpg: 79366 bytes, 448x448, quality 82
+assets/skills/guard.jpg: 78249 bytes, 480x480, quality 81
+assets/skills/healing-rain.jpg: 79805 bytes, 416x416, quality 81
+assets/skills/mend.jpg: 78807 bytes, 448x448, quality 81
+assets/skills/pierce.jpg: 79139 bytes, 448x448, quality 81
+assets/skills/purge.jpg: 79495 bytes, 448x448, quality 80
+assets/skills/quake.jpg: 79421 bytes, 416x416, quality 84
+assets/skills/reprise.jpg: 78970 bytes, 384x384, quality 84
+assets/skills/siphon.jpg: 77677 bytes, 384x384, quality 82
+assets/skills/smash.jpg: 79043 bytes, 416x416, quality 82
+assets/items/duelist-jacket.jpg: 79594 bytes, 448x448, quality 82
+assets/items/glass-prism.jpg: 77858 bytes, 576x576, quality 80
+assets/items/heart-knot.jpg: 79806 bytes, 416x416, quality 84
+assets/items/iron-coat.jpg: 78425 bytes, 448x448, quality 83
+assets/items/lead-plate.jpg: 79837 bytes, 576x576, quality 83
+assets/items/mana-ring.jpg: 78834 bytes, 480x480, quality 80
+assets/items/pilgrim-robe.jpg: 77944 bytes, 512x512, quality 80
+assets/items/quick-pin.jpg: 79735 bytes, 512x512, quality 82
+assets/items/reservoir-robe.jpg: 78941 bytes, 512x512, quality 84
+assets/items/wing-boots.jpg: 78363 bytes, 448x448, quality 80
+assets/algorithm-arena.jpg: 78604 bytes, 512x341, quality 82
+assets/challengers/violet-mage.webp: 739650 bytes, 1254x1254, quality 100
+assets/challengers/blue-swordsman.webp: 455330 bytes, 1254x1254, quality 100
+assets/challengers/green-ranger.webp: 573286 bytes, 1254x1254, quality 100
+assets/challengers/white-healer.webp: 532924 bytes, 1254x1254, quality 100
+assets/challengers/red-duelist.webp: 425910 bytes, 1254x1254, quality 100
+assets/challengers/amber-monk.webp: 454212 bytes, 1254x1254, quality 100
+assets/challengers/star-sorcerer.webp: 647844 bytes, 1254x1254, quality 100
+assets/challengers/rose-alchemist.webp: 684660 bytes, 1254x1254, quality 100
+assets/challengers/silver-guardian.webp: 655780 bytes, 1254x1254, quality 100
+assets/challengers/sand-rogue.webp: 522190 bytes, 1254x1254, quality 100
+assets/skills/wait.jpg: 78410 bytes, 416x416, quality 80
+Converted 54 images: 13890492 bytes total; JPEG <= 80000 bytes, characters lossless at original resolution.
+PASS 54 decoded images, original PNG hashes, and 21 original-resolution lossless RGBA matches
+PASS LCG / defense / effects / reservations / BUG-01 / BUG-02 / meditation HP+15 MP+6 / caps / lethal turn order / record version
+PASS policy 0: 10/10 actual tournament wins, all records replayed
+PASS policy 1: 10/10 actual tournament wins, all records replayed
+PASS policy 2: 10/10 actual tournament wins, all records replayed
+PASS policy 3: 10/10 actual tournament wins, all records replayed
+PASS policy 4: 10/10 actual tournament wins, all records replayed
+PASS duel full HP/MP / preserved builds and original records / rematch / forecast lock / symmetric reservation capture
+PASS C++ parity with explicit meditation data patch: 5262 complete states (5084 operations), all fields including logs/history/ownership
+PASS all checks
+PASS LCG / placement
+PASS Guard / Barrier / speed
+PASS Reservation / reprise
+PASS History / ordinary victory
+PASS Effects / death order
+PASS Shop / equipment
+PASS Input / replay
+PASS Full tournament replay
+PASS Terminal rendering
+9/9 suites passed
+PASS all 30 detailed JSON records and generated assets / route topology / sound routing
+PASS real UI handlers: stable random seed, manual seed preservation, briefing gate, no state changes while reading, held victory screen
+PASS real UI handlers: separate guild shelves, image purchase dialog, cancel, purchase, unequip/re-equip, original stat commit
+PASS actual result X links / gold-silver copy / dedicated arena / ten stable human variants / challenger confirmation and full HP/MP
+PASS combat frame shake only / repeated input blocked during animation
+PASS supplied dragscroll: horizontal drag, release, listener reset
+PASS all JavaScript UI checks (no browser launched)
+PASS original UI dimensions / desktop columns at 1440, 1024 and 820px / mobile breakpoints / bounded typography without a global multiplier
+Built /workspace/scratch/4bba667df2dc/arena/dist/arena/index.html (1238 bytes); external CSS/JS, 54 on-demand JPEG/lossless WebP images, 7 on-demand MP3s. Initial home resource budget: 793733 bytes before HTTP compression.
+PASS rebuilt app UI handlers and CSS / HTTP subdirectory links / 54 preserved PNG originals / 33 JPEG <= 80KB + 21 full-resolution lossless WebP / home resource model: 6 files, 793733 bytes, no skill/equipment/audio preloads
+PASS rebuilt Worker: 50 complete results equal fallback, progress messages, duplicate-start guard, completion

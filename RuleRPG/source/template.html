@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102c31">
+<meta name="description" content="規約を読んで、言葉を組み合わせて反論する。全10戦、無事に帰宅するまでの利用規約RPG。">
+<title>利用規約RPG</title>
+<style>/*__STYLE__*/</style>
+</head>
+<body>
+<main id="app">
+  <header class="masthead"><div class="brand"><span class="brand-mark" aria-hidden="true">§</span><div><h1>利用規約RPG</h1><p>その一文に、反論を。</p></div></div><div class="masthead-actions"><button id="achievements-open" class="quiet" type="button" aria-haspopup="dialog">実績マップ</button><button id="sound" class="quiet" type="button" aria-pressed="true">音 ON</button></div></header>
+  <p id="audio-notice" role="status" hidden></p>
+  <nav id="progress" aria-label="戦闘の進行"></nav>
+  <section id="battle" aria-label="戦闘風景">
+    <div id="enemy-hud" hidden><div class="enemy-heading"><h2 id="enemy-name"></h2><div class="hp"><span id="hp-text">HP 100 / 100</span><div id="hp-track" class="hp-track" role="progressbar" aria-label="敵のHP" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div id="hp-lag"></div><div id="hp-fill"></div><div id="hp-tint"></div></div></div></div><p id="demand"></p></div>
+    <div id="stage"><img id="background" alt="ミュージアムのゲート"><div id="enemy-wrap"><img id="enemy-image" alt="例外スライム"><span id="golem-label" hidden>無効規約</span><div id="slices"></div></div><div id="stamp" hidden></div><div id="damage-number" aria-hidden="true" hidden></div><div id="timer" role="status" hidden></div></div>
+  </section>
+  <section id="welcome" class="paper welcome"><p class="eyebrow">言葉で戦う、小さな冒険。</p><h2>剣より、規約。</h2><p>楽しみにしていたミュージアム。<br>展示を見るのも、家に帰るのも、規約だらけ。<br>言葉を組み合わせて10体の敵に反論し、無事に帰宅しよう。</p><p class="welcome-note">うまくいかなくても、何度でも言い直せます。</p><button id="start" class="primary" type="button" disabled>素材を準備中…</button></section>
+  <div id="play-area" hidden>
+    <section id="rules-panel" class="paper" aria-labelledby="rules-title"><div class="section-heading"><h2 id="rules-title">利用規約</h2><span id="rule-count"></span></div><div id="rules"></div></section>
+    <section id="results" class="paper" hidden aria-label="戦闘結果"></section>
+    <div id="reason" class="reason" role="status" hidden></div>
+    <section id="dialogue" aria-label="会話"><div class="dialogue-top"><span id="speaker">ものがたり</span><span id="turn"></span></div><div id="dialogue-text" aria-live="polite" aria-atomic="true"></div><button id="continue" type="button" hidden>つづける <span aria-hidden="true">▾</span></button></section>
+    <div id="fault-notice" role="status" hidden>反論不成立 <span>0ダメージ · もう一度、言葉を選ぼう。</span></div>
+    <section id="choices" aria-label="発言を組み立てる"><div class="section-heading"><h2>あなたの反論</h2><span id="choice-hint">ふたつ選んで、言う。</span></div><div id="word-columns" class="word-columns"><fieldset><legend>ことば</legend><div id="nouns" class="cards"></div></fieldset><fieldset id="attributes-field" hidden><legend>項目</legend><div id="attributes" class="cards"></div></fieldset><fieldset><legend>つづき</legend><div id="verbs" class="cards"></div></fieldset></div><div class="statement-bar"><p id="statement" aria-live="polite">ことば ＋ つづき</p><button id="speak" class="primary" type="button" disabled>言う <span aria-hidden="true">→</span></button></div></section>
+    <button id="restart" class="primary restart" type="button" hidden>もう一度</button>
+  </div>
+  <p id="fatal" role="alert" hidden></p>
+  <footer><div><span>クソアプリ2026 / 利用規約RPG</span><p class="audio-credit">効果音：<a href="https://otologic.jp/" target="_blank" rel="noopener noreferrer">OtoLogic</a>（<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>）</p></div><div class="footer-buttons"><button id="audio-open" type="button">音素材・利用条件</button><button id="spec-open" type="button">仕様書</button></div></footer>
+</main>
+<dialog id="achievements-dialog" aria-labelledby="achievements-title">
+  <div class="modal-heading"><div><p class="map-eyebrow">あなたが試した、言葉の足あと。</p><h2 id="achievements-title">実績マップ</h2></div><button id="achievements-close" type="button" aria-label="実績マップを閉じる">×</button></div>
+  <div class="map-content">
+    <p class="map-intro"><span class="map-swatch" aria-hidden="true"></span>黄色は試した発言。マスに触れると、台詞を読み返せます。<br><span>気になった言葉だけ、寄り道していこう。</span></p>
+    <p id="achievements-storage" class="storage-notice" role="status" hidden>この環境では実績を保存できません。今開いているページ内で記録します。</p>
+    <nav id="map-stages" aria-label="実績を見る場所"></nav>
+    <h3 id="map-scene-title"></h3>
+    <nav id="map-attributes" aria-label="実績を見る項目" hidden></nav>
+    <p class="map-axis-note">縦：ことば ／ 横：つづき</p>
+    <div class="map-scroll" role="region" aria-label="発言のマップ。横にスクロールできます" tabindex="0"><table id="achievement-grid"></table></div>
+    <section id="map-reaction" class="map-reaction" aria-live="polite" aria-atomic="true"><h4 id="map-statement">言葉の足あと</h4><p id="map-dialogue">マスを選ぶと、ここに台詞が表示されます。</p></section>
+    <p class="map-save-note">記録はこのブラウザに保存されます。「もう一度」でも残ります。</p>
+  </div>
+</dialog>
+<dialog id="spec-dialog" aria-labelledby="spec-title"><div class="modal-heading"><h2 id="spec-title">仕様書</h2><button id="spec-close" type="button" aria-label="仕様書を閉じる">×</button></div><pre id="spec-text"></pre></dialog>
+<dialog id="audio-dialog" aria-labelledby="audio-title"><div class="modal-heading"><h2 id="audio-title">音素材・利用条件</h2><button id="audio-close" type="button" aria-label="音素材・利用条件を閉じる">×</button></div><div class="audio-details"><p>使用した音素材：<a href="https://otologic.jp/" target="_blank" rel="noopener noreferrer">OtoLogic</a></p><p>ライセンス：<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International（CC BY 4.0）</a></p><p>出典：<a href="https://otologic.jp/free/se/game-rpg01.html" target="_blank" rel="noopener noreferrer">OtoLogic「RPG用セット」</a>。音源ファイルは未改変です。ゲーム内で再生音量を調整しています。</p><ul id="audio-list"></ul><p>音素材の利用・再配布時は、OtoLogicのクレジットとライセンス情報を引き継いでください。音素材にはCC BY 4.0が適用されます。</p><p><a href="https://otologic.jp/free/license.html" target="_blank" rel="noopener noreferrer">OtoLogicの利用規約</a> · <a href="https://otologic.jp/free/faq.html" target="_blank" rel="noopener noreferrer">クレジット表記等のFAQ</a></p></div></dialog>
+<script id="scenario" type="application/json">/*__SCENARIO__*/</script>
+<script id="assets" type="application/json">/*__ASSETS__*/</script>
+<script id="sounds" type="application/json">/*__SOUNDS__*/</script>
+<script id="specification" type="application/json">/*__SPEC__*/</script>
+<script type="module">/*__SCRIPT__*/</script>
+</body>
+</html>

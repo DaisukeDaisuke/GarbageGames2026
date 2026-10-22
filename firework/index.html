@@ -1,0 +1,1871 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#0b1014">
+  <meta name="description" content="文字を入力。Enterで大花火。書くほど本文が見えなくなる、邪魔すぎる花火メモ帳。">
+  <title>邪魔すぎる花火メモ帳 — Garbage 2026</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1014'/%3E%3Cg stroke='%23e9ff65' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M32 8v14m0 20v14M8 32h14m20 0h14M15 15l10 10m14 14 10 10M15 49l10-10m14-14 10-10'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='4' fill='%23ff7cba'/%3E%3C/svg%3E">
+<style>
+:root {
+  color-scheme: dark;
+  --page: #0b1014;
+  --panel: #11181e;
+  --paper: #10171d;
+  --line: #2a3339;
+  --text: #f5f4e9;
+  --muted: #8d989e;
+  --accent: #e9ff65;
+  --pink: #ff8bbc;
+  --memo-line: 42px;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+html { width: 100%; min-width: 0; min-height: 100%; background: var(--page); }
+body { margin: 0; min-width: 0; background: var(--page); color: var(--text); }
+body::before {
+  position: fixed;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: radial-gradient(ellipse at 95% 1%, #30404024, transparent 49%);
+}
+button, input, textarea { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; cursor: pointer; }
+button:disabled { cursor: default; }
+button, input { touch-action: manipulation; }
+button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+button svg { width: 19px; height: 19px; flex-shrink: 0; }
+button { color: inherit; }
+button, input[type="range"] { -webkit-user-select: none; user-select: none; }
+.app-shell {
+  position: relative;
+  max-width: 1504px;
+  height: 100vh;
+  height: 100dvh;
+  height: var(--app-height, 100dvh);
+  min-height: 0;
+  min-width: 0;
+  margin: 0 auto;
+  padding: max(27px, env(safe-area-inset-top)) max(clamp(20px, 4.2vw, 68px), env(safe-area-inset-right)) max(13px, env(safe-area-inset-bottom)) max(clamp(20px, 4.2vw, 68px), env(safe-area-inset-left));
+  display: flex;
+  flex-direction: column;
+}
+.site-header { flex-shrink: 0; }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.wordmark { display: flex; align-items: center; gap: 10px; font-family: Arial, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: .11em; }
+.brand-spark { width: 24px; height: 24px; color: var(--accent); }
+.wordmark-year { color: var(--muted); font-weight: 500; margin-left: 8px; }
+.edition { font-size: 10px; letter-spacing: .12em; color: #89959b; white-space: nowrap; }
+.edition span { padding: 0 9px; color: #47565e; }
+.hero { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding: 29px 0 27px; }
+.eyebrow { font-size: 10px; letter-spacing: .12em; color: #b1b7af; margin: 0 0 13px; display: flex; align-items: center; gap: 7px; }
+.eyebrow span { width: 5px; height: 5px; background: var(--accent); border-radius: 50%; }
+h1 { font-size: clamp(29px, 4.2vw, 58px); line-height: 1.15; letter-spacing: -.055em; font-weight: 800; margin: 0; display: flex; align-items: baseline; gap: .22em; }
+h1 > span { font-weight: 700; }
+h1 strong { color: var(--accent); font-weight: 900; white-space: nowrap; }
+.title-dot { letter-spacing: -.25em; }
+.hero-aside { position: relative; flex-shrink: 0; min-width: 180px; text-align: right; padding: 0 0 2px; }
+.hero-copy { position: relative; font-size: 12px; line-height: 1.9; letter-spacing: .07em; margin: 0; color: #cad0c9; }
+.hero-copy span { color: #88938f; }
+.hero-flower { position: absolute; width: 136px; height: 136px; right: 22px; bottom: -14px; opacity: .11; color: var(--accent); transform: rotate(10deg); }
+.notebook {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  isolation: isolate;
+  border: 1px solid #354048;
+  border-radius: 13px;
+  background: var(--panel);
+  box-shadow: 0 12px 60px #00000020;
+  overflow: hidden;
+}
+.notebook-top { flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 22px; min-height: 54px; border-bottom: 1px solid var(--line); }
+.paper-label { display: inline-flex; align-items: center; gap: 8px; font: 11px Arial, sans-serif; letter-spacing: .14em; font-weight: 700; color: #b4bdbb; }
+.paper-dot { width: 5px; height: 5px; background: var(--accent); border-radius: 50%; }
+.input-hint { font-size: 12px; color: #a5afad; line-height: 1.5; margin: 0; }
+kbd { margin: 0 4px; padding: 3px 7px; border-radius: 4px; background: #253027; border: 1px solid #465438; color: var(--accent); font-family: inherit; font-size: 10px; letter-spacing: .03em; box-shadow: 0 1px 0 #465438; white-space: nowrap; }
+.editor-status { font-size: 10px; letter-spacing: .04em; color: #8a969c; min-width: 86px; text-align: right; }
+.stage { position: relative; isolation: isolate; flex: 1 1 auto; min-height: 0; overflow: hidden; background: var(--paper); }
+.stage::before { content: ""; position: absolute; z-index: 0; inset: 26px 24px 0 61px; pointer-events: none; background: repeating-linear-gradient(to bottom, transparent 0, transparent calc(var(--memo-line) - 1px), #d4dfed09 calc(var(--memo-line) - 1px), #d4dfed09 var(--memo-line)); }
+.paper-margin { position: absolute; z-index: 0; left: 0; top: 26px; bottom: 0; width: 47px; display: flex; flex-direction: column; align-items: flex-end; gap: 0; overflow: hidden; color: #52606a; pointer-events: none; opacity: .7; }
+.paper-margin span { font: 10px/var(--memo-line) ui-monospace, "SFMono-Regular", Consolas, monospace; flex-shrink: 0; }
+#memo {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  resize: none;
+  background: transparent;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  opacity: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 26px 27px 50px 65px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: var(--memo-line);
+  letter-spacing: .025em;
+  caret-color: var(--accent);
+  scrollbar-width: thin;
+  scrollbar-color: #465447 transparent;
+  overscroll-behavior: contain;
+  tab-size: 4;
+}
+#memo::placeholder { color: #74827f; -webkit-text-fill-color: #74827f; opacity: 1; }
+#memo::selection { background: #b6c9574a; color: #fff; }
+.notebook:focus-within { border-color: #7f8c59; }
+#fireworks { position: absolute; inset: 0; z-index: 3; width: 100%; height: 100%; pointer-events: none; }
+.stage-corner { position: absolute; z-index: 2; right: 25px; bottom: 14px; font: 9px ui-monospace, "SFMono-Regular", Consolas, monospace; letter-spacing: .18em; color: #5c6b70; pointer-events: none; opacity: .6; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; gap: 16px; padding: 12px 18px; min-height: 67px; border-top: 1px solid var(--line); background: #141c21; }
+.intensity-setting { display: flex; align-items: center; gap: 13px; }
+.control-caption { font-size: 10px; color: #8d999f; white-space: nowrap; }
+.intensity-controls { display: inline-flex; gap: 3px; padding: 4px; border: 1px solid #303b41; border-radius: 7px; background: #0d1419; }
+.intensity-controls button { display: flex; align-items: center; gap: 6px; min-height: 30px; background: transparent; border: 0; border-radius: 4px; padding: 4px 12px; font-size: 11px; line-height: 1.5; color: #9fa9a9; transition: color .15s ease, background .15s ease; }
+.intensity-controls button:hover { color: #edf3d2; background: #242e2d; }
+.intensity-controls button[aria-pressed="true"] { color: #172016; background: var(--accent); font-weight: 700; box-shadow: 0 0 16px #e9ff6514; }
+.level-mark { font-size: 16px; line-height: 1; }
+.level-one { font-size: 19px; }
+.utility-controls { display: flex; align-items: center; gap: 15px; }
+.sound-setting { display: flex; align-items: center; gap: 11px; }
+.icon-text-button { display: flex; align-items: center; justify-content: center; gap: 7px; border: 0; background: none; padding: 7px 0; min-height: 38px; font-size: 11px; color: #b8c0ba; white-space: nowrap; }
+.icon-text-button:hover { color: var(--accent); }
+.sound-off-icon, .play-icon { display: none; }
+#sound-toggle[aria-pressed="false"] .sound-on-icon { display: none; }
+#sound-toggle[aria-pressed="false"] .sound-off-icon { display: block; }
+#sound-toggle[aria-pressed="false"] { color: #818d92; }
+#pause-toggle[aria-pressed="true"] { color: var(--accent); }
+#pause-toggle[aria-pressed="true"] .pause-icon { display: none; }
+#pause-toggle[aria-pressed="true"] .play-icon { display: block; }
+#volume { -webkit-appearance: none; appearance: none; width: 62px; height: 28px; margin: 0; background: transparent; accent-color: var(--accent); cursor: pointer; }
+#volume::-webkit-slider-runnable-track { height: 3px; background: #46504b; border-radius: 4px; }
+#volume::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; background: #dae7a8; border: 0; width: 10px; height: 10px; border-radius: 50%; margin-top: -3.5px; }
+#volume::-moz-range-track { height: 3px; background: #46504b; border-radius: 4px; }
+#volume::-moz-range-thumb { background: #dae7a8; border: 0; width: 10px; height: 10px; border-radius: 50%; }
+#volume:disabled { opacity: .4; cursor: default; }
+.toolbar-divider { width: 1px; height: 19px; background: #3b4548; }
+.export-button { display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid #51604c; border-radius: 6px; background: #293529; color: #e8efd9; padding: 9px 12px; min-height: 38px; font-size: 11px; white-space: nowrap; transition: background .15s ease, border-color .15s ease; }
+.export-button:hover { background: #3a4931; border-color: var(--accent); }
+.notebook-bottom { display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; gap: 12px; min-height: 33px; padding: 7px 21px; background: #10171c; border-top: 1px solid #222d34; font-size: 10px; color: #9aaba9; }
+.save-state { display: inline-flex; align-items: center; gap: 6px; }
+.save-light { width: 4px; height: 4px; border-radius: 50%; background: #a4b881; flex-shrink: 0; }
+.save-state:has([data-state="error"]) .save-light { background: #ffb583; }
+.character-count { font-variant-numeric: tabular-nums; white-space: nowrap; color: #97a1a0; }
+.site-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-shrink: 0; padding-top: 12px; font-size: 10px; letter-spacing: .04em; color: #929d98; }
+.spec-button { background: transparent; border: 0; padding: 5px 0 5px 15px; color: #9eaaa2; font-size: 11px; line-height: 1.5; }
+.spec-button span { padding-left: 4px; }
+.spec-button:hover { color: var(--accent); }
+.spec-dialog { position: fixed; inset: 0; width: min(900px, calc(100vw - 40px)); height: min(850px, calc(100dvh - 48px)); padding: 0; margin: auto; border: 1px solid #596647; border-radius: 13px; background: #11191e; color: #edf0de; overflow: hidden; box-shadow: 0 32px 100px #0009; }
+.spec-dialog[open] { display: flex; flex-direction: column; }
+.spec-dialog::backdrop { background: #000d; backdrop-filter: blur(5px); }
+.spec-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 22px 28px; border-bottom: 1px solid #344134; flex-shrink: 0; }
+.dialog-eyebrow { display: block; font: 9px Arial, sans-serif; letter-spacing: .17em; color: #a9bb75; margin-bottom: 6px; }
+.spec-header h2 { font-size: 26px; margin: 0; letter-spacing: .05em; }
+.spec-close { width: 60px; height: 60px; flex-shrink: 0; display: grid; place-items: center; font: 48px/1 Arial, sans-serif; border: 1px solid #52613d; border-radius: 8px; background: #232e24; color: var(--accent); padding: 0 0 4px; }
+.spec-close:hover { background: #36442c; }
+.spec-scroll { overflow: auto; overscroll-behavior: contain; padding: 22px 28px 30px; }
+#spec-content { font: 13px/1.9 "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, system-ui, sans-serif; white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; tab-size: 2; color: #c9d0c1; }
+.noscript-notice { position: fixed; bottom: 20px; left: 20px; right: 20px; padding: 20px; color: #fff; background: #593428; z-index: 10; }
+@media (min-width: 1400px) and (min-height: 800px) {
+  .hero { padding-top: 40px; padding-bottom: 34px; }
+  h1 { font-size: 58px; }
+}
+@media (max-width: 1000px) {
+  .hero-aside { min-width: 145px; }
+  .hero-copy { font-size: 11px; }
+  .toolbar { gap: 12px; padding-left: 13px; padding-right: 13px; }
+  .utility-controls { gap: 11px; }
+  .intensity-setting { gap: 9px; }
+  .intensity-controls button { padding-left: 9px; padding-right: 9px; }
+  #volume { width: 49px; }
+}
+@media (max-width: 760px) {
+  .app-shell { padding: max(18px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); }
+  .hero { padding-top: 25px; padding-bottom: 22px; }
+  h1 { font-size: 37px; flex-direction: column; align-items: flex-start; gap: 2px; }
+  h1 > span { font-size: 21px; letter-spacing: -.035em; }
+  .hero-aside { min-width: 130px; padding-bottom: 4px; }
+  .hero-flower { width: 116px; height: 116px; right: 4px; bottom: 0; }
+  .eyebrow { margin-bottom: 11px; }
+  .toolbar { flex-wrap: wrap; gap: 10px; min-height: 108px; padding: 10px 15px; }
+  .intensity-setting { flex: 1 1 100%; justify-content: space-between; }
+  .intensity-controls { flex: 0 1 auto; }
+  .intensity-controls button { padding: 4px 16px; }
+  .utility-controls { flex: 1; justify-content: space-between; }
+  .sound-setting { gap: 10px; }
+  .toolbar-divider { margin: 0 4px; }
+  #volume { width: 63px; }
+  .notebook-top { min-height: 48px; padding: 0 16px; }
+  .editor-status { display: none; }
+  .paper-label { font-size: 10px; }
+  .input-hint { font-size: 11px; }
+  .notebook-bottom { padding-left: 16px; padding-right: 16px; }
+  #memo { font-size: 17px; padding-left: 48px; padding-right: 18px; }
+  .paper-margin { width: 31px; }
+  .stage::before { left: 46px; right: 18px; }
+}
+@media (max-width: 430px) {
+  .app-shell { padding-left: max(13px, env(safe-area-inset-left)); padding-right: max(13px, env(safe-area-inset-right)); }
+  .edition { font-size: 8px; letter-spacing: .03em; }
+  .edition span { padding: 0 4px; }
+  .wordmark { font-size: 10px; gap: 7px; }
+  .wordmark-year { margin-left: 5px; }
+  .brand-spark { width: 20px; height: 20px; }
+  .hero { gap: 10px; }
+  .hero-aside { min-width: 107px; }
+  .hero-copy { font-size: 10px; letter-spacing: .025em; }
+  .hero-flower { width: 101px; height: 101px; right: -1px; bottom: 1px; }
+  h1 { font-size: 33px; }
+  h1 > span { font-size: 20px; }
+  .eyebrow { font-size: 9px; }
+  .toolbar { padding-left: 12px; padding-right: 12px; }
+  .intensity-controls button { padding: 4px 13px; }
+  .intensity-setting { gap: 6px; }
+  #volume { width: 48px; }
+  .sound-setting { gap: 7px; }
+  .utility-controls { gap: 8px; }
+  .toolbar-divider { margin: 0 1px; }
+  .icon-text-button { gap: 5px; font-size: 10px; }
+  .export-button { gap: 5px; padding: 8px; font-size: 10px; }
+  #memo { font-size: 16px; padding-left: 42px; padding-right: 15px; letter-spacing: 0; }
+  .paper-margin { width: 28px; }
+  .stage::before { left: 40px; right: 15px; }
+  .input-hint { font-size: 10px; }
+  .notebook-bottom { font-size: 9px; }
+  .spec-dialog { width: calc(100vw - 24px); height: calc(100dvh - 24px); }
+  .spec-header { padding: 18px; }
+  .spec-scroll { padding: 18px; }
+}
+@media (max-height: 700px) {
+  .app-shell { padding-top: max(15px, env(safe-area-inset-top)); padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+  .hero { padding: 15px 0 17px; }
+  .hero h1 { font-size: 35px; }
+  .eyebrow { margin-bottom: 9px; }
+  .notebook-top { min-height: 42px; }
+  .toolbar { min-height: 59px; padding-top: 8px; padding-bottom: 8px; }
+  .notebook-bottom { min-height: 29px; padding-top: 6px; padding-bottom: 6px; }
+  .site-footer { padding-top: 7px; }
+  .hero-flower { height: 100px; width: 100px; }
+}
+@media (max-width: 760px) and (max-height: 700px) {
+  .hero { padding-top: 12px; padding-bottom: 13px; }
+  .hero h1 { flex-direction: row; gap: .2em; font-size: 26px; align-items: baseline; }
+  .hero h1 > span { font-size: 19px; }
+  .hero-aside, .eyebrow { display: none; }
+  .toolbar { min-height: 96px; gap: 7px; padding: 7px 12px; }
+  .intensity-controls button { min-height: 27px; }
+  .notebook-top { min-height: 39px; }
+}
+@media (max-height: 480px) {
+  .app-shell { padding-top: max(8px, env(safe-area-inset-top)); }
+  .masthead, .hero-aside, .eyebrow, .site-footer, .notebook-bottom { display: none; }
+  .hero { padding: 0 0 9px; }
+  .hero h1 { flex-direction: row; font-size: 23px; gap: .2em; }
+  .hero h1 > span { font-size: 19px; }
+  .notebook-top { min-height: 32px; }
+  #memo { padding-top: 12px; }
+  .paper-margin, .stage::before { top: 12px; }
+  .toolbar { padding-top: 6px; padding-bottom: 6px; }
+}
+/* iOS can shrink only the visual viewport when its keyboard opens. */
+:root[data-compact="true"] .app-shell { padding-top: max(8px, env(safe-area-inset-top)); padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+:root[data-compact="true"] :is(.masthead, .hero-aside, .eyebrow, .site-footer, .notebook-bottom) { display: none; }
+:root[data-compact="true"] .hero { padding: 0 0 9px; }
+:root[data-compact="true"] .hero h1 { flex-direction: row; font-size: 23px; gap: .2em; }
+:root[data-compact="true"] .hero h1 > span { font-size: 19px; }
+:root[data-compact="true"] .notebook-top { min-height: 32px; }
+:root[data-compact="true"] #memo { padding-top: 12px; }
+:root[data-compact="true"] .paper-margin,
+:root[data-compact="true"] .stage::before { top: 12px; }
+:root[data-compact="true"] .toolbar { padding-top: 6px; padding-bottom: 6px; }
+@media (max-width: 360px) {
+  .hero h1 { font-size: 23px; }
+  .hero h1 > span { font-size: 16px; }
+  .notebook-top { padding-left: 12px; padding-right: 12px; gap: 6px; }
+  .toolbar { padding-left: 9px; padding-right: 9px; }
+  .intensity-controls button { padding-left: 10px; padding-right: 10px; }
+  .utility-controls { gap: 5px; }
+  .toolbar-divider { display: none; }
+  #volume { width: 38px; }
+  .sound-setting { gap: 5px; }
+}
+@media (pointer: coarse) {
+  .icon-text-button, .export-button { min-height: 44px; }
+  .intensity-controls button { min-height: 36px; }
+  #volume { height: 36px; }
+  #volume::-webkit-slider-thumb { width: 16px; height: 16px; margin-top: -6.5px; }
+  #volume::-moz-range-thumb { width: 16px; height: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="masthead">
+        <div class="wordmark" aria-label="Garbage 2026">
+          <svg class="brand-spark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 1v8m0 14v8M1 16h8m14 0h8M5.4 5.4l5.7 5.7m9.8 9.8 5.7 5.7M5.4 26.6l5.7-5.7m9.8-9.8 5.7-5.7" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="2" fill="currentColor"/></svg>
+          <span>GARBAGE<span class="wordmark-year">2026</span></span>
+        </div>
+        <span class="edition">NO. 04 <span>/</span> 書く、打ち上げる。</span>
+      </div>
+      <div class="hero">
+        <div class="hero-title">
+          <p class="eyebrow"><span></span> 生産性より、祝祭を。</p>
+          <h1><span>邪魔すぎる</span><strong>花火メモ帳<span class="title-dot">。</span></strong></h1>
+        </div>
+        <div class="hero-aside">
+          <svg class="hero-flower" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+            <g stroke="currentColor" stroke-width="1.5">
+              <path d="M80 4v47m0 58v47M4 80h47m58 0h47M26 26l34 34m40 40 34 34M26 134l34-34m40-40 34-34M51 10l18 44m22 52 18 44M10 51l44 18m52 22 44 18M10 109l44-18m52-22 44-18M51 150l18-44m22-52 18-44"/>
+              <path d="M65 5l9 44m12 62 9 44M5 65l44 9m62 12 44 9M15 38l37 24m56 36 37 24M38 15l24 37m36 56 24 37M5 95l44-9m62-12 44-9M65 155l9-44m12-62 9-44M15 122l37-24m56-36 37-24M38 145l24-37m36-56 24-37" opacity=".4"/>
+            </g><circle cx="80" cy="80" r="5" fill="currentColor"/>
+          </svg>
+          <p class="hero-copy">ちゃんと書ける。<br><span>たぶん、読めない。</span></p>
+        </div>
+      </div>
+    </header>
+    <main class="notebook" aria-label="花火メモ帳">
+      <div class="notebook-top">
+        <label class="paper-label" for="memo"><span class="paper-dot"></span> MEMO</label>
+        <p class="input-hint" id="input-hint">文字を入力。<kbd>Enter ↵</kbd> で大花火。</p>
+        <span class="editor-status" id="editor-status">打ち上げ待機中</span>
+      </div>
+      <div class="stage" id="stage">
+        <div class="paper-margin" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span>07</span><span>08</span><span>09</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span></div>
+        <textarea id="memo" name="memo" aria-label="メモ本文" aria-describedby="input-hint" placeholder="ここに、今日のことを。&#10;Enterを押すと、だいたい見えません。" spellcheck="false" autocapitalize="off" autocomplete="off" wrap="soft"></textarea>
+        <canvas id="fireworks" aria-hidden="true"></canvas>
+        <span class="stage-corner" aria-hidden="true">WRITE &amp; IGNITE</span>
+      </div>
+      <div class="toolbar" aria-label="メモ帳の設定と操作">
+        <div class="intensity-setting">
+          <span class="control-caption" id="intensity-label">花火</span>
+          <div class="intensity-controls" id="intensity-controls" role="group" aria-labelledby="intensity-label">
+            <button type="button" data-intensity="lively" aria-pressed="false"><span class="level-mark level-one" aria-hidden="true">✧</span>にぎやか</button>
+            <button type="button" data-intensity="annoying" aria-pressed="true"><span class="level-mark" aria-hidden="true">✳</span>邪魔</button>
+            <button type="button" data-intensity="festival" aria-pressed="false"><span class="level-mark" aria-hidden="true">✹</span>祭り</button>
+          </div>
+        </div>
+        <div class="utility-controls">
+          <div class="sound-setting">
+            <button class="icon-text-button sound-button" type="button" id="sound-toggle" aria-pressed="true" aria-label="音をオフにする" title="音をオフにする">
+              <svg class="sound-on-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m11 4-5 4H3v8h3l5 4V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <svg class="sound-off-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m11 4-5 4H3v8h3l5 4V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m16 9 6 6m0-6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span id="sound-label">音 ON</span>
+            </button>
+            <input type="range" id="volume" min="0" max="100" step="1" value="35" aria-label="音量" title="音量">
+          </div>
+          <span class="toolbar-divider" aria-hidden="true"></span>
+          <button class="icon-text-button pause-button" type="button" id="pause-toggle" aria-pressed="false" aria-label="花火を一時停止する" title="花火を一時停止する">
+            <svg class="pause-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            <svg class="play-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z" fill="currentColor" stroke="currentColor" stroke-linejoin="round"/></svg>
+            <span id="pause-label">一時停止</span>
+          </button>
+          <button class="export-button" type="button" id="export-button" title="本文をUTF-8のテキストファイルで保存">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>.txt 保存</span>
+          </button>
+        </div>
+      </div>
+      <div class="notebook-bottom">
+        <span class="save-state"><span class="save-light" aria-hidden="true"></span><span id="save-status" role="status" aria-live="polite">このブラウザーに自動保存</span></span>
+        <span id="character-count" class="character-count">0 文字</span>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <span>メモは残る。余韻も残る。</span>
+      <button type="button" id="spec-button" class="spec-button" aria-haspopup="dialog">仕様書 <span aria-hidden="true">↗</span></button>
+    </footer>
+  </div>
+  <dialog id="spec-dialog" class="spec-dialog" aria-labelledby="spec-heading">
+    <div class="spec-header">
+      <div><span class="dialog-eyebrow">THE ORIGINAL SPECIFICATION</span><h2 id="spec-heading">仕様書</h2></div>
+      <button type="button" id="spec-close" class="spec-close" aria-label="仕様書を閉じる" autofocus>×</button>
+    </div>
+    <div class="spec-scroll"><pre id="spec-content"></pre></div>
+  </dialog>
+  <noscript><p class="noscript-notice">花火と自動保存を使うには、JavaScriptを有効にしてください。</p></noscript>
+<script type="application/json" id="spec-source">
+"# 邪魔すぎる花火メモ帳 企画仕様書\n版：初稿0.1／2026年10月21日\n位置付け：「クソアプリ2026」の記事内iframeで遊ぶメモ帳。仮の呼び名は「ドパガキメモ帳」。花火の気持ちよさ、密度、音、間は実際の体験を見て相談する項目とする。\n## 企画の核\n文字を入力すると花火が上がる。Enterで改行するとさらに大きな花火が連発し、入力した文章が見えなくなる。文章を書こうとして開いたはずが、花火を出すためにキーを押したくなるメモ帳。\n花火は画面の隅で控えめに飾るものではなく、本文へ大きく重なって視界を邪魔する。入力と演出の反応がすぐ結び付き、連続入力すると画面が騒がしくなるところを中心にする。\n本文は普通に入力、編集、保存できる。「邪魔」は視覚と音の演出として作り、入力した内容が失われることをネタにしない。\n## 初稿で定めることと相談すること\n|項目|扱い|\n|---|---|\n|通常入力で花火|企画の核。確定した文字入力に反応する|\n|Enterで大きな連発|企画の核。実際に改行が挿入されたときに反応する|\n|本文への重なり|企画の核。読みにくくなるほど主張する|\n|編集と保存|確実に動く基本機能。演出の負荷と切り離す|\n|打上げから爆発までの間|初稿の候補値を置き、短い体験で相談する|\n|同時に上がる数、色、残光、音|相談項目。数値だけで最適と決めない|\n|Backspaceや貼り付けの特別演出|候補。通常入力とEnterの感触ができてから採否を決める|\n## 起動から最初の10秒\n最初から大きなメモ欄を表示する。案内は「文字を入力。Enterで大花火。」程度にとどめる。入力欄に触れて文字を打つと、カーソル付近で火花が出て、すぐに一発目が上がる。\n短い文を書くだけで複数の花火が重なり、Enterを押すと本文を覆う大きな連発になる。入力を止めれば残光が数秒で消え、自分が何を書いたのかを読み返せる。\n画面の派手さを説明する長文や、演出を起動するための毎回の確認は置かない。最初の実入力だけで違いが分かる体験にする。\n## 見た目\n夜空のような暗い背景に、読みやすい明るい本文を置く。メモ帳部分は通常の編集欄として見え、余計なゲームの計器を並べない。カーソルと選択範囲は保つ。\n花火は本文と同じ領域の手前に重ねる。大輪、散る小花、垂れる火花など、形と時間変化の異なる演出を混ぜる。色の丸が一瞬出て消えるだけで花火と扱わない。\n爆発の中心は同じ場所に固定せず、カーソル付近から上方や左右へ広がる。画面外で爆発して何も見えない状態を避ける。Enterの連発では、画面の複数箇所が順に開く構成を第一案とする。\n派手さは花の大きさ、残光、重なり、音の組合せで作る。全面を白黒に高速反転させる方法は使わない。\n## 入力ごとの演出案\n以下の個数と時間は試作用の値であり、体験を見て決める。\n|入力|演出の初稿|反応の目安|\n|---|---|---|\n|通常の確定入力|カーソル付近に火花、続いて1〜3輪|火花は入力後すぐ、開花は80〜180ms後|\n|連続入力|前の花火が残ったまま次が重なる|入力のたびに反応。密度を数秒かけて上げる|\n|実際の改行|大輪と追い打ちを5〜8発|最初の反応はすぐ、全体は0.6〜1秒|\n|入力を止めた|残光だけが落ちて静まる|およそ2〜3秒で本文を読める|\n|Backspace|火花がカーソルへ吸い戻される案|採否は相談。削除そのものは普通に実行|\n|貼り付け|まとまった打上げを1回出す案|文字数と同数の粒子を無制限に作らない|\nキーを押してから打上げを眺めるだけの待ち時間を作らず、入力直後の小さな火花と、その後の大きい開花を分けて反応を感じさせる。音も、最初の反応と開花の位置を合わせる。\n「打つほど気持ちよい」「Enterをもう一度押したくなる」という体験は、上の数値を守っただけでは完成としない。最初に10〜20秒程度の入力体験で感触を確認する。\n## メモ帳としての操作\n|機能|仕様|\n|---|---|\n|文字入力|日本語、英数字、絵文字、改行を通常どおり入力できる|\n|編集|選択、削除、カーソル移動、コピー、貼り付けを利用できる|\n|Undo／Redo|ブラウザーの通常の編集履歴を維持する|\n|自動保存|編集した本文を保持する。演出完了を保存の条件にしない|\n|書出し|UTF-8のテキストファイルとして保存する|\n|演出量|常時見える小さな設定から切り替える|\n|音|オン・オフと音量を分けて操作できる|\n|一時停止|花火を止めて本文を読み返せる。本文はそのまま残る|\n設定は本文から離れた小さな帯に集め、花火を見たいときに設定画面を何度も開く必要をなくす。\n## 日本語入力とイベントの扱い\n本文の編集は標準のtextareaを第一案とし、キー入力を独自のテキストエンジンで再実装しない。花火のレイヤーはポインター操作を透過させ、文字選択やカーソル移動を妨げない。\n日本語の変換中、候補移動、変換確定に使ったEnterを、大花火の改行として数えない。keydownだけで判定せず、実際の本文変更と入力イベントから、確定文字と改行の挿入を区別する。\n変換中に複数回届くイベントは、確定時の一度の演出へまとめる。入力が確定した際の花火は出すが、同じ確定文字に対して重複して発火させない。スマートフォンでも物理キーボードの有無に依存しない。\nコピー操作、カーソル移動、文字の選択だけでは入力花火を発生させない。Undoで改行が戻った場合も、新しくEnterを押したと同じ大花火を勝手に出さない。\n連続した絵文字や結合文字は、表示上のまとまりを基準に扱う。UTF-16のコード単位数をそのまま花火の発数へ変換しない。\n## 演出の強度\n強度は「にぎやか」「邪魔」「祭り」の3段階を仮置きし、初期値は「邪魔」とする。「邪魔」では本文の中央も花火で隠れ、入力を止めると読める。「祭り」はEnter連打で画面の広い範囲が埋まる。\n負荷が高い端末では、花火1輪の細かい粒子数や解像度から落とす。輪の大きさ、最初の入力反応、大輪が開くタイミングはなるべく維持し、単に何も起きなくなる調整にしない。\n音は高音の発射、低めの開花、細かな残響を使い分ける。連打時も音量を加算し続けず、同時発音数と総音量を抑える。初回操作で音を開始できない環境でも、文字入力と画面演出はすぐ動く。\n## 保存と再開\nブラウザー内へ、本文と設定を作品固有の名前で保存する。編集直後に本文を確保し、保存処理の失敗がアニメーションや入力を止めないようにする。\niframeで保存領域を利用できない場合は、保存状態を短く表示し、テキスト書出しを使えるようにする。書出しファイルには花火の情報やHTMLを混ぜず、本文だけをUTF-8で入れる。\nページを開き直したときは本文を復元するが、復元した文字数を新しい入力として扱わない。長文の復元によって起動直後に花火が暴発することを避ける。\n## 技術構成案\n単独HTMLに標準の編集欄、Canvasの花火、音、保存処理を含める。本文と演出状態を別々に持ち、アニメーションのフレーム更新で編集欄の値を書き直さない。\n花火のレイヤーは編集欄の上に重ね、表示領域に収める。カーソルの位置が取得しにくい状況では、編集欄内の近い位置から打ち上げ、本文への入力を位置計算の成功待ちにしない。\nアニメーションは1本の更新ループで管理し、粒子、軌跡、発音に上限を設ける。通常のキーボード入力を落とさないことを優先し、演出負荷は計測しながら調整する。\n非表示になったiframeでは演出の更新と音を止め、再表示時に大量の花火を追い掛け再生しない。作品の外側にある記事本文の入力やキー操作には反応しない。\n## 記事への埋め込み\niframeの初期高さは560pxを目安にする。最初から入力欄が見え、クリックして文字を書けば試せる。モバイルではソフトウェアキーボードが出た状態でも、改行直後の大輪が見える位置へ収める。\n記事では「メモ帳です。Enterで改行できます。」程度の説明とともに置く。静止画だけでは入力との結び付きが伝わりにくいため、実物をその場で触れることを中心にする。\n## 完成条件\n入力直後の反応が分かり、短い文章とEnterだけで画面が十分騒がしくなる。通常入力とEnterの強さに明確な違いがあり、文字が隠れるほどの花火を実際に体験できる。\n日本語の変換確定で余分な改行やEnter用花火が発生せず、通常の編集、Undo／Redo、貼り付け、本文の復元、UTF-8書出しが動く。演出を止めた後に、入力した本文がそのまま残る。\n高速入力中もキー入力と本文保存を維持できる。花火を過剰に作って入力自体が止まる状態は、派手さが成立したとは扱わない。\n演出の密度、間、音の最終値は、初期の短い体験を見て相談して決める。この仕様書はその比較に必要な入力の種類と評価点までを定め、体験していない気持ちよさを確定済みとしない。\n"
+</script>
+<script>
+(function () {
+  'use strict';
+
+  const TAU = Math.PI * 2;
+  const clamp = (value, low, high) => Math.max(low, Math.min(high, value));
+  const random = (low, high) => low + Math.random() * (high - low);
+  const PALETTES = [
+    ['#fff2b2', '#ffcc48', '#ff7547'],
+    ['#ffd4ef', '#ff6fbf', '#cf54ff'],
+    ['#d9fff4', '#72ffd6', '#41bddb'],
+    ['#fff9e0', '#ffe17a', '#e79443'],
+    ['#d8e8ff', '#a2baff', '#9b6fff'],
+    ['#fff1ce', '#ff9572', '#ff507e']
+  ];
+  const PROFILES = {
+    lively: { particles: 55, radius: 0.27, maximum: 1300, shells: 1, finale: 5 },
+    annoying: { particles: 88, radius: 0.38, maximum: 2200, shells: 2, finale: 7 },
+    festival: { particles: 125, radius: 0.48, maximum: 3000, shells: 3, finale: 8 }
+  };
+  const COMBO_COLORS = ['#c861ff', '#ff963f', '#ff4fae', '#45e7ff'];
+  const COMBO_WINDOW = 2.4;
+  const SPECIAL_KEYS = new Set(['Insert', 'Home', 'PageUp', 'PageDown', 'End', 'Delete']);
+
+  class FireworksSound {
+    constructor() {
+      this.context = null;
+      this.master = null;
+      this.compressor = null;
+      this.noise = null;
+      this.enabled = true;
+      this.volume = 0.35;
+      this.voices = new Set();
+      this.lastTick = -Infinity;
+      this.lastBoom = -Infinity;
+      this.suspended = false;
+    }
+
+    unlock() {
+      if (!this.enabled || this.suspended) return Promise.resolve(false);
+      try {
+        if (!this.context) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (!AudioContext) return Promise.resolve(false);
+          this.context = new AudioContext();
+          this.master = this.context.createGain();
+          this.master.gain.value = this.volume * 0.62;
+          this.compressor = this.context.createDynamicsCompressor();
+          this.compressor.threshold.value = -17;
+          this.compressor.knee.value = 12;
+          this.compressor.ratio.value = 12;
+          this.compressor.attack.value = 0.003;
+          this.compressor.release.value = 0.18;
+          this.master.connect(this.compressor);
+          this.compressor.connect(this.context.destination);
+          this.noise = this.context.createBuffer(1, this.context.sampleRate, this.context.sampleRate);
+          const data = this.noise.getChannelData(0);
+          let previous = 0;
+          for (let i = 0; i < data.length; i += 1) {
+            previous = (previous + random(-0.085, 0.085)) / 1.018;
+            data[i] = previous * 4;
+          }
+        }
+        if (this.context.state === 'running') return Promise.resolve(true);
+        return this.context.resume().then(() => this.context.state === 'running').catch(() => false);
+      } catch (_) {
+        return Promise.resolve(false);
+      }
+    }
+
+    setEnabled(enabled) {
+      this.enabled = Boolean(enabled);
+      if (!this.enabled) this.stop();
+      this.updateGain();
+    }
+
+    setVolume(volume) {
+      this.volume = clamp(Number(volume) || 0, 0, 1);
+      this.updateGain();
+    }
+
+    updateGain() {
+      if (!this.context || !this.master) return;
+      const volume = this.enabled && !this.suspended ? this.volume * 0.62 : 0;
+      try {
+        const now = this.context.currentTime;
+        this.master.gain.cancelScheduledValues(now);
+        this.master.gain.setTargetAtTime(volume, now, 0.02);
+      } catch (_) { /* Audio failure never interrupts editing. */ }
+    }
+
+    setSuspended(suspended) {
+      this.suspended = Boolean(suspended);
+      if (this.suspended) this.stop();
+      this.updateGain();
+    }
+
+    ready() {
+      return this.enabled && !this.suspended && this.volume > 0 && this.context &&
+        this.context.state === 'running' && this.voices.size < 14;
+    }
+
+    voice(source, gain, nodes, duration) {
+      const entry = { source, nodes: [source, gain, ...nodes] };
+      this.voices.add(entry);
+      source.onended = () => {
+        this.voices.delete(entry);
+        for (const node of entry.nodes) {
+          try { node.disconnect(); } catch (_) { /* Already disconnected. */ }
+        }
+      };
+      source.start();
+      source.stop(this.context.currentTime + duration);
+    }
+
+    tick(large) {
+      if (!this.ready()) return;
+      const now = this.context.currentTime;
+      if (now - this.lastTick < 0.042) return;
+      this.lastTick = now;
+      try {
+        const oscillator = this.context.createOscillator();
+        const gain = this.context.createGain();
+        oscillator.type = 'sine';
+        oscillator.frequency.setValueAtTime(large ? 920 : random(1300, 2100), now);
+        oscillator.frequency.exponentialRampToValueAtTime(large ? 1900 : 650, now + 0.085);
+        gain.gain.setValueAtTime(0.0001, now);
+        gain.gain.exponentialRampToValueAtTime(large ? 0.13 : 0.065, now + 0.004);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.105);
+        oscillator.connect(gain);
+        gain.connect(this.master);
+        this.voice(oscillator, gain, [], 0.12);
+      } catch (_) { /* Browser audio limits do not affect the canvas. */ }
+    }
+
+    boom(large) {
+      if (!this.ready()) return;
+      const now = this.context.currentTime;
+      if (now - this.lastBoom < 0.052) return;
+      this.lastBoom = now;
+      try {
+        const oscillator = this.context.createOscillator();
+        const lowGain = this.context.createGain();
+        oscillator.type = 'sine';
+        oscillator.frequency.setValueAtTime(large ? 112 : 150, now);
+        oscillator.frequency.exponentialRampToValueAtTime(34, now + 0.32);
+        lowGain.gain.setValueAtTime(0.0001, now);
+        lowGain.gain.exponentialRampToValueAtTime(large ? 0.75 : 0.36, now + 0.008);
+        lowGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.43);
+        oscillator.connect(lowGain);
+        lowGain.connect(this.master);
+        this.voice(oscillator, lowGain, [], 0.46);
+
+        if (this.voices.size >= 14) return;
+        const noise = this.context.createBufferSource();
+        const filter = this.context.createBiquadFilter();
+        const gain = this.context.createGain();
+        noise.buffer = this.noise;
+        noise.playbackRate.value = random(0.85, 1.2);
+        filter.type = 'bandpass';
+        filter.frequency.setValueAtTime(large ? 1300 : 1800, now);
+        filter.frequency.exponentialRampToValueAtTime(380, now + 0.5);
+        filter.Q.value = 0.55;
+        gain.gain.setValueAtTime(0.0001, now);
+        gain.gain.exponentialRampToValueAtTime(large ? 0.55 : 0.22, now + 0.008);
+        gain.gain.exponentialRampToValueAtTime(0.02, now + 0.14);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.62);
+        noise.connect(filter);
+        filter.connect(gain);
+        gain.connect(this.master);
+        this.voice(noise, gain, [filter], 0.68);
+      } catch (_) { /* Sound is optional; input is not. */ }
+    }
+
+    stop() {
+      for (const entry of this.voices) {
+        try { entry.source.stop(); } catch (_) { /* Ended source. */ }
+        for (const node of entry.nodes) {
+          try { node.disconnect(); } catch (_) { /* Already disconnected. */ }
+        }
+      }
+      this.voices.clear();
+    }
+
+    destroy() {
+      this.stop();
+      if (this.context) this.context.close().catch(() => {});
+      this.context = null;
+    }
+  }
+
+  class FireworksEngine {
+    constructor({ canvas, stage, onBurst }) {
+      this.canvas = canvas;
+      this.stage = stage;
+      this.context = canvas.getContext('2d', { alpha: true });
+      this.onBurst = typeof onBurst === 'function' ? onBurst : null;
+      this.intensity = 'annoying';
+      this.profile = PROFILES.annoying;
+      this.paused = false;
+      this.destroyed = false;
+      this.inView = true;
+      this.particles = [];
+      this.rockets = [];
+      this.queue = [];
+      this.halos = [];
+      this.labels = [];
+      this.heat = 0;
+      this.quality = 1;
+      this.slowFrames = 0;
+      this.goodFrames = 0;
+      this.lastTime = 0;
+      this.raf = 0;
+      this.width = 1;
+      this.height = 1;
+      this.dpr = 1;
+      this.bursts = 0;
+      this.sequence = 0;
+      this.combo = 0;
+      this.lastComboAt = -Infinity;
+      this.comboTimer = 0;
+      this.comboColor = -1;
+      this.turboUntil = 0;
+      this.lastSpecialAt = new Map();
+      this.specials = 0;
+      this.spriteCache = new Map();
+      this.sound = new FireworksSound();
+      this.motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+      this.reducedMotion = this.motionQuery.matches;
+      this.tick = this.tick.bind(this);
+      this.resize = this.resize.bind(this);
+      this.handleVisibility = () => {
+        const suspended = document.hidden || !this.inView || this.paused;
+        this.sound.setSuspended(suspended);
+        if (suspended) this.clear();
+      };
+      this.handleMotion = (event) => { this.reducedMotion = event.matches; };
+      if (this.motionQuery.addEventListener) {
+        this.motionQuery.addEventListener('change', this.handleMotion);
+      }
+      document.addEventListener('visibilitychange', this.handleVisibility);
+      window.addEventListener('resize', this.resize, { passive: true });
+      if ('ResizeObserver' in window) {
+        this.resizeObserver = new ResizeObserver(this.resize);
+        this.resizeObserver.observe(stage);
+      }
+      if ('IntersectionObserver' in window) {
+        this.intersectionObserver = new IntersectionObserver((entries) => {
+          this.inView = entries.some((entry) => entry.isIntersecting && entry.intersectionRatio > 0);
+          this.handleVisibility();
+        });
+        this.intersectionObserver.observe(stage);
+      }
+      this.resize();
+      this.handleVisibility();
+    }
+
+    resize() {
+      if (this.destroyed) return;
+      const rect = this.stage.getBoundingClientRect();
+      this.width = Math.max(1, rect.width);
+      this.height = Math.max(1, rect.height);
+      const pixelLimit = Math.sqrt(2500000 / (this.width * this.height));
+      this.dpr = clamp(Math.min(window.devicePixelRatio || 1, this.quality < 0.65 ? 1.25 : 1.8, pixelLimit), 0.75, 2);
+      this.canvas.width = Math.round(this.width * this.dpr);
+      this.canvas.height = Math.round(this.height * this.dpr);
+      if (this.context) this.context.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+      if (this.hasWork()) this.ensureFrame();
+    }
+
+    setIntensity(intensity) {
+      if (!Object.prototype.hasOwnProperty.call(PROFILES, intensity)) return;
+      this.intensity = intensity;
+      this.profile = PROFILES[intensity];
+      if (this.particles.length > this.profile.maximum) {
+        this.particles.splice(0, this.particles.length - this.profile.maximum);
+      }
+    }
+
+    setPaused(paused) {
+      this.paused = Boolean(paused);
+      this.handleVisibility();
+    }
+
+    setSound(enabled) { this.sound.setEnabled(enabled); }
+    setVolume(volume) { this.sound.setVolume(volume); }
+    unlockAudio() { return this.sound.unlock(); }
+
+    canRun() {
+      return !this.destroyed && !this.paused && !document.hidden && this.inView && Boolean(this.context);
+    }
+
+    hasWork() {
+      return this.particles.length || this.rockets.length || this.queue.length || this.halos.length || this.labels.length;
+    }
+
+    ensureFrame() {
+      if (!this.raf && this.canRun()) this.raf = requestAnimationFrame(this.tick);
+    }
+
+    addLabel(label) {
+      const type = label.type || 'burst';
+      label.type = type;
+      if (type !== 'burst') {
+        this.labels = this.labels.filter((entry) => entry.type !== type);
+      } else {
+        const bursts = this.labels.filter((entry) => entry.type === 'burst');
+        if (bursts.length >= 2) this.labels.splice(this.labels.indexOf(bursts[0]), 1);
+      }
+      this.labels.push(label);
+      while (this.labels.length > 4) {
+        const burst = this.labels.findIndex((entry) => entry.type === 'burst');
+        this.labels.splice(burst >= 0 ? burst : 0, 1);
+      }
+    }
+
+    resetCombo(cancelTurbo = false) {
+      window.clearTimeout(this.comboTimer);
+      this.comboTimer = 0;
+      this.combo = 0;
+      this.lastComboAt = -Infinity;
+      if (cancelTurbo) this.turboUntil = 0;
+    }
+
+    recordCombo(now) {
+      if (now - this.lastComboAt > COMBO_WINDOW) this.resetCombo();
+      this.combo += 1;
+      this.lastComboAt = now;
+      window.clearTimeout(this.comboTimer);
+      this.comboTimer = window.setTimeout(() => this.resetCombo(), COMBO_WINDOW * 1000);
+      if (this.combo >= 10) {
+        this.comboColor = (this.comboColor + 1 + Math.floor(random(0, 3))) % COMBO_COLORS.length;
+        this.addLabel({
+          type: 'combo', text: this.combo + 'コンボ！', color: COMBO_COLORS[this.comboColor],
+          x: this.width * random(0.37, 0.63), y: this.height * random(0.46, 0.68),
+          born: now, life: 0.78, tilt: this.reducedMotion ? 0 : random(-0.11, 0.09)
+        });
+      }
+      if (this.combo >= 30 && this.combo % 30 === 0) {
+        this.turboUntil = now + 8;
+        this.addLabel({
+          type: 'turbo', text: 'ターボ！', color: '#ff963f',
+          x: this.width * 0.5, y: this.height * 0.31,
+          born: now, life: 1.1, tilt: this.reducedMotion ? 0 : -0.05
+        });
+      }
+    }
+
+    input({ x, y, count = 1, kind = 'type' } = {}) {
+      if (!this.canRun()) return;
+      const confirmed = kind === 'type' || kind === 'newline' || kind === 'paste';
+      if ((!confirmed && kind !== 'delete') || (confirmed && !(Number(count) > 0))) return;
+      const now = performance.now() / 1000;
+      if (confirmed) this.recordCombo(now);
+      const turbo = now < this.turboUntil;
+      const safeX = clamp(Number.isFinite(x) ? x : this.width * 0.35, 18, Math.max(18, this.width - 18));
+      const safeY = clamp(Number.isFinite(y) ? y : this.height * 0.38, 20, Math.max(20, this.height - 20));
+      const palette = PALETTES[this.sequence % PALETTES.length];
+      this.sequence += 1;
+      this.heat = clamp(this.heat + (kind === 'newline' ? 0.32 : 0.12), 0, 1);
+      this.spark(safeX, safeY, palette, now, kind === 'delete');
+      if (kind === 'delete') {
+        this.ensureFrame();
+        return;
+      }
+      const large = kind === 'newline';
+      this.sound.tick(large);
+      let total = large ? this.profile.finale : kind === 'paste' ? Math.min(4, this.profile.shells + 1) :
+        1 + (this.heat > 0.42 && this.profile.shells > 1 ? 1 : 0) +
+        (this.heat > 0.82 && this.profile.shells > 2 ? 1 : 0);
+      if (turbo) total += large ? 2 : 1;
+      total = Math.min(total, large ? 10 : 5);
+      if (this.reducedMotion && !large) total = Math.min(total, turbo ? 3 : 2);
+      const graphemes = clamp(Number(count) || 1, 1, 24);
+      const emphasis = (kind === 'paste' ? 1.1 : Math.min(1.18, 1 + Math.log2(graphemes) * 0.035))
+        * (turbo ? 1.15 : 1);
+      const limit = large ? 28 : 22;
+      if (this.queue.length + total > limit) {
+        this.queue.splice(0, Math.min(this.queue.length, this.queue.length + total - limit));
+      }
+      for (let i = 0; i < total; i += 1) {
+        const marginX = Math.min(95, this.width * 0.18);
+        const marginY = Math.min(90, this.height * 0.24);
+        let targetX;
+        let targetY;
+        if (large) {
+          const fraction = (i + 0.55) / total;
+          targetX = this.width * (0.12 + fraction * 0.76) + random(-35, 35);
+          targetY = this.height * (i % 2 === 0 ? random(0.27, 0.43) : random(0.45, 0.65));
+        } else {
+          targetX = safeX + random(-this.width * 0.19, this.width * 0.25);
+          targetY = safeY + random(-this.height * 0.27, this.height * 0.08);
+          if (i > 0) targetX += this.width * (i % 2 ? 0.16 : -0.16);
+        }
+        targetX = clamp(targetX, marginX, Math.max(marginX, this.width - marginX));
+        targetY = clamp(targetY, marginY, Math.max(marginY, this.height - marginY));
+        this.queue.push({
+          at: now + i * (large ? (turbo ? 0.055 : 0.105) : (turbo ? 0.035 : 0.075)),
+          x: safeX + random(-8, 8),
+          y: safeY + 14,
+          targetX,
+          targetY,
+          palette: PALETTES[(this.sequence + i + (large ? 2 : 0)) % PALETTES.length],
+          kind,
+          large,
+          turbo,
+          first: i === 0,
+          style: (this.sequence + i) % 5,
+          emphasis
+        });
+      }
+      this.ensureFrame();
+    }
+
+    specialKey({ key, x, y } = {}) {
+      if (!this.canRun() || !SPECIAL_KEYS.has(key)) return false;
+      const now = performance.now() / 1000;
+      const previous = this.lastSpecialAt.get(key);
+      if (previous !== undefined && now - previous < 0.1) return false;
+      this.lastSpecialAt.set(key, now);
+      this.specials += 1;
+      const centerX = clamp(Number.isFinite(x) ? x : this.width * 0.5, 24, Math.max(24, this.width - 24));
+      const centerY = clamp(Number.isFinite(y) ? y : this.height * 0.45, 28, Math.max(28, this.height - 28));
+      const total = Math.round((this.reducedMotion ? 48 : 92) * this.quality);
+      this.reserveParticles(total);
+      for (let i = 0; i < total; i += 1) {
+        let particle;
+        const fraction = i / total;
+        if (key === 'Insert') {
+          const angle = TAU * fraction;
+          const speed = i % 2 ? 340 : 185;
+          particle = this.particle(centerX, centerY, Math.cos(angle) * speed, Math.sin(angle) * speed,
+            i % 2 ? '#c861ff' : '#45e7ff', now, random(0.65, 1.15), 2.5, 0, 1.2, 'star');
+        } else if (key === 'Home' || key === 'End') {
+          const direction = key === 'Home' ? -1 : 1;
+          const startX = this.width * (direction < 0 ? random(0.48, 0.95) : random(0.05, 0.52));
+          particle = this.particle(startX, clamp(centerY + random(-42, 42), 12, this.height - 12),
+            direction * random(450, 850), random(-25, 25), direction < 0 ? '#45e7ff' : '#ff963f',
+            now, random(0.5, 1), random(1.3, 2.8), 0, 0.55, 'willow');
+        } else if (key === 'PageUp') {
+          particle = this.particle(this.width * random(0.08, 0.92), this.height * random(0.75, 0.98),
+            random(-55, 55), -random(390, 740), i % 2 ? '#72ffd6' : '#d9fff4',
+            now, random(0.85, 1.35), random(1.4, 2.8), 45, 0.45, 'willow');
+        } else if (key === 'PageDown') {
+          particle = this.particle(this.width * random(-0.05, 0.9), this.height * random(0.01, 0.25),
+            random(95, 210), random(290, 520), i % 2 ? '#ff4fae' : '#ffe17a',
+            now, random(0.85, 1.3), random(1.5, 2.8), 145, 0.15, 'willow');
+        } else {
+          const angle = TAU * fraction;
+          const radius = random(45, Math.min(145, Math.max(50, this.height * 0.34)));
+          particle = this.particle(centerX + Math.cos(angle) * radius, centerY + Math.sin(angle) * radius,
+            0, 0, i % 2 ? '#ff4fae' : '#c861ff', now, random(0.55, 0.9), 2, 0, 0, 'vortex');
+          particle.targetX = centerX;
+          particle.targetY = centerY;
+          particle.orbitAngle = angle;
+          particle.orbitRadius = radius;
+        }
+        this.pushParticle(particle);
+      }
+      if (key === 'Insert') {
+        this.halos.push({ x: centerX, y: centerY, born: now, life: 0.55, radius: 145, color: '#c861ff', type: 'burst' });
+      }
+      if (this.halos.length > 16) this.halos.splice(0, this.halos.length - 16);
+      if (key === 'Delete') this.sound.boom(false);
+      else this.sound.tick(key === 'Insert');
+      this.ensureFrame();
+      return true;
+    }
+
+    reserveParticles(total) {
+      const maximum = Math.round(this.profile.maximum * Math.max(0.65, this.quality));
+      if (this.particles.length + total > maximum) {
+        this.particles.splice(0, Math.min(this.particles.length, this.particles.length + total - maximum));
+      }
+    }
+
+    pushParticle(particle) {
+      const maximum = Math.round(this.profile.maximum * Math.max(0.65, this.quality));
+      if (this.particles.length >= maximum) return;
+      this.particles.push(particle);
+    }
+
+    particle(x, y, vx, vy, color, now, life, size, gravity, drag, style) {
+      return {
+        x, y, px: x, py: y, ox: x, oy: y, vx, vy, color,
+        born: now, life, size, gravity, drag, style,
+        flicker: random(0, TAU), split: false
+      };
+    }
+
+    spark(x, y, palette, now, inward) {
+      const total = this.reducedMotion ? 9 : 17;
+      this.reserveParticles(total);
+      for (let i = 0; i < total; i += 1) {
+        const angle = random(0, TAU);
+        const speed = random(35, 185);
+        const distance = inward ? random(12, 34) : 0;
+        const direction = inward ? -1 : 1;
+        this.pushParticle(this.particle(
+          x + Math.cos(angle) * distance, y + Math.sin(angle) * distance,
+          Math.cos(angle) * speed * direction, Math.sin(angle) * speed * direction,
+          palette[i % 3], now, inward ? 0.22 : random(0.18, 0.38),
+          random(1, 2.4), inward ? 0 : 85, 4, 'spark'
+        ));
+      }
+      if (!inward) this.halos.push({ x, y, born: now, life: 0.18, radius: 28, color: palette[1], type: 'touch' });
+      if (this.halos.length > 16) this.halos.splice(0, this.halos.length - 16);
+    }
+
+    launch(shell, now) {
+      const duration = shell.turbo ? (shell.large ? 0.055 : random(0.045, 0.08)) :
+        (shell.large ? 0.09 : random(0.08, 0.16));
+      this.rockets.push({ ...shell, born: now, duration, px: shell.x, py: shell.y });
+      if (this.rockets.length > 14) this.rockets.shift();
+    }
+
+    burst(shell, now) {
+      this.bursts += 1;
+      const minimum = Math.min(this.width, this.height);
+      const baseRadius = Math.min(340, Math.max(90, minimum * this.profile.radius));
+      const radius = baseRadius * (shell.large ? random(1.12, 1.42) : random(0.83, 1.12)) * shell.emphasis;
+      const population = Math.round(this.profile.particles * this.quality * (shell.large ? 1.3 : 1) * (shell.turbo ? 1.2 : 1));
+      const spaceNeeded = population + Math.round(population * 0.35);
+      this.reserveParticles(spaceNeeded);
+      const golden = shell.style === 3;
+      const palette = golden ? PALETTES[3] : shell.palette;
+      const speed = radius * (shell.turbo ? 2.9 : 2.5);
+      const life = shell.large ? random(1.5, 2.1) : random(1.25, 1.8);
+      for (let i = 0; i < population; i += 1) {
+        let angle = TAU * i / population + random(-0.024, 0.024);
+        let distance = random(0.7, 1);
+        if (shell.style === 0) distance = Math.sqrt(Math.random());
+        if (shell.style === 1) distance = i % 3 === 0 ? random(0.42, 0.53) : random(0.93, 1);
+        if (shell.style === 2) distance = i % 5 === 0 ? random(0.4, 0.65) : random(0.82, 1);
+        if (golden) { angle = random(0, TAU); distance = random(0.56, 1); }
+        if (shell.style === 4) {
+          angle = Math.round(angle / (TAU / 12)) * (TAU / 12) + random(-0.018, 0.018);
+          distance = random(0.32, 1);
+        }
+        const particle = this.particle(
+          shell.targetX, shell.targetY,
+          Math.cos(angle) * speed * distance,
+          Math.sin(angle) * speed * distance * (golden ? 0.83 : 1),
+          i % 9 === 0 ? palette[0] : palette[1 + i % 2],
+          now, life * random(0.72, 1.12), random(1.1, shell.large ? 2.7 : 2.2),
+          golden ? 105 : 64, golden ? 1.75 : 2.5,
+          golden ? 'willow' : shell.style === 2 && i % 8 === 0 ? 'split' : 'star'
+        );
+        this.pushParticle(particle);
+      }
+      for (let i = 0; i < Math.round(population * 0.28); i += 1) {
+        const angle = random(0, TAU);
+        const velocity = speed * random(0.12, 0.48);
+        this.pushParticle(this.particle(
+          shell.targetX, shell.targetY, Math.cos(angle) * velocity, Math.sin(angle) * velocity,
+          palette[0], now, random(0.38, 0.9), random(0.75, 1.8), 45, 3.3, 'spark'
+        ));
+      }
+      this.halos.push({
+        x: shell.targetX, y: shell.targetY, born: now,
+        life: shell.large ? 0.55 : 0.43, radius: radius * 1.25,
+        color: palette[1], type: 'burst'
+      });
+      if (this.halos.length > 16) this.halos.shift();
+      if (shell.large && shell.first && !this.reducedMotion) {
+        this.addLabel({
+          type: 'burst',
+          x: this.width * random(0.38, 0.62), y: this.height * random(0.38, 0.57),
+          born: now, life: 0.9, color: palette[1], tilt: random(-0.12, 0.07),
+          text: ['たまや！', 'ドーン！', 'いい改行。'][Math.floor(random(0, 3))]
+        });
+      }
+      this.sound.boom(shell.large);
+      if (this.onBurst) {
+        try { this.onBurst({ kind: shell.kind, x: shell.targetX, y: shell.targetY, radius }); } catch (_) { /* UI callbacks are isolated. */ }
+      }
+    }
+
+    sprite(color) {
+      if (this.spriteCache.has(color)) return this.spriteCache.get(color);
+      const sprite = document.createElement('canvas');
+      sprite.width = 32;
+      sprite.height = 32;
+      const context = sprite.getContext('2d');
+      const gradient = context.createRadialGradient(16, 16, 0, 16, 16, 16);
+      gradient.addColorStop(0, '#ffffff');
+      gradient.addColorStop(0.12, color);
+      gradient.addColorStop(0.35, color + '99');
+      gradient.addColorStop(1, color + '00');
+      context.fillStyle = gradient;
+      context.fillRect(0, 0, 32, 32);
+      this.spriteCache.set(color, sprite);
+      return sprite;
+    }
+
+    clearCanvas() {
+      if (!this.context) return;
+      const context = this.context;
+      context.setTransform(1, 0, 0, 1, 0, 0);
+      context.globalCompositeOperation = 'source-over';
+      context.globalAlpha = 1;
+      context.shadowBlur = 0;
+      context.shadowOffsetX = 0;
+      context.shadowOffsetY = 0;
+      context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+      context.beginPath();
+      context.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+    }
+
+    tick(timestamp) {
+      this.raf = 0;
+      if (!this.canRun()) { this.clear(); return; }
+      const now = timestamp / 1000;
+      const elapsed = this.lastTime ? now - this.lastTime : 1 / 60;
+      const dt = clamp(elapsed, 0.001, 0.042);
+      this.lastTime = now;
+      if (elapsed > 0.034 && elapsed < 0.2) {
+        this.slowFrames += 1;
+        this.goodFrames = 0;
+        if (this.slowFrames >= 10 && this.quality > 0.48) {
+          this.quality = Math.max(0.48, this.quality - 0.12);
+          this.slowFrames = 0;
+          if (this.quality < 0.65) this.resize();
+        }
+      } else if (elapsed < 0.022) {
+        this.goodFrames += 1;
+        this.slowFrames = Math.max(0, this.slowFrames - 1);
+        if (this.goodFrames > 240) {
+          this.quality = Math.min(1, this.quality + 0.06);
+          this.goodFrames = 0;
+        }
+      }
+      this.heat = Math.max(0, this.heat - dt * 0.3);
+      for (let i = this.queue.length - 1; i >= 0; i -= 1) {
+        if (this.queue[i].at <= now) {
+          const shell = this.queue.splice(i, 1)[0];
+          if (now - shell.at < 1.2) this.launch(shell, now);
+        }
+      }
+      const context = this.context;
+      this.clearCanvas();
+      context.globalCompositeOperation = 'lighter';
+
+      for (let i = this.rockets.length - 1; i >= 0; i -= 1) {
+        const rocket = this.rockets[i];
+        const progress = clamp((now - rocket.born) / rocket.duration, 0, 1);
+        const ease = 1 - Math.pow(1 - progress, 1.6);
+        const x = rocket.x + (rocket.targetX - rocket.x) * ease;
+        const y = rocket.y + (rocket.targetY - rocket.y) * ease - Math.sin(progress * Math.PI) * 18;
+        context.globalAlpha = 0.85;
+        context.strokeStyle = rocket.palette[1];
+        context.lineWidth = rocket.large ? 2.4 : 1.6;
+        context.beginPath();
+        context.moveTo(rocket.px, rocket.py);
+        context.lineTo(x, y);
+        context.stroke();
+        context.drawImage(this.sprite(rocket.palette[0]), x - 8, y - 8, 16, 16);
+        rocket.px = x;
+        rocket.py = y;
+        if (progress >= 1) {
+          this.rockets.splice(i, 1);
+          this.burst(rocket, now);
+        }
+      }
+
+      for (let i = this.halos.length - 1; i >= 0; i -= 1) {
+        const halo = this.halos[i];
+        const progress = Math.max(0, (now - halo.born) / halo.life);
+        if (progress >= 1) { this.halos.splice(i, 1); continue; }
+        const radius = halo.radius * (halo.type === 'touch' ? 0.3 + progress : 0.22 + progress * 0.8);
+        context.globalAlpha = (1 - progress) * (halo.type === 'touch' ? 0.55 : 0.22);
+        const gradient = context.createRadialGradient(halo.x, halo.y, 0, halo.x, halo.y, radius);
+        gradient.addColorStop(0, halo.color);
+        gradient.addColorStop(0.22, halo.color + 'aa');
+        gradient.addColorStop(1, halo.color + '00');
+        context.fillStyle = gradient;
+        context.beginPath();
+        context.arc(halo.x, halo.y, radius, 0, TAU);
+        context.fill();
+        context.globalAlpha = Math.pow(1 - progress, 2) * 0.65;
+        context.lineWidth = halo.type === 'touch' ? 1.5 : 2;
+        context.strokeStyle = halo.color;
+        context.beginPath();
+        context.arc(halo.x, halo.y, radius * 0.74, 0, TAU);
+        context.stroke();
+      }
+
+      const currentCount = this.particles.length;
+      const offspring = [];
+      for (let i = currentCount - 1; i >= 0; i -= 1) {
+        const particle = this.particles[i];
+        const age = Math.max(0, now - particle.born);
+        if (age >= particle.life || particle.y > this.height + 65 || particle.x < -100 || particle.x > this.width + 100) {
+          const last = this.particles.pop();
+          if (i < this.particles.length) this.particles[i] = last;
+          continue;
+        }
+        particle.ox = particle.px;
+        particle.oy = particle.py;
+        particle.px = particle.x;
+        particle.py = particle.y;
+        const progress = age / particle.life;
+        if (particle.style === 'vortex') {
+          const radius = particle.orbitRadius * Math.pow(1 - progress, 1.7);
+          const angle = particle.orbitAngle + progress * 4;
+          particle.x = particle.targetX + Math.cos(angle) * radius;
+          particle.y = particle.targetY + Math.sin(angle) * radius;
+        } else {
+          const drag = Math.exp(-particle.drag * dt);
+          particle.vx *= drag;
+          particle.vy = particle.vy * drag + particle.gravity * dt;
+          particle.x += particle.vx * dt;
+          particle.y += particle.vy * dt;
+        }
+        const alpha = Math.pow(1 - progress, particle.style === 'willow' ? 0.65 : 0.9);
+        const glimmer = progress > 0.48 ? 0.65 + Math.sin(age * 32 + particle.flicker) * 0.35 : 1;
+        context.globalAlpha = alpha * glimmer;
+        context.strokeStyle = particle.color;
+        context.lineWidth = particle.size * (1 - progress * 0.5);
+        context.beginPath();
+        const trail = particle.style === 'willow' ? 3.5 : 1.8;
+        context.moveTo(particle.x - (particle.x - particle.ox) * trail, particle.y - (particle.y - particle.oy) * trail);
+        context.lineTo(particle.x, particle.y);
+        context.stroke();
+        const glowSize = particle.size * (this.quality < 0.65 ? 4 : 6);
+        if (this.quality > 0.58 || i % 2 === 0) {
+          context.drawImage(this.sprite(particle.color), particle.x - glowSize / 2, particle.y - glowSize / 2, glowSize, glowSize);
+        }
+        if (particle.style === 'split' && !particle.split && progress > 0.32) {
+          particle.split = true;
+          for (let j = 0; j < 5; j += 1) {
+            const angle = TAU * j / 5 + particle.flicker;
+            offspring.push(this.particle(
+              particle.x, particle.y, particle.vx * 0.4 + Math.cos(angle) * 55,
+              particle.vy * 0.4 + Math.sin(angle) * 55,
+              particle.color, now, random(0.45, 0.75), 1, 65, 2.7, 'spark'
+            ));
+          }
+        }
+      }
+      for (const particle of offspring) this.pushParticle(particle);
+
+      context.globalCompositeOperation = 'source-over';
+      for (let i = this.labels.length - 1; i >= 0; i -= 1) {
+        if (now - this.labels[i].born >= this.labels[i].life) this.labels.splice(i, 1);
+      }
+      const orderedLabels = this.labels.slice().sort((left, right) =>
+        (left.type === 'turbo' ? 2 : left.type === 'combo' ? 1 : 0) -
+        (right.type === 'turbo' ? 2 : right.type === 'combo' ? 1 : 0));
+      for (const label of orderedLabels) {
+        const progress = Math.max(0, (now - label.born) / label.life);
+        const isCombo = label.type === 'combo';
+        const isTurbo = label.type === 'turbo';
+        const appear = this.reducedMotion ? 1 : clamp(progress / (isTurbo ? 0.09 : 0.12), 0, 1);
+        let size = Math.min(isTurbo ? 156 : isCombo ? 130 : 112,
+          this.width * (isTurbo ? 0.23 : isCombo ? 0.18 : 0.14), this.height * 0.33);
+        context.save();
+        context.font = '900 ' + size + 'px "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif';
+        size *= Math.min(1, this.width * 0.88 / Math.max(1, context.measureText(label.text).width));
+        const halfWidth = Math.min(this.width * 0.44, size * label.text.length * 0.5);
+        const labelX = clamp(label.x, halfWidth + 8, Math.max(halfWidth + 8, this.width - halfWidth - 8));
+        context.translate(labelX, label.y - (this.reducedMotion ? 0 : progress * 22));
+        context.rotate(label.tilt);
+        const scale = this.reducedMotion ? 1 : 0.88 + appear * 0.12;
+        context.scale(scale, scale);
+        context.globalAlpha = (0.5 + appear * 0.5) * Math.pow(1 - progress, isTurbo ? 0.35 : 0.65);
+        context.textAlign = 'center';
+        context.textBaseline = 'middle';
+        context.font = '900 ' + size + 'px "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif';
+        context.lineJoin = 'round';
+        context.strokeStyle = '#0a0b17';
+        context.lineWidth = Math.max(5, size * 0.095);
+        context.strokeText(label.text, 0, 0);
+        context.fillStyle = isCombo || isTurbo ? label.color : '#fff9df';
+        context.shadowColor = label.color;
+        context.shadowBlur = isTurbo ? 30 : isCombo ? 23 : 18;
+        context.fillText(label.text, 0, 0);
+        if (isTurbo) {
+          context.shadowBlur = 0;
+          context.strokeStyle = '#fff1b8';
+          context.lineWidth = Math.max(1, size * 0.013);
+          context.strokeText(label.text, 0, 0);
+        }
+        context.restore();
+      }
+      context.globalAlpha = 1;
+      context.globalCompositeOperation = 'source-over';
+      if (this.hasWork()) this.ensureFrame();
+      else {
+        this.lastTime = 0;
+        this.heat = 0;
+        this.clearCanvas();
+      }
+    }
+
+    clear() {
+      if (this.raf) cancelAnimationFrame(this.raf);
+      this.raf = 0;
+      this.lastTime = 0;
+      this.heat = 0;
+      this.resetCombo(true);
+      this.lastSpecialAt.clear();
+      this.particles.length = 0;
+      this.rockets.length = 0;
+      this.queue.length = 0;
+      this.halos.length = 0;
+      this.labels.length = 0;
+      this.sound.stop();
+      this.clearCanvas();
+    }
+
+    getStats() {
+      const now = performance.now() / 1000;
+      if (now - this.lastComboAt > COMBO_WINDOW) this.resetCombo();
+      return {
+        particles: this.particles.length,
+        queued: this.queue.length,
+        rockets: this.rockets.length,
+        voices: this.sound.voices.size,
+        quality: this.quality,
+        bursts: this.bursts,
+        combo: this.combo,
+        turbo: now < this.turboUntil,
+        turboSeconds: Math.max(0, this.turboUntil - now),
+        specials: this.specials,
+        paused: this.paused,
+        running: Boolean(this.raf)
+      };
+    }
+
+    destroy() {
+      this.clear();
+      this.destroyed = true;
+      this.sound.destroy();
+      document.removeEventListener('visibilitychange', this.handleVisibility);
+      window.removeEventListener('resize', this.resize);
+      if (this.motionQuery.removeEventListener) {
+        this.motionQuery.removeEventListener('change', this.handleMotion);
+      }
+      if (this.resizeObserver) this.resizeObserver.disconnect();
+      if (this.intersectionObserver) this.intersectionObserver.disconnect();
+      this.spriteCache.clear();
+    }
+  }
+
+  window.FireworksEngine = FireworksEngine;
+})();
+</script>
+<script>
+(() => {
+  'use strict';
+
+  const byId = (id) => document.getElementById(id);
+  const memo = byId('memo');
+  const stage = byId('stage');
+  if (!memo || !stage) return;
+
+  const root = document.documentElement;
+  const viewport = window.visualViewport;
+  let viewportFrame = 0;
+  function updateViewportHeight() {
+    viewportFrame = 0;
+    const useVisualHeight = viewport && Number.isFinite(viewport.height) && viewport.height > 0
+      && Number.isFinite(viewport.scale) && Math.abs(viewport.scale - 1) < 0.05;
+    const height = Math.max(1, Math.round(useVisualHeight ? viewport.height : window.innerHeight));
+    root.style.setProperty('--app-height', `${height}px`);
+    root.dataset.compact = String(height <= 480);
+  }
+  function scheduleViewportHeight() {
+    if (!viewportFrame) viewportFrame = window.requestAnimationFrame(updateViewportHeight);
+  }
+  window.addEventListener('resize', scheduleViewportHeight, { passive: true });
+  window.addEventListener('orientationchange', scheduleViewportHeight, { passive: true });
+  if (viewport) viewport.addEventListener('resize', scheduleViewportHeight, { passive: true });
+  updateViewportHeight();
+
+  const keys = {
+    text: 'garbage2026.fire.memo.v1',
+    preferences: 'garbage2026.fire.preferences.v1',
+  };
+  const defaults = { intensity: 'annoying', sound: true, volume: 0.35, paused: false };
+  const allowedIntensities = ['lively', 'annoying', 'festival'];
+  const settings = { ...defaults };
+  const saveStatus = byId('save-status');
+  const characterCount = byId('character-count');
+  const editorStatus = byId('editor-status');
+  const soundToggle = byId('sound-toggle');
+  const soundLabel = byId('sound-label');
+  const volumeControl = byId('volume');
+  const pauseToggle = byId('pause-toggle');
+  const pauseLabel = byId('pause-label');
+  const exportButton = byId('export-button');
+  const specButton = byId('spec-button');
+  const specDialog = byId('spec-dialog');
+  const specClose = byId('spec-close');
+  let storageAvailable = true;
+  let lastSavedText = null;
+  let effectError = false;
+
+  function updateSaveStatus(success) {
+    storageAvailable = success;
+    if (!saveStatus) return;
+    const text = success ? '自動保存済み' : '自動保存できません';
+    if (saveStatus.textContent !== text) saveStatus.textContent = text;
+    saveStatus.dataset.state = success ? 'saved' : 'error';
+  }
+
+  try {
+    const stored = localStorage.getItem(keys.text);
+    if (stored !== null) {
+      memo.value = stored;
+      lastSavedText = stored;
+    }
+    const storedPreferences = localStorage.getItem(keys.preferences);
+    if (storedPreferences !== null) {
+      let parsed = null;
+      try { parsed = JSON.parse(storedPreferences); } catch (_) { /* Keep safe defaults. */ }
+      if (parsed && typeof parsed === 'object') {
+        if (allowedIntensities.includes(parsed.intensity)) settings.intensity = parsed.intensity;
+        if (typeof parsed.sound === 'boolean') settings.sound = parsed.sound;
+        if (typeof parsed.paused === 'boolean') settings.paused = parsed.paused;
+        if (Number.isFinite(parsed.volume)) settings.volume = Math.max(0, Math.min(1, parsed.volume));
+      }
+    }
+  } catch (_) {
+    updateSaveStatus(false);
+  }
+
+  let engine = null;
+  try {
+    engine = new window.FireworksEngine({ canvas: byId('fireworks'), stage });
+  } catch (error) {
+    effectError = true;
+    console.error('Fireworks could not be initialized; the memo remains available.', error);
+  }
+
+  function callEngine(method, ...args) {
+    if (!engine || typeof engine[method] !== 'function') return undefined;
+    try {
+      const result = engine[method](...args);
+      if (result && typeof result.catch === 'function') result.catch(() => {});
+      return result;
+    } catch (error) {
+      if (method !== 'unlockAudio' && !effectError) {
+        effectError = true;
+        console.error('A firework effect failed; the memo remains available.', error);
+        updateEditorStatus();
+      }
+      return undefined;
+    }
+  }
+
+  function persistText(text) {
+    if (storageAvailable && text === lastSavedText) return;
+    try {
+      localStorage.setItem(keys.text, text);
+      lastSavedText = text;
+      updateSaveStatus(true);
+    } catch (_) {
+      updateSaveStatus(false);
+    }
+  }
+
+  function persistPreferences() {
+    try {
+      localStorage.setItem(keys.preferences, JSON.stringify(settings));
+    } catch (_) {
+      updateSaveStatus(false);
+    }
+  }
+
+  function updateEditorStatus() {
+    if (!editorStatus) return;
+    editorStatus.textContent = effectError
+      ? '花火を表示できません · メモは使えます'
+      : settings.paused ? '花火はおやすみ中' : '打ち上げ待機中';
+  }
+
+  function applySettings() {
+    document.documentElement.dataset.intensity = settings.intensity;
+    stage.dataset.paused = String(settings.paused);
+    stage.dataset.sound = String(settings.sound);
+    for (const button of document.querySelectorAll('#intensity-controls [data-intensity]')) {
+      const selected = button.dataset.intensity === settings.intensity;
+      button.setAttribute('aria-pressed', String(selected));
+      button.classList.toggle('is-active', selected);
+    }
+    if (soundToggle) {
+      soundToggle.setAttribute('aria-pressed', String(settings.sound));
+      soundToggle.setAttribute('aria-label', settings.sound ? '音をオフにする' : '音をオンにする');
+      soundToggle.title = settings.sound ? '音をオフにする' : '音をオンにする';
+      soundToggle.dataset.enabled = String(settings.sound);
+    }
+    if (soundLabel) soundLabel.textContent = settings.sound ? '音 ON' : '音 OFF';
+    if (volumeControl) {
+      volumeControl.value = String(Math.round(settings.volume * 100));
+      volumeControl.setAttribute('aria-valuetext', `${Math.round(settings.volume * 100)}%`);
+      volumeControl.style.setProperty('--volume', `${Math.round(settings.volume * 100)}%`);
+    }
+    if (pauseToggle) {
+      pauseToggle.setAttribute('aria-pressed', String(settings.paused));
+      pauseToggle.setAttribute('aria-label', settings.paused ? '花火を再開する' : '花火を一時停止する');
+      pauseToggle.title = settings.paused ? '花火を再開する' : '花火を一時停止する';
+      pauseToggle.dataset.paused = String(settings.paused);
+    }
+    if (pauseLabel) pauseLabel.textContent = settings.paused ? '花火を再開' : '一時停止';
+    callEngine('setIntensity', settings.intensity);
+    callEngine('setSound', settings.sound);
+    callEngine('setVolume', settings.volume);
+    callEngine('setPaused', settings.paused || Boolean(specDialog && specDialog.open));
+    updateEditorStatus();
+  }
+
+  let segmenter = null;
+  if (typeof Intl !== 'undefined' && typeof Intl.Segmenter === 'function') {
+    segmenter = new Intl.Segmenter('ja', { granularity: 'grapheme' });
+  }
+  const combiningMark = /\p{M}/u;
+  const regionalIndicator = (point) => point >= 0x1f1e6 && point <= 0x1f1ff;
+  const extendingPoint = (character, point) => combiningMark.test(character)
+    || point === 0xfe0e || point === 0xfe0f || (point >= 0x1f3fb && point <= 0x1f3ff)
+    || (point >= 0xe0020 && point <= 0xe007f);
+
+  // This fallback also keeps ordinary emoji sequences and combining marks together.
+  function* fallbackSegments(text) {
+    let cluster = '';
+    let joinNext = false;
+    let regionalCount = 0;
+    for (const character of text) {
+      const point = character.codePointAt(0);
+      const shouldJoin = !cluster || joinNext || point === 0x200d
+        || extendingPoint(character, point)
+        || (regionalIndicator(point) && regionalCount === 1)
+        || (cluster === '\r' && character === '\n');
+      if (!shouldJoin) {
+        yield cluster;
+        cluster = '';
+        regionalCount = 0;
+      }
+      cluster += character;
+      if (regionalIndicator(point)) regionalCount += 1;
+      else if (!extendingPoint(character, point)) regionalCount = 0;
+      joinNext = point === 0x200d;
+    }
+    if (cluster) yield cluster;
+  }
+
+  function segments(text) {
+    return segmenter ? segmenter.segment(text)[Symbol.iterator]() : fallbackSegments(text);
+  }
+
+  function boundedGraphemeCount(text, limit = 12) {
+    const iterator = segments(text);
+    let count = 0;
+    while (count < limit && !iterator.next().done) count += 1;
+    return count;
+  }
+
+  let countRevision = 0;
+  let countTimer = 0;
+  function scheduleCharacterCount() {
+    countRevision += 1;
+    if (!characterCount || countTimer) return;
+    countTimer = window.setTimeout(() => {
+      countTimer = 0;
+      const revision = countRevision;
+      const iterator = segments(memo.value);
+      let total = 0;
+      function countChunk() {
+        if (revision !== countRevision) {
+          if (!countTimer) scheduleCharacterCount();
+          return;
+        }
+        const started = performance.now();
+        let result;
+        do {
+          result = iterator.next();
+          if (!result.done) total += 1;
+        } while (!result.done && performance.now() - started < 5);
+        if (result.done) {
+          characterCount.textContent = `${total.toLocaleString('ja-JP')}文字`;
+        } else {
+          window.setTimeout(countChunk, 0);
+        }
+      }
+      countChunk();
+    }, 80);
+  }
+
+  // Keep caret measurements out of the document's scrollable area, including inside an iframe.
+  const mirrorHost = document.createElement('div');
+  mirrorHost.setAttribute('aria-hidden', 'true');
+  mirrorHost.setAttribute('inert', '');
+  mirrorHost.style.cssText = 'position:fixed;left:0;top:0;width:0;height:0;'
+    + 'overflow:hidden;visibility:hidden;pointer-events:none;contain:strict;';
+  const mirror = document.createElement('div');
+  mirror.className = 'caret-mirror';
+  mirror.style.cssText = 'position:absolute;left:0;top:0;visibility:hidden;pointer-events:none;'
+    + 'white-space:pre-wrap;overflow-wrap:break-word;overflow:visible;'
+    + 'height:auto;min-height:0;max-height:none;box-sizing:border-box;'
+    + 'border-style:solid;border-color:transparent;';
+  const marker = document.createElement('span');
+  marker.textContent = '\u200b';
+  mirrorHost.appendChild(mirror);
+  document.body.appendChild(mirrorHost);
+  const mirrorProperties = [
+    'fontFamily', 'fontSize', 'fontWeight', 'fontStyle', 'fontVariant', 'fontStretch',
+    'lineHeight', 'letterSpacing', 'wordSpacing', 'textIndent', 'textAlign',
+    'textTransform', 'direction', 'tabSize', 'wordBreak',
+    'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft',
+    'borderTopWidth', 'borderRightWidth', 'borderBottomWidth', 'borderLeftWidth',
+  ];
+  let lastPointer = null;
+  memo.addEventListener('pointerdown', (event) => {
+    lastPointer = { x: event.clientX, y: event.clientY, time: performance.now() };
+    callEngine('unlockAudio');
+  });
+  const specialKeys = new Set(['Insert', 'Home', 'PageUp', 'PageDown', 'End', 'Delete']);
+  const specialKeyTimes = new Map();
+  memo.addEventListener('keydown', (event) => {
+    callEngine('unlockAudio');
+    if (!specialKeys.has(event.key) || event.isComposing || event.keyCode === 229 || composing
+      || settings.paused || document.hidden || (specDialog && specDialog.open)) return;
+    const now = performance.now();
+    const previous = specialKeyTimes.get(event.key) ?? -Infinity;
+    if (now - previous < (event.repeat ? 220 : 120)) return;
+    specialKeyTimes.set(event.key, now);
+    const key = event.key;
+    // The browser first performs its normal caret move, selection, scrolling, or deletion.
+    window.requestAnimationFrame(() => {
+      if (document.activeElement !== memo || composing || settings.paused || document.hidden
+        || (specDialog && specDialog.open)) return;
+      callEngine('specialKey', { key, ...caretPosition() });
+    });
+  });
+
+  function caretPosition() {
+    const area = memo.getBoundingClientRect();
+    const scene = stage.getBoundingClientRect();
+    const style = getComputedStyle(memo);
+    const lineHeight = parseFloat(style.lineHeight) || (parseFloat(style.fontSize) || 20) * 1.7;
+    const selection = memo.selectionDirection === 'backward' ? memo.selectionStart : memo.selectionEnd;
+    let x = area.left - scene.left + area.width * 0.44;
+    let y = area.top - scene.top + Math.min(area.height * 0.42, lineHeight * 3);
+
+    if (selection <= 12000) {
+      try {
+        for (const property of mirrorProperties) mirror.style[property] = style[property];
+        mirror.style.width = `${memo.clientWidth + (parseFloat(style.borderLeftWidth) || 0)
+          + (parseFloat(style.borderRightWidth) || 0)}px`;
+        mirror.textContent = memo.value.slice(0, selection);
+        mirror.appendChild(marker);
+        x = area.left - scene.left + marker.offsetLeft - memo.scrollLeft + 2;
+        y = area.top - scene.top + marker.offsetTop - memo.scrollTop + lineHeight * 0.55;
+      } catch (_) { /* A nearby point is sufficient if the mirror is unavailable. */ }
+    } else if (lastPointer && performance.now() - lastPointer.time < 8000) {
+      x = lastPointer.x - scene.left;
+      y = lastPointer.y - scene.top;
+    }
+
+    const left = Math.max(10, area.left - scene.left + 12);
+    const right = Math.max(left, Math.min(scene.width - 10, area.right - scene.left - 12));
+    const top = Math.max(12, area.top - scene.top + 12);
+    const bottom = Math.max(top, Math.min(scene.height - 12, area.bottom - scene.top - 12));
+    return { x: Math.max(left, Math.min(right, x)), y: Math.max(top, Math.min(bottom, y)) };
+  }
+
+  function emitInput(kind, text) {
+    if (settings.paused || (specDialog && specDialog.open) || document.hidden) return;
+    const count = kind === 'delete' ? 1 : boundedGraphemeCount(text || '', 12);
+    if (!count) return;
+    callEngine('input', { ...caretPosition(), count, kind });
+  }
+
+  function actualChange(before, after, range) {
+    if (range && range.start >= 0 && range.end >= range.start && range.end <= before.length) {
+      const prefix = before.slice(0, range.start);
+      const suffix = before.slice(range.end);
+      if (after.length >= prefix.length + suffix.length
+        && after.startsWith(prefix) && after.endsWith(suffix)) {
+        return {
+          inserted: after.slice(prefix.length, after.length - suffix.length),
+          removed: before.slice(range.start, range.end),
+        };
+      }
+    }
+    let first = 0;
+    const shorter = Math.min(before.length, after.length);
+    while (first < shorter && before.charCodeAt(first) === after.charCodeAt(first)) first += 1;
+    let oldEnd = before.length;
+    let newEnd = after.length;
+    while (oldEnd > first && newEnd > first
+      && before.charCodeAt(oldEnd - 1) === after.charCodeAt(newEnd - 1)) {
+      oldEnd -= 1;
+      newEnd -= 1;
+    }
+    return { inserted: after.slice(first, newEnd), removed: before.slice(first, oldEnd) };
+  }
+
+  let lastValue = memo.value;
+  let beforeInput = null;
+  let composing = false;
+  let composition = null;
+  let pendingComposition = null;
+  let compositionTimer = 0;
+  let lastComposition = null;
+  let pastedAt = -Infinity;
+
+  function recordCurrentText() {
+    lastValue = memo.value;
+    persistText(lastValue);
+    scheduleCharacterCount();
+  }
+
+  function flushComposition(finalValue) {
+    if (!pendingComposition) return;
+    window.clearTimeout(compositionTimer);
+    compositionTimer = 0;
+    const ended = pendingComposition;
+    pendingComposition = null;
+    if (typeof finalValue === 'string') ended.after = finalValue;
+    const change = actualChange(ended.before, ended.after, ended.range);
+    const committed = change.inserted || ended.data;
+    if (committed && (ended.before !== ended.after || ended.data)) emitInput('type', committed);
+    lastComposition = { after: ended.after, data: ended.data, time: performance.now() };
+  }
+
+  memo.addEventListener('beforeinput', (event) => {
+    beforeInput = {
+      value: memo.value,
+      start: memo.selectionStart,
+      end: memo.selectionEnd,
+      inputType: event.inputType || '',
+      time: performance.now(),
+    };
+    callEngine('unlockAudio');
+  });
+
+  memo.addEventListener('compositionstart', () => {
+    flushComposition();
+    composing = true;
+    composition = {
+      before: memo.value,
+      range: { start: memo.selectionStart, end: memo.selectionEnd },
+      data: '',
+    };
+    beforeInput = null;
+    lastComposition = null;
+  });
+
+  memo.addEventListener('compositionend', (event) => {
+    composing = false;
+    const ended = composition || { before: lastValue, range: null };
+    composition = null;
+    ended.after = memo.value;
+    ended.data = event.data || '';
+    ended.time = performance.now();
+    pendingComposition = ended;
+    recordCurrentText();
+    window.clearTimeout(compositionTimer);
+    // Browsers differ in whether their final input is before or after compositionend.
+    compositionTimer = window.setTimeout(() => flushComposition(), 0);
+  });
+
+  memo.addEventListener('paste', () => { pastedAt = performance.now(); });
+  memo.addEventListener('drop', () => { pastedAt = performance.now(); });
+
+  memo.addEventListener('input', (event) => {
+    const now = performance.now();
+    const snapshot = beforeInput && now - beforeInput.time < 1500 && beforeInput.value === lastValue
+      ? beforeInput : null;
+    beforeInput = null;
+    const before = snapshot ? snapshot.value : lastValue;
+    const after = memo.value;
+    const type = event.inputType || (snapshot && snapshot.inputType) || '';
+    const range = snapshot ? { start: snapshot.start, end: snapshot.end } : null;
+    const wasPaste = type === 'insertFromPaste' || type === 'insertFromPasteAsQuotation'
+      || type === 'insertFromDrop' || (now - pastedAt < 300 && type.startsWith('insert'));
+    pastedAt = -Infinity;
+    recordCurrentText();
+
+    if (event.isComposing || composing) {
+      if (!composition) composition = { before, range, data: '' };
+      composition.data = event.data || composition.data;
+      return;
+    }
+
+    if (pendingComposition) {
+      const isFinalCompositionInput = type === 'insertFromComposition' || type === 'insertCompositionText'
+        || after === pendingComposition.after
+        || (type === 'insertText' && event.data === pendingComposition.data
+          && now - pendingComposition.time < 100);
+      if (isFinalCompositionInput) {
+        pendingComposition.after = after;
+        return;
+      }
+      flushComposition(before);
+    }
+
+    if (lastComposition && now - lastComposition.time < 150
+      && (type === 'insertFromComposition' || type === 'insertCompositionText'
+        || (after === lastComposition.after && event.data === lastComposition.data))) {
+      return;
+    }
+    lastComposition = null;
+
+    if (type === 'historyUndo' || type === 'historyRedo') return;
+    const change = actualChange(before, after, range);
+    if (wasPaste) {
+      if (change.inserted) emitInput('paste', change.inserted);
+      return;
+    }
+    if (type.startsWith('delete') || (!change.inserted && change.removed)) {
+      if (change.removed) emitInput('delete', change.removed);
+      return;
+    }
+    // A committed IME Enter does not insert a newline; only the actual text change can do so.
+    if (change.inserted.includes('\n') || change.inserted.includes('\r')) {
+      emitInput('newline', change.inserted);
+    } else if (change.inserted) {
+      emitInput('type', change.inserted);
+    } else if (range && range.start !== range.end && typeof event.data === 'string'
+      && type.startsWith('insert') && event.data) {
+      emitInput('type', event.data);
+    }
+  });
+
+  for (const button of document.querySelectorAll('#intensity-controls [data-intensity]')) {
+    button.addEventListener('click', () => {
+      if (!allowedIntensities.includes(button.dataset.intensity)) return;
+      settings.intensity = button.dataset.intensity;
+      applySettings();
+      persistPreferences();
+    });
+  }
+
+  if (soundToggle) soundToggle.addEventListener('click', () => {
+    settings.sound = !settings.sound;
+    applySettings();
+    if (settings.sound) callEngine('unlockAudio');
+    persistPreferences();
+  });
+
+  if (volumeControl) volumeControl.addEventListener('input', () => {
+    const next = Number(volumeControl.value);
+    settings.volume = Number.isFinite(next) ? Math.max(0, Math.min(1, next / 100)) : defaults.volume;
+    volumeControl.setAttribute('aria-valuetext', `${Math.round(settings.volume * 100)}%`);
+    volumeControl.style.setProperty('--volume', `${Math.round(settings.volume * 100)}%`);
+    callEngine('setVolume', settings.volume);
+    if (settings.sound) callEngine('unlockAudio');
+    persistPreferences();
+  });
+
+  if (pauseToggle) pauseToggle.addEventListener('click', () => {
+    settings.paused = !settings.paused;
+    applySettings();
+    if (settings.paused) callEngine('clear');
+    persistPreferences();
+  });
+
+  if (exportButton) exportButton.addEventListener('click', () => {
+    recordCurrentText();
+    const date = new Date();
+    const two = (number) => String(number).padStart(2, '0');
+    const stamp = `${date.getFullYear()}${two(date.getMonth() + 1)}${two(date.getDate())}`
+      + `-${two(date.getHours())}${two(date.getMinutes())}${two(date.getSeconds())}`;
+    let url = null;
+    try {
+      const blob = new Blob([memo.value], { type: 'text/plain;charset=utf-8' });
+      url = URL.createObjectURL(blob);
+      const anchor = document.createElement('a');
+      anchor.href = url;
+      anchor.download = `花火メモ-${stamp}.txt`;
+      anchor.hidden = true;
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      exportButton.dataset.exported = 'true';
+      window.setTimeout(() => { delete exportButton.dataset.exported; }, 1000);
+    } catch (error) {
+      console.error('The text file could not be exported.', error);
+      if (editorStatus) editorStatus.textContent = '書出しを開始できませんでした。本文をコピーして保存できます。';
+    } finally {
+      if (url) window.setTimeout(() => URL.revokeObjectURL(url), 1500);
+    }
+  });
+
+  const specSource = byId('spec-source');
+  const specContent = byId('spec-content');
+  if (specSource && specContent) {
+    try {
+      const original = JSON.parse(specSource.textContent);
+      specContent.textContent = typeof original === 'string' ? original : specSource.textContent;
+    } catch (_) {
+      specContent.textContent = specSource.textContent;
+    }
+  }
+
+  let specPreviousFocus = null;
+  let backdropPointer = false;
+  if (specButton && specDialog) specButton.addEventListener('click', () => {
+    if (specDialog.open) return;
+    specPreviousFocus = document.activeElement;
+    flushComposition();
+    specDialog.showModal();
+    document.body.classList.add('spec-open');
+    callEngine('setPaused', true);
+    callEngine('clear');
+    if (specClose) specClose.focus({ preventScroll: true });
+  });
+  if (specClose && specDialog) specClose.addEventListener('click', () => specDialog.close());
+  if (specDialog) {
+    const outsideDialog = (event) => {
+      const rectangle = specDialog.getBoundingClientRect();
+      return event.clientX < rectangle.left || event.clientX > rectangle.right
+        || event.clientY < rectangle.top || event.clientY > rectangle.bottom;
+    };
+    specDialog.addEventListener('pointerdown', (event) => {
+      backdropPointer = event.target === specDialog && outsideDialog(event);
+    });
+    specDialog.addEventListener('click', (event) => {
+      if (backdropPointer && event.target === specDialog && outsideDialog(event)) specDialog.close();
+      backdropPointer = false;
+    });
+    specDialog.addEventListener('close', () => {
+      document.body.classList.remove('spec-open');
+      callEngine('setPaused', settings.paused);
+      if (specPreviousFocus && typeof specPreviousFocus.focus === 'function') {
+        specPreviousFocus.focus({ preventScroll: true });
+      }
+      specPreviousFocus = null;
+    });
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      recordCurrentText();
+      callEngine('clear');
+    }
+  });
+  window.addEventListener('pagehide', () => {
+    recordCurrentText();
+    persistPreferences();
+    callEngine('clear');
+  });
+
+  applySettings();
+  persistText(memo.value);
+  scheduleCharacterCount();
+  // Diagnostics never rewrite the editor or synthesize input events.
+  window.fireApp = Object.freeze({
+    engine,
+    getState: () => Object.freeze({
+      text: memo.value,
+      ...settings,
+      saved: storageAvailable && lastSavedText === memo.value,
+      composing,
+      specOpen: Boolean(specDialog && specDialog.open),
+      statistics: callEngine('getStats'),
+    }),
+  });
+})();
+</script>
+</body>
+</html>

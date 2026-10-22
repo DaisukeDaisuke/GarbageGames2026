@@ -1,0 +1,460 @@
+{
+  "date": "2026-10-22",
+  "allDecoded": true,
+  "losslessCharacters": 21,
+  "checks": [
+    {
+      "file": "assets/arena-background.jpg",
+      "sha256": "dfc20337f35f5d5ea33bcfda0af1aababdac26d5888c01eedb8b3f3b775f36b6",
+      "width": 512,
+      "height": 341,
+      "bytes": 79103,
+      "decoded": true
+    },
+    {
+      "file": "assets/ash-wisp.webp",
+      "sha256": "342de64463681bf728b723dc4473c80f6453aca9164f8eacf06c731647493d9f",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 344226,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/blade-dancer.webp",
+      "sha256": "fa66868f5344605befc766b5e75ade14013e3c5137551f78f838d67a356ad491",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 727396,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/bone-archer.webp",
+      "sha256": "cd013d7915a86e0f04a5b395324a19ab1dbdc5bdf902d532e421c3d52386fec8",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 356986,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/dialogue-frame.jpg",
+      "sha256": "96b15f4ac92ffd29ca8fa5158ca8ee0d0260622fc83d1962a08325cf300ced99",
+      "width": 1024,
+      "height": 341,
+      "bytes": 42299,
+      "decoded": true
+    },
+    {
+      "file": "assets/frost-witch.webp",
+      "sha256": "8d2ed706d12647815e8600940e76146e348b17897bad7c287a0062884ab695c1",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 561688,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/hex-mage.webp",
+      "sha256": "72b05490f7a80f3dbb6558daec5e5f21b7886f8fd0cce93ba6e8be5d27b87e1c",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 692512,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/iron-hound.webp",
+      "sha256": "278c1f503f87982df01dcaf61cbf45d45346f129a30ff5963b7d51ca0d3381bb",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 497550,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/iron-monk.webp",
+      "sha256": "b2bb84ce4a94b6b61a9401c8172b82f38f87d3a8ff9b61c35b10de956b63eb48",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 479898,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/player.webp",
+      "sha256": "7f34fb1b542728298e429dfe0605a9c419eb3c75af4169310ba55a24b208e145",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 508702,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/shade.webp",
+      "sha256": "a0dc386b2f04e0c157f9ec8d53e62f8c80d6390e2820877473bd27694a9d75b8",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 377204,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/stone-golem.webp",
+      "sha256": "dd79879bd2bc0da02a06b0056343368a2333e5ab7d4f9abed083f9aa32267439",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 566430,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/void-knight.webp",
+      "sha256": "cbc5a3c81c47eb6931fcb64412a96ded1adc36fd9f873cd936a8039ad70e1382",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 518608,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/skills/attack.jpg",
+      "sha256": "7f19876104270f169c55b36e7965cf317b5c585eba7684204dc53c72327c4b0f",
+      "width": 480,
+      "height": 480,
+      "bytes": 77828,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/bank-shot.jpg",
+      "sha256": "bf77463b2554dcc0cecead423f1fcfee47f386026d3de98c41d269f9603b5b2b",
+      "width": 416,
+      "height": 416,
+      "bytes": 79855,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/barrier.jpg",
+      "sha256": "dae79ae71437db3072a1e85c574b05b6b7183611b2b614f54b367e2841e1e81e",
+      "width": 416,
+      "height": 416,
+      "bytes": 79558,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/counter.jpg",
+      "sha256": "9329517ff7c33891f343d9cdff73538a32cb8081456b660725b43c7e0bfa1982",
+      "width": 480,
+      "height": 480,
+      "bytes": 79262,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/drain.jpg",
+      "sha256": "553a8f51dd8711c47ba9983581c81d26868c917510282fdcc5b16d590d71626b",
+      "width": 480,
+      "height": 480,
+      "bytes": 78953,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/eclipse.jpg",
+      "sha256": "b2e72bc32269c60a8c79730bb0bae1765cd83d7dd512745caacb39c7408b54e7",
+      "width": 448,
+      "height": 448,
+      "bytes": 77122,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/feint.jpg",
+      "sha256": "2a3be7906cdbc901e0fa1bb824b47fa2b7da44830fbd21512e7c2dbfbab0018f",
+      "width": 448,
+      "height": 448,
+      "bytes": 78317,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/fire.jpg",
+      "sha256": "e1f6243e15d414d9cf0c87d3ec5dedc362935b330cc0b43a793d4b4f69446d55",
+      "width": 480,
+      "height": 480,
+      "bytes": 79478,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/flare.jpg",
+      "sha256": "a469b0e1f02e98f8000ecf7f732ba6ee567dbbd54fd615f0206d900bba47f727",
+      "width": 416,
+      "height": 416,
+      "bytes": 79408,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/focus.jpg",
+      "sha256": "d8f384ffede613311abe098da29685d1f34dd7a0cfe4a1029313fb06c926802a",
+      "width": 448,
+      "height": 448,
+      "bytes": 79366,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/guard.jpg",
+      "sha256": "86d14a38382a7f4b96462959ac60b1670c78e0279175ac84d88f433eb9d95606",
+      "width": 480,
+      "height": 480,
+      "bytes": 78249,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/healing-rain.jpg",
+      "sha256": "c8cc248e559f4af71f3486d9624d3f4d9dfe8079be7475dc69b16354206e27fb",
+      "width": 416,
+      "height": 416,
+      "bytes": 79805,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/mend.jpg",
+      "sha256": "09e36050b1c429860c351c05fa9c7992fd8776e1b1755b8bca06d6785b4d94f1",
+      "width": 448,
+      "height": 448,
+      "bytes": 78807,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/pierce.jpg",
+      "sha256": "5eba58f370ab0f3ecdea882829913a674f46acb0d38e40b12d1c828ee232f70c",
+      "width": 448,
+      "height": 448,
+      "bytes": 79139,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/purge.jpg",
+      "sha256": "6af648bef8826208fd71440b11cb094e7b364016fa59af9487e856108454a698",
+      "width": 448,
+      "height": 448,
+      "bytes": 79495,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/quake.jpg",
+      "sha256": "767fed4f3e477ca13c2337ffc0ee9d6f297f409c0251e9d4bb88c15a17650898",
+      "width": 416,
+      "height": 416,
+      "bytes": 79421,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/reprise.jpg",
+      "sha256": "ca1724bea5c517012556514bee537e2d6faa21c69f93320ed4a9875c69490ca2",
+      "width": 384,
+      "height": 384,
+      "bytes": 78970,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/siphon.jpg",
+      "sha256": "548d6af8125e6720c87e5fce124be7d7d15024ca4667860bfa2d24304d20302a",
+      "width": 384,
+      "height": 384,
+      "bytes": 77677,
+      "decoded": true
+    },
+    {
+      "file": "assets/skills/smash.jpg",
+      "sha256": "6261b2e9af1ebe660f100e61e1fc54b28036d2f0bd8c9a3ebef3f422d9854926",
+      "width": 416,
+      "height": 416,
+      "bytes": 79043,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/duelist-jacket.jpg",
+      "sha256": "598d0b4b29a5046e0aa03f68c29c38dc6380202847acf5179ec2e64d9de1299f",
+      "width": 448,
+      "height": 448,
+      "bytes": 79594,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/glass-prism.jpg",
+      "sha256": "0e405ec5375b807a6f2a86970708aa2762e05928b25c1ae4eef5678af27fc20c",
+      "width": 576,
+      "height": 576,
+      "bytes": 77858,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/heart-knot.jpg",
+      "sha256": "3be21ff2382c1de75f002569d50b3e6396f139046515d9f887bcdf08c95bdec5",
+      "width": 416,
+      "height": 416,
+      "bytes": 79806,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/iron-coat.jpg",
+      "sha256": "8feccb834e97aa657c734f23e4319550635b92a02720b0a20fa8cc1101cbb6de",
+      "width": 448,
+      "height": 448,
+      "bytes": 78425,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/lead-plate.jpg",
+      "sha256": "62b9164cd139a64145ee24135f49205a220cbe6f08f4139e889e40aba1292e78",
+      "width": 576,
+      "height": 576,
+      "bytes": 79837,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/mana-ring.jpg",
+      "sha256": "f830d0f21ba2065b551b2d4b75acee837622363e9803db71041f311ae2b680cc",
+      "width": 480,
+      "height": 480,
+      "bytes": 78834,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/pilgrim-robe.jpg",
+      "sha256": "48b8547d6f682b1d3bd488263902d6a19554aaf4fff4609547a5fd32b1200e38",
+      "width": 512,
+      "height": 512,
+      "bytes": 77944,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/quick-pin.jpg",
+      "sha256": "ef1bd338ecad211ed7b3440b585f432e0d8218f8f15af1fac66c2ecc8469e24b",
+      "width": 512,
+      "height": 512,
+      "bytes": 79735,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/reservoir-robe.jpg",
+      "sha256": "56395daceafb5666e3aae22582c84603abe5ba0ac0885a1b2e2a53371b6e1a4c",
+      "width": 512,
+      "height": 512,
+      "bytes": 78941,
+      "decoded": true
+    },
+    {
+      "file": "assets/items/wing-boots.jpg",
+      "sha256": "b57c48ea50486c73a14cb86f4f66a06f10c2d7ab567c58cd197de9aa0dd075c9",
+      "width": 448,
+      "height": 448,
+      "bytes": 78363,
+      "decoded": true
+    },
+    {
+      "file": "assets/algorithm-arena.jpg",
+      "sha256": "dfbc82b1f3258b1b4dd5416e149a98f6fe1194bcdf6f30df7cfca0e2aac9c9a6",
+      "width": 512,
+      "height": 341,
+      "bytes": 78604,
+      "decoded": true
+    },
+    {
+      "file": "assets/challengers/violet-mage.webp",
+      "sha256": "4a823b7f3415fcb73744b602c3cd45af51c32f42e830c6ef1925e5074476cc0f",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 739650,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/challengers/blue-swordsman.webp",
+      "sha256": "9cfc5be3064edbf086eb9ea8b121235ac32301f56997c4fea4790f68d4d236ce",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 455330,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/challengers/green-ranger.webp",
+      "sha256": "2608fe5405843f3ccf27de7786be27da6b7aaeb03e9dbbc4fa2f4824f800679b",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 573286,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/challengers/white-healer.webp",
+      "sha256": "23859a2dac1700e2d00f9421a4d1249fc10d42fe745ed5f41334f783d2c8f4a8",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 532924,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/challengers/red-duelist.webp",
+      "sha256": "1963172cc6a2acb18ca1741210dca481b8f8f0bdf53f219496608807a9ca8861",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 425910,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/challengers/amber-monk.webp",
+      "sha256": "c6cddd8361d667880906c1107063b178a8e10740f6fea80803a5c7b8d6ed1d6f",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 454212,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/challengers/star-sorcerer.webp",
+      "sha256": "b3bc79d56b7d1d269fa55ff0af43ebed66f6785db833dc11f124bfd4f1398fac",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 647844,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/challengers/rose-alchemist.webp",
+      "sha256": "0bc5462a0b8f4eea07192b4c6c9a5963228d24553ffb5ddab1f704185bb71db8",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 684660,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/challengers/silver-guardian.webp",
+      "sha256": "ff2e9f4a456cd1f914d1ea2bbfdc36eeab8cb08c7c97a3dc6e1380d65bbb25eb",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 655780,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/challengers/sand-rogue.webp",
+      "sha256": "d2979da8dd41d4cf0f95e6e56c6e665b9f1e995d343b782d3b04cef691e58d69",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 522190,
+      "decoded": true,
+      "rgbaPixelsEqual": true
+    },
+    {
+      "file": "assets/skills/wait.jpg",
+      "sha256": "118a047bbf10a69d7aaf8da73f8d56590a701effdf392a6408989dc939742a34",
+      "width": 416,
+      "height": 416,
+      "bytes": 78410,
+      "decoded": true
+    }
+  ]
+}

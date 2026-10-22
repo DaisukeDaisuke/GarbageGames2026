@@ -1,0 +1,172 @@
+[
+  {
+    "id": "iron-coat",
+    "file": "assets/items/iron-coat.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. A finished collectible equipment item displayed large at left-center of the composition on the described ground, with clear silhouette, quiet space on right for a later CSS fade. No people, no letters, no numbers, no logos, no UI frame, no realistic textures, no 3D render. Beautiful charming retro pixel-art inventory illustration, not a pixel grid diagram. Subject: a sturdy silvery iron-plated short cloak, brown leather fastening straps and small teal lining, propped as a readable empty garment. Ground: cool blue cobblestones with a little moss, warm lantern highlights.",
+    "original": "originals/items/iron-coat.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "id": "lead-plate",
+    "file": "assets/items/lead-plate.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. A finished collectible equipment item displayed large at left-center of the composition on the described ground, with clear silhouette, quiet space on right for a later CSS fade. No people, no letters, no numbers, no logos, no UI frame, no realistic textures, no 3D render. Beautiful charming retro pixel-art inventory illustration, not a pixel grid diagram. Subject: a very heavy compact dark lead plate cuirass with broad rounded shoulder plates and thick rivets, modest pale-gold trim, visibly weighty. Ground: cracked dark stone slabs, muted purple-gray dungeon lighting.",
+    "original": "originals/items/lead-plate.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "id": "pilgrim-robe",
+    "file": "assets/items/pilgrim-robe.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. A finished collectible equipment item displayed large at left-center of the composition on the described ground, with clear silhouette, quiet space on right for a later CSS fade. No people, no letters, no numbers, no logos, no UI frame, no realistic textures, no 3D render. Beautiful charming retro pixel-art inventory illustration, not a pixel grid diagram. Subject: an elegant soft ivory pilgrim robe with teal hood, gold cord belt and little embroidered blue star trim, readable empty garment. Ground: warm wooden floorboards in a quiet guild, scattered tiny soft light specks.",
+    "original": "originals/items/pilgrim-robe.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "id": "wing-boots",
+    "file": "assets/items/wing-boots.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. A finished collectible equipment item displayed large at left-center of the composition on the described ground, with clear silhouette, quiet space on right for a later CSS fade. No people, no letters, no numbers, no logos, no UI frame, no realistic textures, no 3D render. Beautiful charming retro pixel-art inventory illustration, not a pixel grid diagram. Subject: a pair of small sky-blue leather adventure boots with little white feather wings on the ankles, golden buckles. Ground: snowy blue-white tiled mountain terrace, faint snowflakes and cool sparkling frost.",
+    "original": "originals/items/wing-boots.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "id": "mana-ring",
+    "file": "assets/items/mana-ring.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. A finished collectible equipment item displayed large at left-center of the composition on the described ground, with clear silhouette, quiet space on right for a later CSS fade. No people, no letters, no numbers, no logos, no UI frame, no realistic textures, no 3D render. Beautiful charming retro pixel-art inventory illustration, not a pixel grid diagram. Subject: one elegant gold ring with a big glowing sapphire, a few cyan magical motes around it, clearly recognisable ring resting slightly tilted. Ground: blue-purple magical mosaic stone tiles with subtle circular patterns.",
+    "original": "originals/items/mana-ring.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "id": "quick-pin",
+    "file": "assets/items/quick-pin.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. A finished collectible equipment item displayed large at left-center of the composition on the described ground, with clear silhouette, quiet space on right for a later CSS fade. No people, no letters, no numbers, no logos, no UI frame, no realistic textures, no 3D render. Beautiful charming retro pixel-art inventory illustration, not a pixel grid diagram. Subject: one shining brass cloak clasp shaped like a small lightning arrow, teal gem in the center, subtle yellow speed streaks. Ground: sunlit sandy sandstone paving with a few grass tufts. The clasp is the single large focal object.",
+    "original": "originals/items/quick-pin.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "id": "duelist-jacket",
+    "file": "assets/items/duelist-jacket.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. A finished collectible equipment item displayed large at left-center of the composition on the described ground, with clear silhouette, quiet space on right for a later CSS fade. No people, no letters, no numbers, no logos, no UI frame, no realistic textures, no 3D render. Beautiful charming retro pixel-art inventory illustration, not a pixel grid diagram. Subject: a short crimson duelist jacket with asymmetrical dark leather shoulder guard, light weight, elegant gold embroidery, small sash. Readable empty garment. Ground: red brick training courtyard with scattered pink flower petals.",
+    "original": "originals/items/duelist-jacket.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "id": "reservoir-robe",
+    "file": "assets/items/reservoir-robe.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. A finished collectible equipment item displayed large at left-center of the composition on the described ground, with clear silhouette, quiet space on right for a later CSS fade. No people, no letters, no numbers, no logos, no UI frame, no realistic textures, no 3D render. Beautiful charming retro pixel-art inventory illustration, not a pixel grid diagram. Subject: a deep midnight-blue mage robe with large violet crystal clasp and cyan magical seams, soft cloth and long sleeves. Readable empty garment. Ground: dark obsidian floor with faint luminous aquamarine star mosaics, not text.",
+    "original": "originals/items/reservoir-robe.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "id": "heart-knot",
+    "file": "assets/items/heart-knot.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. A finished collectible equipment item displayed large at left-center of the composition on the described ground, with clear silhouette, quiet space on right for a later CSS fade. No people, no letters, no numbers, no logos, no UI frame, no realistic textures, no 3D render. Beautiful charming retro pixel-art inventory illustration, not a pixel grid diagram. Subject: a small braided red-and-white protective cord amulet tied into a decorative heart-shaped knot with one small polished amber bead, clear charming chunky shape. Ground: moss-covered old forest stones and little white flowers.",
+    "original": "originals/items/heart-knot.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "id": "glass-prism",
+    "file": "assets/items/glass-prism.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create one square game equipment illustration for a cute Japanese 32-bit-era JRPG. Authentic crisp chunky PIXEL ART with square pixel clusters, stepped outlines, limited rich palette, 3-5 discrete shading tones. Subject: one clear faceted glass crystal prism pendant with a small silver setting, rainbow light splitting through it into cyan, violet, gold little rays. It is a large recognisable single collectible charm displayed left-center on pale marble floor tiles with little quartz fragments. Whole object visible, clear silhouette and quiet space on the right for a later CSS fade. Beautiful charming retro pixel-art inventory illustration. No people, no letters, no numbers, no logos, no UI frame, no photorealism, no realistic textures, no 3D render, no pixel grid diagram.",
+    "original": "originals/items/glass-prism.png",
+    "review": "Viewed generated output: matching equipment, pixel-art style, distinct ground, no letters, large left-center subject.",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  }
+]

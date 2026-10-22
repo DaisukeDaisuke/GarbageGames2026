@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+import {runTrial,TRIAL_SEEDS,POLICIES} from '../src/policies.js';
+const root=path.resolve(process.argv[2]);
+const manifest=JSON.parse(fs.readFileSync(new URL('../docs/build-manifest.json',import.meta.url),'utf8'));
+const source=fs.readFileSync(path.join(root,manifest.files.worker),'utf8');
+const messages=[],queue=[];let closed=false;
+const context=vm.createContext({structuredClone,postMessage:message=>messages.push(structuredClone(message)),setTimeout:fn=>queue.push(fn),close:()=>closed=true});
+vm.runInContext(source,context);vm.runInContext('onmessage();onmessage();',context);
+while(queue.length)queue.shift()();
+assert.equal(messages.length,50,'Repeated start must not duplicate jobs');assert.equal(closed,true);
+const expected=POLICIES.flatMap((_,policy)=>TRIAL_SEEDS.map((seed,i)=>runTrial(policy,i+1,seed)));
+assert.deepEqual(JSON.parse(JSON.stringify(messages)),JSON.parse(JSON.stringify(expected)),'Built Worker results must match fallback results');
+console.log('PASS rebuilt Worker: 50 complete results equal fallback, progress messages, duplicate-start guard, completion');

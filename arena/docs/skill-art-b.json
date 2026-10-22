@@ -1,0 +1,172 @@
+[
+  {
+    "name": "barrier",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: The adventurer raises a brilliant circular blue magical shield to stop violet magical sparks. Small stone temple floor, luminous blue concentric crystalline barrier, calm brave expression.",
+    "file": "assets/skills/barrier.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-b4ac68e1-25f5-4f0a-bc9a-bc76c3ddc3b0.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/barrier.png"
+  },
+  {
+    "name": "purge",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: A cleansing beam of white and gold light dissolves wisps of purple curse around the adventurer's raised hand. Pale stone shrine floor, shimmering clean light and tiny purifying sparkles.",
+    "file": "assets/skills/purge.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-2e652a66-2c4e-4a89-b31a-10d6b16730a8.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/purge.png"
+  },
+  {
+    "name": "counter",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: One tiny cute teal-hood adventurer in the left-center is in a compact low stance, countering an incoming floating axe strike with a tiny sword and a bright white star-shaped clash. Orange parry arc curls around the small sword. Only ONE visible character, no humanoid opponent, no giant adult figures. The incoming attack is represented only by a floating dark axe at center-right. Dark battle arena stone floor, clear dynamic defensive counterattack pose, entire hero visible and distinctly three-head-tall.",
+    "file": "assets/skills/counter.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-c97b267f-07e4-4c55-9198-942a62a79d49.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/counter.png"
+  },
+  {
+    "name": "siphon",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: The adventurer draws floating blue mana droplets and luminous turquoise ribbons into an open hand. Ancient blue mosaic floor, magical stream moving toward the hero, clearly magical energy absorption.",
+    "file": "assets/skills/siphon.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-abbe89e1-f486-4f3d-9fa7-e7a01ce912c3.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/siphon.png"
+  },
+  {
+    "name": "mend",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: The adventurer kneels to wrap a white bandage around their small arm, with soft green healing sparkles and a small medicine pouch beside them. Warm mossy stone courtyard floor, comforting recovery mood.",
+    "file": "assets/skills/mend.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-66c02cc7-2de5-4c7a-9142-7e5b131b380e.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/mend.png"
+  },
+  {
+    "name": "bank-shot",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: The adventurer releases accumulated bright golden energy through a sword in one powerful arc. Glowing gold rings stored around the arm burst forward as a compact streak. Amber cracked stone floor, energetic impact.",
+    "file": "assets/skills/bank-shot.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-3ae96b2a-fcb7-47d5-9489-a105f6ff3bbd.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/bank-shot.png"
+  },
+  {
+    "name": "quake",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: The adventurer slams the ground with a small sword, sending dramatic cracks and chunky stone fragments outward. Brown rocky ground and amber shockwaves. Cute small hero dominates left, enormous earth-moving power around them.",
+    "file": "assets/skills/quake.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-01988b4b-8f48-4315-bdc5-614987801779.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/quake.png"
+  },
+  {
+    "name": "eclipse",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: The adventurer channels a dark purple sphere beneath a spectacular black sun with a violet corona, a descending beam of dark magic. Obsidian arena floor, midnight purple magical atmosphere, compact cute hero.",
+    "file": "assets/skills/eclipse.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-b9b8fc8a-53f6-47a4-a23d-d32377e38d3e.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/eclipse.png"
+  },
+  {
+    "name": "feint",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: The adventurer makes a clever feint with a tiny sword, three translucent teal pixel afterimages showing a quick sideways step and a small orange sword arc. Slate cobblestone ground. Nimble playful confident pose.",
+    "file": "assets/skills/feint.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-85f488c0-add8-41d4-a953-a3b1811204a4.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/feint.png"
+  },
+  {
+    "name": "reprise",
+    "prompt": "Use case: stylized-concept. Asset type: one square illustration for a skill card in a cute Japanese 32-bit-era JRPG. Authentic crisp pixel art with chunky visible square pixel clusters, stepped contours, rich but limited color palette, no smooth painted shading. Any human is an adorable exactly three-head-tall chibi adventurer with an oversized head, tiny compact body, teal hood and cape, small silver armor, brown boots, simple pixel eyes. Never tall, muscular, realistic, Disney-like, or 3D. Ground and evocative environment included. Compose the important character and effect in the LEFT and CENTER, keep the far right simpler dark atmosphere because a CSS gradient will fade it under text. Square landscape scene, beautiful detailed game pixel art, approximately 256x256 pixel aesthetic enlarged crisply. No letters, no numbers, no words, no logo, no border, no UI. Subject: The adventurer holds a floating silver-blue magical mirror that catches an incoming purple orb and reflects its shape as a new golden-blue orb ready to cast. Circular tiled floor, sparkling borrowed magical power. A small dark enemy silhouette far right only.",
+    "file": "assets/skills/reprise.webp",
+    "tool": "built-in image_gen",
+    "source": "/workspace/scratch/4bba667df2dc/generated_images/exec-78e367a8-31e4-45ad-9dc9-abf84cc53010.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "width": 1254,
+      "height": 1254,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    },
+    "original": "originals/skills/reprise.png"
+  }
+]

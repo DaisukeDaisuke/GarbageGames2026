@@ -1,0 +1,12 @@
+{
+  "sounds": {
+    "slash": "assets/audio/slash.mp3",
+    "hit": "assets/audio/hit.mp3",
+    "magic": "assets/audio/magic.mp3",
+    "guard": "assets/audio/guard.mp3",
+    "heal": "assets/audio/heal.mp3",
+    "victory": "assets/audio/victory.mp3",
+    "ui": "assets/audio/ui.mp3"
+  },
+  "credit": "効果音：OtoLogic / CC BY 4.0。SNES RPG05-01・10・11、SNES RPG04-01・12、SNES RPG03-4・7を使用しています。音声ファイル自体は未加工です。ゲーム内で再生音量とタイミングを調整しています。OtoLogicによる本作品の推奨・公認を示すものではありません。"
+}

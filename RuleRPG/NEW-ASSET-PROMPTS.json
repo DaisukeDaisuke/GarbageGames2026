@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-22",
+  "method": "built-in image_gen for enemies; ImageMagick MVG for backgrounds",
+  "assets": [
+    {
+      "id": "permit_crab",
+      "type": "enemy",
+      "prompt": "Original single enemy asset for Japanese 16-bit pixel-art comedy RPG about absurd terms and conditions. Strict crisp large square pixels, 3-level shading, limited muted teal midnight-blue antique-gold parchment-ivory and stamp-crimson palette, playful detailed readable silhouette, no text no letters no watermark no smooth painting no 3D. Full body centered with all extremities visible and 8% padding. Square canvas, truly transparent alpha background, no ground no backdrop no cast shadow. Intended logical resolution 128x128, visually rich but silhouette reads at small size. A pompous red crab checkpoint inspector, teal peaked bureaucrat cap, one claw holding an ivory blank permit sheet and the other a red rubber stamp, small brass wastepaper basket beside its legs. Smug funny clerical crab.",
+      "edit": "Remove the wastepaper basket completely; preserve the crab, permit, stamp, pose, style and alpha. Retain first draft in art-originals/retakes/permit_crab-basket.png."
+    },
+    {
+      "id": "infinity_hermit",
+      "type": "enemy",
+      "prompt": "Original single enemy asset for Japanese 16-bit pixel-art comedy RPG about absurd terms and conditions. Strict crisp large square pixels, 3-level shading, limited muted teal midnight-blue antique-gold parchment-ivory and stamp-crimson palette, playful detailed readable silhouette, no text no letters no watermark no smooth painting no 3D. Full body centered with all extremities visible and 8% padding. Square canvas, truly transparent alpha background, no ground no backdrop no cast shadow. Intended logical resolution 128x128, visually rich but silhouette reads at small size. A small nervous hermit crab with an enormous midnight teal armored shell shaped unmistakably like a sideways figure-eight infinity loop, antique gold rims and ivory spirals, tiny red claws poking out. Comically overpowered defensive creature."
+    },
+    {
+      "id": "last_train_crow",
+      "type": "enemy",
+      "prompt": "Original single enemy asset for Japanese 16-bit pixel-art comedy RPG about absurd terms and conditions. Strict crisp large square pixels, 3-level shading, limited muted teal midnight-blue antique-gold parchment-ivory and stamp-crimson palette, playful detailed readable silhouette, no text no letters no watermark no smooth painting no 3D. Full body centered with all extremities visible and 8% padding. Square canvas, truly transparent alpha background, no ground no backdrop no cast shadow. Intended logical resolution 128x128, visually rich but silhouette reads at small size. A raven train conductor in an oversized dark teal railway uniform and antique gold cap badge, holding ivory lost luggage tag and tiny brass lantern, full black bird body and feet, round lost-property suitcase beside it. Weary but kind comical fantasy railway clerk."
+    },
+    {
+      "id": "home_lock",
+      "type": "enemy",
+      "prompt": "Original single enemy asset for Japanese 16-bit pixel-art comedy RPG about absurd terms and conditions. Strict crisp large square pixels, 3-level shading, limited muted teal midnight-blue antique-gold parchment-ivory and stamp-crimson palette, playful detailed readable silhouette, no text no letters no watermark no smooth painting no 3D. Full body centered with all extremities visible and 8% padding. Square canvas, truly transparent alpha background, no ground no backdrop no cast shadow. Intended logical resolution 128x128, visually rich but silhouette reads at small size. A sentient antique brass front-door padlock with a heart-shaped keyhole, sleepy expressive ink eyes, tiny teal slippers and two key-like arms, one holding a blank ivory house rule booklet. Warm funny final boss that looks like a home guardian, complete freestanding silhouette."
+    },
+    {
+      "id": "echo_machine",
+      "type": "enemy",
+      "prompt": "Original single enemy sprite for a Japanese comedy RPG, a 32-bit era 2D pixel-art fantasy world where worn old machinery and steam trains coexist. Replace the concept of the echoing wild bird with an abandoned little walking voice-recorder automaton. NOT a bird, no wings or beak. Squat battered teal metal box torso, large brass phonograph horn mouth, two visible ivory magnetic tape reels on chest, round amber glass eyes, red recording lamp, mismatched little mechanical arms and boot-like metal feet, charming self-important expression. Rust patches, repaired plates, bolts, lightly worn patina, whimsical not threatening. Detailed crisp pixel art with readable silhouette and stepped pixel shading, muted teal midnight-blue antique-gold parchment-ivory small crimson accents. No lettering, no text, no numbers, no watermark, no gradients, no 3D. Full body centered with 8% empty margins on each edge, square canvas, genuine transparent alpha background, no ground no backdrop no cast shadow. Designed for 128x128 logical display."
+    }
+  ],
+  "retakes": [
+    {
+      "id": "echo_parrot",
+      "type": "enemy",
+      "prompt": "Original single enemy asset for Japanese 16-bit pixel-art comedy RPG about absurd terms and conditions. Strict crisp large square pixels, 3-level shading, limited muted teal midnight-blue antique-gold parchment-ivory and stamp-crimson palette, playful detailed readable silhouette, no text no letters no watermark no smooth painting no 3D. Full body centered with all extremities visible and 8% padding. Square canvas, truly transparent alpha background, no ground no backdrop no cast shadow. Intended logical resolution 128x128, visually rich but silhouette reads at small size. A wild teal and antique gold parrot, dramatic red crest, wings half open, perched on its own two feet without branch, neck ruff shaped like little ivory quotation marks, a tiny absurd dark teal armored breastplate. Proud noisy silly RPG bird monster.",
+      "status": "retired; replaced with echo_machine; original PNG retained"
+    }
+  ],
+  "backgrounds": {
+    "source": "tools/make-backgrounds.mjs",
+    "masters": "art-originals/background-sources/",
+    "renderer": "ImageMagick native MVG",
+    "ids": [
+      "border_checkpoint",
+      "forest_path",
+      "moon_bridge",
+      "last_train_platform",
+      "home_door"
+    ]
+  }
+}

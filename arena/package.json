@@ -1,0 +1,1 @@
+{"name":"void-pit-arena","version":"3.3.0","private":true,"type":"module","scripts":{"build":"bash build.sh","test":"node tests/check.mjs && node tests/ui-check.mjs && node tests/layout-check.mjs"}}

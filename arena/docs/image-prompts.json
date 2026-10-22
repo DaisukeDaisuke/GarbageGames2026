@@ -1,0 +1,171 @@
+[
+  {
+    "file": "assets/arena-background.webp",
+    "tool": "built-in image_gen",
+    "prompt": "A wide battle arena background for a cute three-head-tall character Japanese 32-bit-era JRPG, authentic crisp PIXEL ART with large visible pixel clusters and stepped contours, a ruined ancient circular stone arena with small monumental arches, ivy, teal glowing portal in the far center, dusk blue sky and distant purple mountains, little warm lanterns. Beautiful charming atmospheric old-school Japanese RPG scene, quiet teal, slate blue and desaturated gold palette. Open flat tiled stone battlefield in lower half for sprite combat, full scene shown in side-perspective. Approximately 480x320 pixel-art aesthetic enlarged by nearest-neighbor. No characters, no UI, no text, no logos. No photographic textures, no smooth painterly rendering.",
+    "original": "originals/arena-background.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/dialogue-frame.webp",
+    "tool": "built-in image_gen",
+    "prompt": "One blank game dialogue window as an image asset for a Japanese 32-bit-era pixel-art RPG with cute chibi characters. Wide horizontal rectangle aspect 3:1, authentic chunky crisp square pixel art. Simple double border of pale gold and dark teal pixels, small jade pixel corner gems, very dark navy flat interior so white overlay text will be clear. Restrained elegant classic JRPG window. Front-facing flat graphic, frame reaches the edges. No letters, no words, no symbols in center, no interface buttons, no scene, no gradients or realistic textures.",
+    "original": "originals/dialogue-frame.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/player.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute small adventurer wearing a teal hood and short cape, simple silver armor, tiny sword and round buckler, visible friendly face with simple pixel eyes, facing RIGHT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/player.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/iron-hound.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute squat little mechanical hunting dog with stubby legs, layered blue-gray iron armor, tiny red glowing eyes, playful but battle-ready, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/iron-hound.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/hex-mage.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute small mysterious wizard in oversized purple hooded robe, simple shadow face with two tiny teal eyes, floating paper talismans and turquoise magic, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/hex-mage.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/stone-golem.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute squat stone golem with round boulder fists and stubby legs, big head, amber glowing core and tiny friendly stern eyes, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/stone-golem.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/ash-wisp.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute small floating ash flame spirit, rounded little flame body, two bright expressive simple eyes, orange ember wisps, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/ash-wisp.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/shade.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute small shadow ghost in a ragged dark blue cloak, tiny red eyes in a big simple dark face, wispy stubby arms and short shadow legs, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/shade.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/iron-monk.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute small martial monk in an ochre robe and small silver gauntlets, round big head, simple determined pixel eyes, stubby arms and legs, NOT muscular, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/iron-monk.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/bone-archer.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute tiny skeleton archer with big rounded skull and simple eye sockets, compact short rib cage, stubby legs, small green cloak, holding a little bone bow, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/bone-archer.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/frost-witch.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute small ice witch in a modest full-length pale blue robe and large pointed blue hat, short silver hair, big round head and simple calm pixel eyes, holding a small crystal staff, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/frost-witch.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/blade-dancer.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute small masked sword dancer in a modest magenta tunic and short flowing cape, big round head, simple confident pixel eyes, stubby body and limbs, two little curved swords, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/blade-dancer.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  },
+  {
+    "file": "assets/void-knight.webp",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Make ONE clean game character sprite. Subject: a cute small dark knight with big rounded enclosed purple-black helmet, tiny red pixel eyes, compact chunky armor and short limbs, holding a little violet void sword, regal but adorable, facing LEFT. Art direction: adorable Japanese 32-bit era JRPG PIXEL ART, exactly three-head-tall chibi proportions, oversized head and very small compact body, short limbs, understated cute expression. Hand-placed-looking chunky square pixels, crisp stepped pixel contours, limited rich palette and 3-5 discrete cel shading tones per material, no smooth gradients. A low-resolution approximately 96x96 sprite shown at large size using nearest-neighbor pixel scaling. NOT a realistic person, NOT muscular, NOT a tall adult body, NOT western animated movie character design, NOT Disney, NOT 3D render, NOT photorealistic, NOT detailed skin or pores. Single full-body character centered, whole figure and equipment visible with ample empty margin. Isolated genuine transparent background, no environment, no ground, no lettering, no UI. All clothes modest. Cute and compact classic Japanese RPG battle sprite.",
+    "original": "originals/void-knight.png",
+    "delivery": {
+      "format": "WebP",
+      "quality": 100,
+      "lossless": true,
+      "method": 6,
+      "exact": true
+    }
+  }
+]

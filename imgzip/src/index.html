@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2c928">
+  <meta name="description" content="画像を圧縮できます。油圧プレスで、物理的に。">
+  <title>画像圧縮（物理） | Garbage2026</title>
+  <!-- BUILD:CSS -->
+</head>
+<body>
+  <div class="app" id="app">
+    <div class="app-surface" id="app-surface">
+      <header class="header">
+        <div class="wordmark ink-target">
+          <div class="eyebrow"><span class="brand-mark" aria-hidden="true">↓</span> GARBAGE 2026 <span class="edition">EXPERIMENT No.02</span></div>
+          <h1>画像圧縮<span class="physical">（物理）</span><span class="title-dot" aria-hidden="true">。</span></h1>
+        </div>
+        <div class="header-controls">
+          <button class="icon-button" id="motion-toggle" type="button" aria-pressed="false" aria-label="演出を軽減" title="演出を軽減">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m3 8 2 4-2 4M21 8l-2 4 2 4M8 5h8v14H8z"/></svg>
+          </button>
+          <button class="sound-button" id="sound-toggle" type="button" aria-pressed="true" aria-label="効果音をオフにする" title="効果音">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M11 4 6 8H3v8h3l5 4zM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></svg>
+            <span id="sound-label">音 ON</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <div class="workbench">
+          <section class="stage" id="stage" aria-label="画像をつぶす油圧プレス">
+            <div class="stage-grid" aria-hidden="true"></div>
+            <div class="stage-topline"><span class="live-state" id="live-state">READY</span><span class="model-number">HP-2026 / 01</span></div>
+            <div class="press-frame" aria-hidden="true">
+              <div class="top-beam"><i class="bolt"></i><span>HYDRAULIC IMAGE PRESS</span><i class="bolt"></i></div>
+              <div class="column column-left"></div><div class="column column-right"></div>
+              <div class="ram"></div>
+              <div class="moving-plate"><span class="plate-vents"></span><i class="bolt"></i><i class="bolt"></i></div>
+              <div class="bottom-plate"><div class="hazard-stripe"></div><div class="foot foot-left"></div><div class="foot foot-right"></div></div>
+            </div>
+            <div class="ruler" aria-hidden="true"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span></div>
+            <div class="image-zone" id="image-zone"><img id="press-image" alt="プレス台の原画像" draggable="false"></div>
+            <div class="target-line" id="target-line" aria-hidden="true"><span id="target-label">20%</span></div>
+            <div class="hash-block" id="hash-block" hidden><span class="hash-kicker" id="hash-kicker">最終形態</span><code id="stage-hash"></code></div>
+            <div class="impact-word" id="impact-word" aria-hidden="true"></div>
+            <div class="pressure-meter" aria-hidden="true"><span>PRESSURE</span><strong id="pressure-value">00<span>%</span></strong><div class="pressure-track"><i id="pressure-fill"></i></div></div>
+            <div class="stage-caption"><span><i class="status-led"></i> <span id="stage-caption">画像を圧縮できます。</span></span><span id="stage-ratio">100%</span></div>
+            <div class="drop-overlay" id="drop-overlay" hidden><span>ここに投入 ↓</span></div>
+          </section>
+
+          <aside class="control-panel" aria-label="プレス操作">
+            <div class="source-picker">
+              <div class="section-label"><span class="step-number">01</span> 画像を投入</div>
+              <div class="file-controls"><button class="choose-file" id="choose-file" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="15.5" cy="8.5" r="1.5"/></svg><span>画像を選ぶ</span></button><button class="sample-button" id="sample-button" type="button" title="内蔵サンプルに戻す" aria-label="内蔵サンプルに戻す">サンプル</button></div>
+              <input type="file" id="file-input" accept="image/png,image/jpeg,image/webp" hidden>
+              <p class="file-info"><span id="source-name">サンプルを準備中</span><span id="source-detail">PNG / JPEG / WebP · 最大20MB</span></p>
+            </div>
+
+            <div class="height-control ink-target">
+              <label class="section-label" for="height-slider"><span class="step-number">02</span> 残りの高さ</label>
+              <div class="height-display"><output id="height-value" for="height-slider">20<span>%</span></output><div class="reduction-chip">高さ<span id="reduction-value">−80%</span></div></div>
+              <input id="height-slider" class="height-slider" type="range" min="1" max="100" value="20" aria-label="残りの高さ" aria-valuetext="残り20パーセント">
+              <div class="range-labels"><span>100% <i>やさしく</i></span><span><i>力ずく</i> 1%</span></div>
+              <div class="presets" aria-label="残りの高さのプリセット"><button type="button" data-height="75">75%</button><button type="button" data-height="50">50%</button><button type="button" data-height="25">25%</button><button type="button" data-height="10">10%</button></div>
+            </div>
+
+            <div class="action-group ink-target">
+              <button class="press-button" id="press-button" type="button" disabled><span class="press-button-label" id="press-button-label">圧縮する</span><span class="press-button-icon" aria-hidden="true">↓↓</span></button>
+              <button class="reset-button" id="reset-button" type="button"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 9a7 7 0 1 1 1 5M3 3v6h6"/></svg>元に戻す</button>
+            </div>
+          </aside>
+        </div>
+
+        <section class="result-panel ink-target" id="result-panel" aria-label="圧縮結果">
+          <div class="result-heading"><span class="section-label">OUTPUT</span><span class="result-badge" id="result-badge">プレス待ち</span></div>
+          <div class="result-content" id="result-content">
+            <div class="result-stat"><span id="result-main">準備中…</span><small id="result-detail">画像を読み込んでいます</small></div>
+            <div class="result-actions"><button class="save-button" id="save-button" type="button" disabled><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M10 2v10m-4-4 4 4 4-4M3 13v4h14v-4"/></svg><span id="save-label">PNGを保存</span></button></div>
+          </div>
+          <div class="hash-details" id="hash-details" hidden>
+            <div class="hash-controls"><label for="hash-method">方式</label><select id="hash-method"><option value="xxhash128">xxHash128</option><option value="xxhash64">xxHash64</option><option value="md5">MD5</option><option value="crc32">CRC32</option></select><button type="button" class="copy-button" id="copy-button">コピー</button></div><span id="hash-budget"></span>
+          </div>
+        </section>
+        <div class="notice" id="notice" role="status" aria-live="polite" hidden></div>
+        <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+      </main>
+      <footer class="footer"><span>力こそ、圧縮。</span><div><span class="local-label"><i></i> 端末内で処理</span><button id="spec-button" type="button">仕様書 <span aria-hidden="true">↗</span></button></div></footer>
+    </div>
+    <div class="effects" id="effects" aria-hidden="true"></div>
+  </div>
+  <dialog id="spec-dialog" class="spec-dialog" aria-labelledby="spec-title"><div class="spec-topbar"><h2 id="spec-title">仕様書</h2><button type="button" id="spec-close" aria-label="仕様書を閉じる">×</button></div><pre id="spec-text"></pre></dialog>
+  <noscript><p class="noscript">このアプリを動かすにはJavaScriptを有効にしてください。</p></noscript>
+  <!-- BUILD:WORKER -->
+  <!-- BUILD:SAMPLE -->
+  <!-- BUILD:SPEC -->
+  <!-- BUILD:ENGINE -->
+  <!-- BUILD:APP -->
+</body>
+</html>

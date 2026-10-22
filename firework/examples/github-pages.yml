@@ -1,0 +1,6 @@
+# Insert this step after the existing site build and before its Pages artifact upload.
+# Replace _site with the existing workflow's publish directory.
+# Keep uploading that entire directory so the other pages remain part of the site.
+- name: Build the fireworks notepad
+  shell: sh
+  run: sh fire/build.sh --output-dir _site/fire

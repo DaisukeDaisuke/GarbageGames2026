@@ -1,0 +1,12 @@
+{
+  "original": "originals/skills/meditate.png",
+  "file": "assets/skills/wait.jpg",
+  "runtimeFile": "assets/skills/wait.jpg",
+  "width": 1254,
+  "height": 1254,
+  "originalBytes": 2251177,
+  "originalSha256": "a022e0b40d3e7f743a34a33e6a7dd6ef3f2438b2c0deb5d66bf10c4a9cb60339",
+  "generator": "OpenAI image generation",
+  "prompt": "Use case: stylized-concept. Asset type: square illustrated skill card for the action Meditation in a cute 32-bit-era Japanese pixel-art JRPG. One small three-head-tall human adventurer with teal cloak and short blond hair, sitting cross-legged with eyes gently closed on ancient arena stone tiles. Calm breathing, clear soft GREEN healing pixel motes near the heart and BLUE mana pixel motes around the hands, small square particles rising, gentle concentric magical ripples on the floor. Warm sunset arena courtyard in background. Authentic crisp square pixel clusters, stepped edges, compact chibi body, no muscular anatomy, no Disney style, no 3D rendering, no photorealism. Main character and green/blue restorative effect on the LEFT half so the image can fade toward text on the right in CSS. No text, numbers, bars, lettering, UI, logo or watermark. Full opaque illustrated background.",
+  "previousOriginalRetained": "originals/skills/wait.png"
+}

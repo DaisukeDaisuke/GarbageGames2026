@@ -1,0 +1,6 @@
+{
+  "generator": "OpenAI image generation",
+  "referenceOriginal": "originals/history/blue-swordsman-before-highlights.png",
+  "editedOriginal": "originals/challengers/blue-swordsman.png",
+  "prompt": "Use case: precise-object-edit. Edit target: the attached transparent 32-bit pixel-art blue-clothed male swordsman sprite. Change ONLY the eyes: add a distinct bright white square pixel catchlight INSIDE the dark brown iris of EACH eye. These are reflective highlights in the colored irises, not merely the existing whites of the eyes. Make both iris highlights clearly visible and lively at small game-sprite display size, with one clean white pixel cluster per iris, approximately two logical pixel steps wide. Retain dark pupils, brown iris color, pixelated outlines, cute expression. Preserve the exact existing character identity, three-head-tall proportions, hair, face shape, eyebrows, clothing, sword, pose, framing, pixel-art style, and transparent background. Do not redraw the outfit or add any background, ground, text, or props."
+}

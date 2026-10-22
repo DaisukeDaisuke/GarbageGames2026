@@ -1,0 +1,18 @@
+{
+  "creator": "OtoLogic",
+  "website": "https://otologic.jp/",
+  "source": "https://otologic.jp/free/se/game-rpg01.html",
+  "terms": "https://otologic.jp/free/license.html",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "changes": "音源ファイルは未改変。ゲーム内で再生音量を調整。",
+  "sounds": {
+    "select": {"file":"SNES-RPG01-10(Select).mp3", "label":"語句選択", "volume":0.35},
+    "sword": {"file":"SNES-RPG05-01(Attack-Sword).mp3", "label":"発言・剣を振る", "volume":0.6},
+    "fault": {"file":"SNES-RPG05-08(Miss).mp3", "label":"反論不成立", "volume":0.45},
+    "damage": {"file":"SNES-RPG05-10(Damage).mp3", "label":"100ダメージ", "volume":0.6},
+    "defeat": {"file":"SNES-RPG05-15(Defeat).mp3", "label":"撃破演出", "volume":0.45},
+    "encounter": {"file":"SNES-RPG05-17(Encounter).mp3", "label":"戦闘開始", "volume":0.4},
+    "depart": {"file":"SNES-RPG05-18(Run).mp3", "label":"退場・撤回", "volume":0.4}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "original": "originals/algorithm-arena.png",
+  "file": "assets/algorithm-arena.jpg",
+  "width": 1536,
+  "height": 1024,
+  "originalBytes": 2647605,
+  "originalSha256": "11e91d0b2e3215c7643fc3402ed29868abd923c99b3487c320ddd06aed372909",
+  "generator": "OpenAI image generation",
+  "prompt": "Wide 3:2 background for a Japanese 32-bit pixel-art JRPG special algorithm arena. Ancient stone dueling arena suspended among deep indigo stars, violet and turquoise circuits inlaid in the floor, five illuminated archways along the far rim. Open lower half for separate cute three-head-tall sprites. Crisp square pixel clusters, stepped edges, restrained palette. No characters, letters, UI, logos, realistic people, 3D or Disney style. Quiet darker upper-left area for UI. Original location distinct from the ordinary tournament arena."
+}

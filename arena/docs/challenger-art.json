@@ -1,0 +1,107 @@
+{
+  "generator": "OpenAI image generation",
+  "style": "Cute three-head-tall 32-bit JRPG human characters",
+  "images": [
+    {
+      "id": "violet-mage",
+      "original": "originals/challengers/violet-mage.png",
+      "file": "assets/challengers/violet-mage.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 970270,
+      "originalSha256": "5362832efae6e98ac18f9a12a8ede5fe624cefbf458d125353895d73c39cb949",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: a friendly adult woman mage with a short lavender bob, a large floppy purple pointed hat, modest navy-and-violet robe, small wooden staff with a turquoise gem, a tiny closed spellbook at her belt."
+    },
+    {
+      "id": "blue-swordsman",
+      "original": "originals/challengers/blue-swordsman.png",
+      "file": "assets/challengers/blue-swordsman.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 657715,
+      "originalSha256": "a5510eda3bc286a403b7a00f6c80119c9a35c5b2bdcc33e281e95563d2bda2a2",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: an adult man swordsman with tousled chestnut hair, a short navy cape, simple blue tunic and small silver shoulder guards, holding one simple short sword angled down. Light nimble outfit, no bulky plate armor.",
+      "editRecord": "docs/eye-highlight-edit.json"
+    },
+    {
+      "id": "green-ranger",
+      "original": "originals/challengers/green-ranger.png",
+      "file": "assets/challengers/green-ranger.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 758269,
+      "originalSha256": "601d37be601e28f74f75c8c3c37707e985d2fe96000782c35370402ba838cf0f",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: an adult woman ranger with auburn ponytail, green hood pushed back, forest-green tunic and brown boots, holding a short wooden bow. Friendly determined face."
+    },
+    {
+      "id": "white-healer",
+      "original": "originals/challengers/white-healer.png",
+      "file": "assets/challengers/white-healer.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 727905,
+      "originalSha256": "b4ef2753143a3284e8fa714854d032ae651ad9762b5608e88136bf9ccb9393a7",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: an adult man healer with short sandy blond hair, cream robe trimmed in teal, simple soft cloth mantle and a small rounded staff, gentle determined expression. No religious logos."
+    },
+    {
+      "id": "red-duelist",
+      "original": "originals/challengers/red-duelist.png",
+      "file": "assets/challengers/red-duelist.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 599211,
+      "originalSha256": "99082500e5fd456a0bf4d563986e5a3664023f5e2ae0af240cc94e5e7de5c329",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: an adult woman duelist with black bobbed hair, red short jacket, navy trousers and ankle boots, holding a delicate silver rapier. Modest practical clothes, cute energetic pose."
+    },
+    {
+      "id": "amber-monk",
+      "original": "originals/challengers/amber-monk.png",
+      "file": "assets/challengers/amber-monk.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 648816,
+      "originalSha256": "7e4c200d5644c2a8366fa403d1aaf8ae0ee14455b3fde4f3e0b2320a264179b8",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: an adult man martial artist with dark brown skin, short curly black hair, amber loose tunic, simple navy sash, cloth wrist wraps and small shoes, relaxed raised fists. Soft compact build, no visible abs or large muscles."
+    },
+    {
+      "id": "star-sorcerer",
+      "original": "originals/challengers/star-sorcerer.png",
+      "file": "assets/challengers/star-sorcerer.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 842039,
+      "originalSha256": "84fbf93e9a899ad9b29726b70909abb8ab88beb8bd8509463ea477ae60d07f0e",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: an adult man sorcerer with short silver hair, deep blue pointed wizard hat, midnight-blue robe with sparse gold pixels, a small brass wand with one tiny blue spark. Friendly thoughtful face."
+    },
+    {
+      "id": "rose-alchemist",
+      "original": "originals/challengers/rose-alchemist.png",
+      "file": "assets/challengers/rose-alchemist.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 923880,
+      "originalSha256": "43a427bd07699794290b1e4f8da06038e514c33876256dd10d224d59a6b3111f",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: an adult woman alchemist with round glasses, short brown hair, rose-and-cream hooded coat, brown boots, holding a small turquoise potion bottle and wearing a tiny satchel. Cheerful intelligent expression."
+    },
+    {
+      "id": "silver-guardian",
+      "original": "originals/challengers/silver-guardian.png",
+      "file": "assets/challengers/silver-guardian.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 871218,
+      "originalSha256": "1c353b7e609b4aa606ea8f81e34f725c67a510cec30e362646577417df4746be",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: an adult woman guardian with short golden hair, small silver helmet open at face, compact silver breastplate over a teal tunic, small round wooden shield and a short sheathed sword. Cute modest armor, no huge shoulder pads."
+    },
+    {
+      "id": "sand-rogue",
+      "original": "originals/challengers/sand-rogue.png",
+      "file": "assets/challengers/sand-rogue.webp",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 763962,
+      "originalSha256": "6efa3dfca3f10f4bbaa8d7f6efcbb65d87e3e9af416b017db4aff1f8af3fe89a",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent full-body human challenger sprite for a 32-bit-era Japanese console RPG arena. A cute chibi ADULT human, exactly three-head-tall proportions, oversized round head, small compact non-muscular body, tiny hands and boots, simple expressive pixel eyes. Authentic crisp PIXEL ART made from clearly visible square pixel clusters and stepped outlines, a modest limited palette, minimal 2-3-tone shading, no smooth painted detail. Not a Disney character, no 3D rendering, no realistic anatomy, no muscular build, no glossy cartoon shading. Full body centered in a square canvas, head and feet completely inside frame, generous transparent margins, three-quarter view facing left in a relaxed battle-ready pose. Only one character and their handheld equipment, no ground, pedestal, background, UI, lettering, logo or watermark. Genuinely transparent background. Subject: an adult man rogue with tan skin, spiky charcoal hair, sand-colored scarf, charcoal tunic, loose trousers, brown boots, holding a short dagger pointed down. A playful confident smile, no sinister expression."
+    }
+  ]
+}

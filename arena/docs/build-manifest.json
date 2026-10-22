@@ -1,0 +1,390 @@
+{
+  "version": 5,
+  "base": "/Garbage2026/arena/",
+  "specificationSha256": "706eeaf77aff881c0761bb8e2eb0ae3296bf51c1a8df2f48591c5ed3a6134c8c",
+  "htmlSha256": "785c05716ae792addb5d2dc98eed422676533e222419f06b18c507da190784a0",
+  "assets": [
+    "arena-background",
+    "algorithm-arena",
+    "dialogue-frame",
+    "player",
+    "iron-hound",
+    "hex-mage",
+    "stone-golem",
+    "ash-wisp",
+    "shade",
+    "iron-monk",
+    "bone-archer",
+    "frost-witch",
+    "blade-dancer",
+    "void-knight",
+    "challengers/violet-mage",
+    "challengers/blue-swordsman",
+    "challengers/green-ranger",
+    "challengers/white-healer",
+    "challengers/red-duelist",
+    "challengers/amber-monk",
+    "challengers/star-sorcerer",
+    "challengers/rose-alchemist",
+    "challengers/silver-guardian",
+    "challengers/sand-rogue",
+    "skills/attack",
+    "skills/guard",
+    "skills/wait",
+    "skills/pierce",
+    "skills/smash",
+    "skills/fire",
+    "skills/flare",
+    "skills/drain",
+    "skills/healing-rain",
+    "skills/focus",
+    "skills/barrier",
+    "skills/purge",
+    "skills/counter",
+    "skills/siphon",
+    "skills/mend",
+    "skills/bank-shot",
+    "skills/quake",
+    "skills/eclipse",
+    "skills/feint",
+    "skills/reprise",
+    "items/iron-coat",
+    "items/lead-plate",
+    "items/pilgrim-robe",
+    "items/wing-boots",
+    "items/mana-ring",
+    "items/quick-pin",
+    "items/duelist-jacket",
+    "items/reservoir-robe",
+    "items/heart-knot",
+    "items/glass-prism"
+  ],
+  "assetFiles": {
+    "arena-background": "assets/arena-background.jpg",
+    "algorithm-arena": "assets/algorithm-arena.jpg",
+    "dialogue-frame": "assets/dialogue-frame.jpg",
+    "player": "assets/player.webp",
+    "iron-hound": "assets/iron-hound.webp",
+    "hex-mage": "assets/hex-mage.webp",
+    "stone-golem": "assets/stone-golem.webp",
+    "ash-wisp": "assets/ash-wisp.webp",
+    "shade": "assets/shade.webp",
+    "iron-monk": "assets/iron-monk.webp",
+    "bone-archer": "assets/bone-archer.webp",
+    "frost-witch": "assets/frost-witch.webp",
+    "blade-dancer": "assets/blade-dancer.webp",
+    "void-knight": "assets/void-knight.webp",
+    "challengers/violet-mage": "assets/challengers/violet-mage.webp",
+    "challengers/blue-swordsman": "assets/challengers/blue-swordsman.webp",
+    "challengers/green-ranger": "assets/challengers/green-ranger.webp",
+    "challengers/white-healer": "assets/challengers/white-healer.webp",
+    "challengers/red-duelist": "assets/challengers/red-duelist.webp",
+    "challengers/amber-monk": "assets/challengers/amber-monk.webp",
+    "challengers/star-sorcerer": "assets/challengers/star-sorcerer.webp",
+    "challengers/rose-alchemist": "assets/challengers/rose-alchemist.webp",
+    "challengers/silver-guardian": "assets/challengers/silver-guardian.webp",
+    "challengers/sand-rogue": "assets/challengers/sand-rogue.webp",
+    "skills/attack": "assets/skills/attack.jpg",
+    "skills/guard": "assets/skills/guard.jpg",
+    "skills/wait": "assets/skills/wait.jpg",
+    "skills/pierce": "assets/skills/pierce.jpg",
+    "skills/smash": "assets/skills/smash.jpg",
+    "skills/fire": "assets/skills/fire.jpg",
+    "skills/flare": "assets/skills/flare.jpg",
+    "skills/drain": "assets/skills/drain.jpg",
+    "skills/healing-rain": "assets/skills/healing-rain.jpg",
+    "skills/focus": "assets/skills/focus.jpg",
+    "skills/barrier": "assets/skills/barrier.jpg",
+    "skills/purge": "assets/skills/purge.jpg",
+    "skills/counter": "assets/skills/counter.jpg",
+    "skills/siphon": "assets/skills/siphon.jpg",
+    "skills/mend": "assets/skills/mend.jpg",
+    "skills/bank-shot": "assets/skills/bank-shot.jpg",
+    "skills/quake": "assets/skills/quake.jpg",
+    "skills/eclipse": "assets/skills/eclipse.jpg",
+    "skills/feint": "assets/skills/feint.jpg",
+    "skills/reprise": "assets/skills/reprise.jpg",
+    "items/iron-coat": "assets/items/iron-coat.jpg",
+    "items/lead-plate": "assets/items/lead-plate.jpg",
+    "items/pilgrim-robe": "assets/items/pilgrim-robe.jpg",
+    "items/wing-boots": "assets/items/wing-boots.jpg",
+    "items/mana-ring": "assets/items/mana-ring.jpg",
+    "items/quick-pin": "assets/items/quick-pin.jpg",
+    "items/duelist-jacket": "assets/items/duelist-jacket.jpg",
+    "items/reservoir-robe": "assets/items/reservoir-robe.jpg",
+    "items/heart-knot": "assets/items/heart-knot.jpg",
+    "items/glass-prism": "assets/items/glass-prism.jpg"
+  },
+  "audio": {
+    "slash": "assets/audio/slash.mp3",
+    "hit": "assets/audio/hit.mp3",
+    "magic": "assets/audio/magic.mp3",
+    "guard": "assets/audio/guard.mp3",
+    "heal": "assets/audio/heal.mp3",
+    "victory": "assets/audio/victory.mp3",
+    "ui": "assets/audio/ui.mp3"
+  },
+  "media": {
+    "assets/arena-background.jpg": {
+      "bytes": 79103,
+      "sha256": "dfc20337f35f5d5ea33bcfda0af1aababdac26d5888c01eedb8b3f3b775f36b6"
+    },
+    "assets/algorithm-arena.jpg": {
+      "bytes": 78604,
+      "sha256": "dfbc82b1f3258b1b4dd5416e149a98f6fe1194bcdf6f30df7cfca0e2aac9c9a6"
+    },
+    "assets/dialogue-frame.jpg": {
+      "bytes": 42299,
+      "sha256": "96b15f4ac92ffd29ca8fa5158ca8ee0d0260622fc83d1962a08325cf300ced99"
+    },
+    "assets/player.webp": {
+      "bytes": 508702,
+      "sha256": "7f34fb1b542728298e429dfe0605a9c419eb3c75af4169310ba55a24b208e145"
+    },
+    "assets/iron-hound.webp": {
+      "bytes": 497550,
+      "sha256": "278c1f503f87982df01dcaf61cbf45d45346f129a30ff5963b7d51ca0d3381bb"
+    },
+    "assets/hex-mage.webp": {
+      "bytes": 692512,
+      "sha256": "72b05490f7a80f3dbb6558daec5e5f21b7886f8fd0cce93ba6e8be5d27b87e1c"
+    },
+    "assets/stone-golem.webp": {
+      "bytes": 566430,
+      "sha256": "dd79879bd2bc0da02a06b0056343368a2333e5ab7d4f9abed083f9aa32267439"
+    },
+    "assets/ash-wisp.webp": {
+      "bytes": 344226,
+      "sha256": "342de64463681bf728b723dc4473c80f6453aca9164f8eacf06c731647493d9f"
+    },
+    "assets/shade.webp": {
+      "bytes": 377204,
+      "sha256": "a0dc386b2f04e0c157f9ec8d53e62f8c80d6390e2820877473bd27694a9d75b8"
+    },
+    "assets/iron-monk.webp": {
+      "bytes": 479898,
+      "sha256": "b2bb84ce4a94b6b61a9401c8172b82f38f87d3a8ff9b61c35b10de956b63eb48"
+    },
+    "assets/bone-archer.webp": {
+      "bytes": 356986,
+      "sha256": "cd013d7915a86e0f04a5b395324a19ab1dbdc5bdf902d532e421c3d52386fec8"
+    },
+    "assets/frost-witch.webp": {
+      "bytes": 561688,
+      "sha256": "8d2ed706d12647815e8600940e76146e348b17897bad7c287a0062884ab695c1"
+    },
+    "assets/blade-dancer.webp": {
+      "bytes": 727396,
+      "sha256": "fa66868f5344605befc766b5e75ade14013e3c5137551f78f838d67a356ad491"
+    },
+    "assets/void-knight.webp": {
+      "bytes": 518608,
+      "sha256": "cbc5a3c81c47eb6931fcb64412a96ded1adc36fd9f873cd936a8039ad70e1382"
+    },
+    "assets/challengers/violet-mage.webp": {
+      "bytes": 739650,
+      "sha256": "4a823b7f3415fcb73744b602c3cd45af51c32f42e830c6ef1925e5074476cc0f"
+    },
+    "assets/challengers/blue-swordsman.webp": {
+      "bytes": 455330,
+      "sha256": "9cfc5be3064edbf086eb9ea8b121235ac32301f56997c4fea4790f68d4d236ce"
+    },
+    "assets/challengers/green-ranger.webp": {
+      "bytes": 573286,
+      "sha256": "2608fe5405843f3ccf27de7786be27da6b7aaeb03e9dbbc4fa2f4824f800679b"
+    },
+    "assets/challengers/white-healer.webp": {
+      "bytes": 532924,
+      "sha256": "23859a2dac1700e2d00f9421a4d1249fc10d42fe745ed5f41334f783d2c8f4a8"
+    },
+    "assets/challengers/red-duelist.webp": {
+      "bytes": 425910,
+      "sha256": "1963172cc6a2acb18ca1741210dca481b8f8f0bdf53f219496608807a9ca8861"
+    },
+    "assets/challengers/amber-monk.webp": {
+      "bytes": 454212,
+      "sha256": "c6cddd8361d667880906c1107063b178a8e10740f6fea80803a5c7b8d6ed1d6f"
+    },
+    "assets/challengers/star-sorcerer.webp": {
+      "bytes": 647844,
+      "sha256": "b3bc79d56b7d1d269fa55ff0af43ebed66f6785db833dc11f124bfd4f1398fac"
+    },
+    "assets/challengers/rose-alchemist.webp": {
+      "bytes": 684660,
+      "sha256": "0bc5462a0b8f4eea07192b4c6c9a5963228d24553ffb5ddab1f704185bb71db8"
+    },
+    "assets/challengers/silver-guardian.webp": {
+      "bytes": 655780,
+      "sha256": "ff2e9f4a456cd1f914d1ea2bbfdc36eeab8cb08c7c97a3dc6e1380d65bbb25eb"
+    },
+    "assets/challengers/sand-rogue.webp": {
+      "bytes": 522190,
+      "sha256": "d2979da8dd41d4cf0f95e6e56c6e665b9f1e995d343b782d3b04cef691e58d69"
+    },
+    "assets/skills/attack.jpg": {
+      "bytes": 77828,
+      "sha256": "7f19876104270f169c55b36e7965cf317b5c585eba7684204dc53c72327c4b0f"
+    },
+    "assets/skills/guard.jpg": {
+      "bytes": 78249,
+      "sha256": "86d14a38382a7f4b96462959ac60b1670c78e0279175ac84d88f433eb9d95606"
+    },
+    "assets/skills/wait.jpg": {
+      "bytes": 78410,
+      "sha256": "118a047bbf10a69d7aaf8da73f8d56590a701effdf392a6408989dc939742a34"
+    },
+    "assets/skills/pierce.jpg": {
+      "bytes": 79139,
+      "sha256": "5eba58f370ab0f3ecdea882829913a674f46acb0d38e40b12d1c828ee232f70c"
+    },
+    "assets/skills/smash.jpg": {
+      "bytes": 79043,
+      "sha256": "6261b2e9af1ebe660f100e61e1fc54b28036d2f0bd8c9a3ebef3f422d9854926"
+    },
+    "assets/skills/fire.jpg": {
+      "bytes": 79478,
+      "sha256": "e1f6243e15d414d9cf0c87d3ec5dedc362935b330cc0b43a793d4b4f69446d55"
+    },
+    "assets/skills/flare.jpg": {
+      "bytes": 79408,
+      "sha256": "a469b0e1f02e98f8000ecf7f732ba6ee567dbbd54fd615f0206d900bba47f727"
+    },
+    "assets/skills/drain.jpg": {
+      "bytes": 78953,
+      "sha256": "553a8f51dd8711c47ba9983581c81d26868c917510282fdcc5b16d590d71626b"
+    },
+    "assets/skills/healing-rain.jpg": {
+      "bytes": 79805,
+      "sha256": "c8cc248e559f4af71f3486d9624d3f4d9dfe8079be7475dc69b16354206e27fb"
+    },
+    "assets/skills/focus.jpg": {
+      "bytes": 79366,
+      "sha256": "d8f384ffede613311abe098da29685d1f34dd7a0cfe4a1029313fb06c926802a"
+    },
+    "assets/skills/barrier.jpg": {
+      "bytes": 79558,
+      "sha256": "dae79ae71437db3072a1e85c574b05b6b7183611b2b614f54b367e2841e1e81e"
+    },
+    "assets/skills/purge.jpg": {
+      "bytes": 79495,
+      "sha256": "6af648bef8826208fd71440b11cb094e7b364016fa59af9487e856108454a698"
+    },
+    "assets/skills/counter.jpg": {
+      "bytes": 79262,
+      "sha256": "9329517ff7c33891f343d9cdff73538a32cb8081456b660725b43c7e0bfa1982"
+    },
+    "assets/skills/siphon.jpg": {
+      "bytes": 77677,
+      "sha256": "548d6af8125e6720c87e5fce124be7d7d15024ca4667860bfa2d24304d20302a"
+    },
+    "assets/skills/mend.jpg": {
+      "bytes": 78807,
+      "sha256": "09e36050b1c429860c351c05fa9c7992fd8776e1b1755b8bca06d6785b4d94f1"
+    },
+    "assets/skills/bank-shot.jpg": {
+      "bytes": 79855,
+      "sha256": "bf77463b2554dcc0cecead423f1fcfee47f386026d3de98c41d269f9603b5b2b"
+    },
+    "assets/skills/quake.jpg": {
+      "bytes": 79421,
+      "sha256": "767fed4f3e477ca13c2337ffc0ee9d6f297f409c0251e9d4bb88c15a17650898"
+    },
+    "assets/skills/eclipse.jpg": {
+      "bytes": 77122,
+      "sha256": "b2e72bc32269c60a8c79730bb0bae1765cd83d7dd512745caacb39c7408b54e7"
+    },
+    "assets/skills/feint.jpg": {
+      "bytes": 78317,
+      "sha256": "2a3be7906cdbc901e0fa1bb824b47fa2b7da44830fbd21512e7c2dbfbab0018f"
+    },
+    "assets/skills/reprise.jpg": {
+      "bytes": 78970,
+      "sha256": "ca1724bea5c517012556514bee537e2d6faa21c69f93320ed4a9875c69490ca2"
+    },
+    "assets/items/iron-coat.jpg": {
+      "bytes": 78425,
+      "sha256": "8feccb834e97aa657c734f23e4319550635b92a02720b0a20fa8cc1101cbb6de"
+    },
+    "assets/items/lead-plate.jpg": {
+      "bytes": 79837,
+      "sha256": "62b9164cd139a64145ee24135f49205a220cbe6f08f4139e889e40aba1292e78"
+    },
+    "assets/items/pilgrim-robe.jpg": {
+      "bytes": 77944,
+      "sha256": "48b8547d6f682b1d3bd488263902d6a19554aaf4fff4609547a5fd32b1200e38"
+    },
+    "assets/items/wing-boots.jpg": {
+      "bytes": 78363,
+      "sha256": "b57c48ea50486c73a14cb86f4f66a06f10c2d7ab567c58cd197de9aa0dd075c9"
+    },
+    "assets/items/mana-ring.jpg": {
+      "bytes": 78834,
+      "sha256": "f830d0f21ba2065b551b2d4b75acee837622363e9803db71041f311ae2b680cc"
+    },
+    "assets/items/quick-pin.jpg": {
+      "bytes": 79735,
+      "sha256": "ef1bd338ecad211ed7b3440b585f432e0d8218f8f15af1fac66c2ecc8469e24b"
+    },
+    "assets/items/duelist-jacket.jpg": {
+      "bytes": 79594,
+      "sha256": "598d0b4b29a5046e0aa03f68c29c38dc6380202847acf5179ec2e64d9de1299f"
+    },
+    "assets/items/reservoir-robe.jpg": {
+      "bytes": 78941,
+      "sha256": "56395daceafb5666e3aae22582c84603abe5ba0ac0885a1b2e2a53371b6e1a4c"
+    },
+    "assets/items/heart-knot.jpg": {
+      "bytes": 79806,
+      "sha256": "3be21ff2382c1de75f002569d50b3e6396f139046515d9f887bcdf08c95bdec5"
+    },
+    "assets/items/glass-prism.jpg": {
+      "bytes": 77858,
+      "sha256": "0e405ec5375b807a6f2a86970708aa2762e05928b25c1ae4eef5678af27fc20c"
+    },
+    "assets/audio/slash.mp3": {
+      "bytes": 12407,
+      "sha256": "1b56b30a6194effb7288e11a41231122b568a8e6aa966b5f576974c9442c6d6a"
+    },
+    "assets/audio/hit.mp3": {
+      "bytes": 13555,
+      "sha256": "27d01fd2b7cb15f6ecb32a3e040f4fd23b1bc49f85821750b4150514e4a59cb3"
+    },
+    "assets/audio/magic.mp3": {
+      "bytes": 15255,
+      "sha256": "412e3c4fdfa457dccfddf957c968762da5c84f972036a7a4f3fb2f92f136598a"
+    },
+    "assets/audio/guard.mp3": {
+      "bytes": 11388,
+      "sha256": "ccfbd6a551da79f664a3c6cdb3a6b553813eaf88114c3cf31a3e892fea4cd632"
+    },
+    "assets/audio/heal.mp3": {
+      "bytes": 19714,
+      "sha256": "02e6a2707e94181ca5051561a5f0882bdcc2e264ac67a0251a3c4ae7418815a1"
+    },
+    "assets/audio/victory.mp3": {
+      "bytes": 11703,
+      "sha256": "3ee24acfd1deafc7207a7a9a208dd95d38eb6e2f2329b5a2b245f4c0783f3f60"
+    },
+    "assets/audio/ui.mp3": {
+      "bytes": 11674,
+      "sha256": "b9eefc1b3c17c7e8450e2084b63808a3c1c2860d2315853d365ea15d82372b4a"
+    }
+  },
+  "files": {
+    "html": "index.html",
+    "css": "style.30db20bea69b.css",
+    "app": "app.9d1038a4c32e.js",
+    "dragscroll": "dragscroll.4fe3a562b06c.js",
+    "worker": "qualifier-worker.0e4cd4c1c473.js"
+  },
+  "htmlBytes": 1238,
+  "initialFiles": [
+    "index.html",
+    "style.30db20bea69b.css",
+    "dragscroll.4fe3a562b06c.js",
+    "app.9d1038a4c32e.js",
+    "assets/arena-background.jpg",
+    "assets/void-knight.webp"
+  ],
+  "initialUncompressedBytes": 793733
+}

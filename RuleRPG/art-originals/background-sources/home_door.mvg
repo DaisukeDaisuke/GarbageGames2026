@@ -1,0 +1,3420 @@
+push graphic-context
+viewbox 0 0 480 180
+push defs
+push pattern brick 0,0 24,14
+push graphic-context
+fill '#52655f' stroke 'none' stroke-width 1 rectangle 0,0 23,13
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#2d484a' stroke-width 1 path 'M0,0H24M0,7H24M0,14H24M12,0V7M0,7V14M24,7V14'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#85907b' stroke-width 1 path 'M1,1H11M13,1H23M1,8H23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#62766b' stroke-width 1 path 'M3,4H7M16,3H21M4,10H9M15,12H19'
+pop graphic-context
+pop pattern
+push pattern plaster 0,0 31,23
+push graphic-context
+fill '#bdac80' stroke 'none' stroke-width 1 rectangle 0,0 30,22
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#9f9874' stroke-width 1 path 'M2,3H8M12,6H17M19,18H28M5,20H9M22,8H25M9,11H12'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#d0bc8d' stroke-width 1 path 'M3,5H7M13,7H16M20,20H25'
+pop graphic-context
+pop pattern
+pop defs
+push graphic-context
+fill '#142a3c' stroke 'none' stroke-width 1 rectangle 0,0 479,22
+pop graphic-context
+push graphic-context
+fill '#193549' stroke 'none' stroke-width 1 rectangle 0,22 479,44
+pop graphic-context
+push graphic-context
+fill '#234654' stroke 'none' stroke-width 1 rectangle 0,44 479,66
+pop graphic-context
+push graphic-context
+fill '#365c60' stroke 'none' stroke-width 1 rectangle 0,66 479,88
+pop graphic-context
+push graphic-context
+fill '#617575' stroke 'none' stroke-width 1 rectangle 0,88 479,110
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 202,20 219,21
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 15,71 74,72
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 48,76 55,77
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 366,11 382,12
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 301,54 356,55
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 33,45 48,46
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 324,38 337,39
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 477,57 501,58
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 391,33 421,34
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 309,43 325,44
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 45,44 80,45
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 81,74 107,75
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 20,67 37,68
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 26,13 77,14
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 224,45 268,46
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 165,46 201,47
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 201,35 257,36
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 392,31 430,32
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 298,52 305,53
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 415,23 431,24
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 142,54 174,55
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 26,79 47,80
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle -2,1 11,2
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 352,13 399,14
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle -8,38 39,39
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 315,0 331,1
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 18,5 68,6
+pop graphic-context
+push graphic-context
+fill '#45606a' stroke 'none' stroke-width 1 rectangle 284,19 338,20
+pop graphic-context
+push graphic-context
+fill '#dfd4ab' stroke 'none' stroke-width 1 ellipse 366,29 12,12 0,360
+pop graphic-context
+push graphic-context
+fill '#193549' stroke 'none' stroke-width 1 ellipse 371,26 12,12 0,360
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 183,50 183,50
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 97,51 99,51
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 17,59 19,59
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 29,25 31,25
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 409,11 411,11
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 175,33 175,33
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 56,13 57,13
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 61,49 61,49
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 180,59 182,59
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 364,20 365,20
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 415,64 415,64
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 16,25 18,25
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 238,47 239,47
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 289,64 291,64
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 191,8 193,8
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 35,56 35,56
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 19,25 19,25
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 315,59 317,59
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 427,42 428,42
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 176,57 178,57
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 319,5 320,5
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 378,18 379,18
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 60,12 60,12
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 197,44 198,44
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 208,42 210,42
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 251,26 251,26
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 38,12 40,12
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 315,19 316,19
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 176,63 178,63
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 296,6 297,6
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 222,16 223,16
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 28,56 30,56
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 4,15 5,15
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 297,58 299,58
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 142,30 142,30
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 308,60 308,60
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 477,17 479,17
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 204,31 204,31
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 223,45 225,45
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 33,52 34,52
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 291,51 293,51
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 409,57 411,57
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 139,61 140,61
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 95,55 96,55
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 162,54 162,54
+pop graphic-context
+push graphic-context
+fill '#729a9e' stroke 'none' stroke-width 1 rectangle 91,53 92,53
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 38,35 38,35
+pop graphic-context
+push graphic-context
+fill '#b9c6b7' stroke 'none' stroke-width 1 rectangle 310,51 311,51
+pop graphic-context
+push graphic-context
+fill '#577c7d' stroke 'none' stroke-width 1 polygon 0,115 0,60 15,51 30,61 45,53 60,54 75,66 90,60 105,52 120,56 135,57 150,61 165,60 180,62 195,67 210,59 225,53 240,58 255,56 270,64 285,53 300,59 315,54 330,66 345,64 360,65 375,62 390,56 405,51 420,65 435,52 450,61 465,62 480,64 495,57 480,135 0,135
+pop graphic-context
+push graphic-context
+fill '#3c666b' stroke 'none' stroke-width 1 polygon 0,115 0,75 15,68 30,70 45,68 60,63 75,79 90,78 105,77 120,75 135,73 150,75 165,76 180,68 195,77 210,75 225,65 240,78 255,66 270,68 285,72 300,67 315,72 330,73 345,75 360,72 375,67 390,63 405,78 420,70 435,67 450,66 465,71 480,71 495,67 480,135 0,135
+pop graphic-context
+push graphic-context
+fill '#294e55' stroke 'none' stroke-width 1 polygon 0,115 0,91 15,90 30,90 45,86 60,78 75,79 90,80 105,82 120,88 135,76 150,79 165,91 180,85 195,82 210,83 225,90 240,82 255,89 270,78 285,91 300,84 315,75 330,80 345,78 360,77 375,90 390,83 405,82 420,80 435,81 450,87 465,91 480,80 495,90 480,135 0,135
+pop graphic-context
+push graphic-context
+fill '#817f65' stroke 'none' stroke-width 1 rectangle 0,136 479,179
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#505f55' stroke-width 1 path 'M0,136 L480,136'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#a49b74' stroke-width 1 path 'M0,137 L480,137'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#505f55' stroke-width 1 path 'M0,138 L480,138'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#a49b74' stroke-width 1 path 'M0,139 L480,139'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#505f55' stroke-width 1 path 'M0,143 L480,143'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#a49b74' stroke-width 1 path 'M0,144 L480,144'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#505f55' stroke-width 1 path 'M0,150 L480,150'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#a49b74' stroke-width 1 path 'M0,151 L480,151'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#505f55' stroke-width 1 path 'M0,158 L480,158'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#a49b74' stroke-width 1 path 'M0,159 L480,159'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#505f55' stroke-width 1 path 'M0,168 L480,168'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#a49b74' stroke-width 1 path 'M0,169 L480,169'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#505f55' stroke-width 1 path 'M0,180 L480,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#a49b74' stroke-width 1 path 'M0,181 L480,181'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M53.80000000000001,136 L-250,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M71.28,136 L-204,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M88.75999999999999,136 L-158,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M106.24000000000001,136 L-112,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M123.72,136 L-66,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M141.2,136 L-20,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M158.68,136 L26,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M176.16,136 L72,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M193.64,136 L118,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M211.12,136 L164,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M228.6,136 L210,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M246.08,136 L256,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M263.56,136 L302,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M281.04,136 L348,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M298.52,136 L394,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M316,136 L440,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M333.48,136 L486,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M350.96000000000004,136 L532,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M368.44,136 L578,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M385.92,136 L624,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M403.4,136 L670,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M420.88,136 L716,180'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#526257' stroke-width 1 path 'M438.36,136 L762,180'
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 352,150 352,150
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 218,156 219,156
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 462,175 462,175
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 138,159 140,159
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 38,178 40,178
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 156,165 157,165
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 374,177 376,177
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 244,167 245,167
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 89,176 90,176
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 12,150 12,150
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 243,148 244,148
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 122,141 122,141
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 363,169 365,169
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 366,170 368,170
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 260,143 262,143
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 177,140 178,140
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 430,166 432,166
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 133,140 134,140
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 98,154 99,154
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 123,176 123,176
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 76,150 78,150
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 433,145 435,145
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 385,144 385,144
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 453,163 455,163
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 296,156 296,156
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 302,153 303,153
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 329,164 331,164
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 74,158 76,158
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 440,177 440,177
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 82,162 84,162
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 153,139 155,139
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 169,144 171,144
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 170,159 170,159
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 9,162 9,162
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 162,149 162,149
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 395,151 395,151
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 443,159 444,159
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 246,158 248,158
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 295,171 295,171
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 349,161 350,161
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 186,168 186,168
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 430,169 431,169
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 154,158 155,158
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 77,146 77,146
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 162,149 162,149
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 185,138 186,138
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 471,154 471,154
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 106,139 108,139
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 124,151 124,151
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 109,165 111,165
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 265,159 265,159
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 34,145 34,145
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 282,177 284,177
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 367,138 368,138
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 226,167 226,167
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 479,174 480,174
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 374,138 376,138
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 239,169 239,169
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 347,155 347,155
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 230,154 232,154
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 175,169 176,169
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 68,140 70,140
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 434,162 436,162
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 116,166 116,166
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 10,175 12,175
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 337,146 337,146
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 137,151 138,151
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 156,150 157,150
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 301,149 302,149
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 251,155 253,155
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 417,173 419,173
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 71,145 71,145
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 156,164 157,164
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 171,172 173,172
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 220,147 221,147
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 270,157 272,157
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 285,162 285,162
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 205,141 207,141
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 343,148 345,148
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 446,151 446,151
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 143,149 143,149
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 235,148 236,148
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 108,144 108,144
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 80,167 80,167
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 363,149 364,149
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 430,166 432,166
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 269,158 269,158
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 392,149 394,149
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 388,152 389,152
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 311,168 312,168
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 162,138 162,138
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 57,140 59,140
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 417,150 418,150
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 229,163 229,163
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 138,149 139,149
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 26,154 26,154
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 478,169 480,169
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 427,147 428,147
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 150,166 151,166
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 203,167 204,167
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 456,141 457,141
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 116,177 117,177
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 262,145 263,145
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 432,149 434,149
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 125,138 125,138
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 380,156 381,156
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 205,140 207,140
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 47,141 48,141
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 136,161 136,161
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 371,158 371,158
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 360,170 361,170
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 302,164 304,164
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 130,175 132,175
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 215,169 217,169
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 351,174 353,174
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 84,170 85,170
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 203,141 203,141
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 83,166 83,166
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 37,164 39,164
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 257,158 258,158
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 462,171 464,171
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 222,147 222,147
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 18,177 19,177
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 338,165 340,165
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 89,154 90,154
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 26,168 26,168
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 228,146 228,146
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 443,138 443,138
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 255,158 256,158
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 462,166 462,166
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 444,177 446,177
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 360,168 360,168
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 312,172 314,172
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 264,160 265,160
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 315,174 315,174
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 56,160 56,160
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 214,145 216,145
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 280,162 281,162
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 353,160 354,160
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 189,148 191,148
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 79,140 79,140
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 146,166 148,166
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 45,143 47,143
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 217,167 219,167
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 209,161 210,161
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 231,144 232,144
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 278,151 278,151
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 350,162 350,162
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 166,147 166,147
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 231,158 232,158
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 15,146 15,146
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 137,149 139,149
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 238,169 238,169
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 157,149 159,149
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 159,174 160,174
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 418,156 420,156
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 34,177 35,177
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 364,175 364,175
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 229,156 230,156
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 472,147 473,147
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 427,154 428,154
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 146,160 146,160
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 304,168 305,168
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 452,164 454,164
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 232,152 233,152
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 159,166 160,166
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 98,142 99,142
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 448,168 448,168
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 69,159 69,159
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 55,148 57,148
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 428,151 429,151
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 42,146 42,146
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 478,174 478,174
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 434,146 436,146
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 362,152 363,152
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 256,148 257,148
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 25,161 27,161
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 469,156 469,156
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 132,141 132,141
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 223,154 223,154
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 135,161 136,161
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 338,161 339,161
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 205,151 207,151
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 96,151 97,151
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 322,161 322,161
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 298,170 300,170
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 349,155 350,155
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 119,165 119,165
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 136,171 138,171
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 227,163 227,163
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 143,144 144,144
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 176,170 176,170
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 157,173 159,173
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 142,168 144,168
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 453,163 455,163
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 301,164 303,164
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 101,158 102,158
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 224,172 226,172
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 97,174 97,174
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 230,162 232,162
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 293,152 293,152
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 369,154 369,154
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 192,178 194,178
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 388,146 388,146
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 255,176 255,176
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 218,157 218,157
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 354,160 354,160
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 1,138 2,138
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 180,151 181,151
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 150,161 151,161
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 158,169 159,169
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 5,154 7,154
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 475,177 476,177
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 348,155 349,155
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 132,141 134,141
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 198,154 199,154
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 356,160 356,160
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 350,171 352,171
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 350,142 350,142
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 226,158 227,158
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 280,170 282,170
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 39,151 39,151
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 455,154 456,154
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 98,154 99,154
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 48,147 48,147
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 155,150 157,150
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 176,146 176,146
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 212,177 213,177
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 282,142 282,142
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 404,158 404,158
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 313,154 313,154
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 427,172 427,172
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 49,140 50,140
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 444,138 444,138
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 371,143 373,143
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 92,156 94,156
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 256,140 256,140
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 403,178 403,178
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 26,173 28,173
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 476,166 478,166
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 318,143 320,143
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 420,160 421,160
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 118,176 118,176
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 1,172 3,172
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 108,148 110,148
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 204,159 206,159
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 280,161 280,161
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 26,147 28,147
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 465,140 465,140
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 15,148 15,148
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 407,163 407,163
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 83,146 83,146
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 349,168 349,168
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 223,159 225,159
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 208,150 208,150
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 303,172 303,172
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 225,172 227,172
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 369,145 369,145
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 195,143 195,143
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 9,171 10,171
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 178,139 179,139
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 162,143 162,143
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 273,165 274,165
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 143,145 145,145
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 421,178 421,178
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 466,140 467,140
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 248,153 249,153
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 417,144 417,144
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 364,141 365,141
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 451,146 451,146
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 342,152 343,152
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 306,140 307,140
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 84,154 85,154
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 23,151 25,151
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 257,147 259,147
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 34,176 35,176
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 359,150 361,150
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 330,150 331,150
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 172,176 174,176
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 125,159 125,159
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 292,157 294,157
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 439,143 440,143
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 284,158 285,158
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 473,178 475,178
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 226,160 227,160
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 242,164 244,164
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 367,176 367,176
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 374,170 376,170
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 331,140 331,140
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 6,152 7,152
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 275,176 276,176
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 475,156 475,156
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 155,144 155,144
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 402,146 402,146
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 458,173 459,173
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 400,151 400,151
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 94,157 96,157
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 138,158 140,158
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 66,150 68,150
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 228,161 228,161
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 462,174 464,174
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 308,164 308,164
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 344,144 346,144
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 34,170 34,170
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 81,155 81,155
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 100,174 102,174
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 339,147 340,147
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 408,174 409,174
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 151,177 151,177
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 190,149 192,149
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 292,146 294,146
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 77,178 77,178
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 441,143 441,143
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 365,155 365,155
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 224,153 224,153
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 260,141 262,141
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 276,140 277,140
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 42,147 44,147
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 454,154 455,154
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 375,138 376,138
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 10,147 11,147
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 210,170 212,170
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 180,149 180,149
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 473,140 473,140
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 94,150 96,150
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 107,146 108,146
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 393,139 394,139
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 303,140 304,140
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 150,173 151,173
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 123,152 123,152
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 70,159 70,159
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 307,176 308,176
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 434,150 436,150
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 396,167 398,167
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 37,152 38,152
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 204,164 204,164
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 432,161 432,161
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 358,146 359,146
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 127,161 128,161
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 467,178 467,178
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 329,140 331,140
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 207,176 207,176
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 163,160 164,160
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 427,154 429,154
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 76,153 78,153
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 456,141 456,141
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 472,172 472,172
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 227,168 227,168
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 382,142 384,142
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 44,166 46,166
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 474,172 475,172
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 370,145 372,145
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 345,167 347,167
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 206,157 206,157
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 152,168 154,168
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 308,175 309,175
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 361,152 363,152
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 182,163 184,163
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 82,150 84,150
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 396,141 398,141
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 234,160 234,160
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 126,161 128,161
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 22,164 24,164
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 479,155 479,155
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 164,145 164,145
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 179,177 181,177
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 385,139 387,139
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 400,151 400,151
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 302,147 303,147
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 19,148 20,148
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 345,170 345,170
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 35,154 36,154
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 296,158 298,158
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 325,167 325,167
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 270,139 270,139
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 279,156 279,156
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 279,161 281,161
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 416,142 418,142
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 310,158 311,158
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 199,144 199,144
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 427,160 428,160
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 194,161 196,161
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 430,151 432,151
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 422,140 422,140
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 20,173 21,173
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 178,154 178,154
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 436,175 437,175
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 284,147 284,147
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 358,142 358,142
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 90,175 90,175
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 8,170 8,170
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 263,141 265,141
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 469,172 469,172
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 330,144 332,144
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 167,148 169,148
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 87,151 88,151
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 16,154 18,154
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 82,171 84,171
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 431,151 433,151
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 204,162 204,162
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 295,166 296,166
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 226,139 226,139
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 276,161 276,161
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 374,154 376,154
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 415,140 415,140
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 9,142 10,142
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 136,170 136,170
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 176,173 178,173
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 217,140 218,140
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 429,156 429,156
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 463,177 464,177
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 479,161 480,161
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 297,147 298,147
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 435,149 436,149
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 327,177 327,177
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 115,153 115,153
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 120,138 120,138
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 308,159 309,159
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 316,155 318,155
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 224,146 224,146
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 451,156 451,156
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 255,160 255,160
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 175,161 175,161
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 446,172 448,172
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 19,142 19,142
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 438,139 439,139
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 269,176 269,176
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 395,171 395,171
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 354,169 354,169
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 47,170 48,170
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 179,151 181,151
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 162,144 162,144
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 53,152 54,152
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 205,158 207,158
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 165,156 166,156
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 350,145 352,145
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 91,164 93,164
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 161,163 162,163
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 245,174 247,174
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 182,153 182,153
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 11,145 12,145
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 199,142 200,142
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 215,171 215,171
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 412,146 412,146
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 353,138 353,138
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 231,152 232,152
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 167,172 167,172
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 473,173 475,173
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 288,159 288,159
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 301,171 302,171
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 35,172 36,172
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 431,141 431,141
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 41,148 41,148
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 140,138 140,138
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 106,168 107,168
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 51,140 52,140
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 448,166 449,166
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 156,146 158,146
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 91,152 92,152
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 267,144 269,144
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 101,145 101,145
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 19,151 21,151
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 112,143 114,143
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 337,167 338,167
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 181,160 182,160
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 138,163 140,163
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 256,140 257,140
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 265,177 266,177
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 167,142 167,142
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 246,165 248,165
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 120,155 121,155
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 361,168 363,168
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 265,151 265,151
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 390,140 392,140
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 288,164 289,164
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 300,150 302,150
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 1,168 3,168
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 5,147 5,147
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 435,141 436,141
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 120,146 120,146
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 167,168 167,168
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 340,149 341,149
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 317,170 319,170
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 251,142 251,142
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 453,151 453,151
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 170,170 171,170
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 287,155 288,155
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 100,157 101,157
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 439,177 439,177
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 145,165 146,165
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 357,140 359,140
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 7,160 7,160
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 100,156 102,156
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 421,175 423,175
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 235,172 235,172
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 312,139 312,139
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 322,164 324,164
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 209,154 210,154
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 311,178 312,178
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 424,138 426,138
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 47,148 49,148
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 206,170 208,170
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 246,159 247,159
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 296,164 298,164
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 144,171 144,171
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 224,149 225,149
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 448,142 448,142
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 447,140 447,140
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 84,149 86,149
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 181,154 181,154
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 174,169 174,169
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 79,145 80,145
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 362,139 364,139
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 129,173 131,173
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 446,173 446,173
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 465,157 466,157
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 132,159 132,159
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 288,152 288,152
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 240,168 240,168
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 177,170 178,170
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 117,148 117,148
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 111,153 113,153
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 351,164 353,164
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 398,147 399,147
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 237,157 237,157
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 237,139 237,139
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 72,160 72,160
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 151,172 151,172
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 121,177 123,177
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 123,170 123,170
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 95,172 97,172
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 171,159 172,159
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 94,178 95,178
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 467,155 467,155
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 147,150 149,150
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 51,171 52,171
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 252,138 252,138
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 367,168 367,168
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 457,169 459,169
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 197,167 197,167
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 5,157 7,157
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 223,151 223,151
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 349,139 351,139
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 415,157 417,157
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 35,168 37,168
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 333,160 333,160
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 186,164 188,164
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 419,155 421,155
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 400,168 401,168
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 438,145 439,145
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 448,168 449,168
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 346,169 348,169
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 85,176 87,176
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 236,151 238,151
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 317,168 319,168
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 304,155 306,155
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 394,140 395,140
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 372,144 373,144
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 105,153 105,153
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 399,172 400,172
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 180,174 181,174
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 62,170 63,170
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 331,147 333,147
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 288,167 290,167
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 193,143 194,143
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 12,140 13,140
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 305,171 305,171
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 171,138 171,138
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 231,148 233,148
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 41,154 41,154
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 80,146 81,146
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 335,159 336,159
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 129,145 130,145
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 75,159 75,159
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 2,176 3,176
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 230,172 230,172
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 272,146 274,146
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 174,151 175,151
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 260,169 262,169
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 416,145 416,145
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 181,170 181,170
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 83,169 84,169
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 437,160 437,160
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 192,142 194,142
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 466,152 468,152
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 225,157 226,157
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 17,177 18,177
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 29,153 29,153
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 456,140 457,140
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 287,169 288,169
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 339,154 339,154
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 158,168 160,168
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 145,168 146,168
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 211,152 212,152
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 304,168 306,168
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 120,173 121,173
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 228,160 229,160
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 224,145 224,145
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 245,146 247,146
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 238,176 238,176
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 206,174 207,174
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 391,148 391,148
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 40,141 40,141
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 203,165 205,165
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 339,147 340,147
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 160,155 160,155
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 98,163 100,163
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 69,138 70,138
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 235,170 237,170
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 316,145 316,145
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 432,172 434,172
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 279,178 279,178
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 319,159 319,159
+pop graphic-context
+push graphic-context
+fill '#bec191' stroke 'none' stroke-width 1 rectangle 128,160 129,160
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 209,149 211,149
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 257,160 259,160
+pop graphic-context
+push graphic-context
+fill '#ada079' stroke 'none' stroke-width 1 rectangle 425,172 427,172
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 262,170 264,170
+pop graphic-context
+push graphic-context
+fill '#747760' stroke 'none' stroke-width 1 rectangle 177,173 177,173
+pop graphic-context
+push graphic-context
+fill '#6c725f' stroke 'none' stroke-width 1 rectangle 356,149 358,149
+pop graphic-context
+push graphic-context
+fill 'url(#brick)' stroke 'none' stroke-width 1 rectangle 43,31 436,142
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 43,31 45,142
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 432,31 436,142
+pop graphic-context
+push graphic-context
+fill '#a19b7c' stroke 'none' stroke-width 1 rectangle 47,31 431,33
+pop graphic-context
+push graphic-context
+fill 'url(#plaster)' stroke 'none' stroke-width 1 rectangle 49,34 430,133
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 54,34 60,136
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 420,34 426,136
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 49,64 430,69
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 49,119 430,124
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 polygon 24,32 92,0 388,0 456,32 456,38 24,38
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#496962' stroke-width 2 path 'M77.8,4 L402.2,4'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M60,4 L57,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M77,4 L74,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M94,4 L91,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M111,4 L108,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M128,4 L125,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M145,4 L142,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M162,4 L159,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M179,4 L176,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M196,4 L193,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M213,4 L210,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M230,4 L227,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M247,4 L244,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M264,4 L261,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M281,4 L278,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M298,4 L295,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M315,4 L312,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M332,4 L329,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M349,4 L346,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M366,4 L363,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M383,4 L380,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M400,4 L397,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M417,4 L414,8'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#496962' stroke-width 2 path 'M68.8,9 L411.2,9'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M60,9 L57,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M77,9 L74,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M94,9 L91,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M111,9 L108,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M128,9 L125,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M145,9 L142,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M162,9 L159,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M179,9 L176,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M196,9 L193,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M213,9 L210,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M230,9 L227,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M247,9 L244,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M264,9 L261,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M281,9 L278,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M298,9 L295,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M315,9 L312,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M332,9 L329,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M349,9 L346,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M366,9 L363,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M383,9 L380,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M400,9 L397,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M417,9 L414,13'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#496962' stroke-width 2 path 'M59.8,14 L420.2,14'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M60,14 L57,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M77,14 L74,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M94,14 L91,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M111,14 L108,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M128,14 L125,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M145,14 L142,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M162,14 L159,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M179,14 L176,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M196,14 L193,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M213,14 L210,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M230,14 L227,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M247,14 L244,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M264,14 L261,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M281,14 L278,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M298,14 L295,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M315,14 L312,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M332,14 L329,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M349,14 L346,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M366,14 L363,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M383,14 L380,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M400,14 L397,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M417,14 L414,18'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#496962' stroke-width 2 path 'M50.8,19 L429.2,19'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M60,19 L57,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M77,19 L74,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M94,19 L91,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M111,19 L108,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M128,19 L125,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M145,19 L142,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M162,19 L159,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M179,19 L176,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M196,19 L193,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M213,19 L210,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M230,19 L227,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M247,19 L244,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M264,19 L261,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M281,19 L278,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M298,19 L295,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M315,19 L312,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M332,19 L329,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M349,19 L346,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M366,19 L363,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M383,19 L380,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M400,19 L397,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M417,19 L414,23'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#496962' stroke-width 2 path 'M41.8,24 L438.2,24'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M60,24 L57,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M77,24 L74,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M94,24 L91,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M111,24 L108,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M128,24 L125,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M145,24 L142,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M162,24 L159,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M179,24 L176,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M196,24 L193,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M213,24 L210,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M230,24 L227,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M247,24 L244,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M264,24 L261,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M281,24 L278,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M298,24 L295,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M315,24 L312,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M332,24 L329,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M349,24 L346,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M366,24 L363,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M383,24 L380,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M400,24 L397,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M417,24 L414,28'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#496962' stroke-width 2 path 'M32.8,29 L447.2,29'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M60,29 L57,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M77,29 L74,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M94,29 L91,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M111,29 L108,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M128,29 L125,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M145,29 L142,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M162,29 L159,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M179,29 L176,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M196,29 L193,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M213,29 L210,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M230,29 L227,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M247,29 L244,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M264,29 L261,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M281,29 L278,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M298,29 L295,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M315,29 L312,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M332,29 L329,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M349,29 L346,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M366,29 L363,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M383,29 L380,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M400,29 L397,33'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#284b53' stroke-width 1 path 'M417,29 L414,33'
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 199,42 280,138
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 203,45 276,135
+pop graphic-context
+push graphic-context
+fill '#dfb764' stroke 'none' stroke-width 1 rectangle 210,49 269,135
+pop graphic-context
+push graphic-context
+fill '#bd8748' stroke 'none' stroke-width 1 rectangle 213,52 266,131
+pop graphic-context
+push graphic-context
+fill '#8b6339' stroke 'none' stroke-width 1 rectangle 217,55 261,98
+pop graphic-context
+push graphic-context
+fill '#8b6339' stroke 'none' stroke-width 1 rectangle 217,103 261,128
+pop graphic-context
+push graphic-context
+fill '#bf8e50' stroke 'none' stroke-width 1 rectangle 219,57 259,95
+pop graphic-context
+push graphic-context
+fill '#bf8e50' stroke 'none' stroke-width 1 rectangle 219,105 259,125
+pop graphic-context
+push graphic-context
+fill '#f2d9a1' stroke 'none' stroke-width 1 ellipse 258,100 2,2 0,360
+pop graphic-context
+push graphic-context
+fill '#edd493' stroke 'none' stroke-width 1 rectangle 207,135 271,137
+pop graphic-context
+push graphic-context
+fill '#a49b79' stroke 'none' stroke-width 1 rectangle 191,139 287,142
+pop graphic-context
+push graphic-context
+fill '#6c7769' stroke 'none' stroke-width 1 rectangle 185,143 293,146
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 89,79 137,116
+pop graphic-context
+push graphic-context
+fill '#b78845' stroke 'none' stroke-width 1 rectangle 91,81 135,113
+pop graphic-context
+push graphic-context
+fill '#ebc67c' stroke 'none' stroke-width 1 rectangle 93,83 133,111
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 112.5,81 113.5,113
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 91,97.5 135,98.5
+pop graphic-context
+push graphic-context
+fill '#be9a57' stroke 'none' stroke-width 1 rectangle 88,115 138,117
+pop graphic-context
+push graphic-context
+fill '#8b6043' stroke 'none' stroke-width 1 rectangle 91,81 92,113
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 340,79 388,116
+pop graphic-context
+push graphic-context
+fill '#b78845' stroke 'none' stroke-width 1 rectangle 342,81 386,113
+pop graphic-context
+push graphic-context
+fill '#ebc67c' stroke 'none' stroke-width 1 rectangle 344,83 384,111
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 363.5,81 364.5,113
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 342,97.5 386,98.5
+pop graphic-context
+push graphic-context
+fill '#be9a57' stroke 'none' stroke-width 1 rectangle 339,115 389,117
+pop graphic-context
+push graphic-context
+fill '#8b6043' stroke 'none' stroke-width 1 rectangle 342,81 343,113
+pop graphic-context
+push graphic-context
+fill '#dfce9b' stroke 'none' stroke-width 1 rectangle 91,82 101,111
+pop graphic-context
+push graphic-context
+fill '#dfce9b' stroke 'none' stroke-width 1 rectangle 126,82 135,111
+pop graphic-context
+push graphic-context
+fill '#dfce9b' stroke 'none' stroke-width 1 rectangle 343,82 353,111
+pop graphic-context
+push graphic-context
+fill '#dfce9b' stroke 'none' stroke-width 1 rectangle 377,82 386,111
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#102830' stroke-width 3 path 'M175,62 L175,112'
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 169,72 181,73
+pop graphic-context
+push graphic-context
+fill '#be9a57' stroke 'none' stroke-width 1 rectangle 171,74 179,87
+pop graphic-context
+push graphic-context
+fill '#efd58c' stroke 'none' stroke-width 1 rectangle 173,76 177,85
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 170,88 180,90
+pop graphic-context
+push graphic-context
+fill '#98723c' stroke 'none' stroke-width 1 rectangle 174,74 174,87
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#102830' stroke-width 3 path 'M304,62 L304,112'
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 298,72 310,73
+pop graphic-context
+push graphic-context
+fill '#be9a57' stroke 'none' stroke-width 1 rectangle 300,74 308,87
+pop graphic-context
+push graphic-context
+fill '#efd58c' stroke 'none' stroke-width 1 rectangle 302,76 306,85
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 299,88 309,90
+pop graphic-context
+push graphic-context
+fill '#98723c' stroke 'none' stroke-width 1 rectangle 303,74 303,87
+pop graphic-context
+push graphic-context
+fill '#8b6043' stroke 'none' stroke-width 1 rectangle 150,120 168,136
+pop graphic-context
+push graphic-context
+fill '#be9a57' stroke 'none' stroke-width 1 rectangle 147,118 171,121
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M162.36361051048152,119 L160.36361051048152,113.05051935836673'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M162.36361051048152,119 L165.36361051048152,114.83536355085671'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M165.15309081343003,119 L163.15309081343003,114.30718017369509'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M165.15309081343003,119 L168.15309081343003,115.71502612158656'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M166.8760504142847,119 L164.8760504142847,113.41970870271325'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M166.8760504142847,119 L169.8760504142847,115.09379609189928'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M152.30792002216913,119 L150.30792002216913,114.27339866757393'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M152.30792002216913,119 L155.30792002216913,115.69137906730175'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M162.04992575827055,119 L160.04992575827055,110.0456332527101'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M162.04992575827055,119 L165.04992575827055,112.73194327689707'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M154.77126330439933,119 L152.77126330439933,112.56793039292097'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M154.77126330439933,119 L157.77126330439933,114.49755127504469'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M168.8220758845564,119 L166.8220758845564,113.40222145989537'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M168.8220758845564,119 L171.8220758845564,115.08155502192676'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M162.68415502482094,119 L160.68415502482094,110.24757428467274'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M162.68415502482094,119 L165.68415502482094,112.87330199927092'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M155.04366584937088,119 L153.04366584937088,108.81700895354152'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M155.04366584937088,119 L158.04366584937088,111.87190626747906'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M164.90789398294874,119 L162.90789398294874,114.78499231487513'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M164.90789398294874,119 L167.90789398294874,116.04949462041259'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M160.95851894258521,119 L158.95851894258521,112.30463463440537'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M160.95851894258521,119 L163.95851894258521,114.31324424408376'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M164.5497392138932,119 L162.5497392138932,110.42954933643341'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M164.5497392138932,119 L167.5497392138932,113.00068453550338'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M160.23320701974444,119 L158.23320701974444,108.04877426847816'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M160.23320701974444,119 L163.23320701974444,111.33414198793471'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M169.73567610164173,119 L167.73567610164173,115.15409042686224'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M169.73567610164173,119 L172.73567610164173,116.30786329880357'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M168.74202364659868,119 L166.74202364659868,114.90751158073545'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M168.74202364659868,119 L171.74202364659868,116.13525810651481'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M159.95837780483998,119 L157.95837780483998,114.56265573203564'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M159.95837780483998,119 L162.95837780483998,115.89385901242494'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M152.5599650561344,119 L150.5599650561344,115.3171468488872'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M152.5599650561344,119 L155.5599650561344,116.42200279422104'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M159.57848699507304,119 L157.57848699507304,109.134132809937'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M159.57848699507304,119 L162.57848699507304,112.0938929669559'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M152.8668439181056,119 L150.8668439181056,113.96944299712777'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M152.8668439181056,119 L155.8668439181056,115.47861009798945'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M156.30734290764667,119 L154.30734290764667,109.1768464744091'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M156.30734290764667,119 L159.30734290764667,112.12379253208637'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M168.71566092106514,119 L166.71566092106514,111.63730918988585'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M168.71566092106514,119 L171.71566092106514,113.8461164329201'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M153.74927870486863,119 L151.74927870486863,109.8690861389041'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M153.74927870486863,119 L156.74927870486863,112.60836029723286'
+pop graphic-context
+push graphic-context
+fill '#8b6043' stroke 'none' stroke-width 1 rectangle 315,121 334,138
+pop graphic-context
+push graphic-context
+fill '#be9a57' stroke 'none' stroke-width 1 rectangle 312,118 337,122
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M328.8495533335954,119 L326.8495533335954,113.52392192557454'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M328.8495533335954,119 L331.8495533335954,115.16674534790218'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M336.2361304592341,119 L334.2361304592341,108.7605706602335'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M336.2361304592341,119 L339.2361304592341,111.83239946216345'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M328.03095586039126,119 L326.03095586039126,113.51028363034129'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M328.03095586039126,119 L331.03095586039126,115.1571985412389'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M328.08624983392656,119 L326.08624983392656,114.10985068231821'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M328.08624983392656,119 L331.08624983392656,115.57689547762274'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M321.0446741897613,119 L319.0446741897613,113.67621875181794'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M321.0446741897613,119 L324.0446741897613,115.27335312627255'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M318.61202207021415,119 L316.61202207021415,114.4326484799385'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M318.61202207021415,119 L321.61202207021415,115.80285393595696'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M318.0324224177748,119 L316.0324224177748,108.4698073528707'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M318.0324224177748,119 L321.0324224177748,111.62886514700949'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M324.4135200288147,119 L322.4135200288147,113.63613530248404'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M324.4135200288147,119 L327.4135200288147,115.24529471173882'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M318.3225296307355,119 L316.3225296307355,112.90025620535016'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M318.3225296307355,119 L321.3225296307355,114.7301793437451'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M321.78499992005527,119 L319.78499992005527,110.11414621770382'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M321.78499992005527,119 L324.78499992005527,112.77990235239267'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M314.9665609989315,119 L312.9665609989315,112.12920738384128'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M314.9665609989315,119 L317.9665609989315,114.1904451686889'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M315.90386614762247,119 L313.90386614762247,112.17833245545626'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M315.90386614762247,119 L318.90386614762247,114.22483271881939'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M334.1743763703853,119 L332.1743763703853,111.83548435941339'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M334.1743763703853,119 L337.1743763703853,113.98483905158938'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M331.85557365231216,119 L329.85557365231216,112.20025125145912'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M331.85557365231216,119 L334.85557365231216,114.24017587602138'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M321.02262636460364,119 L319.02262636460364,114.7282755933702'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M321.02262636460364,119 L324.02262636460364,116.00979291535914'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M321.8694677557796,119 L319.8694677557796,115.83939319103956'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M321.8694677557796,119 L324.8694677557796,116.7875752337277'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M336.8116859663278,119 L334.8116859663278,110.5837556309998'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M336.8116859663278,119 L339.8116859663278,113.10862894169986'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M325.1405615042895,119 L323.1405615042895,112.7321470528841'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M325.1405615042895,119 L328.1405615042895,114.61250293701887'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M315.4460256192833,119 L313.4460256192833,109.18014369532466'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M315.4460256192833,119 L318.4460256192833,112.12610058672726'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M334.61225051246583,119 L332.61225051246583,113.01670215278864'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M334.61225051246583,119 L337.61225051246583,114.81169150695204'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M336.2130198199302,119 L334.2130198199302,115.5061997808516'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M336.2130198199302,119 L339.2130198199302,116.55433984659612'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M315.094965307042,119 L313.094965307042,108.06888818740845'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M315.094965307042,119 L318.094965307042,111.34822173118592'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M336.33519321121275,119 L334.33519321121275,112.61815824732184'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M336.33519321121275,119 L339.33519321121275,114.53271077312529'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M319.0957611706108,119 L317.0957611706108,115.82395257800817'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M319.0957611706108,119 L322.0957611706108,116.77676680460573'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M328.6709041763097,119 L326.6709041763097,115.52009891346097'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M328.6709041763097,119 L331.6709041763097,116.56406923942268'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M316.73384548537433,119 L314.73384548537433,109.05927531421185'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M316.73384548537433,119 L319.73384548537433,112.0414927199483'
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 11,108 15,150
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 polygon 10,109 13,104 17,109
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 21,108 25,150
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 polygon 20,109 23,104 27,109
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 31,108 35,150
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 polygon 30,109 33,104 37,109
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 41,108 45,150
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 polygon 40,109 43,104 47,109
+pop graphic-context
+push graphic-context
+fill '#be9a57' stroke 'none' stroke-width 1 rectangle 8,122 44,125
+pop graphic-context
+push graphic-context
+fill '#625548' stroke 'none' stroke-width 1 rectangle 359,130 388,141
+pop graphic-context
+push graphic-context
+fill '#be9a57' stroke 'none' stroke-width 1 rectangle 358,128 390,130
+pop graphic-context
+push graphic-context
+fill '#102830' stroke 'none' stroke-width 1 rectangle 367,126 381,128
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M434.5365507279057,148 L432.5365507279057,138.44275565072894'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M434.5365507279057,148 L437.5365507279057,141.30992895551026'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M429.4517438604962,148 L427.4517438604962,140.01302129775286'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M429.4517438604962,148 L432.4517438604962,142.409114908427'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M409.133051805431,148 L407.133051805431,144.8957624770701'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M409.133051805431,148 L412.133051805431,145.82703373394907'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M436.25546399480663,148 L434.25546399480663,137.71373018622398'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M436.25546399480663,148 L439.25546399480663,140.7996111303568'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M438.7589241892565,148 L436.7589241892565,144.86833715066314'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M438.7589241892565,148 L441.7589241892565,145.8078360054642'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M454.19000337528996,148 L452.19000337528996,141.39584373682737'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M454.19000337528996,148 L457.19000337528996,143.37709061577917'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M421.52469754056074,148 L419.52469754056074,138.55340226367116'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M421.52469754056074,148 L424.52469754056074,141.38738158456982'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M445.7544548192527,148 L443.7544548192527,140.37617065012455'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M445.7544548192527,148 L448.7544548192527,142.6633194550872'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M416.03609118727036,148 L414.03609118727036,138.97014383599162'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M416.03609118727036,148 L419.03609118727036,141.67910068519413'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M405.84199607442133,148 L403.84199607442133,143.7662889137864'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M405.84199607442133,148 L408.84199607442133,145.0364022396505'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M410.9874589482788,148 L408.9874589482788,142.86000740900636'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M410.9874589482788,148 L413.9874589482788,144.40200518630445'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M412.8445651119109,148 L410.8445651119109,140.39588564634323'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M412.8445651119109,148 L415.8445651119109,142.67711995244025'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M415.16441364516504,148 L413.16441364516504,144.23113163933158'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M415.16441364516504,148 L418.16441364516504,145.3617921475321'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M424.908902606694,148 L422.908902606694,138.32203444093466'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M424.908902606694,148 L427.908902606694,141.22542410865427'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M425.02750630141236,148 L423.02750630141236,141.92621939256787'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M425.02750630141236,148 L428.02750630141236,143.7483535747975'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M425.39083660556935,148 L423.39083660556935,138.29941020905972'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M425.39083660556935,148 L428.39083660556935,141.2095871463418'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M446.7988350291271,148 L444.7988350291271,138.5888463370502'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M446.7988350291271,148 L449.7988350291271,141.41219243593514'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M466.3046843826305,148 L464.3046843826305,141.5864415243268'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M466.3046843826305,148 L469.3046843826305,143.51050906702875'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M431.7234586032573,148 L429.7234586032573,142.4032070375979'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M431.7234586032573,148 L434.7234586032573,144.08224492631854'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M443.3146464822348,148 L441.3146464822348,138.4624004662037'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M443.3146464822348,148 L446.3146464822348,141.32368032634258'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M468.92748972331174,148 L466.92748972331174,140.98229854926467'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M468.92748972331174,148 L471.92748972331174,143.08760898448526'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M457.565067949472,148 L455.565067949472,141.83042996376753'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M457.565067949472,148 L460.565067949472,143.68130097463728'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M458.0447429625783,148 L456.0447429625783,142.7795415110886'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M458.0447429625783,148 L461.0447429625783,144.34567905776203'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M425.39644174813293,148 L423.39644174813293,144.28150863945484'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M425.39644174813293,148 L428.39644174813293,145.39705604761838'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M443.53381240484305,148 L441.53381240484305,139.39883873984218'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M443.53381240484305,148 L446.53381240484305,141.97918711788952'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M427.74402936617844,148 L425.74402936617844,138.99435315281153'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M427.74402936617844,148 L430.74402936617844,141.69604720696807'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M464.35745396860875,148 L462.35745396860875,144.1780713237822'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M464.35745396860875,148 L467.35745396860875,145.32464992664754'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M426.765973608708,148 L424.765973608708,142.84625804424286'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M426.765973608708,148 L429.765973608708,144.39238063097'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M464.4461474188138,148 L462.4461474188138,140.4210322163999'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M464.4461474188138,148 L467.4461474188138,142.69472255147994'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M405.99777857842855,148 L403.99777857842855,142.10987307876348'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M405.99777857842855,148 L408.99777857842855,143.87691115513445'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M424.1177130660508,148 L422.1177130660508,138.65279733017087'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M424.1177130660508,148 L427.1177130660508,141.45695813111962'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M466.08003184362315,148 L464.08003184362315,143.11091808974743'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M466.08003184362315,148 L469.08003184362315,144.5776426628232'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M420.37485815328546,148 L418.37485815328546,140.27353413030505'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M420.37485815328546,148 L423.37485815328546,142.59147389121352'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M424.8562437936198,148 L422.8562437936198,140.2218353226781'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M424.8562437936198,148 L427.8562437936198,142.55528472587466'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M407.7525279300753,148 L405.7525279300753,138.9857477284968'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M407.7525279300753,148 L410.7525279300753,141.69002340994774'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M430.3876791817602,148 L428.3876791817602,139.56637927889824'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M430.3876791817602,148 L433.3876791817602,142.09646549522876'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M466.13693641428836,148 L464.13693641428836,137.3699644766748'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M466.13693641428836,148 L469.13693641428836,140.55897513367236'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M427.1820558558684,148 L425.1820558558684,142.81014405936003'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M427.1820558558684,148 L430.1820558558684,144.36710084155203'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M469.72815184132196,148 L467.72815184132196,137.98385306075215'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M469.72815184132196,148 L472.72815184132196,140.98869714252652'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M419.6829856762197,148 L417.6829856762197,137.41202820837498'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M419.6829856762197,148 L422.6829856762197,140.5884197458625'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M426.0681118008215,148 L424.0681118008215,138.35978309437633'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M426.0681118008215,148 L429.0681118008215,141.25184816606344'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#37635a' stroke-width 2 path 'M411.8170326210093,148 L409.8170326210093,137.711637057364'
+pop graphic-context
+push graphic-context
+fill 'none' stroke '#7b9772' stroke-width 1 path 'M411.8170326210093,148 L414.8170326210093,140.7981459401548'
+pop graphic-context
+pop graphic-context

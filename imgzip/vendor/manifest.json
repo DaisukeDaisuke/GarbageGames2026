@@ -1,0 +1,13 @@
+{
+  "name": "hash-wasm",
+  "version": "4.12.0",
+  "bundles": [
+    "crc32.umd.min.js",
+    "md5.umd.min.js",
+    "xxhash64.umd.min.js",
+    "xxhash128.umd.min.js"
+  ],
+  "license": "LICENSE.hash-wasm",
+  "source": "https://registry.npmjs.org/hash-wasm/-/hash-wasm-4.12.0.tgz",
+  "integrity": "sha512-+/2B2rYLb48I/evdOIhP+K/DD2ca2fgBjp6O+GBEnCDk2e4rpeXIK8GvIyRPjTezgmWn9gmKwkQjjx6BtqDHVQ=="
+}

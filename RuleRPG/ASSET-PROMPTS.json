@@ -1,0 +1,60 @@
+{
+  "method": "built-in image_gen",
+  "assets": [
+    {
+      "id": "museum_gate",
+      "type": "background",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. A museum entrance at dawn, stone stairway and imposing gate, muted turquoise sky, elegant slightly odd bureaucracy fantasy architecture. Center foreground clear for a separately composited enemy. Extra wide horizontal 8:3 composition. Intended final logical resolution 480x180. No characters."
+    },
+    {
+      "id": "refund_counter",
+      "type": "background",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. Interior museum ticket refund counter, cash register, receipt rolls, desks open to left and right. Empty center floor for a separately composited enemy. Extra wide horizontal 8:3 composition. Intended final logical resolution 480x180. No characters."
+    },
+    {
+      "id": "document_archive",
+      "type": "background",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. A tall archive of shelves, piles of paper, a narrow paper shredder slot on the floor, symmetrical receding shelves. Empty center floor for a separately composited enemy. Extra wide horizontal 8:3 composition. Intended final logical resolution 480x180. No characters."
+    },
+    {
+      "id": "appeal_office",
+      "type": "background",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. Dim appeals office, a wall clock, many unanswered envelopes, softly lit teal windows, silent waiting room. Empty center floor for a separately composited enemy. Extra wide horizontal 8:3 composition. Intended final logical resolution 480x180. No characters."
+    },
+    {
+      "id": "terms_throne",
+      "type": "background",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. Royal chamber built from stacks of terms-and-conditions papers and binders, a small paper throne behind the center, old ivory papers left and new pale sheets right. Empty center foreground for a separately composited king. Extra wide horizontal 8:3 composition. Intended final logical resolution 480x180. No characters."
+    },
+    {
+      "id": "exception_slime",
+      "type": "enemy",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. A small imperious slime creature made of melted translucent ivory terms-and-conditions paper, expressive ink eyes and smug face, tiny blank reception placard. Complete silhouette and base visible. Square 1:1, genuine transparent background, centered at about 85% image height, no backdrop or ground, intended logical resolution 128x128."
+    },
+    {
+      "id": "refund_mimic",
+      "type": "enemy",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. A contract-paper treasure chest monster with TWO DISTINCT mouths, one on the left and one on the right facing away from each other, binder metal hinges, parchment tongues, small feet. Comical clerical creature, complete body visible. Square 1:1, genuine transparent background, centered at about 85% image height, no backdrop or ground, intended logical resolution 128x128."
+    },
+    {
+      "id": "invalid_golem",
+      "type": "enemy",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. A squat golem assembled from thick stacks of ivory documents, hefty block arms and paper feet, ink eyes. Large BLANK dark teal cover rectangle in center of chest for a UI label later. Complete body visible. Square 1:1, genuine transparent background, centered at about 85% image height, no backdrop or ground, intended logical resolution 128x128."
+    },
+    {
+      "id": "reply_ghost",
+      "type": "enemy",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. An anxious floating ghost made of white reply stationery sheets, worried expressive ink eyes, hovering fountain pen companion, folded sheet tail. Complete body and hovering pen visible. Square 1:1, genuine transparent background, centered at about 85% image height, no backdrop or ground, intended logical resolution 128x128."
+    },
+    {
+      "id": "revision_king",
+      "type": "enemy",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. A pompous little king with sticky-note crown, teal binder armor, ivory paper beard, holding a curled blank revision document, red stamp scepter, short boots. Complete body visible. Square 1:1, genuine transparent background, centered at about 85% image height, no backdrop or ground, intended logical resolution 128x128."
+    },
+    {
+      "id": "dialogue_frame",
+      "type": "frame",
+      "prompt": "Use case: stylized-concept. Asset for a Japanese 16-bit pixel-art comedy RPG about terms and conditions. Crisp large square pixels, strictly pixel art, limited muted teal, midnight blue and faded antique gold palette, parchment ivory and stamp crimson accents, 3-level shading. No smooth painting, no 3D, no gradients, no text, no letters, no watermark. Original artwork. An ornate but restrained rectangular RPG dialogue box frame, aged gold pixel borders, small geometric corner flourishes, deep midnight teal opaque flat interior with large completely empty center for Japanese dialogue text. Outer shape rectangle, entire border visible, no icons or lettering. Wide horizontal 5:1 composition. Intended as a resizable nine-slice game UI frame."
+    }
+  ]
+}

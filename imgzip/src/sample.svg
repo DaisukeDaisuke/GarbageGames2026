@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#186952" stroke-width="1" opacity=".2"/></pattern></defs>
+  <rect width="800" height="600" fill="#73bc9f"/><rect width="800" height="600" fill="url(#grid)"/>
+  <path d="M0 478 800 402v198H0z" fill="#418973"/>
+  <circle cx="407" cy="341" r="195" fill="#26513d" opacity=".17"/>
+  <circle cx="400" cy="300" r="195" fill="#ff883b" stroke="#c84d27" stroke-width="6"/>
+  <path d="M227 282a176 176 0 0 1 151-154" fill="none" stroke="#ffba6d" stroke-width="18" stroke-linecap="round"/>
+  <path d="m394 103 6-55" stroke="#286044" stroke-width="12" stroke-linecap="round"/><path d="M400 83c17-52 83-43 82-43-5 31-30 58-82 43Z" fill="#24664c"/>
+  <ellipse cx="332" cy="281" rx="19" ry="31" fill="#34392d"/><ellipse cx="464" cy="281" rx="19" ry="31" fill="#34392d"/>
+  <circle cx="338" cy="270" r="6" fill="#fff3dc"/><circle cx="470" cy="270" r="6" fill="#fff3dc"/>
+  <ellipse cx="282" cy="329" rx="30" ry="15" fill="#e35f36"/><ellipse cx="512" cy="329" rx="30" ry="15" fill="#e35f36"/>
+  <path d="M340 340q60 85 120 0Z" fill="#4b3829" stroke="#4b3829" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M352 343h96l-11 15h-74z" fill="#fff1cb"/>
+  <path d="M365 389q36-20 68 0" fill="#f6947c"/>
+  <g stroke="#eaf0ce" fill="none"><circle cx="106" cy="150" r="43" stroke-width="9"/><circle cx="686" cy="373" r="52" stroke-width="9"/><circle cx="669" cy="158" r="20" stroke-width="5"/></g>
+  <g fill="#eaf0ce"><path d="m91 366 8 22 23 7-23 8-8 22-7-22-23-8 23-7z"/><path d="m673 242 6 17 18 5-18 6-6 17-5-17-17-6 17-5z"/></g>
+  <g fill="#dcebcf"><rect x="747" y="73" width="4" height="420"/><path d="M730 73h21v4h-21zm7 42h14v3h-14zm-7 42h21v4h-21zm7 42h14v3h-14zm-7 42h21v4h-21zm7 42h14v3h-14zm-7 42h21v4h-21zm7 42h14v3h-14zm-7 42h21v4h-21zm7 42h14v3h-14zm-7 42h21v4h-21z"/></g>
+  <g font-family="DejaVu Sans,sans-serif" font-weight="bold" fill="#eaf0ce"><text x="48" y="53" font-size="18" letter-spacing="4">100% FRESH</text><text x="48" y="558" font-size="40" letter-spacing="3">PLEASE BE GENTLE.</text></g>
+</svg>
