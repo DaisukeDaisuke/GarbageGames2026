@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {spawnSync} from 'node:child_process';
-import {skills,clone,newRun,Lcg64,operation,chooseAction,availableActions,Session,routes,stats} from '../src/engine.js';
+import {skills,clone,newRun,Lcg64,operation,chooseAction,availableActions,Session,routes,stats,totalBouts,serviceBouts} from '../src/engine.js';
 import {runTrial,createDuel,duelForecast,TRIAL_SEEDS} from '../src/policies.js';
 const command=id=>id<0?'next':'use '+skills[id].name;
 const use=(r,op)=>assert.equal(operation(r,op),'',op);
@@ -23,12 +23,21 @@ assert.ok(availableActions(r).includes(2));use(r,'use wait');assert.equal(r.you.
 r=finalFixture();r.you.hp=95;r.you.mp=31;r.enemy.rest=true;r.forecast={skill:0,stage:2};use(r,'use wait');assert.equal(r.you.hp,96);assert.equal(r.you.mp,32);
 r=finalFixture();r.you.hp=20;r.you.mp=0;r.you.burn=2;r.forecast={skill:0,stage:0};use(r,'use wait');assert.equal(r.you.hp,20);assert.equal(r.you.mp,6);assert.equal(r.you.burn,1);assert.equal(r.you.bank,0);
 r=finalFixture();r.you.hp=10;r.you.mp=0;r.you.spd=1;r.forecast={skill:0,stage:0};use(r,'use wait');assert.equal(r.you.hp,0);assert.equal(r.you.mp,0);assert.equal(r.screen,5);
-const fresh=new Session('0000000000000001');assert.equal(fresh.record().version,'VOID-PIT-WEB-3');assert.throws(()=>Session.restore({...fresh.record(),version:'VOID-PIT-WEB-1'}));
+const fresh=new Session('0000000000000001');assert.equal(fresh.record().version,'VOID-PIT-WEB-5');assert.equal(totalBouts(fresh.run),9);assert.deepEqual(serviceBouts(fresh.run),[2,4,6,8]);assert.throws(()=>Session.restore({...fresh.record(),version:'VOID-PIT-WEB-1'}));
+const v4=JSON.parse(fs.readFileSync(new URL('./fixtures/v4-record.json',import.meta.url),'utf8'));const restoredV4=Session.restore(v4.record);
+assert.equal(restoredV4.record().version,'VOID-PIT-WEB-4');assert.deepEqual(restoredV4.run.path,v4.path);assert.equal(restoredV4.run.reward,2);
+assert.deepEqual(newRun(1n).nodes.slice(0,10),newRun(1n,true,9,true).nodes.slice(0,10),'First four bouts and original opponents stay unchanged');
+const previous=new Session('0000000000000001',true,10);assert.equal(previous.record().version,'VOID-PIT-WEB-3');assert.deepEqual(Session.restore(previous.record()).run,previous.run);
 const legacy=new Session('0000000000000001',true,5);assert.equal(legacy.record().version,'VOID-PIT-WEB-2');assert.deepEqual(Session.restore(legacy.record()).run,legacy.run);
+for(const [bout,hp,max,expected] of [[3,10,196,10],[4,10,196,110],[5,10,196,110],[8,193,196,196]]){
+ r=newRun(1n);r.bout=bout;r.you.hp=hp;r.you.max_hp=max;use(r,'route '+routes(r)[0]);assert.equal(r.you.hp,expected,`Bout ${bout+1} start recovery`);
+}
+r=newRun(1n);r.duel=true;r.bout=4;r.you.hp=10;use(r,'route '+routes(r)[0]);assert.equal(r.you.hp,10,'Challenger battle does not use campaign recovery');
+r=newRun(1n,true,10);r.bout=4;r.you.hp=10;use(r,'route '+routes(r)[0]);assert.equal(r.you.hp,10,'Previous ten-bout record keeps its original rules');
 console.log('PASS LCG / defense / effects / reservations / BUG-01 / BUG-02 / meditation HP+15 MP+6 / caps / lethal turn order / record version');
 const witnesses=[];
 for(let policy=0;policy<5;policy++){
- const results=TRIAL_SEEDS.map((seed,i)=>runTrial(policy,i+1,seed,process.env.ARENA_ORACLE?5:10));
+ const results=TRIAL_SEEDS.map((seed,i)=>runTrial(policy,i+1,seed,process.env.ARENA_ORACLE?5:9));
  assert.ok(results.every(x=>['winner','defeat'].includes(x.status)));
  const winners=results.filter(x=>x.status==='winner');witnesses.push(...winners);
  for(const x of winners)assert.deepEqual(Session.restore(x.record).run,x.snapshot);

@@ -8,7 +8,14 @@ export function randomSeedText(fill=values=>globalThis.crypto.getRandomValues(va
 export function tournamentTree(run){
  const rows=boutRows(run);
  const edges=[[0,2],[0,3],[1,4],[1,5],[2,6],[2,7],[3,6],[3,7],[4,6],[4,7],[5,6],[5,7],[6,8],[7,8],[8,9]];
- for(let i=5;i<rows.length;i++)for(const from of rows[i-1])for(const to of rows[i])edges.push([from,to]);
+ for(let i=5;i<rows.length;i++)for(const from of rows[i-1])for(const to of rows[i]){
+  if(run.campaign===9&&i===6){
+   const pair=run.seventhPairs?.[from]||(from===run.sixthChoices[0]?[13,14]:[17,18]);
+   if(!pair.includes(to))continue;
+  }
+  if(run.campaign===9&&i===7&&!run.seventhPairs&&(from===13||from===14?to!==15:to!==16))continue;
+  edges.push([from,to]);
+ }
  return {rows:rows.map((ids,bout)=>ids.map(id=>({id,bout,name:enemies[run.nodes[id].enemy].name,slots:[...run.nodes[id].slots],hp:enemies[run.nodes[id].enemy].hp,spd:enemies[run.nodes[id].enemy].spd}))),edges};
 }
 

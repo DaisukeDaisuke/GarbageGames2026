@@ -19,7 +19,7 @@ for(const [kind,list] of [['skills',skills],['items',items]]){
 }
 assert.equal(randomSeedText(a=>{a[0]=0x12345678;a[1]=0x90abcdef;return a;}),'1234567890abcdef');
 assert.equal(randomSeedText(()=>{throw Error();},()=>12345),'0000000000003039');
-const tree=tournamentTree(newRun(1n));assert.equal(tree.rows.flat().length,20);assert.equal(tree.edges.length,34);
+const tree=tournamentTree(newRun(1n));assert.equal(tree.rows.flat().length,19);assert.equal(tree.edges.length,27);
 assert.ok(!tree.edges.some(([a,b])=>a===0&&b===4));
 assert.equal(skillSound(0),'slash');assert.equal(skillSound(5),'magic');assert.equal(skillSound(1),'guard');assert.equal(skillSound(8),'heal');assert.equal(battlePresentation(newRun(1n),newRun(1n)),null);
 console.log('PASS all 30 detailed JSON records and generated assets / route topology / sound routing');
@@ -70,7 +70,7 @@ nodes.get('seed').value='0000000000000001';for(const fn of events.get('input'))f
 await action('ledger');assert.match(nodes.get('modal-body').innerHTML,/SKILL-20/);assert.match(nodes.get('modal-body').innerHTML,/ITEM-10/);run('closeModal()');await action('sound');await action('motion');
 assert.equal(nodes.get('seed').value,'0000000000000001');assert.equal(randomCalls,1);
 await action('start');assert.equal(state().page,'briefing');assert.equal(state().run.screen,0);assert.equal(state().run.round,1);assert.equal(state().operations.length,0);
-assert.match(lastMarkup,/すること/);assert.match(lastMarkup,/TOURNAMENT TREE/);assert.equal((lastMarkup.match(/class="tree-node"/g)||[]).length,20);assert.match(lastMarkup,/id="tournament-progress" value="0" max="10"/);assert.match(lastMarkup,/max="20"/);
+assert.match(lastMarkup,/すること/);assert.match(lastMarkup,/TOURNAMENT TREE/);assert.equal((lastMarkup.match(/class="tree-node"/g)||[]).length,19);assert.match(lastMarkup,/id="tournament-progress" value="0" max="9"/);assert.match(lastMarkup,/準決勝/);assert.match(lastMarkup,/max="20"/);
 const beforeReading=JSON.stringify(state().run);await action('ledger');run('closeModal()');await action('help');run('closeModal()');assert.equal(JSON.stringify(state().run),beforeReading);
 run("commit('route 0')");assert.equal(state().operations.length,0,'Briefing cannot accept battle or route commands');
 await action('briefing-done');run("commit('route 0')");assert.equal(state().run.screen,1);assert.equal(nodes.get('app').classList.contains('readable-text'),false);
@@ -85,7 +85,7 @@ const trial=runTrial(3,1,'0000000000000001'),shopSession=new Session(trial.seed,
 for(const op of trial.record.operations){shopSession.commit(op);if(shopSession.run.screen===3)break;}
 assert.equal(shopSession.run.screen,3);
 run('session=Session.restore('+JSON.stringify(shopSession.record())+');duel=null;page="main";render();');
-assert.match(lastMarkup,/ショップに到着！/);assert.match(lastMarkup,/class="guild-section armor"/);assert.match(lastMarkup,/class="guild-section charms"/);assert.equal((lastMarkup.match(/class="gear-shelf dragscroll"/g)||[]).length,3);
+assert.match(lastMarkup,/EQUIPMENT GUILD/);assert.match(lastMarkup,/ギルドに到着！/);assert.doesNotMatch(lastMarkup,/ショップに到着！/);assert.match(lastMarkup,/class="guild-section armor"/);assert.match(lastMarkup,/class="guild-section charms"/);assert.equal((lastMarkup.match(/class="gear-shelf dragscroll"/g)||[]).length,3);
 const shelfMarkup=key=>lastMarkup.match(new RegExp('<div id="shelf-'+key+'"[^>]*>([\\s\\S]*?)</section>'))[1];
 assert.ok(lastMarkup.indexOf('id="shelf-purchased"')<lastMarkup.indexOf('id="shelf-armor"'));
 assert.match(shelfMarkup('armor'),/is-unowned/);assert.match(shelfMarkup('purchased'),/何度でも/);

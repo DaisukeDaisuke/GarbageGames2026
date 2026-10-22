@@ -1,7 +1,7 @@
 import DATA from './data.js';
 export const {skills,enemies,items}=DATA;
 export const Screen={Route:0,Battle:1,Booth:2,Shop:3,Discovery:4,Result:5,Closed:6};
-export const VERSION='VOID-PIT-WEB-3';
+export const VERSION='VOID-PIT-WEB-5';
 export const EXTRA_ENEMIES=[
  {name:'EMBER WITCH',hp:58,spd:95,candidates:[[5],[6],[13]]},
  {name:'MOSS TROLL',hp:76,spd:50,candidates:[[4],[16],[8]]},
@@ -15,11 +15,11 @@ export const EXTRA_ENEMIES=[
  {name:'ASTRAL DRAGON',hp:120,spd:120,candidates:[[17],[7],[13]]}
 ];
 enemies.push(...EXTRA_ENEMIES);
-export const totalBouts=r=>r.campaign===10?10:5;
-export const serviceBouts=r=>r.campaign===10?[2,4,6,8]:[2,3];
+export const totalBouts=r=>r.campaign===9?9:r.campaign===10?10:5;
+export const serviceBouts=r=>r.campaign===9||r.campaign===10?[2,4,6,8]:[2,3];
 export const serviceVisit=r=>serviceBouts(r).indexOf(r.bout)+1;
-export const itemAvailable=(r,id)=>!items[id].second||(r.campaign===10?r.bout>=4:r.bout===3);
-export const boutRows=r=>[[0,1],[2,3,4,5],[6,7],[8],[9],...(r.campaign===10?[[10,11,12],[13,14],[15,16],[17,18],[19]]:[])];
+export const itemAvailable=(r,id)=>!items[id].second||(r.campaign===9||r.campaign===10?r.bout>=4:r.bout===3);
+export const boutRows=r=>[[0,1],[2,3,4,5],[6,7],[8],[9],...(r.campaign===9?[r.sixthChoices||[10,11,12],[13,14,17,18],[15,16],[19]]:r.campaign===10?[[10,11,12],[13,14],[15,16],[17,18],[19]]:[])];
 export const clone=x=>structuredClone(x);
 export const seedText=x=>BigInt(x).toString(16).padStart(16,'0');
 export class Lcg64{
@@ -33,7 +33,7 @@ export function event(r,s){r.log.push(s);if(r.log.length>4)r.log.shift();}
 const has=(f,id)=>f.slots.includes(id);
 const direct=id=>skills[id].effects.some(e=>e[0]===0);
 export function resetConditions(f){f.focus=f.guard=f.barrier=f.rest=false;f.burn=f.bank=0;f.pending=pending();}
-export function newRun(seed,practice=true,campaign=10){
+export function newRun(seed,practice=true,campaign=9,legacyTopology=false){
  const rng=new Lcg64(typeof seed==='string'?BigInt('0x'+seed):seed);
  const r={seed:seedText(rng.state),rng_state:'',practice,you:fighter(),enemy:fighter(),nodes:Array.from({length:10},()=>({enemy:0,slots:[]})),registered:Array(20).fill(false),owned:Array(10).fill(false),defeated:[],path:[],history:[],log:[],bout:0,node:-1,round:1,gold:0,armor:-1,charm:-1,preview_armor:-1,preview_charm:-1,rounds:0,taken:0,maximum_damage:0,observation:0,discovered:false,learned_here:false,charge_hint:false,guard_hint:false,charge_hint_round:0,guard_hint_round:0,screen:0,after_discovery:0,reward:0,won:false,forecast:{skill:0,stage:0}};
  const initial=[[5,3,4],[9,12,15],[8,14,7]];
@@ -46,7 +46,19 @@ export function newRun(seed,practice=true,campaign=10){
  pool=[6,7];for(let i=6;i<8;i++)r.nodes[i].enemy=draw();
  r.nodes[8].enemy=8;r.nodes[9].enemy=9;
  for(const n of r.nodes)n.slots=enemies[n.enemy].candidates.map(p=>[...p].sort((a,b)=>a-b)[Math.floor(rng.percent()*p.length/100)]);
- if(campaign===10){r.campaign=10;for(let i=10;i<20;i++)r.nodes.push({enemy:i,slots:enemies[i].candidates.map(p=>p[Math.floor(rng.percent()*p.length/100)])});}
+ if(campaign===9||campaign===10){r.campaign=campaign;for(let i=10;i<20;i++)r.nodes.push({enemy:i,slots:enemies[i].candidates.map(p=>p[Math.floor(rng.percent()*p.length/100)])});}
+ if(campaign===9){
+  if(legacyTopology){
+   const candidates=[13,14,17,18];
+   for(let i=candidates.length-1;i>0;i--){const j=Math.floor(rng.percent()*(i+1)/100);[candidates[i],candidates[j]]=[candidates[j],candidates[i]];}
+   r.seventhPairs={10:candidates.slice(0,2),11:candidates.slice(2,4),12:[candidates[0],candidates[2]]};
+  }else{
+   r.sixthChoices=rng.percent()<50?[10,11]:[11,12];
+   const positions=[13,14,17,18],opponents=positions.map(id=>r.nodes[id]);
+   for(let i=opponents.length-1;i>0;i--){const j=Math.floor(rng.percent()*(i+1)/100);[opponents[i],opponents[j]]=[opponents[j],opponents[i]];}
+   positions.forEach((id,i)=>{r.nodes[id]=opponents[i];});
+  }
+ }
  r.rng_state=seedText(rng.state);return r;
 }
 export function chooseAction(r){
@@ -95,12 +107,13 @@ function finishBout(r,won){
  if(r.duel||!won){r.screen=5;resetConditions(r.you);resetConditions(r.enemy);return;}
  const found=r.discovered&&!r.registered[19];
  event(r,`VICTORY / YOU HP ${r.you.hp} / ENEMY HP 0`);r.defeated.push(r.node);
- if(r.bout===totalBouts(r)-1){r.reward=r.history.every(id=>r.registered[id])?2:1;r.screen=5;}
+ if(r.bout===totalBouts(r)-1){r.reward=r.history.every(id=>r.registered[id])?2:1;r.screen=5;if(r.campaign===9){r.you.hp=r.you.max_hp;r.you.mp=r.you.max_mp;}}
  else{r.gold+=[60,80,100,120,120,140,140,160,180][r.bout];r.you.hp=Math.min(r.you.max_hp,r.you.hp+24);r.you.mp=Math.min(r.you.max_mp,r.you.mp+12);r.bout++;r.learned_here=false;r.screen=serviceBouts(r).includes(r.bout)?2:0;}
  resetConditions(r.you);resetConditions(r.enemy);
  if(found){r.registered[19]=true;event(r,'You learned REPRISE: borrow a charging strike.');if(r.screen!==5){r.after_discovery=r.screen;r.screen=4;}}
 }
 export function startBout(r,node){
+ if(r.campaign===9&&r.bout>=4&&!r.duel)r.you.hp=Math.min(r.you.max_hp,r.you.hp+100);
  r.node=node;r.path.push(node);const n=r.nodes[node],d=enemies[n.enemy];
  r.enemy=fighter();r.enemy.hp=r.enemy.max_hp=d.hp;r.enemy.spd=d.spd;r.enemy.slots=[...n.slots];
  r.round=1;r.observation=0;r.discovered=false;r.charge_hint=r.guard_hint=false;r.charge_hint_round=r.guard_hint_round=0;r.screen=1;r.log=[];
@@ -148,8 +161,13 @@ export function fight(r,id,next=false,options={}){
  if(r.enemy.pending.power>0&&!r.charge_hint){r.charge_hint=true;r.charge_hint_round=r.round;}
  return '';
 }
-export function routes(r){if(r.bout===1)return [2+r.path[0]*2,3+r.path[0]*2];return boutRows(r)[r.bout]||[];}
-export function learnable(r){const c=new Set();for(const n of r.defeated)for(const id of r.nodes[n].slots)if(id>=3&&id<19)c.add(id);if(r.bout===2)c.add(10);if(r.campaign===10){if(r.bout>=4)c.add(19);if(r.bout>=6){c.add(7);c.add(16);}if(r.bout>=8){c.add(17);c.add(13);}}else if(r.bout===3)c.add(19);return [...c].filter(id=>!r.registered[id]).sort((a,b)=>a-b);}
+export function routes(r){
+ if(r.bout===1)return [2+r.path[0]*2,3+r.path[0]*2];
+ if(r.campaign===9&&r.bout===6)return r.seventhPairs?r.seventhPairs[r.path[5]]||[]:r.path[5]===r.sixthChoices[0]?[13,14]:[17,18];
+ if(r.campaign===9&&r.bout===7&&!r.seventhPairs)return [r.path[6]===13||r.path[6]===14?15:16];
+ return boutRows(r)[r.bout]||[];
+}
+export function learnable(r){const c=new Set();for(const n of r.defeated)for(const id of r.nodes[n].slots)if(id>=3&&id<19)c.add(id);if(r.bout===2)c.add(10);if(r.campaign===9||r.campaign===10){if(r.bout>=4)c.add(19);if(r.bout>=6){c.add(7);c.add(16);}if(r.bout>=8){c.add(17);c.add(13);}}else if(r.bout===3)c.add(19);return [...c].filter(id=>!r.registered[id]).sort((a,b)=>a-b);}
 export function stats(armor,charm){let result=[96,32,100];for(const id of [armor,charm])if(id>=0&&id<10)result=result.map((n,s)=>{const [mul,div,add]=items[id].stats[s];return Math.trunc(n*mul/div)+add;});return result.map((n,s)=>Math.max(s===0?1:0,Math.min(999,n)));}
 export function operation(r,command,options={}){
  const a=command.split(/\s+/),verb=a[0],id=Number(a[1]),slot=Number(a[2]);
@@ -173,10 +191,10 @@ export function operation(r,command,options={}){
  if(verb==='leave-shop'&&a.length===1&&r.screen===3){const s=stats(r.preview_armor,r.preview_charm);r.you.hp=Math.min(s[0],r.you.hp+Math.max(0,s[0]-r.you.max_hp));r.you.mp=Math.min(s[1],r.you.mp+Math.max(0,s[1]-r.you.max_mp));[r.you.max_hp,r.you.max_mp,r.you.spd]=s;r.armor=r.preview_armor;r.charm=r.preview_charm;r.screen=0;return '';}
  return reject;
 }
-export const score=r=>Math.max(0,(r.campaign===10?20000:10000)-120*r.rounds-10*r.taken+20*r.maximum_damage);
+export const score=r=>Math.max(0,(r.campaign===9||r.campaign===10?20000:10000)-120*r.rounds-10*r.taken+20*r.maximum_damage);
 export class Session{
- constructor(seed,practice=true,campaign=10){this.run=newRun(seed,practice,campaign);this.operations=[];}
+ constructor(seed,practice=true,campaign=9,legacyTopology=false){this.run=newRun(seed,practice,campaign,legacyTopology);this.operations=[];}
  commit(command,options={}){if(typeof command!=='string'||command.length>64)return '入力は64文字以内にしてください。';if(this.operations.length>=4096)return '操作記録の上限です。記録を書き出してください。';const error=operation(this.run,command,options);if(!error)this.operations.push(command);return error;}
- record(){return {version:this.run.campaign===10?VERSION:'VOID-PIT-WEB-2',seed:this.run.seed,practice:this.run.practice,operations:[...this.operations]};}
- static restore(record){if(!record||![VERSION,'VOID-PIT-WEB-2'].includes(record.version)||!(/^[\da-f]{16}$/i.test(record.seed))||typeof record.practice!=='boolean'||!Array.isArray(record.operations)||record.operations.length>4096)throw Error('記録の形式または版が一致しません。');const s=new Session(record.seed,record.practice,record.version===VERSION?10:5);for(const op of record.operations){const error=s.commit(op);if(error)throw Error('記録を再生できません：'+error);}return s;}
+ record(){return {version:this.run.campaign===9?this.run.seventhPairs?'VOID-PIT-WEB-4':VERSION:this.run.campaign===10?'VOID-PIT-WEB-3':'VOID-PIT-WEB-2',seed:this.run.seed,practice:this.run.practice,operations:[...this.operations]};}
+ static restore(record){if(!record||![VERSION,'VOID-PIT-WEB-4','VOID-PIT-WEB-3','VOID-PIT-WEB-2'].includes(record.version)||!(/^[\da-f]{16}$/i.test(record.seed))||typeof record.practice!=='boolean'||!Array.isArray(record.operations)||record.operations.length>4096)throw Error('記録の形式または版が一致しません。');const s=new Session(record.seed,record.practice,[VERSION,'VOID-PIT-WEB-4'].includes(record.version)?9:record.version==='VOID-PIT-WEB-3'?10:5,record.version==='VOID-PIT-WEB-4');for(const op of record.operations){const error=s.commit(op);if(error)throw Error('記録を再生できません：'+error);}return s;}
 }
