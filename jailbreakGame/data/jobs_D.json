@@ -1,0 +1,1417 @@
+[
+  {
+    "id": "JOB_D_001",
+    "grade": "D",
+    "rank": 2,
+    "n": 1,
+    "title": "写真を残したまま管理者制限を外せますか",
+    "from": "小さな写真館・石間",
+    "body": "撮影の下見に使っている古いスマホです。管理者制限を外して、細かな管理を自分でできるようにしたいです。まだ整理していない写真が残っているので、そこは消さずにお願いします。アプリや見た目の変更は不要で、今のOSのまま返していただけると助かります。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 380,
+    "hardware_model_id": "H_D_001",
+    "data": [
+      "写真"
+    ],
+    "keep": [
+      "写真"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ],
+      "version": "1.0"
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "P03",
+      "S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1069
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-f7dc77582d838d8a",
+    "decision_signature": "DS-62ab82e6013e1fd8"
+  },
+  {
+    "id": "JOB_D_002",
+    "grade": "D",
+    "rank": 2,
+    "n": 2,
+    "title": "同じシリーズですが、今度のモデルは1.1でした",
+    "from": "小さな写真館・石間",
+    "body": "先日はありがとうございました。別のスタッフのスマホも同じように管理者制限を外してください。前回と同じフレームシリーズですが、こちらは横幅の広いWモデルで、OSは1.1でした。撮影場所を書いた文書を残し、OSも変更せずにお願いします。前の道具が使えるかはそちらで確認していただけますか。",
+    "family": "MiraOS",
+    "version": "1.1",
+    "reward": 440,
+    "hardware_model_id": "H_D_002",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ],
+      "version": "1.1"
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "P08",
+      "S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_D_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1077
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-8232e0b3d62c372a",
+    "decision_signature": "DS-2d41b272eb1794bd"
+  },
+  {
+    "id": "JOB_D_003",
+    "grade": "D",
+    "rank": 2,
+    "n": 3,
+    "title": "筆記アプリだけを使えるようにしてください",
+    "from": "夜間講座の受講者・佐野",
+    "body": "講座で使う「筆記」アプリを入れようとしたら、導入制限の画面で止まりました。管理者機能までは必要ありません。作業中も含めて管理者制限は外さず、筆記を追加できる状態にしてください。手元にある「手帳」と、その中の授業メモは残していただきたいです。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 360,
+    "hardware_model_id": "H_D_003",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        true,
+        null
+      ],
+      "apps": [
+        "筆記",
+        "手帳"
+      ]
+    },
+    "forbid": [
+      "root"
+    ],
+    "routes": [
+      "P09 +筆記",
+      "S:install +筆記"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1085
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "never_root",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-19e9ed275c4aec9a",
+    "decision_signature": "DS-81054f469cb7e630"
+  },
+  {
+    "id": "JOB_D_004",
+    "grade": "D",
+    "rank": 2,
+    "n": 4,
+    "title": "写真整理を入れたら、導入制限を戻してください",
+    "from": "祖父の端末係・三橋",
+    "body": "祖父のスマホに「写真整理」を入れてほしいです。ただ、何でも追加できる状態で返すと、また画面がアプリだらけになってしまいます。入れ終わったら導入制限を元に戻してください。写真は家族の大事な記録なので、一度も消さず、今のOSのままでお願いします。",
+    "family": "MiraOS",
+    "version": "1.1",
+    "reward": 420,
+    "hardware_model_id": "H_D_004",
+    "data": [
+      "写真"
+    ],
+    "keep": [
+      "写真"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        null
+      ],
+      "apps": [
+        "写真整理",
+        "手帳"
+      ],
+      "version": "1.1"
+    },
+    "forbid": [
+      "erase",
+      "update"
+    ],
+    "routes": [
+      "P10 +写真整理 L:install",
+      "S:install +写真整理 L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1093
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "never_erase",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-5506b30163cc5155",
+    "decision_signature": "DS-5a4d7df665b73e71"
+  },
+  {
+    "id": "JOB_D_005",
+    "grade": "D",
+    "rank": 2,
+    "n": 5,
+    "title": "手帳を外して、音声メモは残したい",
+    "from": "出張案内人・幡野",
+    "body": "案内の記録を音声に統一したので、使わなくなった「手帳」を端末から外したいです。削除も導入制限の対象らしく、私の操作では消せませんでした。「音声メモ」と録音済みの記録は残してください。終わったら、勝手にアプリを追加できない状態へ戻してもらえると助かります。",
+    "family": "MiraOS",
+    "version": "1.1",
+    "reward": 400,
+    "hardware_model_id": "H_D_005",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳",
+        "音声メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        null,
+        false,
+        null
+      ],
+      "apps": [
+        "音声メモ"
+      ],
+      "remove": [
+        "手帳"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P10 -手帳 L:install",
+      "S:install -手帳 L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1101
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-0bfa1d3f79cfd6a0",
+    "decision_signature": "DS-b07e8cbf887eeec4"
+  },
+  {
+    "id": "JOB_D_006",
+    "grade": "D",
+    "rank": 2,
+    "n": 6,
+    "title": "展示の色に合わせたら、編集口を閉じてください",
+    "from": "手仕事展・受付係",
+    "body": "展示の入口に置くスマホです。画面のテーマを、同封した展示用の配色に変えたいのですが、編集メニューが閉じられています。変更後は来場者が触っても色を変えられないように戻してください。作品紹介の文書と再生アプリはそのまま使います。管理者権限の解除は必要ありません。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 390,
+    "hardware_model_id": "H_D_006",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        null,
+        false
+      ],
+      "apps": [
+        "展示再生"
+      ],
+      "settings": {
+        "theme": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P11 theme=custom L:feature",
+      "S:feature theme=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1109
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-3ea9bd3a0f2ee531",
+    "decision_signature": "DS-3f2fd73fc89626b5"
+  },
+  {
+    "id": "JOB_D_007",
+    "grade": "D",
+    "rank": 2,
+    "n": 7,
+    "title": "案内を外の画面にも出したい",
+    "from": "休憩所・杉原",
+    "body": "休憩所の案内を、このスマホから外部画面へ出せるようにしたいです。画面自体は正常ですが、出力先の設定が固定されています。こちらで後から出力先を切り替えられるよう、編集メニューも使えるまま返してください。「展示再生」と登録済みの案内文は引き続き必要です。",
+    "family": "MiraOS",
+    "version": "1.1",
+    "reward": 460,
+    "hardware_model_id": "H_D_007",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        null,
+        true
+      ],
+      "apps": [
+        "展示再生"
+      ],
+      "settings": {
+        "output": "external"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P12 output=external",
+      "S:feature output=external"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1117
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-4aa069e9fd60a114",
+    "decision_signature": "DS-03e7a8ec9b8304b2"
+  },
+  {
+    "id": "JOB_D_008",
+    "grade": "D",
+    "rank": 2,
+    "n": 8,
+    "title": "録音を書き出せるようにしたい",
+    "from": "小劇場の記録係・椋",
+    "body": "稽古の録音を端末の外へ渡したいのですが、ローカル書き出しが無効になっています。書き出せる設定にして、設定画面はまた閉じてください。録音そのものと「音声メモ」は消さないでほしいです。管理者機能やアプリの追加機能まで開放する必要はありません。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 410,
+    "hardware_model_id": "H_D_008",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "音声メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "音声メモ"
+      ],
+      "settings": {
+        "export": "local"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P11 export=local L:feature",
+      "S:feature export=local L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1125
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-078b436e07c2bdb7",
+    "decision_signature": "DS-bd0b26edb3eec167"
+  },
+  {
+    "id": "JOB_D_009",
+    "grade": "D",
+    "rank": 2,
+    "n": 9,
+    "title": "閉店後は別の案内を表示したい",
+    "from": "古書店・窓辺",
+    "body": "店先のスマホを使い、営業時間と閉店後で案内を切り替えたいです。いまは標準の内容しか出せず、時間設定も固定されています。店の案内を入れて、同封の時刻表で切り替わるようにしてください。後で私が時刻を直せるように、設定の編集だけは残しておいてください。",
+    "family": "MiraOS",
+    "version": "1.1",
+    "reward": 480,
+    "hardware_model_id": "H_D_009",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        true
+      ],
+      "settings": {
+        "schedule": "custom",
+        "content": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P12 schedule=custom content=custom",
+      "S:feature schedule=custom content=custom"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1133
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-1b6979ed8547c408",
+    "decision_signature": "DS-71a2b6413e2b04f2"
+  },
+  {
+    "id": "JOB_D_010",
+    "grade": "D",
+    "rank": 2,
+    "n": 10,
+    "title": "管理アプリが動くところまでお願いします",
+    "from": "倉庫の端末担当・久慈",
+    "body": "倉庫の端末を自分で管理するため、「管理アプリ」を使いたいです。いまはアプリを入れることも、管理者機能を使うことも制限されています。導入しただけで終わりにせず、管理機能が使える状態までお願いします。保管中の記録は残し、画面設定の制限は今のままで大丈夫です。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 540,
+    "hardware_model_id": "H_D_010",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        false
+      ],
+      "apps": [
+        "管理アプリ"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P09 +管理アプリ P03",
+      "S:root+install +管理アプリ"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1141
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "install"
+    ],
+    "decision_structure": "STRUCT-5e1cde4814718a19",
+    "decision_signature": "DS-7143eeae9c1d5c27"
+  },
+  {
+    "id": "JOB_D_011",
+    "grade": "D",
+    "rank": 2,
+    "n": 11,
+    "title": "管理・導入・表示設定をまとめて開放したい",
+    "from": "自主展示室・大橋",
+    "body": "展示で使う端末を一度きちんと整えたいです。「管理アプリ」と「展示再生」を入れ、管理機能を使えるようにし、店の展示内容へ切り替えてください。これから自分で調整するので、導入と設定の制限も開いたままで構いません。すでに保存した作品のデータはそのまま必要です。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 620,
+    "hardware_model_id": "H_D_011",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        true
+      ],
+      "apps": [
+        "管理アプリ",
+        "展示再生"
+      ],
+      "settings": {
+        "content": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P03 P09 P11 +管理アプリ +展示再生 content=custom",
+      "S:root+install+feature +管理アプリ +展示再生 content=custom"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 2,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1149
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-41d40c729e8bb8c5",
+    "decision_signature": "DS-60cdc5f8ab917090"
+  },
+  {
+    "id": "JOB_D_012",
+    "grade": "D",
+    "rank": 2,
+    "n": 12,
+    "title": "アプリを入れてから更新しても大丈夫です",
+    "from": "移動図書室・湯村",
+    "body": "新しい配布資料に合わせて、OSを1.1に更新してください。それから「作品閲覧」を使えるようにしたいです。作業の順番はお任せしますが、返却時にはアプリの追加制限と管理者制限を閉じておいてください。すでに入っている「手帳」と文書はそのまま残してほしいです。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 500,
+    "hardware_model_id": "H_D_012",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        null
+      ],
+      "version": "1.1",
+      "apps": [
+        "作品閲覧",
+        "手帳"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P09 +作品閲覧 U",
+      "U P10 +作品閲覧 L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1157
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "app_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-1a033b8fcc426b8d",
+    "decision_signature": "DS-90b9ed565fae131d"
+  },
+  {
+    "id": "JOB_D_013",
+    "grade": "D",
+    "rank": 2,
+    "n": 13,
+    "title": "使い慣れた設定にしてから最新版へ",
+    "from": "会場案内係・篠原",
+    "body": "案内担当が交代するので、操作用のプリセットを同封の内容に合わせてください。OSも1.1へ更新したいです。ただし、受け取った人がうっかり設定を変えないよう、最後は編集メニューを閉じてください。登録済みの記録は引き継ぎに使うので、消さずに残していただけますか。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 510,
+    "hardware_model_id": "H_D_013",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        null,
+        false
+      ],
+      "version": "1.1",
+      "settings": {
+        "profile": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P11 profile=custom U",
+      "U P12 profile=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1165
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-88098b3995f2501e",
+    "decision_signature": "DS-d0c14b7cd077e0e5"
+  },
+  {
+    "id": "JOB_D_014",
+    "grade": "D",
+    "rank": 2,
+    "n": 14,
+    "title": "画面は暗いですが、本体は動いています",
+    "from": "道具係・牧瀬",
+    "body": "画面が映らなくなったスマホですが、本体は起動しているそうです。今回は管理者制限の解除だけお願いしたく、画面を直すかどうかはそちらの作業しやすい方法で構いません。記録は残し、OSは変えないでください。見えないまま操作を当てるような作業は避けたいです。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 560,
+    "hardware_model_id": "H_D_014",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": false
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ],
+      "version": "1.0"
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "dock P03",
+      "screen P03"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1173
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "screen_fault",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-1edbdb17773fdc6b",
+    "decision_signature": "DS-80f522bf9b1ca1d5"
+  },
+  {
+    "id": "JOB_D_015",
+    "grade": "D",
+    "rank": 2,
+    "n": 15,
+    "title": "展示を設定して、開きっぱなしの権限を閉じたい",
+    "from": "貸出端末係・鶴見",
+    "body": "以前の利用者が各種制限を開いたまま返した展示用スマホです。今回の紹介文に入れ替えたうえで、管理者機能、アプリの追加、設定の編集を全部閉じてください。OSは1.0でも1.1でも構いません。もともとの作品データと「展示再生」は次回も使うので残してください。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 400,
+    "hardware_model_id": "H_D_015",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        true,
+        true,
+        true
+      ],
+      "settings": {},
+      "apps": [
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": [
+        "1.0",
+        "1.1"
+      ],
+      "apps": [
+        "展示再生"
+      ],
+      "settings": {
+        "content": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "content=custom L:all",
+      "content=custom U"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1181
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [],
+    "decision_structure": "STRUCT-4c66746d653be0b7",
+    "decision_signature": "DS-8be0575829bee787"
+  },
+  {
+    "id": "JOB_D_016",
+    "grade": "D",
+    "rank": 2,
+    "n": 16,
+    "title": "起動できる状態に戻してから、制限を外してください",
+    "from": "倉庫受付・今西",
+    "body": "案内用スマホが起動画面で止まるようになりました。まず使える状態へ戻し、それから管理者制限を外してください。受付記録を失うと困るので、初期化はしないでほしいです。OSの版も変えずにお願いします。修復と制限解除が別料金になる場合は作業前に分かるようにしてください。",
+    "family": "MiraOS",
+    "version": "1.1",
+    "reward": 600,
+    "hardware_model_id": "H_D_016",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ],
+      "version": "1.1"
+    },
+    "forbid": [
+      "erase",
+      "update"
+    ],
+    "routes": [
+      "fix P08",
+      "fix S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1189
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "never_erase",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-2cd276ce4c463e28",
+    "decision_signature": "DS-e94ec68dd3c11c72"
+  },
+  {
+    "id": "JOB_D_017",
+    "grade": "D",
+    "rank": 2,
+    "n": 17,
+    "title": "管理者機能を閉じ、在庫メモの導入だけ開けたい",
+    "from": "小売倉庫・城戸",
+    "body": "引き継いだスマホは管理者機能が使えるのに、必要な「在庫メモ」は入れられません。現場で使うのはアプリだけなので、管理者制限は閉じてください。今後も一般アプリを追加するため、導入制限は開けたままが希望です。「手帳」と、そこに保存された引き継ぎ文書は残してください。",
+    "family": "MiraOS",
+    "version": "1.1",
+    "reward": 450,
+    "hardware_model_id": "H_D_017",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        true,
+        false
+      ],
+      "apps": [
+        "在庫メモ",
+        "手帳"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "L:root P10 +在庫メモ",
+      "S:install +在庫メモ L:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1197
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-f155d181f2e5e6b3",
+    "decision_signature": "DS-0121d8451ee31594"
+  },
+  {
+    "id": "JOB_D_018",
+    "grade": "D",
+    "rank": 2,
+    "n": 18,
+    "title": "外部出力を管理し、一般アプリは追加できないように",
+    "from": "案内設備係・新田",
+    "body": "案内画面を外部出力へ切り替え、担当者が管理アプリを使える状態にしてください。一般のアプリ追加は終わったら閉じて構いません。出力先は後から変更するので、設定の編集は残してほしいです。管理アプリは最初から入っています。保存してある記録も、そのまま引き継ぎます。",
+    "family": "MiraOS",
+    "version": "1.1",
+    "reward": 590,
+    "hardware_model_id": "H_D_018",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "管理アプリ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        false,
+        true
+      ],
+      "apps": [
+        "管理アプリ"
+      ],
+      "settings": {
+        "output": "external"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P08 P12 output=external",
+      "S:root+feature output=external"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 2,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1205
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-29d64cba6d8bf369",
+    "decision_signature": "DS-a5e1898474ccb204"
+  },
+  {
+    "id": "JOB_D_019",
+    "grade": "D",
+    "rank": 2,
+    "n": 19,
+    "title": "字幕を追加し、案内の時刻だけ変えたい",
+    "from": "上映会受付・雨宮",
+    "body": "字幕付きの案内に切り替えるため、「字幕」アプリを追加してください。編集メニューはすでに開いているので、案内を切り替える時刻も同封の表へ直してほしいです。上映用の内容と作品データは変更しないでください。作業後はアプリの追加も設定の編集も閉じ、今のOSのまま返してください。",
+    "family": "MiraOS",
+    "version": "1.0",
+    "reward": 530,
+    "hardware_model_id": "H_D_019",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        true
+      ],
+      "settings": {
+        "content": "custom"
+      },
+      "apps": [
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.0",
+      "apps": [
+        "字幕",
+        "展示再生"
+      ],
+      "settings": {
+        "schedule": "custom"
+      },
+      "keepSettings": [
+        "content"
+      ]
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "P09 +字幕 schedule=custom L:install L:feature",
+      "S:install +字幕 schedule=custom L:install L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1213
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-fdfebc2ab846b41e",
+    "decision_signature": "DS-f940c9a7d8b3e62b"
+  },
+  {
+    "id": "JOB_D_020",
+    "grade": "D",
+    "rank": 2,
+    "n": 20,
+    "title": "口は新しくても、中身は前と同じです",
+    "from": "小さな展示会・端末担当",
+    "body": "薄型の展示用PCに「作品閲覧」を入れ、テーマを会場の配色へ変えてください。差し込み口はUSB-Cだけですが、中身はKomaOS 1.1のままです。返却時は各種制限をすべて閉じておいてください。「手帳」と文書は残し、OSも変更しないでほしいです。端子が違うだけで、道具を全部買い直す必要があるのでしょうか。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 560,
+    "hardware_model_id": "H_D_020",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "作品閲覧",
+        "手帳"
+      ],
+      "settings": {
+        "theme": "custom"
+      }
+    },
+    "forbid": [
+      "erase",
+      "update"
+    ],
+    "routes": [
+      "adapter P02 +作品閲覧 P06 theme=custom L:install L:feature",
+      "S:install+feature +作品閲覧 theme=custom L:install L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 4,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1221
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "never_erase",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-1588e8f8f3ac3d0f",
+    "decision_signature": "DS-c559570dee670c7e"
+  }
+]

@@ -1,8 +1,8 @@
 {
   "version": 5,
   "base": "/Garbage2026/arena/",
-  "specificationSha256": "21605d2b8484bd689a85678e4a95549e2bf91b7677df9faafa513e6b33623159",
-  "htmlSha256": "71cb38b67a38edf24e3b412a29e9fd147a8a5721dae510798af7031fff65586c",
+  "specificationSha256": "a6bc8777171502c0ef3439e6f6b94ac24848527fad3f7da58392d4227017ca52",
+  "htmlSha256": "6233b45140112d40ee8785a0c6e57ebde69b0d9d703fe7b8ec92637bad1e52f1",
   "assets": [
     "arena-background",
     "algorithm-arena",
@@ -432,19 +432,19 @@
   },
   "files": {
     "html": "index.html",
-    "css": "style.d5fd03cfd932.css",
-    "app": "app.3e7f45d0ab4e.js",
-    "dragscroll": "dragscroll.4fe3a562b06c.js",
-    "worker": "qualifier-worker.9e91fbb1ecff.js"
+    "css": "style.b2755adea19c.css",
+    "app": "app.959b4bc716e4.js",
+    "dragscroll": "dragscroll.64fae950c16a.js",
+    "worker": "qualifier-worker.6f0344f26d1b.js"
   },
-  "htmlBytes": 1238,
+  "htmlBytes": 1242,
   "initialFiles": [
     "index.html",
-    "style.d5fd03cfd932.css",
-    "dragscroll.4fe3a562b06c.js",
-    "app.3e7f45d0ab4e.js",
+    "style.b2755adea19c.css",
+    "dragscroll.64fae950c16a.js",
+    "app.959b4bc716e4.js",
     "assets/arena-background.jpg",
     "assets/void-knight.webp"
   ],
-  "initialUncompressedBytes": 806564
+  "initialUncompressedBytes": 807821
 }

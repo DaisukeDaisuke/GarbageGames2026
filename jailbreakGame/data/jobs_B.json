@@ -1,0 +1,1419 @@
+[
+  {
+    "id": "JOB_B_001",
+    "grade": "B",
+    "rank": 4,
+    "n": 1,
+    "title": "教材機の管理者設定を引き継ぎたい",
+    "from": "あさぎ学習室・真壁",
+    "body": "閉じた教室からDVD教材機を譲ってもらいました。教材は使えますが、管理者設定だけが開けません。前の先生が作った授業メモが残っているので、そこはそのまま引き継ぎたいです。新しいソフトを入れる予定はまだありません。まず管理者として設定を確認できる状態にしてください。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 900,
+    "hardware_model_id": "H_B_001",
+    "data": [
+      "文書",
+      "作品"
+    ],
+    "keep": [
+      "文書",
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ],
+      "version": "1.0"
+    },
+    "forbid": [],
+    "routes": [
+      "P19",
+      "S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1455
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-b5018e4ece35e70c",
+    "decision_signature": "DS-9aca42fc999a8be3"
+  },
+  {
+    "id": "JOB_B_002",
+    "grade": "B",
+    "rank": 4,
+    "n": 2,
+    "title": "同じ教材機なのに昨日のDVDが使えません",
+    "from": "あさぎ学習室・真壁",
+    "body": "もう一台の教材機もお願いします。外見は先ほどの機械と同じですが、こちらは引き継ぐ前にOSだけ更新されていました。授業メモを残したまま、管理者設定を開けるようにしてください。同じDVDが使えると思っていたのですが、画面にはReelOS 1.1と表示されています。",
+    "family": "ReelOS",
+    "version": "1.1",
+    "reward": 960,
+    "hardware_model_id": "H_B_002",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ]
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "P20",
+      "S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_B_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1466
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-be6cbda3c2522c9e",
+    "decision_signature": "DS-3cd2a4d4540df46f"
+  },
+  {
+    "id": "JOB_B_003",
+    "grade": "B",
+    "rank": 4,
+    "n": 3,
+    "title": "字幕だけ足して教材を使い続けたい",
+    "from": "まどい市民講座・河原",
+    "body": "DVD教材の音声を聞き取りにくい参加者がいるため、字幕アプリを追加したいです。今使っている展示再生アプリと教材データは残してください。管理者権限を広げる必要はありませんし、作業中も管理者制限は解除しないでほしいです。アプリを増やせる状態と字幕があれば十分です。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 980,
+    "hardware_model_id": "H_B_003",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        true,
+        null
+      ],
+      "apps": [
+        "字幕",
+        "展示再生"
+      ]
+    },
+    "forbid": [
+      "root"
+    ],
+    "routes": [
+      "P21 +字幕",
+      "S:install +字幕"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1477
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "never_root",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-86f2f744083797c0",
+    "decision_signature": "DS-ef7a26c416ad8a55"
+  },
+  {
+    "id": "JOB_B_004",
+    "grade": "B",
+    "rank": 4,
+    "n": 4,
+    "title": "字幕付きの映像を外のモニターへ",
+    "from": "風見商店・展示担当",
+    "body": "店内の映像プレーヤーに字幕を足して、出力先を外部モニターへ切り替えてください。作業後はスタッフが設定を触らないように、解除した権限を全部閉じて返してほしいです。店の紹介映像は作り直せないので残してください。字幕が入ったことだけで完了にしないでくださいね。",
+    "family": "ReelOS",
+    "version": "1.1",
+    "reward": 1200,
+    "hardware_model_id": "H_B_004",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "字幕",
+        "展示再生"
+      ],
+      "settings": {
+        "output": "external"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P22 +字幕 P24 output=external L:install L:feature",
+      "S:install+feature +字幕 output=external L:install L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1488
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-30c19b9b503e7d53",
+    "decision_signature": "DS-606cbc263c4da755"
+  },
+  {
+    "id": "JOB_B_005",
+    "grade": "B",
+    "rank": 4,
+    "n": 5,
+    "title": "展示の見本映像を自分たちの作品に替えたい",
+    "from": "しろつめ造形部・実行委員",
+    "body": "展示映像機がメーカーの見本映像しか選べない状態です。作品データ自体はもう入れてありますので、それを通常の再生内容に指定してください。来場者が内容を切り替えないよう、設定画面は閉じて返してほしいです。機械の管理者になることや、アプリを増やすことは目的ではありません。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 1020,
+    "hardware_model_id": "H_B_005",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        null,
+        false
+      ],
+      "version": "1.0",
+      "settings": {
+        "content": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P23 content=custom L:feature",
+      "S:feature content=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1499
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-9633982535198d87",
+    "decision_signature": "DS-b737e5259e9b1a50"
+  },
+  {
+    "id": "JOB_B_006",
+    "grade": "B",
+    "rank": 4,
+    "n": 6,
+    "title": "管理アプリを使える音楽端末にしたい",
+    "from": "夕凪スタジオ・備品係",
+    "body": "練習室の音楽端末に管理アプリを入れ、備品担当が端末情報を確認できるようにしてください。いまある音声メモと録音作品は引き続き使います。アプリが一覧に見えるだけではなく、管理者権限が有効な状態で引き渡してほしいです。日常の再生設定は変えなくて大丈夫です。",
+    "family": "ReelOS",
+    "version": "1.1",
+    "reward": 1240,
+    "hardware_model_id": "H_B_006",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "音声メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        null
+      ],
+      "apps": [
+        "管理アプリ",
+        "音声メモ"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P20 P22 +管理アプリ",
+      "S:root+install +管理アプリ"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1510
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "install"
+    ],
+    "decision_structure": "STRUCT-34910e1c1f60ca60",
+    "decision_signature": "DS-afe3d4302d2665e2"
+  },
+  {
+    "id": "JOB_B_007",
+    "grade": "B",
+    "rank": 4,
+    "n": 7,
+    "title": "OSを更新してから管理者として使いたい",
+    "from": "あかね資料室・小早川",
+    "body": "資料室の教材端末をReelOS 1.1へ更新し、更新後も管理者として使える状態にしてください。教材と文書は残します。古い版で管理者設定が開けても、更新したらまた閉じると聞きました。受け取り時に1.1で管理者制限が外れていれば、途中の作業順はお任せします。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 1180,
+    "hardware_model_id": "H_B_007",
+    "data": [
+      "作品",
+      "文書"
+    ],
+    "keep": [
+      "作品",
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ],
+      "version": "1.1"
+    },
+    "forbid": [],
+    "routes": [
+      "U P20",
+      "O S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": true,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1521
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-590d568981a1b966",
+    "decision_signature": "DS-4024ed67db76fcf9"
+  },
+  {
+    "id": "JOB_B_008",
+    "grade": "B",
+    "rank": 4,
+    "n": 8,
+    "title": "通信せずに展示時刻の設定を更新したい",
+    "from": "こもれび展示室・村瀬",
+    "body": "展示映像機を新しいOSにして、開館時間に合わせた再生予定を設定したいです。館外の通信には接続せず、作業を完了してください。作品は残しますが、保存して戻す作業は構いません。返却後はこちらで予定を調整するので、予定の編集メニューは開けたままにしてください。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 1380,
+    "hardware_model_id": "H_B_008",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        true
+      ],
+      "version": "1.1",
+      "settings": {
+        "schedule": "custom"
+      }
+    },
+    "forbid": [
+      "network"
+    ],
+    "routes": [
+      "O P24 schedule=custom",
+      "O B:data X+ R:data schedule=custom L:root L:install"
+    ],
+    "network": false,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1532
+    },
+    "decision_family": "offline",
+    "decision_tags": [
+      "offline",
+      "version_change",
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-f05497c73cf02ae0",
+    "decision_signature": "DS-7d64cc12a1d63596"
+  },
+  {
+    "id": "JOB_B_009",
+    "grade": "B",
+    "rank": 4,
+    "n": 9,
+    "title": "起動しない教材機から授業を再開したい",
+    "from": "木舟夜間講座・教材係",
+    "body": "授業用の端末が起動しなくなりました。中にある教材と授業メモは読み出せるそうなので、それを残して復旧してください。再開に合わせて字幕アプリも入れたいです。返すときは権限を全部閉じておいてください。復旧の途中で保存と戻しが必要なら、その方法で構いません。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 1400,
+    "hardware_model_id": "H_B_009",
+    "data": [
+      "作品",
+      "文書"
+    ],
+    "keep": [
+      "作品",
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.0",
+      "apps": [
+        "字幕"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "fix P21 +字幕 L:install",
+      "Q:data X+ R:data +字幕 L:all"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1543
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "app_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-2454aad23fe45f5a",
+    "decision_signature": "DS-3abbe489e5fe0fd0"
+  },
+  {
+    "id": "JOB_B_010",
+    "grade": "B",
+    "rank": 4,
+    "n": 10,
+    "title": "中古プレーヤーを初期化して管理用に回したい",
+    "from": "回遊映像サークル・備品担当",
+    "body": "中古の映像プレーヤーを予備機にします。起動しない状態ですが、保存してあるものは前の利用者が消してよいと確認済みです。こちらでは管理者用の設定に入れることだけ必要なので、起動する状態に直して管理者制限を外してください。アプリや映像の復元は不要です。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 1080,
+    "hardware_model_id": "H_B_010",
+    "data": [
+      "写真",
+      "作品"
+    ],
+    "keep": [],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "version": "1.0"
+    },
+    "forbid": [],
+    "routes": [
+      "fix P19",
+      "X+ L:install L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1554
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-a0907775091d9f69",
+    "decision_signature": "DS-44f0d0e09eb4c8df"
+  },
+  {
+    "id": "JOB_B_011",
+    "grade": "B",
+    "rank": 4,
+    "n": 11,
+    "title": "内蔵画面はそのままで字幕を追加したい",
+    "from": "花窓ギャラリー・受付",
+    "body": "外部モニターにつないで使う映像プレーヤーです。本体の小さな画面が映りませんが、再生と外部出力は動きます。内蔵画面を直す必要はありませんので、字幕アプリを追加して権限を閉じて返してください。展示再生アプリと作品を残してもらえれば、そのまま展示を再開できます。",
+    "family": "ReelOS",
+    "version": "1.1",
+    "reward": 1200,
+    "hardware_model_id": "H_B_011",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {
+        "output": "external"
+      },
+      "apps": [
+        "展示再生"
+      ],
+      "operational": true,
+      "display": false
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "字幕",
+        "展示再生"
+      ],
+      "keepSettings": [
+        "output"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "dock P22 +字幕 L:install",
+      "screen P22 +字幕 L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1565
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "screen_fault",
+      "app_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-b19597f316724ede",
+    "decision_signature": "DS-e71e13ab3f75728c"
+  },
+  {
+    "id": "JOB_B_012",
+    "grade": "B",
+    "rank": 4,
+    "n": 12,
+    "title": "音楽端末に紛れた在庫アプリを消したい",
+    "from": "白波練習室・石田",
+    "body": "前の持ち主が管理者制限だけ外した音楽端末です。使わない在庫メモが入っているので、それだけ削除してください。音声メモと練習録音は残したいです。子どもたちも触る備品なので、作業後は管理者制限とアプリ追加の制限を両方戻してほしいです。OSは今の版のままで構いません。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 1040,
+    "hardware_model_id": "H_B_012",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "在庫メモ",
+        "音声メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        null
+      ],
+      "apps": [
+        "音声メモ"
+      ],
+      "remove": [
+        "在庫メモ"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P21 -在庫メモ L:root L:install",
+      "S:install -在庫メモ L:root L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1576
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-726567619afb77ab",
+    "decision_signature": "DS-194de49c07d48070"
+  },
+  {
+    "id": "JOB_B_013",
+    "grade": "B",
+    "rank": 4,
+    "n": 13,
+    "title": "持込展示機を通信なしで設定したい",
+    "from": "砂丘工作展・設営係",
+    "body": "展示機を持ち込んで使います。館の回線につなぐ許可がないため、外部通信をせずに設定してください。メーカーの見本内容を、同梱した私たちの展示内容へ切り替えたいです。端末に残っている古いデータは消して構いません。最後は来場者が設定を変えられない状態にしてください。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 1100,
+    "hardware_model_id": "H_B_013",
+    "data": [
+      "作品"
+    ],
+    "keep": [],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.0",
+      "settings": {
+        "content": "custom"
+      }
+    },
+    "forbid": [
+      "network"
+    ],
+    "routes": [
+      "P23 content=custom L:feature",
+      "X+ content=custom L:all"
+    ],
+    "network": false,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1587
+    },
+    "decision_family": "offline",
+    "decision_tags": [
+      "offline",
+      "settings_change",
+      "relock"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-0241e8dab1369645",
+    "decision_signature": "DS-abd6132519c1ff7c"
+  },
+  {
+    "id": "JOB_B_014",
+    "grade": "B",
+    "rank": 4,
+    "n": 14,
+    "title": "作品閲覧と授業用プリセットだけ整えてほしい",
+    "from": "星見放課後教室・宮野",
+    "body": "教材端末に作品閲覧アプリを入れ、授業用のプリセットへ切り替えてください。教材を一度でも消す作業は避けたいですし、管理者制限も解除しないでください。作品閲覧が入っていて授業用の設定になっていれば十分です。追加や編集のメニューは閉じて返してください。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 1180,
+    "hardware_model_id": "H_B_014",
+    "data": [
+      "作品",
+      "文書"
+    ],
+    "keep": [
+      "作品",
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "作品閲覧"
+      ],
+      "settings": {
+        "profile": "custom"
+      }
+    },
+    "forbid": [
+      "erase",
+      "root"
+    ],
+    "routes": [
+      "P21 +作品閲覧 P23 profile=custom L:install L:feature",
+      "S:install+feature +作品閲覧 profile=custom L:install L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1598
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "never_erase",
+      "never_root",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-a25d90aac67964f2",
+    "decision_signature": "DS-9ad2f9283f787c2e"
+  },
+  {
+    "id": "JOB_B_015",
+    "grade": "B",
+    "rank": 4,
+    "n": 15,
+    "title": "個人写真だけ残さず管理用へ引き継ぎたい",
+    "from": "くじら映像部・会計係",
+    "body": "個人で使っていた映像プレーヤーを部の備品へ回します。部の作品は引き継ぎますが、私の写真は端末に残さないでください。管理者設定を開ける状態にしてもらえると助かります。いったん初期化することは承知していますので、作品だけ保存して戻す方法でも問題ありません。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 1260,
+    "hardware_model_id": "H_B_015",
+    "data": [
+      "作品",
+      "写真"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "version": "1.0",
+      "empty": [
+        "写真"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "B:作品 X R:作品 P19",
+      "B:作品 X+ R:作品 L:install L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1609
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "selective_restore",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-d56279166eee54da",
+    "decision_signature": "DS-f90f610b195e763b"
+  },
+  {
+    "id": "JOB_B_016",
+    "grade": "B",
+    "rank": 4,
+    "n": 16,
+    "title": "既存の教材と外部出力を残して更新だけ",
+    "from": "南庭研修室・事務担当",
+    "body": "教材端末のOSをReelOS 1.1へ更新してください。字幕と展示再生は既に入っており、外部モニターへの出力設定も済んでいます。これらを残したまま更新できれば十分です。前の担当者が開けた権限は返却時には全部閉じてほしいです。新しいアプリや機能を足す必要はありません。",
+    "family": "ReelOS",
+    "version": "1.0",
+    "reward": 900,
+    "hardware_model_id": "H_B_016",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        true,
+        true,
+        true
+      ],
+      "settings": {
+        "output": "external"
+      },
+      "apps": [
+        "字幕",
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "字幕",
+        "展示再生"
+      ],
+      "keepSettings": [
+        "output"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "U",
+      "O"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1620
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [],
+    "decision_structure": "STRUCT-4d46fc810056bac7",
+    "decision_signature": "DS-16f1a548ddda67c4"
+  },
+  {
+    "id": "JOB_B_017",
+    "grade": "B",
+    "rank": 4,
+    "n": 17,
+    "title": "開いたままの設定を整えて閉じてほしい",
+    "from": "駅前合唱団・連絡係",
+    "body": "音楽端末の表示を見やすいテーマにして、練習用プリセットへ切り替えてください。設定メニューは今も開ける状態です。以前の担当者が管理者制限まで外していましたが、そこはもう必要ありません。音声メモと録音を残し、全権限を閉じた状態で次の担当へ渡したいです。",
+    "family": "ReelOS",
+    "version": "1.1",
+    "reward": 920,
+    "hardware_model_id": "H_B_017",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        true,
+        false,
+        true
+      ],
+      "settings": {},
+      "apps": [
+        "音声メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "音声メモ"
+      ],
+      "settings": {
+        "theme": "custom",
+        "profile": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "theme=custom profile=custom L:root L:feature",
+      "B:data,apps X+ R:data,apps theme=custom profile=custom L:all"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1631
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [],
+    "decision_structure": "STRUCT-913e9c9a7d991d8e",
+    "decision_signature": "DS-844f4bbc6e5d77f5"
+  },
+  {
+    "id": "JOB_B_018",
+    "grade": "B",
+    "rank": 4,
+    "n": 18,
+    "title": "録音を一度も消さず書き出せるように",
+    "from": "森端朗読会・収録係",
+    "body": "朗読の録音が入った音楽端末が起動しません。録音部分は読み取り可能とのことですが、一度消して戻す方法は避けてください。起動を直したうえで、録音をローカルへ書き出す設定を有効にしたいです。今後はこちらでも書き出し方法を調整するため、編集メニューは開けておいてください。",
+    "family": "ReelOS",
+    "version": "1.1",
+    "reward": 1360,
+    "hardware_model_id": "H_B_018",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "音声メモ"
+      ],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        null,
+        true
+      ],
+      "version": "1.1",
+      "apps": [
+        "音声メモ"
+      ],
+      "settings": {
+        "export": "local"
+      }
+    },
+    "forbid": [
+      "erase"
+    ],
+    "routes": [
+      "fix P24 export=local",
+      "fix S:feature export=local"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1642
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "settings_change",
+      "never_erase",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-836367555c66da77",
+    "decision_signature": "DS-d0fe8b41ff0981a4"
+  },
+  {
+    "id": "JOB_B_019",
+    "grade": "B",
+    "rank": 4,
+    "n": 19,
+    "title": "貸出展示機を操作しすぎない状態へ",
+    "from": "月舟文化祭・貸出担当",
+    "body": "貸し出す展示機を、文化祭の内容と予定に合わせてください。字幕と作品閲覧は使いますが、管理アプリは借り手には渡したくないので削除をお願いします。元の作品データは残します。準備のために開いている権限は納品時にはすべて閉じてください。再生内容だけ合っていても困ります。",
+    "family": "ReelOS",
+    "version": "1.1",
+    "reward": 1320,
+    "hardware_model_id": "H_B_019",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        true,
+        true,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "管理アプリ",
+        "字幕",
+        "作品閲覧"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "字幕",
+        "作品閲覧"
+      ],
+      "remove": [
+        "管理アプリ"
+      ],
+      "settings": {
+        "content": "custom",
+        "schedule": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "-管理アプリ P24 content=custom schedule=custom L:all",
+      "-管理アプリ S:feature content=custom schedule=custom L:all"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1653
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-c3b3a84c50d5579f",
+    "decision_signature": "DS-07fa8cb102ea72ab"
+  },
+  {
+    "id": "JOB_B_020",
+    "grade": "B",
+    "rank": 4,
+    "n": 20,
+    "title": "巡回展示の担当者が全部調整できる一台に",
+    "from": "巡回企画「灯りの箱」・北野",
+    "body": "展示先ごとに内容と予定を変えるため、担当者が管理・アプリ追加・設定編集を続けられる展示機にしてください。管理アプリと字幕を入れ、最初の会場向けの内容と予定まで設定してほしいです。前回の展示作品は残します。保存して戻す工程は構いませんが、今回は権限を閉じずに納品してください。",
+    "family": "ReelOS",
+    "version": "1.1",
+    "reward": 1400,
+    "hardware_model_id": "H_B_020",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        true
+      ],
+      "version": "1.1",
+      "apps": [
+        "管理アプリ",
+        "字幕",
+        "展示再生"
+      ],
+      "settings": {
+        "content": "custom",
+        "schedule": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P20 P22 P24 +管理アプリ +字幕 content=custom schedule=custom",
+      "B:data,apps X+ R:data,apps +管理アプリ +字幕 content=custom schedule=custom"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1664
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-ce8dc7fa8cfa40e4",
+    "decision_signature": "DS-e9bef8ec2b219bfb"
+  }
+]

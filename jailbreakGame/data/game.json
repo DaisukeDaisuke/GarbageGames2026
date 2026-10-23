@@ -1,0 +1,55 @@
+{
+  "title": "脱獄RTA（物理）",
+  "subtitle": "片桐工房の五件",
+  "initial_cash": 400,
+  "carryover_rate": 0.5,
+  "support_cap": 120,
+  "main_job_limit": 5,
+  "schema_version": 1,
+  "currency": "fictional_usd",
+  "inbox_slots": 6,
+  "media_instance_limit": 2,
+  "initial_items": [
+    "P01",
+    "M01"
+  ],
+  "development_image_cost": {
+    "KomaOS": 100,
+    "MiraOS": 160,
+    "FolioOS": 240,
+    "ReelOS": 340,
+    "HearthOS": 460
+  },
+  "service_rates": {
+    "one_axis": 0.35,
+    "two_axes": 0.6,
+    "three_axes": 0.75,
+    "repair": 0.25,
+    "screen": 0.25
+  },
+  "defaults": {
+    "theme": "standard",
+    "output": "internal",
+    "export": "off",
+    "schedule": "locked",
+    "content": "stock",
+    "profile": "factory"
+  },
+  "first_run_intro": [
+    "JOB_E_001",
+    "JOB_E_002",
+    "JOB_E_003"
+  ],
+  "carryover_equipment": [
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M09",
+    "M10",
+    "M13",
+    "M16"
+  ]
+}

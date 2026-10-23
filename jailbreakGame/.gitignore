@@ -1,0 +1,4 @@
+/dist/
+/test-output/
+/.openai/*
+!/.openai/hosting.json

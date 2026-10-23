@@ -1,0 +1,455 @@
+[
+  {
+    "id": "P01",
+    "name": "KomaOS 1.0 / 1.1 管理者制限解除",
+    "family": "KomaOS",
+    "versions": [
+      "1.0",
+      "1.1"
+    ],
+    "media": "USB-A",
+    "axis": "root",
+    "price": 0,
+    "rank": 1,
+    "duration": 1200,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": false
+  },
+  {
+    "id": "P02",
+    "name": "KomaOS 1.0 / 1.1 アプリ導入制限解除",
+    "family": "KomaOS",
+    "versions": [
+      "1.0",
+      "1.1"
+    ],
+    "media": "USB-A",
+    "axis": "install",
+    "price": 160,
+    "rank": 1,
+    "duration": 1200,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P03",
+    "name": "MiraOS 1.0 管理者制限解除",
+    "family": "MiraOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "USB-C",
+    "axis": "root",
+    "price": 220,
+    "rank": 2,
+    "duration": 1200,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P04",
+    "name": "KomaOS 2.0 管理者制限解除",
+    "family": "KomaOS",
+    "versions": [
+      "2.0"
+    ],
+    "media": "USB-A",
+    "axis": "root",
+    "price": 260,
+    "rank": 1,
+    "duration": 1500,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P05",
+    "name": "KomaOS 2.0 アプリ導入制限解除",
+    "family": "KomaOS",
+    "versions": [
+      "2.0"
+    ],
+    "media": "USB-A",
+    "axis": "install",
+    "price": 220,
+    "rank": 1,
+    "duration": 1500,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P06",
+    "name": "KomaOS 1.0 / 1.1 設定編集制限解除",
+    "family": "KomaOS",
+    "versions": [
+      "1.0",
+      "1.1"
+    ],
+    "media": "USB-A",
+    "axis": "feature",
+    "price": 200,
+    "rank": 1,
+    "duration": 1200,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P07",
+    "name": "KomaOS 2.0 設定編集制限解除",
+    "family": "KomaOS",
+    "versions": [
+      "2.0"
+    ],
+    "media": "USB-A",
+    "axis": "feature",
+    "price": 300,
+    "rank": 1,
+    "duration": 1500,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P08",
+    "name": "MiraOS 1.1 管理者制限解除",
+    "family": "MiraOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "USB-C",
+    "axis": "root",
+    "price": 340,
+    "rank": 2,
+    "duration": 1500,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P09",
+    "name": "MiraOS 1.0 アプリ導入制限解除",
+    "family": "MiraOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "USB-C",
+    "axis": "install",
+    "price": 180,
+    "rank": 2,
+    "duration": 1200,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P10",
+    "name": "MiraOS 1.1 アプリ導入制限解除",
+    "family": "MiraOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "USB-C",
+    "axis": "install",
+    "price": 280,
+    "rank": 2,
+    "duration": 1500,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P11",
+    "name": "MiraOS 1.0 設定編集制限解除",
+    "family": "MiraOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "USB-C",
+    "axis": "feature",
+    "price": 240,
+    "rank": 2,
+    "duration": 1200,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P12",
+    "name": "MiraOS 1.1 設定編集制限解除",
+    "family": "MiraOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "USB-C",
+    "axis": "feature",
+    "price": 360,
+    "rank": 2,
+    "duration": 1500,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P13",
+    "name": "FolioOS 1.0 管理者制限解除",
+    "family": "FolioOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "SD",
+    "axis": "root",
+    "price": 420,
+    "rank": 3,
+    "duration": 1200,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P14",
+    "name": "FolioOS 1.1 管理者制限解除",
+    "family": "FolioOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "SD",
+    "axis": "root",
+    "price": 560,
+    "rank": 3,
+    "duration": 1500,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P15",
+    "name": "FolioOS 1.0 アプリ導入制限解除",
+    "family": "FolioOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "SD",
+    "axis": "install",
+    "price": 320,
+    "rank": 3,
+    "duration": 1200,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P16",
+    "name": "FolioOS 1.1 アプリ導入制限解除",
+    "family": "FolioOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "SD",
+    "axis": "install",
+    "price": 460,
+    "rank": 3,
+    "duration": 1500,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P17",
+    "name": "FolioOS 1.0 設定編集制限解除",
+    "family": "FolioOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "SD",
+    "axis": "feature",
+    "price": 360,
+    "rank": 3,
+    "duration": 1200,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P18",
+    "name": "FolioOS 1.1 設定編集制限解除",
+    "family": "FolioOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "SD",
+    "axis": "feature",
+    "price": 500,
+    "rank": 3,
+    "duration": 1500,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P19",
+    "name": "ReelOS 1.0 管理者制限解除",
+    "family": "ReelOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "DVD",
+    "axis": "root",
+    "price": 560,
+    "rank": 4,
+    "duration": 1200,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P20",
+    "name": "ReelOS 1.1 管理者制限解除",
+    "family": "ReelOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "DVD",
+    "axis": "root",
+    "price": 740,
+    "rank": 4,
+    "duration": 1500,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P21",
+    "name": "ReelOS 1.0 アプリ導入制限解除",
+    "family": "ReelOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "DVD",
+    "axis": "install",
+    "price": 420,
+    "rank": 4,
+    "duration": 1200,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P22",
+    "name": "ReelOS 1.1 アプリ導入制限解除",
+    "family": "ReelOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "DVD",
+    "axis": "install",
+    "price": 600,
+    "rank": 4,
+    "duration": 1500,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P23",
+    "name": "ReelOS 1.0 設定編集制限解除",
+    "family": "ReelOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "DVD",
+    "axis": "feature",
+    "price": 480,
+    "rank": 4,
+    "duration": 1200,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P24",
+    "name": "ReelOS 1.1 設定編集制限解除",
+    "family": "ReelOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "DVD",
+    "axis": "feature",
+    "price": 660,
+    "rank": 4,
+    "duration": 1500,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P25",
+    "name": "HearthOS 1.0 管理者制限解除",
+    "family": "HearthOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "USB-C",
+    "axis": "root",
+    "price": 760,
+    "rank": 5,
+    "duration": 1200,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P26",
+    "name": "HearthOS 1.1 管理者制限解除",
+    "family": "HearthOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "USB-C",
+    "axis": "root",
+    "price": 980,
+    "rank": 5,
+    "duration": 1500,
+    "description": "管理者制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P27",
+    "name": "HearthOS 1.0 アプリ導入制限解除",
+    "family": "HearthOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "USB-C",
+    "axis": "install",
+    "price": 600,
+    "rank": 5,
+    "duration": 1200,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P28",
+    "name": "HearthOS 1.1 アプリ導入制限解除",
+    "family": "HearthOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "USB-C",
+    "axis": "install",
+    "price": 820,
+    "rank": 5,
+    "duration": 1500,
+    "description": "アプリ導入制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P29",
+    "name": "HearthOS 1.0 設定編集制限解除",
+    "family": "HearthOS",
+    "versions": [
+      "1.0"
+    ],
+    "media": "USB-C",
+    "axis": "feature",
+    "price": 680,
+    "rank": 5,
+    "duration": 1200,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  },
+  {
+    "id": "P30",
+    "name": "HearthOS 1.1 設定編集制限解除",
+    "family": "HearthOS",
+    "versions": [
+      "1.1"
+    ],
+    "media": "USB-C",
+    "axis": "feature",
+    "price": 900,
+    "rank": 5,
+    "duration": 1500,
+    "description": "設定編集制限解除だけを行います。他の権限・データ・アプリ・OS版は変更しません。",
+    "surrenderable": true
+  }
+]

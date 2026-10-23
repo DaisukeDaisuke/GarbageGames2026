@@ -106,7 +106,7 @@ BEGIN {
     project = ENVIRON["FIRE_PROJECT_DIR"]
 }
 
-/^[ \t]*<!-- INLINE_STYLE -->[ \t]*$/ {
+/^[ \t]*<!-- INLINE_STYLE -->[ \t\r]*$/ {
     if (++style_count != 1) fail("duplicate INLINE_STYLE marker")
     print "<style>"
     emit_file(project "/src/style.css", "style")
@@ -114,7 +114,7 @@ BEGIN {
     next
 }
 
-/^[ \t]*<!-- INLINE_FIREWORKS -->[ \t]*$/ {
+/^[ \t]*<!-- INLINE_FIREWORKS -->[ \t\r]*$/ {
     if (++fireworks_count != 1) fail("duplicate INLINE_FIREWORKS marker")
     print "<script>"
     emit_file(project "/src/fireworks.js", "script")
@@ -122,7 +122,7 @@ BEGIN {
     next
 }
 
-/^[ \t]*<!-- INLINE_APP -->[ \t]*$/ {
+/^[ \t]*<!-- INLINE_APP -->[ \t\r]*$/ {
     if (++app_count != 1) fail("duplicate INLINE_APP marker")
     print "<script>"
     emit_file(project "/src/app.js", "script")
@@ -130,7 +130,7 @@ BEGIN {
     next
 }
 
-/^[ \t]*<!-- INLINE_SPEC -->[ \t]*$/ {
+/^[ \t]*<!-- INLINE_SPEC -->[ \t\r]*$/ {
     if (++spec_count != 1) fail("duplicate INLINE_SPEC marker")
     emit_spec(project "/spec.md")
     next

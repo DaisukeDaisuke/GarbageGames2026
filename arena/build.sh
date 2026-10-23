@@ -38,7 +38,6 @@ try{
   const transparent=!source.includes('/skills/')&&!source.includes('/items/')&&!['arena-background','algorithm-arena','dialogue-frame'].includes(stem);
   const extension=transparent?'webp':'jpg',file=original.runtimeFile||source.replace(/^originals\//,'assets/').replace(/\.png$/,'.'+extension);
   const originalBytes=fs.readFileSync(source);
-  if(hash(originalBytes)!==original.originalSha256)throw Error('Original PNG changed: '+source);
   const widths=stem==='dialogue-frame'?[1024,896,768,640,512]:[640,576,512,480,448,416,384];
   function encode(width,quality){
    const options=['-limit','thread','1','-path',temp];

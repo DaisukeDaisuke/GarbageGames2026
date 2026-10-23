@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#142e34">
+  <meta name="description" content="メディアを差して、直して、返す。架空の端末100機種を扱う工房の修理パズル。">
+  <title>脱獄RTA（物理）｜小さな工房の大きな仕事</title>
+  <link rel="stylesheet" href="./src/ending.css">
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#102c30}canvas{display:block;width:100%;height:100%;touch-action:none;outline:none}input{position:fixed;left:-9999px}#status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  </style>
+</head>
+<body>
+  <canvas id="game" tabindex="0" role="application" aria-label="脱獄RTA（物理）。読込み中。Tabで操作を選びEnterで決定。">このゲームにはCanvasを使えるブラウザが必要です。</canvas>
+  <input id="file-import" type="file" accept="application/json,.json" tabindex="-1">
+  <input id="text-input" autocomplete="off" tabindex="-1" aria-label="入力欄">
+  <div id="status" role="status" aria-live="polite"></div>
+  <script type="module" src="./src/ui.mjs"></script>
+</body>
+</html>

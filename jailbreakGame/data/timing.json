@@ -1,0 +1,11 @@
+{
+  "fixed_courses": [],
+  "start_from_current_progress": true,
+  "controls": [
+    "start",
+    "split",
+    "stop"
+  ],
+  "includes_hidden_time": true,
+  "reload_is_reference": true
+}

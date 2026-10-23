@@ -1,0 +1,1378 @@
+[
+  {
+    "id": "JOB_E_001",
+    "grade": "E",
+    "rank": 1,
+    "n": 1,
+    "title": "古い原稿を残して、管理者にしてください",
+    "from": "町の印刷室・水野",
+    "body": "引き継いだパソコンで作業しようとしたら、管理者のメニューが灰色でした。先代が残した原稿はそのまま使いたいので、文書を消さずに管理者制限だけ外してください。まずはメニューが開ければ十分です。新しいアプリを入れる作業までは頼みません。",
+    "family": "KomaOS",
+    "version": "1.0",
+    "reward": 180,
+    "hardware_model_id": "H_E_001",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P01"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 887
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-53bf28bbe8eea049",
+    "decision_signature": "DS-1098be76cc408f6a"
+  },
+  {
+    "id": "JOB_E_002",
+    "grade": "E",
+    "rank": 1,
+    "n": 2,
+    "title": "管理者ではなく、アプリを入れられるように",
+    "from": "手書き資料係・白井",
+    "body": "本体は起動しますが、内蔵画面が壊れて何も映りません。返却後に使う外部画面はこちらで用意します。工房の作業用外部画面につないで操作してください。内蔵画面の交換は依頼しません。今後、必要な小さなアプリを自分で足したいので、アプリの導入制限を外してください。授業用の文書は残し、管理者制限はかかった状態で返してもらえると助かります。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 240,
+    "hardware_model_id": "H_E_002",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": false
+    },
+    "goal": {
+      "s": [
+        false,
+        true,
+        null
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "dock P02",
+      "dock S:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 895
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "screen_fault",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-f9a78b7e6c52fb60",
+    "decision_signature": "DS-ab40035ce8f87476"
+  },
+  {
+    "id": "JOB_E_003",
+    "grade": "E",
+    "rank": 1,
+    "n": 3,
+    "title": "同じシリーズですが、OSは2.0です",
+    "from": "町の印刷室・水野",
+    "body": "もう一台もお願いしたくなりました。見た目は先ほどの古いパソコンと同じですが、こちらはKomaOS 2.0に更新済みです。原稿を残したまま管理者制限を外してください。前回の方法がそのまま使えるかは分からないので、画面の版を見てから作業をお願いします。",
+    "family": "KomaOS",
+    "version": "2.0",
+    "reward": 300,
+    "hardware_model_id": "H_E_003",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ],
+      "version": "2.0"
+    },
+    "forbid": [],
+    "routes": [
+      "P04",
+      "S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_002"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 904
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-d78ce3167d372a87",
+    "decision_signature": "DS-59f00a727acd3625"
+  },
+  {
+    "id": "JOB_E_004",
+    "grade": "E",
+    "rank": 1,
+    "n": 4,
+    "title": "展示の色だけ、お店に合わせたい",
+    "from": "文具店「方眼」・展示係",
+    "body": "店頭のパソコンを、うちの看板に合わせた色にしたいです。添付した色見本がcustomテーマです。色を合わせたあとも私が選び直せるように、編集メニューは開けておいてください。作品の紹介文はそのまま使います。管理者のメニューを開ける必要はありません。",
+    "family": "KomaOS",
+    "version": "1.0",
+    "reward": 260,
+    "hardware_model_id": "H_E_004",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        null,
+        true
+      ],
+      "settings": {
+        "theme": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P06 theme=custom",
+      "S:feature theme=custom"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 913
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-5f854ad5591de2eb",
+    "decision_signature": "DS-c38c65a9c0f150b4"
+  },
+  {
+    "id": "JOB_E_005",
+    "grade": "E",
+    "rank": 1,
+    "n": 5,
+    "title": "映像は外へ、操作はここに残したい",
+    "from": "小ホール・映写当番",
+    "body": "発表用のパソコンから、外部画面へ資料を映せるようにしたいです。本体の画面が壊れているわけではありません。外部出力を選べる編集メニューが閉じているので、そこを開けて出力先を変えてください。保存している発表作品と、いつものテーマの色は残してください。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 280,
+    "hardware_model_id": "H_E_005",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {
+        "theme": "custom"
+      },
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "settings": {
+        "output": "external"
+      },
+      "keepSettings": [
+        "theme"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P06 output=external",
+      "S:feature output=external"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 922
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-dac3e72939861e53",
+    "decision_signature": "DS-1894c73490b979e7"
+  },
+  {
+    "id": "JOB_E_006",
+    "grade": "E",
+    "rank": 1,
+    "n": 6,
+    "title": "写真整理を追加して、手帳は残してください",
+    "from": "散歩写真の会・小森",
+    "body": "写真が増えてきたので、写真整理アプリを入れてほしいです。今使っている手帳アプリと、撮った写真は残してください。これから自分で別のアプリも試したいので、導入制限は解除したままで構いません。管理者の設定までは使う予定がありません。",
+    "family": "KomaOS",
+    "version": "1.0",
+    "reward": 260,
+    "hardware_model_id": "H_E_006",
+    "data": [
+      "写真"
+    ],
+    "keep": [
+      "写真"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        true,
+        null
+      ],
+      "apps": [
+        "写真整理",
+        "手帳"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P02 +写真整理",
+      "S:install +写真整理"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 931
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-569e3d5947119b07",
+    "decision_signature": "DS-4dca6fbc50769cda"
+  },
+  {
+    "id": "JOB_E_007",
+    "grade": "E",
+    "rank": 1,
+    "n": 7,
+    "title": "筆記だけ入れて、入口は閉めてください",
+    "from": "読み書き教室・受付",
+    "body": "教室で使う筆記アプリを一つだけ追加してください。生徒がほかのアプリを次々に入れないよう、作業後は導入制限を戻してほしいです。先に入っている手帳と授業の文書は消さないでください。アプリが使えて、入口だけ閉じていれば大丈夫です。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 280,
+    "hardware_model_id": "H_E_007",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        null
+      ],
+      "apps": [
+        "筆記",
+        "手帳"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P02 +筆記 L:install",
+      "S:install +筆記 L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 940
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-097752adc389a71a",
+    "decision_signature": "DS-7c316fa8be1d91b5"
+  },
+  {
+    "id": "JOB_E_008",
+    "grade": "E",
+    "rank": 1,
+    "n": 8,
+    "title": "アプリを入れてからでも、更新してからでも",
+    "from": "資料保管係・根岸",
+    "body": "KomaOSを2.0にそろえることになりました。この機会に作品閲覧アプリも入れてください。保存済みの作品は全部残したいです。作業の順序はお任せしますが、返却時は導入制限を閉じて、普通に作品が開ける状態にしてください。管理者機能は必要ありません。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 320,
+    "hardware_model_id": "H_E_008",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        null
+      ],
+      "apps": [
+        "作品閲覧"
+      ],
+      "version": "2.0"
+    },
+    "forbid": [],
+    "routes": [
+      "P02 +作品閲覧 U",
+      "U P05 +作品閲覧 L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_003"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 949
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "app_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-fbc7e8bfbe5d5023",
+    "decision_signature": "DS-355ea068f001ffbc"
+  },
+  {
+    "id": "JOB_E_009",
+    "grade": "E",
+    "rank": 1,
+    "n": 9,
+    "title": "管理者制限には一度も触れないでください",
+    "from": "朗読教室・機器係",
+    "body": "録音の練習に音声メモアプリを追加したいです。この端末では管理者制限を解除しない運用にしているため、作業中もそこは一度も開けないでください。導入制限は開けて構いません。残っている録音記録は教材なので、消さずに返していただけると助かります。",
+    "family": "KomaOS",
+    "version": "2.0",
+    "reward": 300,
+    "hardware_model_id": "H_E_009",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        null,
+        null
+      ],
+      "apps": [
+        "音声メモ"
+      ]
+    },
+    "forbid": [
+      "root"
+    ],
+    "routes": [
+      "P05 +音声メモ",
+      "S:install +音声メモ"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_003"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 958
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "never_root",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-50e677e9ea921eb0",
+    "decision_signature": "DS-366c34e96616d6ce"
+  },
+  {
+    "id": "JOB_E_010",
+    "grade": "E",
+    "rank": 1,
+    "n": 10,
+    "title": "管理アプリを使えるところまでお願いします",
+    "from": "小さな製本室・主任",
+    "body": "工房の管理アプリを使いたいのですが、入れようとしても止められます。アプリの導入と、その管理機能を使える状態までお願いします。今後も追加するため導入制限は開けたままにして、作業中の文書は残してください。管理者メニューだけ、アプリだけでは仕事を始められません。",
+    "family": "KomaOS",
+    "version": "1.0",
+    "reward": 340,
+    "hardware_model_id": "H_E_010",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        null
+      ],
+      "apps": [
+        "管理アプリ"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P01 P02 +管理アプリ",
+      "S:root+install +管理アプリ"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 967
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "install"
+    ],
+    "decision_structure": "STRUCT-1f0ce6950673d35c",
+    "decision_signature": "DS-81fee45364014521"
+  },
+  {
+    "id": "JOB_E_011",
+    "grade": "E",
+    "rank": 1,
+    "n": 11,
+    "title": "映らない画面はそのままで構いません",
+    "from": "古道具店「箱」・店主",
+    "body": "画面の映らない古いパソコンを、あとで外部画面につないで使います。本体は起動しているそうです。今回は管理者制限を外す作業だけお願いします。画面交換そのものは頼みません。文書が残って、こちらで接続したときに管理者メニューを開ければ十分です。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 340,
+    "hardware_model_id": "H_E_011",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": false
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "dock P01",
+      "screen P01"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 976
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "screen_fault",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-ac6b46f6726d048d",
+    "decision_signature": "DS-c7c97861aa548ed8"
+  },
+  {
+    "id": "JOB_E_012",
+    "grade": "E",
+    "rank": 1,
+    "n": 12,
+    "title": "画面とアプリ、両方を直してください",
+    "from": "巡回図書室・担当",
+    "body": "この薄いパソコンは起動音がするのに、画面が映りません。貸出先では本体だけを渡すので、画面も直したうえで作品閲覧アプリを入れてください。内蔵画面で読めることが必要です。保存してある文書は貸出の控えなので、そのまま残してください。",
+    "family": "KomaOS",
+    "version": "1.0",
+    "reward": 360,
+    "hardware_model_id": "H_E_012",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": false
+    },
+    "goal": {
+      "apps": [
+        "作品閲覧"
+      ],
+      "display": true
+    },
+    "forbid": [],
+    "routes": [
+      "screen P02 +作品閲覧",
+      "screen S:install +作品閲覧"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 985
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "screen_fault",
+      "app_change",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-81db81a75f51aae4",
+    "decision_signature": "DS-f50abfbeb12ef129"
+  },
+  {
+    "id": "JOB_E_013",
+    "grade": "E",
+    "rank": 1,
+    "n": 13,
+    "title": "見本の表示にしたら、編集できない状態へ",
+    "from": "陶芸展示会・受付係",
+    "body": "展示用のパソコンに、今回の作品紹介を表示させたいです。同封した紹介画面をcustomコンテンツとして選んでください。会期中は来場者が編集しないよう、変更後に編集メニューを閉じてください。写真は次の展示でも使うため、元のファイルを残しておいてください。",
+    "family": "KomaOS",
+    "version": "2.0",
+    "reward": 320,
+    "hardware_model_id": "H_E_013",
+    "data": [
+      "写真"
+    ],
+    "keep": [
+      "写真"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        null,
+        null,
+        false
+      ],
+      "settings": {
+        "content": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P07 content=custom L:feature",
+      "S:feature content=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_003"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 994
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-b216b32a447abf3b",
+    "decision_signature": "DS-b0e69cf6702e5f4c"
+  },
+  {
+    "id": "JOB_E_014",
+    "grade": "E",
+    "rank": 1,
+    "n": 14,
+    "title": "写真を整理して、手元へ書き出したい",
+    "from": "町歩き記録係・三田",
+    "body": "写真整理アプリを入れて、写真を手元の保存先へ書き出せるようにしてください。今はアプリの導入も書き出し設定も閉じています。元の写真と手帳アプリは残したいです。導入と編集は今後こちらでも使うので開けたままでお願いします。管理者機能は不要です。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 340,
+    "hardware_model_id": "H_E_014",
+    "data": [
+      "写真"
+    ],
+    "keep": [
+      "写真"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        true,
+        true
+      ],
+      "apps": [
+        "写真整理",
+        "手帳"
+      ],
+      "settings": {
+        "export": "local"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P02 +写真整理 P06 export=local",
+      "S:install+feature +写真整理 export=local"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1003
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-fb7f4a287d866ebe",
+    "decision_signature": "DS-85e42dc52fa696ac"
+  },
+  {
+    "id": "JOB_E_015",
+    "grade": "E",
+    "rank": 1,
+    "n": 15,
+    "title": "起動しないので、修復してから引き継ぎたい",
+    "from": "町内会・会計係",
+    "body": "引き継ぎ用のパソコンが起動しなくなりました。診断票には保存データは読めていると書いてあります。文書を残して起動できる状態へ戻し、次の担当が設定を扱えるよう管理者制限も外してください。初期化して文書を消す方法は使わないでほしいです。",
+    "family": "KomaOS",
+    "version": "1.0",
+    "reward": 360,
+    "hardware_model_id": "H_E_015",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ]
+    },
+    "forbid": [
+      "erase"
+    ],
+    "routes": [
+      "fix P01",
+      "fix S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1012
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "never_erase",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-2bc6e5e9674a60fe",
+    "decision_signature": "DS-8bbc0ad484cababf"
+  },
+  {
+    "id": "JOB_E_016",
+    "grade": "E",
+    "rank": 1,
+    "n": 16,
+    "title": "新しいOSで、三つの入口を開けてください",
+    "from": "教材づくりの会・調整係",
+    "body": "KomaOS 2.0の教室用パソコンを、教材の試作専用にします。管理者メニュー、アプリの導入、表示設定の編集を全部使えるようにしてください。まだ試作を始めていないので、アプリ追加やテーマ変更は不要です。今入っている文書だけは資料として残してください。",
+    "family": "KomaOS",
+    "version": "2.0",
+    "reward": 360,
+    "hardware_model_id": "H_E_016",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        true
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P04 P05 P07",
+      "S:root+install+feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_003"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1021
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-e26a78faf5690b84",
+    "decision_signature": "DS-ecd913979c5da3e5"
+  },
+  {
+    "id": "JOB_E_017",
+    "grade": "E",
+    "rank": 1,
+    "n": 17,
+    "title": "色も版も、店の指定にそろえてください",
+    "from": "文具店「方眼」・事務係",
+    "body": "このパソコンも店の色に合わせたいです。今はKomaOS 1.0ですが、受け取り時には1.1へ更新しておいてください。色を変える順序は問いません。返却時は編集メニューを閉じ、元の文書と手帳アプリを残してください。2.0までは上げずにお願いします。",
+    "family": "KomaOS",
+    "version": "1.0",
+    "reward": 300,
+    "hardware_model_id": "H_E_017",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        null,
+        null,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "手帳"
+      ],
+      "settings": {
+        "theme": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P06 theme=custom U",
+      "U P06 theme=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1030
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-5b5fe2d97ee604fb",
+    "decision_signature": "DS-038a56bcd5d159cf"
+  },
+  {
+    "id": "JOB_E_018",
+    "grade": "E",
+    "rank": 1,
+    "n": 18,
+    "title": "使わなくなったアプリだけ外してください",
+    "from": "朗読教室・片付け係",
+    "body": "授業の内容を変えたので、このパソコンから写真整理アプリを外してください。音声メモと手帳は引き続き使います。写真も記録も消したくありません。アプリの整理が終わったら、勝手に追加や削除をされないよう、導入制限は閉じた状態で返してください。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 280,
+    "hardware_model_id": "H_E_018",
+    "data": [
+      "写真",
+      "記録"
+    ],
+    "keep": [
+      "写真",
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "写真整理",
+        "音声メモ",
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        null,
+        false,
+        null
+      ],
+      "apps": [
+        "音声メモ",
+        "手帳"
+      ],
+      "remove": [
+        "写真整理"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P02 -写真整理 L:install",
+      "S:install -写真整理 L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1039
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-acb8b6b72ca5b5b6",
+    "decision_signature": "DS-ce639d24a7cb26fc"
+  },
+  {
+    "id": "JOB_E_019",
+    "grade": "E",
+    "rank": 1,
+    "n": 19,
+    "title": "予定を組み替えて、2.0で固定してください",
+    "from": "小ホール・掲示係",
+    "body": "展示パソコンの表示予定を、添付した新しい予定表へ切り替えたいです。返却までにKomaOS 2.0へ更新し、予定を触れないよう編集メニューも閉じてください。展示作品は入れ替えず、そのまま使います。途中の作業順序は都合のよいほうで構いません。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 340,
+    "hardware_model_id": "H_E_019",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        null,
+        null,
+        false
+      ],
+      "version": "2.0",
+      "settings": {
+        "schedule": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P06 schedule=custom U",
+      "U P07 schedule=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_003"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1048
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-8922f187d210691d",
+    "decision_signature": "DS-32028411abacdeee"
+  },
+  {
+    "id": "JOB_E_020",
+    "grade": "E",
+    "rank": 1,
+    "n": 20,
+    "title": "編集用の機械を、展示専用へ戻してください",
+    "from": "作品発表会・運営",
+    "body": "準備のために開けていたパソコンを、そのまま展示に回します。作品閲覧アプリと今回の紹介画面を用意したら、管理者、導入、編集の三つの制限を閉じてください。作品と文書は残してください。版は1.1でも2.0でも構いません。来場者が見る内容がそろっていれば大丈夫です。",
+    "family": "KomaOS",
+    "version": "1.1",
+    "reward": 320,
+    "hardware_model_id": "H_E_020",
+    "data": [
+      "文書",
+      "作品"
+    ],
+    "keep": [
+      "文書",
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        true,
+        true,
+        true
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": [
+        "1.1",
+        "2.0"
+      ],
+      "apps": [
+        "作品閲覧"
+      ],
+      "settings": {
+        "content": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "+作品閲覧 content=custom L:all",
+      "+作品閲覧 content=custom U"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_E_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1057
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [],
+    "decision_structure": "STRUCT-67ccd11e68f894ba",
+    "decision_signature": "DS-30e8b8348946c323"
+  }
+]

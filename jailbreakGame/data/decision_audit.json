@@ -1,0 +1,14 @@
+{
+  "signature_count": 100,
+  "structure_count": 100,
+  "family_counts": {
+    "unlock_only": 10,
+    "compound_validation": 26,
+    "settings_relock": 17,
+    "app_change": 15,
+    "os_update": 11,
+    "data_recovery": 13,
+    "offline": 8
+  },
+  "note": "署名は状態・禁止条件・互換版・費用条件の重複を検出する。100種類の面白さを実測した数値ではない。"
+}

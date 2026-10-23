@@ -1,0 +1,1474 @@
+[
+  {
+    "id": "JOB_A_001",
+    "grade": "A",
+    "rank": 5,
+    "n": 1,
+    "title": "温室の表示盤を引き継ぎたい",
+    "from": "ほし葉園芸・小野",
+    "body": "温室の案内表示盤を前任者から引き継ぎました。植物の紹介文を管理する担当者になったのですが、管理者メニューだけ開けません。中にある栽培記録と写真は残してください。まずは管理者制限の解除だけで結構です。温室の温度などを動かす機械とは別の表示専用機です。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 1300,
+    "hardware_model_id": "H_A_001",
+    "data": [
+      "写真",
+      "記録"
+    ],
+    "keep": [
+      "写真",
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {
+        "profile": "custom"
+      },
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ],
+      "version": "1.0",
+      "keepSettings": [
+        "profile"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P25",
+      "S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1678
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-33f5479c2e384984",
+    "decision_signature": "DS-c97fbf2b5172fcc2"
+  },
+  {
+    "id": "JOB_A_002",
+    "grade": "A",
+    "rank": 5,
+    "n": 2,
+    "title": "同じ表示盤ですが、版が違いました",
+    "from": "ほし葉園芸・小野",
+    "body": "先日の機械とは別の表示盤をお願いします。正面の枠は同じなのですが、こちらにはHearthOS 1.1と出ています。管理者メニューを開けるようにして、植物の写真と点検記録を残してください。前と同じ道具が使えると思っていましたが、版によって違うのでしたら、合う方法でお願いします。",
+    "family": "HearthOS",
+    "version": "1.1",
+    "reward": 1460,
+    "hardware_model_id": "H_A_002",
+    "data": [
+      "写真",
+      "記録"
+    ],
+    "keep": [
+      "写真",
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        null,
+        null
+      ],
+      "version": "1.1"
+    },
+    "forbid": [],
+    "routes": [
+      "P26",
+      "S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_A_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1688
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-8e203f1a13b29e40",
+    "decision_signature": "DS-6d2ce7ac92a446ec"
+  },
+  {
+    "id": "JOB_A_003",
+    "grade": "A",
+    "rank": 5,
+    "n": 3,
+    "title": "在庫メモだけ入れて、入口は閉めてください",
+    "from": "雑貨店こぐま・三浦",
+    "body": "整理棚の端末に在庫メモを入れて、棚番号を書き留めたいです。今の棚一覧は残してください。導入が済んだら、ほかのアプリをうっかり追加できない状態に戻してほしいです。管理者権限は必要ありませんし、作業中も管理者制限を解除せずに済ませてください。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 1380,
+    "hardware_model_id": "H_A_003",
+    "data": [
+      "棚一覧"
+    ],
+    "keep": [
+      "棚一覧"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        null
+      ],
+      "apps": [
+        "在庫メモ"
+      ]
+    },
+    "forbid": [
+      "root"
+    ],
+    "routes": [
+      "P27 +在庫メモ L:install",
+      "S:install +在庫メモ L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": true,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1698
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "never_root",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-abcb211f4a5ec578",
+    "decision_signature": "DS-90c8adde453c3716"
+  },
+  {
+    "id": "JOB_A_004",
+    "grade": "A",
+    "rank": 5,
+    "n": 4,
+    "title": "飲み物の一覧を店の色に",
+    "from": "喫茶あさつゆ・林",
+    "body": "卓上飲料機のメニュー画面を、店で使っている色合いにしたいです。変えたいのは見た目だけで、飲み物の名前やレシピ名の並びは今のままにしてください。店員が後から触ってしまわないよう、編集メニューは閉じて返していただけると助かります。",
+    "family": "HearthOS",
+    "version": "1.1",
+    "reward": 1420,
+    "hardware_model_id": "H_A_004",
+    "data": [
+      "レシピ名"
+    ],
+    "keep": [
+      "レシピ名"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {
+        "theme": "custom"
+      },
+      "keepSettings": [
+        "content",
+        "profile"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "P30 theme=custom L:feature",
+      "S:feature theme=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1708
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-99a64abb99e96dcf",
+    "decision_signature": "DS-481541ee574a0feb"
+  },
+  {
+    "id": "JOB_A_005",
+    "grade": "A",
+    "rank": 5,
+    "n": 5,
+    "title": "名前を書き換えず、同封の表示セットへ",
+    "from": "喫茶あさつゆ・林",
+    "body": "期間限定メニューの表示セットを同封しました。画面の色、案内文、レシピ名の並びをこのセットに合わせてください。端末をネットにつなぐ許可は出ていません。管理者制限は作業中も解除せず、編集メニューも閉じた状態で返してください。抽出の設定を頼んでいるわけではありません。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 1580,
+    "hardware_model_id": "H_A_005",
+    "data": [
+      "レシピ名"
+    ],
+    "keep": [
+      "レシピ名"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {
+        "theme": "custom",
+        "content": "custom",
+        "profile": "custom"
+      }
+    },
+    "forbid": [
+      "network",
+      "root"
+    ],
+    "routes": [
+      "P29 theme=custom content=custom profile=custom L:feature",
+      "preset"
+    ],
+    "network": false,
+    "preset": true,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1718
+    },
+    "decision_family": "offline",
+    "decision_tags": [
+      "offline",
+      "settings_change",
+      "relock",
+      "never_root",
+      "preset",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-b7ae88262dbbd6dd",
+    "decision_signature": "DS-045e46f1b38353f2"
+  },
+  {
+    "id": "JOB_A_006",
+    "grade": "A",
+    "rank": 5,
+    "n": 6,
+    "title": "照明盤の予定表だけ整理したい",
+    "from": "小劇場まどべ・川上",
+    "body": "室内照明盤の画面にある公演予定表を編集したいです。これは照明を動かす時刻表ではなく、受付係が見る案内用の予定表です。ネット接続はしないでください。過去の公演記録と表示プリセットを残し、予定表を直した後も担当者が編集できるようにして返してください。",
+    "family": "HearthOS",
+    "version": "1.1",
+    "reward": 1700,
+    "hardware_model_id": "H_A_006",
+    "data": [
+      "公演記録"
+    ],
+    "keep": [
+      "公演記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        true
+      ],
+      "settings": {
+        "schedule": "custom"
+      },
+      "keepSettings": [
+        "profile"
+      ]
+    },
+    "forbid": [
+      "network"
+    ],
+    "routes": [
+      "P30 schedule=custom",
+      "B:data,apps,settings X+ R:data,apps,settings schedule=custom L:root L:install"
+    ],
+    "network": false,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1728
+    },
+    "decision_family": "offline",
+    "decision_tags": [
+      "offline",
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-dd4afb8aea2c9415",
+    "decision_signature": "DS-bf59d96d835a47fc"
+  },
+  {
+    "id": "JOB_A_007",
+    "grade": "A",
+    "rank": 5,
+    "n": 7,
+    "title": "案内音声に字幕画面も付けたい",
+    "from": "市民展示室・佐伯",
+    "body": "音声案内機を、音が聞こえにくい方にも使いやすくしたいです。字幕アプリを入れ、映像の出力先を外部表示にしてください。録音済みの案内は消さないでください。担当者は設定を変えませんので、終わったらアプリ導入と設定編集の入口を閉じて返していただきたいです。",
+    "family": "HearthOS",
+    "version": "1.1",
+    "reward": 1820,
+    "hardware_model_id": "H_A_007",
+    "data": [
+      "録音",
+      "案内文"
+    ],
+    "keep": [
+      "録音",
+      "案内文"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "音声メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "字幕",
+        "音声メモ"
+      ],
+      "settings": {
+        "output": "external"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P28 +字幕 P30 output=external L:install L:feature",
+      "S:install+feature +字幕 output=external L:install L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1738
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-47893869645bc639",
+    "decision_signature": "DS-675bef3e30199292"
+  },
+  {
+    "id": "JOB_A_008",
+    "grade": "A",
+    "rank": 5,
+    "n": 8,
+    "title": "棚の記録を工房の外へ持ち出せるように",
+    "from": "古書こより・星野",
+    "body": "整理棚の端末にたまった棚卸し記録を、手元の媒体へ書き出せるようにしたいです。中にある記録は一度も消さないでください。バックアップして戻す方法でも、途中で消すのは困ります。外部への送信機能は不要です。ローカルへの書き出しを有効にして、編集口は閉じてください。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 1480,
+    "hardware_model_id": "H_A_008",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        null,
+        false
+      ],
+      "settings": {
+        "export": "local"
+      }
+    },
+    "forbid": [
+      "erase"
+    ],
+    "routes": [
+      "P29 export=local L:feature",
+      "S:feature export=local L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1748
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "never_erase",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-ba980333a58f7f73",
+    "decision_signature": "DS-53a0c5172145fddb"
+  },
+  {
+    "id": "JOB_A_009",
+    "grade": "A",
+    "rank": 5,
+    "n": 9,
+    "title": "起動しない表示器から、展示記録を残したい",
+    "from": "小さな博物室・田辺",
+    "body": "店頭表示器を展示用に使っていたのですが、今は起動しません。中の展示記録と作品画像は替えがないので、元どおり残した状態で使えるようにしてください。管理者制限を外す必要はありません。初期化を経由しても構いませんが、最後には元の内容が全部戻っていることが条件です。",
+    "family": "HearthOS",
+    "version": "1.1",
+    "reward": 1900,
+    "hardware_model_id": "H_A_009",
+    "data": [
+      "記録",
+      "作品"
+    ],
+    "keep": [
+      "記録",
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {
+        "content": "custom",
+        "theme": "custom"
+      },
+      "apps": [
+        "展示再生"
+      ],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "展示再生"
+      ],
+      "keepSettings": [
+        "content",
+        "theme",
+        "output"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "fix",
+      "Q:data,apps,settings X R:data,apps,settings"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1758
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "preserve_data"
+    ],
+    "creditable_axes": [],
+    "decision_structure": "STRUCT-ffbd69ef7a56f908",
+    "decision_signature": "DS-04fa31dbba96e74a"
+  },
+  {
+    "id": "JOB_A_010",
+    "grade": "A",
+    "rank": 5,
+    "n": 10,
+    "title": "空の予備機を管理用に作り直す",
+    "from": "貸し棚リム・大庭",
+    "body": "使わなくなった整理棚端末を管理担当者の予備機に回したいです。起動しないのですが、中身はすべて消して構いません。管理アプリを使えるようにして、必要なアプリを追加できる状態も残してください。表示設定をいじる予定はないので、その編集口だけは閉じたままでお願いします。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 1800,
+    "hardware_model_id": "H_A_010",
+    "data": [
+      "記録"
+    ],
+    "keep": [],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        false
+      ],
+      "version": "1.0",
+      "apps": [
+        "管理アプリ"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "X+ +管理アプリ L:feature",
+      "fix S:root+install +管理アプリ"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1768
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "app_change",
+      "relock",
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "install"
+    ],
+    "decision_structure": "STRUCT-07a7ac5f6fd272a2",
+    "decision_signature": "DS-c2338efe23adccdc"
+  },
+  {
+    "id": "JOB_A_011",
+    "grade": "A",
+    "rank": 5,
+    "n": 11,
+    "title": "新版へ上げても、店の表示を残したい",
+    "from": "文具店みちくさ・桐山",
+    "body": "店頭表示器をHearthOS 1.1にそろえたいです。店の配色と営業案内を同封したので、更新後もその表示にしてください。指定済みの転写プリセットも付けています。今入っている画像は残してください。店員が編集する予定はなく、最後はすべての制限がかかった状態で大丈夫です。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 1780,
+    "hardware_model_id": "H_A_011",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "展示再生"
+      ],
+      "settings": {
+        "theme": "custom",
+        "content": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P29 theme=custom content=custom U",
+      "O preset"
+    ],
+    "network": true,
+    "preset": true,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1778
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "settings_change",
+      "relock",
+      "preset",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-d92d2f2d21ec651a",
+    "decision_signature": "DS-e05b3ef0ef58c6a8"
+  },
+  {
+    "id": "JOB_A_012",
+    "grade": "A",
+    "rank": 5,
+    "n": 12,
+    "title": "更新後の管理アプリまで確認してください",
+    "from": "共同工房ひだまり・渡辺",
+    "body": "温室表示盤を新版に統一し、管理アプリも使えるようにしたいです。現在の版では管理者制限が外れているはずですが、そのまま更新してよいのか分かりません。写真と記録を残したうえで、HearthOS 1.1上で管理アプリが実際に開く状態までお願いします。編集メニューは閉じてください。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 2080,
+    "hardware_model_id": "H_A_012",
+    "data": [
+      "写真",
+      "記録"
+    ],
+    "keep": [
+      "写真",
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "管理アプリ"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "U P26 P28 +管理アプリ",
+      "U S:root+install +管理アプリ"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1788
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "app_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-dbe8a7071a9019a8",
+    "decision_signature": "DS-4c9079bc74198de4"
+  },
+  {
+    "id": "JOB_A_013",
+    "grade": "A",
+    "rank": 5,
+    "n": 13,
+    "title": "展示用アプリを一つだけ片付ける",
+    "from": "駅前案内所・安田",
+    "body": "音声案内機に入っている展示再生アプリだけを削除したいです。字幕と音声メモは使っていますので、残してください。録音した案内も必要です。管理者制限は一度も外さず、削除が済んだらアプリ導入の入口を閉じて返してください。端末全体を初期化する作業は頼んでいません。",
+    "family": "HearthOS",
+    "version": "1.1",
+    "reward": 1500,
+    "hardware_model_id": "H_A_013",
+    "data": [
+      "録音"
+    ],
+    "keep": [
+      "録音"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "展示再生",
+        "字幕",
+        "音声メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "字幕",
+        "音声メモ"
+      ],
+      "remove": [
+        "展示再生"
+      ]
+    },
+    "forbid": [
+      "root",
+      "reimage"
+    ],
+    "routes": [
+      "P28 -展示再生 L:install",
+      "S:install -展示再生 L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1798
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "never_root",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-5cc9d8cf4998b03b",
+    "decision_signature": "DS-bfdad9aeca31096f"
+  },
+  {
+    "id": "JOB_A_014",
+    "grade": "A",
+    "rank": 5,
+    "n": 14,
+    "title": "作品を残して、小さな展示室へ転用",
+    "from": "手仕事の会・小松",
+    "body": "店頭表示器を作品紹介に使いたいです。作品閲覧と字幕を追加し、同封の配色と紹介文を表示してください。前から入っている写真整理アプリと作品画像は残してください。初期化を経由しても、最後に全部戻れば構いません。設定が済んだ後は各種の制限を元どおり閉じて返してください。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 1960,
+    "hardware_model_id": "H_A_014",
+    "data": [
+      "作品",
+      "写真整理データ"
+    ],
+    "keep": [
+      "作品",
+      "写真整理データ"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "写真整理"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.0",
+      "apps": [
+        "写真整理",
+        "作品閲覧",
+        "字幕"
+      ],
+      "settings": {
+        "theme": "custom",
+        "content": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P27 +作品閲覧 +字幕 P29 theme=custom content=custom L:install L:feature",
+      "B:data,apps,settings X+ R:data,apps,settings +作品閲覧 +字幕 theme=custom content=custom L:all"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1808
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-ddd6d653f4f26d63",
+    "decision_signature": "DS-c81d5672a58b79a3"
+  },
+  {
+    "id": "JOB_A_015",
+    "grade": "A",
+    "rank": 5,
+    "n": 15,
+    "title": "画面が映らない機械の表示設定",
+    "from": "共同売店・森",
+    "body": "卓上飲料機の画面が映らなくなりましたが、本体は起動しています。今回は画面の修理そのものではなく、表示するレシピ名を同封の順番へ整理してほしいです。元の名前と登録内容は残してください。別画面から作業しても構いませんし、画面交換も許可します。最後に編集口を閉じてください。",
+    "family": "HearthOS",
+    "version": "1.1",
+    "reward": 1840,
+    "hardware_model_id": "H_A_015",
+    "data": [
+      "レシピ名",
+      "登録内容"
+    ],
+    "keep": [
+      "レシピ名",
+      "登録内容"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": false
+    },
+    "goal": {
+      "s": [
+        false,
+        null,
+        false
+      ],
+      "settings": {
+        "profile": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "dock P30 profile=custom L:feature",
+      "screen S:feature profile=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1818
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "screen_fault",
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-38644bc12e4125d8",
+    "decision_signature": "DS-dded6a74bbce434d"
+  },
+  {
+    "id": "JOB_A_016",
+    "grade": "A",
+    "rank": 5,
+    "n": 16,
+    "title": "通信せず、決まった案内だけを書き込む",
+    "from": "夜間資料室・日高",
+    "body": "音声案内機の表示予定と案内文を、同封した今月分のセットに差し替えてください。ネットには接続しないでください。録音と出力先はそのままにして、管理者制限も作業中から返却まで外さないでください。セットを適用できれば十分で、自由に編集できる状態にはしておかなくて結構です。",
+    "family": "HearthOS",
+    "version": "1.1",
+    "reward": 1760,
+    "hardware_model_id": "H_A_016",
+    "data": [
+      "録音"
+    ],
+    "keep": [
+      "録音"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {
+        "output": "external"
+      },
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {
+        "schedule": "custom",
+        "content": "custom"
+      },
+      "keepSettings": [
+        "output"
+      ]
+    },
+    "forbid": [
+      "network",
+      "root"
+    ],
+    "routes": [
+      "P30 schedule=custom content=custom L:feature",
+      "preset"
+    ],
+    "network": false,
+    "preset": true,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1828
+    },
+    "decision_family": "offline",
+    "decision_tags": [
+      "offline",
+      "settings_change",
+      "relock",
+      "never_root",
+      "preset",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-8b9ce25b1dd113f9",
+    "decision_signature": "DS-7cdb28b33d56cbeb"
+  },
+  {
+    "id": "JOB_A_017",
+    "grade": "A",
+    "rank": 5,
+    "n": 17,
+    "title": "試験用の設定を戻して、貸出用に",
+    "from": "貸出展示室・井口",
+    "body": "展示会の試験で使った温室表示盤を貸出用に戻します。画面の配色と表示プリセットを標準へ戻し、開いている管理者・アプリ導入・設定編集の制限をすべて閉じてください。過去の試験記録は消さずに残します。標準の配色と表示プリセットをまとめた移行データも添えておきます。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 1320,
+    "hardware_model_id": "H_A_017",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        true,
+        true,
+        true
+      ],
+      "settings": {
+        "theme": "custom",
+        "profile": "custom"
+      },
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.0",
+      "apps": [
+        "手帳"
+      ],
+      "settings": {
+        "theme": "standard",
+        "profile": "factory"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "theme=standard profile=factory L:all",
+      "preset L:all"
+    ],
+    "network": true,
+    "preset": true,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1838
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preset",
+      "preserve_data"
+    ],
+    "creditable_axes": [],
+    "decision_structure": "STRUCT-53ea1185842ac653",
+    "decision_signature": "DS-22135c18fbf9413b"
+  },
+  {
+    "id": "JOB_A_018",
+    "grade": "A",
+    "rank": 5,
+    "n": 18,
+    "title": "管理用の機能は残して、案内だけ直す",
+    "from": "広場の小店・北村",
+    "body": "整理棚端末の管理アプリは今までどおり使いたいので、管理者権限を残してください。そのうえで、棚番号の表示プリセットを同封の並びへ変えてほしいです。新しいアプリを追加する予定はありません。編集が終わったら設定の入口は閉じ、管理アプリと在庫メモの中身を残して返してください。",
+    "family": "HearthOS",
+    "version": "1.1",
+    "reward": 1620,
+    "hardware_model_id": "H_A_018",
+    "data": [
+      "棚データ"
+    ],
+    "keep": [
+      "棚データ"
+    ],
+    "initial": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "管理アプリ",
+        "在庫メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "apps": [
+        "管理アプリ",
+        "在庫メモ"
+      ],
+      "settings": {
+        "profile": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P30 profile=custom L:feature",
+      "S:feature profile=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1848
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-020bf6aff1e6fd73",
+    "decision_signature": "DS-7a463ddbdcff5b37"
+  },
+  {
+    "id": "JOB_A_019",
+    "grade": "A",
+    "rank": 5,
+    "n": 19,
+    "title": "直してから、決まった配色だけ戻したい",
+    "from": "地域資料棚・今井",
+    "body": "整理棚端末が起動しなくなりました。棚一覧を残して起動できるようにし、同封した配色セットも適用してください。管理者制限は一度も外さないでほしいです。初期化を挟むこと自体は構いません。アプリ追加や自由な設定変更は不要なので、すべて閉じた状態で返してください。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 1980,
+    "hardware_model_id": "H_A_019",
+    "data": [
+      "棚一覧"
+    ],
+    "keep": [
+      "棚一覧"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "在庫メモ"
+      ],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "在庫メモ"
+      ],
+      "settings": {
+        "theme": "custom"
+      }
+    },
+    "forbid": [
+      "root"
+    ],
+    "routes": [
+      "fix preset",
+      "Q:data,apps,settings X R:data,apps,settings preset"
+    ],
+    "network": true,
+    "preset": true,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1858
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "settings_change",
+      "relock",
+      "never_root",
+      "preset",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-da1b135a20c25b24",
+    "decision_signature": "DS-231def779f3914ba"
+  },
+  {
+    "id": "JOB_A_020",
+    "grade": "A",
+    "rank": 5,
+    "n": 20,
+    "title": "閉店した売店の表示器を、次の展示へ",
+    "from": "まちの展示係・阿部",
+    "body": "引き取った店頭表示器は起動しませんが、前の展示記録と作品画像は保存しておきたいです。通信せずHearthOS 1.1へ更新し、作品閲覧を追加して、同封の配色と案内文を表示してください。初期化は許可します。最後はすべての制限を閉じてください。専用の表示プリセットも同封します。",
+    "family": "HearthOS",
+    "version": "1.0",
+    "reward": 2200,
+    "hardware_model_id": "H_A_020",
+    "data": [
+      "記録",
+      "作品",
+      "写真整理データ"
+    ],
+    "keep": [
+      "記録",
+      "作品",
+      "写真整理データ"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "写真整理"
+      ],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "作品閲覧",
+        "写真整理"
+      ],
+      "settings": {
+        "theme": "custom",
+        "content": "custom"
+      }
+    },
+    "forbid": [
+      "network"
+    ],
+    "routes": [
+      "Q:data,apps X R:data,apps O P28 +作品閲覧 L:install preset",
+      "Q:data,apps,settings X+ R:data,apps,settings +作品閲覧 theme=custom content=custom O"
+    ],
+    "network": false,
+    "preset": true,
+    "beforeBackup": false,
+    "priorGradeCount": 3,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1868
+    },
+    "decision_family": "offline",
+    "decision_tags": [
+      "offline",
+      "recovery",
+      "version_change",
+      "app_change",
+      "settings_change",
+      "relock",
+      "preset",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-0964d8f55e2c2245",
+    "decision_signature": "DS-c7d06e00b336986d"
+  }
+]

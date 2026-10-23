@@ -1,0 +1,1517 @@
+{
+  "P01": {
+    "kind": "pocs",
+    "name": "KomaOS 1.0 / 1.1 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "KomaOS 1.0 / 1.1",
+    "shape": "USB-A",
+    "purpose": "管理者権限"
+  },
+  "P02": {
+    "kind": "pocs",
+    "name": "KomaOS 1.0 / 1.1 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "KomaOS 1.0 / 1.1",
+    "shape": "USB-A",
+    "purpose": "アプリ導入権限"
+  },
+  "P03": {
+    "kind": "pocs",
+    "name": "MiraOS 1.0 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "MiraOS 1.0",
+    "shape": "USB-C",
+    "purpose": "管理者権限"
+  },
+  "P04": {
+    "kind": "pocs",
+    "name": "KomaOS 2.0 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "KomaOS 2.0",
+    "shape": "USB-A",
+    "purpose": "管理者権限"
+  },
+  "P05": {
+    "kind": "pocs",
+    "name": "KomaOS 2.0 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "KomaOS 2.0",
+    "shape": "USB-A",
+    "purpose": "アプリ導入権限"
+  },
+  "P06": {
+    "kind": "pocs",
+    "name": "KomaOS 1.0 / 1.1 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "KomaOS 1.0 / 1.1",
+    "shape": "USB-A",
+    "purpose": "設定編集権限"
+  },
+  "P07": {
+    "kind": "pocs",
+    "name": "KomaOS 2.0 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "KomaOS 2.0",
+    "shape": "USB-A",
+    "purpose": "設定編集権限"
+  },
+  "P08": {
+    "kind": "pocs",
+    "name": "MiraOS 1.1 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "MiraOS 1.1",
+    "shape": "USB-C",
+    "purpose": "管理者権限"
+  },
+  "P09": {
+    "kind": "pocs",
+    "name": "MiraOS 1.0 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "MiraOS 1.0",
+    "shape": "USB-C",
+    "purpose": "アプリ導入権限"
+  },
+  "P10": {
+    "kind": "pocs",
+    "name": "MiraOS 1.1 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "MiraOS 1.1",
+    "shape": "USB-C",
+    "purpose": "アプリ導入権限"
+  },
+  "P11": {
+    "kind": "pocs",
+    "name": "MiraOS 1.0 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "MiraOS 1.0",
+    "shape": "USB-C",
+    "purpose": "設定編集権限"
+  },
+  "P12": {
+    "kind": "pocs",
+    "name": "MiraOS 1.1 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "MiraOS 1.1",
+    "shape": "USB-C",
+    "purpose": "設定編集権限"
+  },
+  "P13": {
+    "kind": "pocs",
+    "name": "FolioOS 1.0 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "FolioOS 1.0",
+    "shape": "SD",
+    "purpose": "管理者権限"
+  },
+  "P14": {
+    "kind": "pocs",
+    "name": "FolioOS 1.1 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "FolioOS 1.1",
+    "shape": "SD",
+    "purpose": "管理者権限"
+  },
+  "P15": {
+    "kind": "pocs",
+    "name": "FolioOS 1.0 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "FolioOS 1.0",
+    "shape": "SD",
+    "purpose": "アプリ導入権限"
+  },
+  "P16": {
+    "kind": "pocs",
+    "name": "FolioOS 1.1 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "FolioOS 1.1",
+    "shape": "SD",
+    "purpose": "アプリ導入権限"
+  },
+  "P17": {
+    "kind": "pocs",
+    "name": "FolioOS 1.0 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "FolioOS 1.0",
+    "shape": "SD",
+    "purpose": "設定編集権限"
+  },
+  "P18": {
+    "kind": "pocs",
+    "name": "FolioOS 1.1 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "FolioOS 1.1",
+    "shape": "SD",
+    "purpose": "設定編集権限"
+  },
+  "P19": {
+    "kind": "pocs",
+    "name": "ReelOS 1.0 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "ReelOS 1.0",
+    "shape": "DVD",
+    "purpose": "管理者権限"
+  },
+  "P20": {
+    "kind": "pocs",
+    "name": "ReelOS 1.1 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "ReelOS 1.1",
+    "shape": "DVD",
+    "purpose": "管理者権限"
+  },
+  "P21": {
+    "kind": "pocs",
+    "name": "ReelOS 1.0 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "ReelOS 1.0",
+    "shape": "DVD",
+    "purpose": "アプリ導入権限"
+  },
+  "P22": {
+    "kind": "pocs",
+    "name": "ReelOS 1.1 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "ReelOS 1.1",
+    "shape": "DVD",
+    "purpose": "アプリ導入権限"
+  },
+  "P23": {
+    "kind": "pocs",
+    "name": "ReelOS 1.0 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "ReelOS 1.0",
+    "shape": "DVD",
+    "purpose": "設定編集権限"
+  },
+  "P24": {
+    "kind": "pocs",
+    "name": "ReelOS 1.1 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "ReelOS 1.1",
+    "shape": "DVD",
+    "purpose": "設定編集権限"
+  },
+  "P25": {
+    "kind": "pocs",
+    "name": "HearthOS 1.0 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "HearthOS 1.0",
+    "shape": "USB-C",
+    "purpose": "管理者権限"
+  },
+  "P26": {
+    "kind": "pocs",
+    "name": "HearthOS 1.1 管理者制限解除",
+    "shortName": "管理者用",
+    "compatibility": "HearthOS 1.1",
+    "shape": "USB-C",
+    "purpose": "管理者権限"
+  },
+  "P27": {
+    "kind": "pocs",
+    "name": "HearthOS 1.0 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "HearthOS 1.0",
+    "shape": "USB-C",
+    "purpose": "アプリ導入権限"
+  },
+  "P28": {
+    "kind": "pocs",
+    "name": "HearthOS 1.1 アプリ導入制限解除",
+    "shortName": "アプリ導入制限解除",
+    "compatibility": "HearthOS 1.1",
+    "shape": "USB-C",
+    "purpose": "アプリ導入権限"
+  },
+  "P29": {
+    "kind": "pocs",
+    "name": "HearthOS 1.0 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "HearthOS 1.0",
+    "shape": "USB-C",
+    "purpose": "設定編集権限"
+  },
+  "P30": {
+    "kind": "pocs",
+    "name": "HearthOS 1.1 設定編集制限解除",
+    "shortName": "設定編集用",
+    "compatibility": "HearthOS 1.1",
+    "shape": "USB-C",
+    "purpose": "設定編集権限"
+  },
+  "M01": {
+    "kind": "equipment",
+    "name": "観察レンズ",
+    "shortName": "観察レンズ"
+  },
+  "M02": {
+    "kind": "equipment",
+    "name": "外部画面ドック",
+    "shortName": "外部画面ドック"
+  },
+  "M03": {
+    "kind": "equipment",
+    "name": "USB-A/C変換器",
+    "shortName": "USB-A/C変換器"
+  },
+  "M04": {
+    "kind": "equipment",
+    "name": "バックアップ装置",
+    "shortName": "バックアップ装置"
+  },
+  "M05": {
+    "kind": "equipment",
+    "name": "リカバリー装置",
+    "shortName": "リカバリー装置"
+  },
+  "M06": {
+    "kind": "equipment",
+    "name": "読取専用救出機",
+    "shortName": "読取専用救出機"
+  },
+  "M07": {
+    "kind": "equipment",
+    "name": "詳細診断機",
+    "shortName": "詳細診断機"
+  },
+  "M08": {
+    "kind": "equipment",
+    "name": "メディア複製器",
+    "shortName": "メディア複製器"
+  },
+  "M09": {
+    "kind": "equipment",
+    "name": "オフライン更新箱",
+    "shortName": "オフライン更新箱"
+  },
+  "M10": {
+    "kind": "equipment",
+    "name": "機能検査台",
+    "shortName": "機能検査台"
+  },
+  "M11": {
+    "kind": "equipment",
+    "name": "作業記録台",
+    "shortName": "作業記録台"
+  },
+  "M12": {
+    "kind": "equipment",
+    "name": "追加受付棚",
+    "shortName": "追加受付棚"
+  },
+  "M13": {
+    "kind": "equipment",
+    "name": "設定転写機",
+    "shortName": "設定転写機"
+  },
+  "M14": {
+    "kind": "equipment",
+    "name": "メディア収納棚",
+    "shortName": "メディア収納棚"
+  },
+  "M15": {
+    "kind": "equipment",
+    "name": "一括処理台",
+    "shortName": "一括処理台"
+  },
+  "M16": {
+    "kind": "equipment",
+    "name": "返却検品トレー",
+    "shortName": "返却検品トレー"
+  },
+  "A1": {
+    "kind": "skills",
+    "name": "買い取り：媒体2本",
+    "shortName": "買い取り：媒体2本"
+  },
+  "A2": {
+    "kind": "skills",
+    "name": "買い取り：機材2台",
+    "shortName": "買い取り：機材2台"
+  },
+  "A3": {
+    "kind": "skills",
+    "name": "支給：携帯保全設備",
+    "shortName": "支給：携帯保全設備"
+  },
+  "A4": {
+    "kind": "skills",
+    "name": "買い取り：媒体4本",
+    "shortName": "買い取り：媒体4本"
+  },
+  "A5": {
+    "kind": "skills",
+    "name": "買い取り：機材4台",
+    "shortName": "買い取り：機材4台"
+  },
+  "B1": {
+    "kind": "skills",
+    "name": "媒体：適合品の取り置き",
+    "shortName": "媒体：適合品の取り置き"
+  },
+  "B2": {
+    "kind": "skills",
+    "name": "媒体：実行予約",
+    "shortName": "媒体：実行予約"
+  },
+  "B3": {
+    "kind": "skills",
+    "name": "媒体：複合媒体",
+    "shortName": "媒体：複合媒体"
+  },
+  "B4": {
+    "kind": "skills",
+    "name": "媒体：四本の取り置き",
+    "shortName": "媒体：四本の取り置き"
+  },
+  "C1": {
+    "kind": "skills",
+    "name": "思考：次便を読む",
+    "shortName": "思考：次便を読む"
+  },
+  "C2": {
+    "kind": "skills",
+    "name": "思考：工程の仮置き",
+    "shortName": "思考：工程の仮置き"
+  },
+  "C3": {
+    "kind": "skills",
+    "name": "思考：脳内工程",
+    "shortName": "思考：脳内工程"
+  },
+  "C4": {
+    "kind": "skills",
+    "name": "思考：段取り上手",
+    "shortName": "思考：段取り上手"
+  },
+  "D1": {
+    "kind": "skills",
+    "name": "並行：相談を指名する",
+    "shortName": "並行：相談を指名する"
+  },
+  "D2": {
+    "kind": "skills",
+    "name": "並行：配達の先行予約",
+    "shortName": "並行：配達の先行予約"
+  },
+  "D3": {
+    "kind": "skills",
+    "name": "並行：双卓",
+    "shortName": "並行：双卓"
+  },
+  "D4": {
+    "kind": "skills",
+    "name": "並行：予備媒体の製作",
+    "shortName": "並行：予備媒体の製作"
+  },
+  "F1": {
+    "kind": "skills",
+    "name": "中央：委託評価の窓口",
+    "shortName": "中央：委託評価の窓口"
+  },
+  "R2": {
+    "kind": "skills",
+    "name": "開始時の信用：Dの紹介状",
+    "shortName": "開始時の信用：Dの紹介状"
+  },
+  "R3": {
+    "kind": "skills",
+    "name": "開始時の信用：Cの紹介状",
+    "shortName": "開始時の信用：Cの紹介状"
+  },
+  "R4": {
+    "kind": "skills",
+    "name": "開始時の信用：Bの紹介状",
+    "shortName": "開始時の信用：Bの紹介状"
+  },
+  "R5": {
+    "kind": "skills",
+    "name": "開始時の信用：Aの紹介状",
+    "shortName": "開始時の信用：Aの紹介状"
+  },
+  "S01": {
+    "kind": "services",
+    "name": "正規制限解除",
+    "shortName": "正規制限解除"
+  },
+  "S02": {
+    "kind": "services",
+    "name": "正規修復",
+    "shortName": "正規修復"
+  },
+  "S03": {
+    "kind": "services",
+    "name": "正規更新",
+    "shortName": "正規更新"
+  },
+  "S04": {
+    "kind": "services",
+    "name": "画面交換",
+    "shortName": "画面交換"
+  },
+  "JOB_E_001": {
+    "kind": "jobs",
+    "name": "古い原稿を残して、管理者にしてください",
+    "shortName": "古い原稿を残して、管理者にしてください"
+  },
+  "JOB_E_002": {
+    "kind": "jobs",
+    "name": "管理者ではなく、アプリを入れられるように",
+    "shortName": "管理者ではなく、アプリを入れられるように"
+  },
+  "JOB_E_003": {
+    "kind": "jobs",
+    "name": "同じシリーズですが、OSは2.0です",
+    "shortName": "同じシリーズですが、OSは2.0です"
+  },
+  "JOB_E_004": {
+    "kind": "jobs",
+    "name": "展示の色だけ、お店に合わせたい",
+    "shortName": "展示の色だけ、お店に合わせたい"
+  },
+  "JOB_E_005": {
+    "kind": "jobs",
+    "name": "映像は外へ、操作はここに残したい",
+    "shortName": "映像は外へ、操作はここに残したい"
+  },
+  "JOB_E_006": {
+    "kind": "jobs",
+    "name": "写真整理を追加して、手帳は残してください",
+    "shortName": "写真整理を追加して、手帳は残してください"
+  },
+  "JOB_E_007": {
+    "kind": "jobs",
+    "name": "筆記だけ入れて、入口は閉めてください",
+    "shortName": "筆記だけ入れて、入口は閉めてください"
+  },
+  "JOB_E_008": {
+    "kind": "jobs",
+    "name": "アプリを入れてからでも、更新してからでも",
+    "shortName": "アプリを入れてからでも、更新してからでも"
+  },
+  "JOB_E_009": {
+    "kind": "jobs",
+    "name": "管理者制限には一度も触れないでください",
+    "shortName": "管理者制限には一度も触れないでください"
+  },
+  "JOB_E_010": {
+    "kind": "jobs",
+    "name": "管理アプリを使えるところまでお願いします",
+    "shortName": "管理アプリを使えるところまでお願いします"
+  },
+  "JOB_E_011": {
+    "kind": "jobs",
+    "name": "映らない画面はそのままで構いません",
+    "shortName": "映らない画面はそのままで構いません"
+  },
+  "JOB_E_012": {
+    "kind": "jobs",
+    "name": "画面とアプリ、両方を直してください",
+    "shortName": "画面とアプリ、両方を直してください"
+  },
+  "JOB_E_013": {
+    "kind": "jobs",
+    "name": "見本の表示にしたら、編集できない状態へ",
+    "shortName": "見本の表示にしたら、編集できない状態へ"
+  },
+  "JOB_E_014": {
+    "kind": "jobs",
+    "name": "写真を整理して、手元へ書き出したい",
+    "shortName": "写真を整理して、手元へ書き出したい"
+  },
+  "JOB_E_015": {
+    "kind": "jobs",
+    "name": "起動しないので、修復してから引き継ぎたい",
+    "shortName": "起動しないので、修復してから引き継ぎたい"
+  },
+  "JOB_E_016": {
+    "kind": "jobs",
+    "name": "新しいOSで、三つの入口を開けてください",
+    "shortName": "新しいOSで、三つの入口を開けてください"
+  },
+  "JOB_E_017": {
+    "kind": "jobs",
+    "name": "色も版も、店の指定にそろえてください",
+    "shortName": "色も版も、店の指定にそろえてください"
+  },
+  "JOB_E_018": {
+    "kind": "jobs",
+    "name": "使わなくなったアプリだけ外してください",
+    "shortName": "使わなくなったアプリだけ外してください"
+  },
+  "JOB_E_019": {
+    "kind": "jobs",
+    "name": "予定を組み替えて、2.0で固定してください",
+    "shortName": "予定を組み替えて、2.0で固定してください"
+  },
+  "JOB_E_020": {
+    "kind": "jobs",
+    "name": "編集用の機械を、展示専用へ戻してください",
+    "shortName": "編集用の機械を、展示専用へ戻してください"
+  },
+  "JOB_D_001": {
+    "kind": "jobs",
+    "name": "写真を残したまま管理者制限を外せますか",
+    "shortName": "写真を残したまま管理者制限を外せますか"
+  },
+  "JOB_D_002": {
+    "kind": "jobs",
+    "name": "同じシリーズですが、今度のモデルは1.1でした",
+    "shortName": "同じシリーズですが、今度のモデルは1.1でした"
+  },
+  "JOB_D_003": {
+    "kind": "jobs",
+    "name": "筆記アプリだけを使えるようにしてください",
+    "shortName": "筆記アプリだけを使えるようにしてください"
+  },
+  "JOB_D_004": {
+    "kind": "jobs",
+    "name": "写真整理を入れたら、導入制限を戻してください",
+    "shortName": "写真整理を入れたら、導入制限を戻してください"
+  },
+  "JOB_D_005": {
+    "kind": "jobs",
+    "name": "手帳を外して、音声メモは残したい",
+    "shortName": "手帳を外して、音声メモは残したい"
+  },
+  "JOB_D_006": {
+    "kind": "jobs",
+    "name": "展示の色に合わせたら、編集口を閉じてください",
+    "shortName": "展示の色に合わせたら、編集口を閉じてください"
+  },
+  "JOB_D_007": {
+    "kind": "jobs",
+    "name": "案内を外の画面にも出したい",
+    "shortName": "案内を外の画面にも出したい"
+  },
+  "JOB_D_008": {
+    "kind": "jobs",
+    "name": "録音を書き出せるようにしたい",
+    "shortName": "録音を書き出せるようにしたい"
+  },
+  "JOB_D_009": {
+    "kind": "jobs",
+    "name": "閉店後は別の案内を表示したい",
+    "shortName": "閉店後は別の案内を表示したい"
+  },
+  "JOB_D_010": {
+    "kind": "jobs",
+    "name": "管理アプリが動くところまでお願いします",
+    "shortName": "管理アプリが動くところまでお願いします"
+  },
+  "JOB_D_011": {
+    "kind": "jobs",
+    "name": "管理・導入・表示設定をまとめて開放したい",
+    "shortName": "管理・導入・表示設定をまとめて開放したい"
+  },
+  "JOB_D_012": {
+    "kind": "jobs",
+    "name": "アプリを入れてから更新しても大丈夫です",
+    "shortName": "アプリを入れてから更新しても大丈夫です"
+  },
+  "JOB_D_013": {
+    "kind": "jobs",
+    "name": "使い慣れた設定にしてから最新版へ",
+    "shortName": "使い慣れた設定にしてから最新版へ"
+  },
+  "JOB_D_014": {
+    "kind": "jobs",
+    "name": "画面は暗いですが、本体は動いています",
+    "shortName": "画面は暗いですが、本体は動いています"
+  },
+  "JOB_D_015": {
+    "kind": "jobs",
+    "name": "展示を設定して、開きっぱなしの権限を閉じたい",
+    "shortName": "展示を設定して、開きっぱなしの権限を閉じたい"
+  },
+  "JOB_D_016": {
+    "kind": "jobs",
+    "name": "起動できる状態に戻してから、制限を外してください",
+    "shortName": "起動できる状態に戻してから、制限を外してください"
+  },
+  "JOB_D_017": {
+    "kind": "jobs",
+    "name": "管理者機能を閉じ、在庫メモの導入だけ開けたい",
+    "shortName": "管理者機能を閉じ、在庫メモの導入だけ開けたい"
+  },
+  "JOB_D_018": {
+    "kind": "jobs",
+    "name": "外部出力を管理し、一般アプリは追加できないように",
+    "shortName": "外部出力を管理し、一般アプリは追加できないように"
+  },
+  "JOB_D_019": {
+    "kind": "jobs",
+    "name": "字幕を追加し、案内の時刻だけ変えたい",
+    "shortName": "字幕を追加し、案内の時刻だけ変えたい"
+  },
+  "JOB_D_020": {
+    "kind": "jobs",
+    "name": "口は新しくても、中身は前と同じです",
+    "shortName": "口は新しくても、中身は前と同じです"
+  },
+  "JOB_C_001": {
+    "kind": "jobs",
+    "name": "予定表を管理できるように",
+    "shortName": "予定表を管理できるように"
+  },
+  "JOB_C_002": {
+    "kind": "jobs",
+    "name": "同じ手帳なのに前のパッケージが効かない",
+    "shortName": "同じ手帳なのに前のパッケージが効かない"
+  },
+  "JOB_C_003": {
+    "kind": "jobs",
+    "name": "読書メモだけ足してください",
+    "shortName": "読書メモだけ足してください"
+  },
+  "JOB_C_004": {
+    "kind": "jobs",
+    "name": "読みやすい配色にして鍵を戻す",
+    "shortName": "読みやすい配色にして鍵を戻す"
+  },
+  "JOB_C_005": {
+    "kind": "jobs",
+    "name": "写真を端末の中だけに閉じ込めないで",
+    "shortName": "写真を端末の中だけに閉じ込めないで"
+  },
+  "JOB_C_006": {
+    "kind": "jobs",
+    "name": "会場の画面へ作品を映したい",
+    "shortName": "会場の画面へ作品を映したい"
+  },
+  "JOB_C_007": {
+    "kind": "jobs",
+    "name": "見本アプリだけ片付けたい",
+    "shortName": "見本アプリだけ片付けたい"
+  },
+  "JOB_C_008": {
+    "kind": "jobs",
+    "name": "管理アプリは使う、追加は閉じる",
+    "shortName": "管理アプリは使う、追加は閉じる"
+  },
+  "JOB_C_009": {
+    "kind": "jobs",
+    "name": "新版にしてからアプリを追加できるように",
+    "shortName": "新版にしてからアプリを追加できるように"
+  },
+  "JOB_C_010": {
+    "kind": "jobs",
+    "name": "更新前の設定でも引き継げますか",
+    "shortName": "更新前の設定でも引き継げますか"
+  },
+  "JOB_C_011": {
+    "kind": "jobs",
+    "name": "中身はいらないので起動する手帳に",
+    "shortName": "中身はいらないので起動する手帳に"
+  },
+  "JOB_C_012": {
+    "kind": "jobs",
+    "name": "起動しなくても録音は返してください",
+    "shortName": "起動しなくても録音は返してください"
+  },
+  "JOB_C_013": {
+    "kind": "jobs",
+    "name": "写真を救って管理者制限も外したい",
+    "shortName": "写真を救って管理者制限も外したい"
+  },
+  "JOB_C_014": {
+    "kind": "jobs",
+    "name": "空の実験用タブレットを作りたい",
+    "shortName": "空の実験用タブレットを作りたい"
+  },
+  "JOB_C_015": {
+    "kind": "jobs",
+    "name": "持ち出せない記録を端末内で整理する",
+    "shortName": "持ち出せない記録を端末内で整理する"
+  },
+  "JOB_C_016": {
+    "kind": "jobs",
+    "name": "返ってくればよい、ではありません",
+    "shortName": "返ってくればよい、ではありません"
+  },
+  "JOB_C_017": {
+    "kind": "jobs",
+    "name": "修復後も設定を変え続けたい",
+    "shortName": "修復後も設定を変え続けたい"
+  },
+  "JOB_C_018": {
+    "kind": "jobs",
+    "name": "画面は外へ出せれば十分です",
+    "shortName": "画面は外へ出せれば十分です"
+  },
+  "JOB_C_019": {
+    "kind": "jobs",
+    "name": "貸出用の一式を整えて閉じる",
+    "shortName": "貸出用の一式を整えて閉じる"
+  },
+  "JOB_C_020": {
+    "kind": "jobs",
+    "name": "ネットに出せない故障端末を管理用に",
+    "shortName": "ネットに出せない故障端末を管理用に"
+  },
+  "JOB_B_001": {
+    "kind": "jobs",
+    "name": "教材機の管理者設定を引き継ぎたい",
+    "shortName": "教材機の管理者設定を引き継ぎたい"
+  },
+  "JOB_B_002": {
+    "kind": "jobs",
+    "name": "同じ教材機なのに昨日のDVDが使えません",
+    "shortName": "同じ教材機なのに昨日のDVDが使えません"
+  },
+  "JOB_B_003": {
+    "kind": "jobs",
+    "name": "字幕だけ足して教材を使い続けたい",
+    "shortName": "字幕だけ足して教材を使い続けたい"
+  },
+  "JOB_B_004": {
+    "kind": "jobs",
+    "name": "字幕付きの映像を外のモニターへ",
+    "shortName": "字幕付きの映像を外のモニターへ"
+  },
+  "JOB_B_005": {
+    "kind": "jobs",
+    "name": "展示の見本映像を自分たちの作品に替えたい",
+    "shortName": "展示の見本映像を自分たちの作品に替えたい"
+  },
+  "JOB_B_006": {
+    "kind": "jobs",
+    "name": "管理アプリを使える音楽端末にしたい",
+    "shortName": "管理アプリを使える音楽端末にしたい"
+  },
+  "JOB_B_007": {
+    "kind": "jobs",
+    "name": "OSを更新してから管理者として使いたい",
+    "shortName": "OSを更新してから管理者として使いたい"
+  },
+  "JOB_B_008": {
+    "kind": "jobs",
+    "name": "通信せずに展示時刻の設定を更新したい",
+    "shortName": "通信せずに展示時刻の設定を更新したい"
+  },
+  "JOB_B_009": {
+    "kind": "jobs",
+    "name": "起動しない教材機から授業を再開したい",
+    "shortName": "起動しない教材機から授業を再開したい"
+  },
+  "JOB_B_010": {
+    "kind": "jobs",
+    "name": "中古プレーヤーを初期化して管理用に回したい",
+    "shortName": "中古プレーヤーを初期化して管理用に回したい"
+  },
+  "JOB_B_011": {
+    "kind": "jobs",
+    "name": "内蔵画面はそのままで字幕を追加したい",
+    "shortName": "内蔵画面はそのままで字幕を追加したい"
+  },
+  "JOB_B_012": {
+    "kind": "jobs",
+    "name": "音楽端末に紛れた在庫アプリを消したい",
+    "shortName": "音楽端末に紛れた在庫アプリを消したい"
+  },
+  "JOB_B_013": {
+    "kind": "jobs",
+    "name": "持込展示機を通信なしで設定したい",
+    "shortName": "持込展示機を通信なしで設定したい"
+  },
+  "JOB_B_014": {
+    "kind": "jobs",
+    "name": "作品閲覧と授業用プリセットだけ整えてほしい",
+    "shortName": "作品閲覧と授業用プリセットだけ整えてほしい"
+  },
+  "JOB_B_015": {
+    "kind": "jobs",
+    "name": "個人写真だけ残さず管理用へ引き継ぎたい",
+    "shortName": "個人写真だけ残さず管理用へ引き継ぎたい"
+  },
+  "JOB_B_016": {
+    "kind": "jobs",
+    "name": "既存の教材と外部出力を残して更新だけ",
+    "shortName": "既存の教材と外部出力を残して更新だけ"
+  },
+  "JOB_B_017": {
+    "kind": "jobs",
+    "name": "開いたままの設定を整えて閉じてほしい",
+    "shortName": "開いたままの設定を整えて閉じてほしい"
+  },
+  "JOB_B_018": {
+    "kind": "jobs",
+    "name": "録音を一度も消さず書き出せるように",
+    "shortName": "録音を一度も消さず書き出せるように"
+  },
+  "JOB_B_019": {
+    "kind": "jobs",
+    "name": "貸出展示機を操作しすぎない状態へ",
+    "shortName": "貸出展示機を操作しすぎない状態へ"
+  },
+  "JOB_B_020": {
+    "kind": "jobs",
+    "name": "巡回展示の担当者が全部調整できる一台に",
+    "shortName": "巡回展示の担当者が全部調整できる一台に"
+  },
+  "JOB_A_001": {
+    "kind": "jobs",
+    "name": "温室の表示盤を引き継ぎたい",
+    "shortName": "温室の表示盤を引き継ぎたい"
+  },
+  "JOB_A_002": {
+    "kind": "jobs",
+    "name": "同じ表示盤ですが、版が違いました",
+    "shortName": "同じ表示盤ですが、版が違いました"
+  },
+  "JOB_A_003": {
+    "kind": "jobs",
+    "name": "在庫メモだけ入れて、入口は閉めてください",
+    "shortName": "在庫メモだけ入れて、入口は閉めてください"
+  },
+  "JOB_A_004": {
+    "kind": "jobs",
+    "name": "飲み物の一覧を店の色に",
+    "shortName": "飲み物の一覧を店の色に"
+  },
+  "JOB_A_005": {
+    "kind": "jobs",
+    "name": "名前を書き換えず、同封の表示セットへ",
+    "shortName": "名前を書き換えず、同封の表示セットへ"
+  },
+  "JOB_A_006": {
+    "kind": "jobs",
+    "name": "照明盤の予定表だけ整理したい",
+    "shortName": "照明盤の予定表だけ整理したい"
+  },
+  "JOB_A_007": {
+    "kind": "jobs",
+    "name": "案内音声に字幕画面も付けたい",
+    "shortName": "案内音声に字幕画面も付けたい"
+  },
+  "JOB_A_008": {
+    "kind": "jobs",
+    "name": "棚の記録を工房の外へ持ち出せるように",
+    "shortName": "棚の記録を工房の外へ持ち出せるように"
+  },
+  "JOB_A_009": {
+    "kind": "jobs",
+    "name": "起動しない表示器から、展示記録を残したい",
+    "shortName": "起動しない表示器から、展示記録を残したい"
+  },
+  "JOB_A_010": {
+    "kind": "jobs",
+    "name": "空の予備機を管理用に作り直す",
+    "shortName": "空の予備機を管理用に作り直す"
+  },
+  "JOB_A_011": {
+    "kind": "jobs",
+    "name": "新版へ上げても、店の表示を残したい",
+    "shortName": "新版へ上げても、店の表示を残したい"
+  },
+  "JOB_A_012": {
+    "kind": "jobs",
+    "name": "更新後の管理アプリまで確認してください",
+    "shortName": "更新後の管理アプリまで確認してください"
+  },
+  "JOB_A_013": {
+    "kind": "jobs",
+    "name": "展示用アプリを一つだけ片付ける",
+    "shortName": "展示用アプリを一つだけ片付ける"
+  },
+  "JOB_A_014": {
+    "kind": "jobs",
+    "name": "作品を残して、小さな展示室へ転用",
+    "shortName": "作品を残して、小さな展示室へ転用"
+  },
+  "JOB_A_015": {
+    "kind": "jobs",
+    "name": "画面が映らない機械の表示設定",
+    "shortName": "画面が映らない機械の表示設定"
+  },
+  "JOB_A_016": {
+    "kind": "jobs",
+    "name": "通信せず、決まった案内だけを書き込む",
+    "shortName": "通信せず、決まった案内だけを書き込む"
+  },
+  "JOB_A_017": {
+    "kind": "jobs",
+    "name": "試験用の設定を戻して、貸出用に",
+    "shortName": "試験用の設定を戻して、貸出用に"
+  },
+  "JOB_A_018": {
+    "kind": "jobs",
+    "name": "管理用の機能は残して、案内だけ直す",
+    "shortName": "管理用の機能は残して、案内だけ直す"
+  },
+  "JOB_A_019": {
+    "kind": "jobs",
+    "name": "直してから、決まった配色だけ戻したい",
+    "shortName": "直してから、決まった配色だけ戻したい"
+  },
+  "JOB_A_020": {
+    "kind": "jobs",
+    "name": "閉店した売店の表示器を、次の展示へ",
+    "shortName": "閉店した売店の表示器を、次の展示へ"
+  },
+  "H_E_001": {
+    "kind": "devices",
+    "name": "文箱 K-101",
+    "shortName": "文箱 K-101"
+  },
+  "H_E_002": {
+    "kind": "devices",
+    "name": "学習棚 L-11",
+    "shortName": "学習棚 L-11"
+  },
+  "H_E_003": {
+    "kind": "devices",
+    "name": "文箱 K-202 増設型",
+    "shortName": "文箱 K-202 増設型"
+  },
+  "H_E_004": {
+    "kind": "devices",
+    "name": "色札 S-10",
+    "shortName": "色札 S-10"
+  },
+  "H_E_005": {
+    "kind": "devices",
+    "name": "映写橋 V-11",
+    "shortName": "映写橋 V-11"
+  },
+  "H_E_006": {
+    "kind": "devices",
+    "name": "写真簿 F-10",
+    "shortName": "写真簿 F-10"
+  },
+  "H_E_007": {
+    "kind": "devices",
+    "name": "筆机 N-11",
+    "shortName": "筆机 N-11"
+  },
+  "H_E_008": {
+    "kind": "devices",
+    "name": "作品帳 W-12",
+    "shortName": "作品帳 W-12"
+  },
+  "H_E_009": {
+    "kind": "devices",
+    "name": "音札 T-20",
+    "shortName": "音札 T-20"
+  },
+  "H_E_010": {
+    "kind": "devices",
+    "name": "製本卓 B-10",
+    "shortName": "製本卓 B-10"
+  },
+  "H_E_011": {
+    "kind": "devices",
+    "name": "携箱 P-11",
+    "shortName": "携箱 P-11"
+  },
+  "H_E_012": {
+    "kind": "devices",
+    "name": "巡回帳 R-10",
+    "shortName": "巡回帳 R-10"
+  },
+  "H_E_013": {
+    "kind": "devices",
+    "name": "展札 C-20",
+    "shortName": "展札 C-20"
+  },
+  "H_E_014": {
+    "kind": "devices",
+    "name": "採集帳 F-11",
+    "shortName": "採集帳 F-11"
+  },
+  "H_E_015": {
+    "kind": "devices",
+    "name": "会計箱 A-10",
+    "shortName": "会計箱 A-10"
+  },
+  "H_E_016": {
+    "kind": "devices",
+    "name": "教材机 X-20",
+    "shortName": "教材机 X-20"
+  },
+  "H_E_017": {
+    "kind": "devices",
+    "name": "方眼帳 G-10",
+    "shortName": "方眼帳 G-10"
+  },
+  "H_E_018": {
+    "kind": "devices",
+    "name": "朗読机 V-11",
+    "shortName": "朗読机 V-11"
+  },
+  "H_E_019": {
+    "kind": "devices",
+    "name": "時間札 T-11",
+    "shortName": "時間札 T-11"
+  },
+  "H_E_020": {
+    "kind": "devices",
+    "name": "展台 R-11",
+    "shortName": "展台 R-11"
+  },
+  "H_D_001": {
+    "kind": "devices",
+    "name": "フレームS",
+    "shortName": "フレームS"
+  },
+  "H_D_002": {
+    "kind": "devices",
+    "name": "フレームW",
+    "shortName": "フレームW"
+  },
+  "H_D_003": {
+    "kind": "devices",
+    "name": "ペンノートMini",
+    "shortName": "ペンノートMini"
+  },
+  "H_D_004": {
+    "kind": "devices",
+    "name": "フォトテーブル",
+    "shortName": "フォトテーブル"
+  },
+  "H_D_005": {
+    "kind": "devices",
+    "name": "ルートボイス",
+    "shortName": "ルートボイス"
+  },
+  "H_D_006": {
+    "kind": "devices",
+    "name": "ミニフレームStand",
+    "shortName": "ミニフレームStand"
+  },
+  "H_D_007": {
+    "kind": "devices",
+    "name": "ガイドリンク",
+    "shortName": "ガイドリンク"
+  },
+  "H_D_008": {
+    "kind": "devices",
+    "name": "レコードスリム",
+    "shortName": "レコードスリム"
+  },
+  "H_D_009": {
+    "kind": "devices",
+    "name": "窓辺タイマー",
+    "shortName": "窓辺タイマー"
+  },
+  "H_D_010": {
+    "kind": "devices",
+    "name": "ワークセルGrip",
+    "shortName": "ワークセルGrip"
+  },
+  "H_D_011": {
+    "kind": "devices",
+    "name": "スタジオパネル",
+    "shortName": "スタジオパネル"
+  },
+  "H_D_012": {
+    "kind": "devices",
+    "name": "リーフPocket",
+    "shortName": "リーフPocket"
+  },
+  "H_D_013": {
+    "kind": "devices",
+    "name": "ハンドオフDial",
+    "shortName": "ハンドオフDial"
+  },
+  "H_D_014": {
+    "kind": "devices",
+    "name": "タフミラー",
+    "shortName": "タフミラー"
+  },
+  "H_D_015": {
+    "kind": "devices",
+    "name": "ループフレーム",
+    "shortName": "ループフレーム"
+  },
+  "H_D_016": {
+    "kind": "devices",
+    "name": "レセプトGate",
+    "shortName": "レセプトGate"
+  },
+  "H_D_017": {
+    "kind": "devices",
+    "name": "ストックSlate",
+    "shortName": "ストックSlate"
+  },
+  "H_D_018": {
+    "kind": "devices",
+    "name": "管理ガイドHub",
+    "shortName": "管理ガイドHub"
+  },
+  "H_D_019": {
+    "kind": "devices",
+    "name": "キューサイン",
+    "shortName": "キューサイン"
+  },
+  "H_D_020": {
+    "kind": "devices",
+    "name": "コマ・フェザーC",
+    "shortName": "コマ・フェザーC"
+  },
+  "H_C_001": {
+    "kind": "devices",
+    "name": "ノツ・レジャー",
+    "shortName": "ノツ・レジャー"
+  },
+  "H_C_002": {
+    "kind": "devices",
+    "name": "ウケツケ・ボード",
+    "shortName": "ウケツケ・ボード"
+  },
+  "H_C_003": {
+    "kind": "devices",
+    "name": "マージン・リード",
+    "shortName": "マージン・リード"
+  },
+  "H_C_004": {
+    "kind": "devices",
+    "name": "コショ・ペーパー",
+    "shortName": "コショ・ペーパー"
+  },
+  "H_C_005": {
+    "kind": "devices",
+    "name": "サンポ・スナップ",
+    "shortName": "サンポ・スナップ"
+  },
+  "H_C_006": {
+    "kind": "devices",
+    "name": "ミニギャラリー・パネル",
+    "shortName": "ミニギャラリー・パネル"
+  },
+  "H_C_007": {
+    "kind": "devices",
+    "name": "ヒッキ・スレート",
+    "shortName": "ヒッキ・スレート"
+  },
+  "H_C_008": {
+    "kind": "devices",
+    "name": "コウボウ・レコード",
+    "shortName": "コウボウ・レコード"
+  },
+  "H_C_009": {
+    "kind": "devices",
+    "name": "ボイス・スタック",
+    "shortName": "ボイス・スタック"
+  },
+  "H_C_010": {
+    "kind": "devices",
+    "name": "チドリ・ビュー",
+    "shortName": "チドリ・ビュー"
+  },
+  "H_C_011": {
+    "kind": "devices",
+    "name": "リユース・ポケット",
+    "shortName": "リユース・ポケット"
+  },
+  "H_C_012": {
+    "kind": "devices",
+    "name": "キキガキ・テーブル",
+    "shortName": "キキガキ・テーブル"
+  },
+  "H_C_013": {
+    "kind": "devices",
+    "name": "クラ・アーカイヴ",
+    "shortName": "クラ・アーカイヴ"
+  },
+  "H_C_014": {
+    "kind": "devices",
+    "name": "ジッケン・スクエア",
+    "shortName": "ジッケン・スクエア"
+  },
+  "H_C_015": {
+    "kind": "devices",
+    "name": "シリョウ・スキャン",
+    "shortName": "シリョウ・スキャン"
+  },
+  "H_C_016": {
+    "kind": "devices",
+    "name": "ホカン・ブック",
+    "shortName": "ホカン・ブック"
+  },
+  "H_C_017": {
+    "kind": "devices",
+    "name": "ロウドク・キューブ",
+    "shortName": "ロウドク・キューブ"
+  },
+  "H_C_018": {
+    "kind": "devices",
+    "name": "タナ・ワイド",
+    "shortName": "タナ・ワイド"
+  },
+  "H_C_019": {
+    "kind": "devices",
+    "name": "カシダシ・プラン",
+    "shortName": "カシダシ・プラン"
+  },
+  "H_C_020": {
+    "kind": "devices",
+    "name": "シリツ・ファイル",
+    "shortName": "シリツ・ファイル"
+  },
+  "H_B_001": {
+    "kind": "devices",
+    "name": "コマド教材機・内覧型",
+    "shortName": "コマド教材機・内覧型"
+  },
+  "H_B_002": {
+    "kind": "devices",
+    "name": "コマド教材機・投映型",
+    "shortName": "コマド教材機・投映型"
+  },
+  "H_B_003": {
+    "kind": "devices",
+    "name": "フタバ字幕教材器",
+    "shortName": "フタバ字幕教材器"
+  },
+  "H_B_004": {
+    "kind": "devices",
+    "name": "ヨコナガ映像ベース",
+    "shortName": "ヨコナガ映像ベース"
+  },
+  "H_B_005": {
+    "kind": "devices",
+    "name": "トール展示台",
+    "shortName": "トール展示台"
+  },
+  "H_B_006": {
+    "kind": "devices",
+    "name": "オトワ音楽コンソール",
+    "shortName": "オトワ音楽コンソール"
+  },
+  "H_B_007": {
+    "kind": "devices",
+    "name": "シオリ教材ラック",
+    "shortName": "シオリ教材ラック"
+  },
+  "H_B_008": {
+    "kind": "devices",
+    "name": "コヨミ展示塔",
+    "shortName": "コヨミ展示塔"
+  },
+  "H_B_009": {
+    "kind": "devices",
+    "name": "ヒバリ講座トランク",
+    "shortName": "ヒバリ講座トランク"
+  },
+  "H_B_010": {
+    "kind": "devices",
+    "name": "マス目映像キューブ",
+    "shortName": "マス目映像キューブ"
+  },
+  "H_B_011": {
+    "kind": "devices",
+    "name": "ソトミ映像ポケット",
+    "shortName": "ソトミ映像ポケット"
+  },
+  "H_B_012": {
+    "kind": "devices",
+    "name": "フミダン音声端末",
+    "shortName": "フミダン音声端末"
+  },
+  "H_B_013": {
+    "kind": "devices",
+    "name": "サンカク展示ケース",
+    "shortName": "サンカク展示ケース"
+  },
+  "H_B_014": {
+    "kind": "devices",
+    "name": "コツブ作品教卓",
+    "shortName": "コツブ作品教卓"
+  },
+  "H_B_015": {
+    "kind": "devices",
+    "name": "ミギヒラキ映像帳",
+    "shortName": "ミギヒラキ映像帳"
+  },
+  "H_B_016": {
+    "kind": "devices",
+    "name": "ワタリ研修パネル",
+    "shortName": "ワタリ研修パネル"
+  },
+  "H_B_017": {
+    "kind": "devices",
+    "name": "ガクフ音楽スタンド",
+    "shortName": "ガクフ音楽スタンド"
+  },
+  "H_B_018": {
+    "kind": "devices",
+    "name": "カタリ収録柱",
+    "shortName": "カタリ収録柱"
+  },
+  "H_B_019": {
+    "kind": "devices",
+    "name": "ヒラキ展示ボード",
+    "shortName": "ヒラキ展示ボード"
+  },
+  "H_B_020": {
+    "kind": "devices",
+    "name": "タビバコ巡回展示機",
+    "shortName": "タビバコ巡回展示機"
+  },
+  "H_A_001": {
+    "kind": "devices",
+    "name": "葉札スタンド G1",
+    "shortName": "葉札スタンド G1"
+  },
+  "H_A_002": {
+    "kind": "devices",
+    "name": "葉札スタンド G2・札窓付き",
+    "shortName": "葉札スタンド G2・札窓付き"
+  },
+  "H_A_003": {
+    "kind": "devices",
+    "name": "棚番キューブ S3",
+    "shortName": "棚番キューブ S3"
+  },
+  "H_A_004": {
+    "kind": "devices",
+    "name": "喫茶メニュー T4",
+    "shortName": "喫茶メニュー T4"
+  },
+  "H_A_005": {
+    "kind": "devices",
+    "name": "回転札メニュー T5",
+    "shortName": "回転札メニュー T5"
+  },
+  "H_A_006": {
+    "kind": "devices",
+    "name": "公演札ライトボード L6",
+    "shortName": "公演札ライトボード L6"
+  },
+  "H_A_007": {
+    "kind": "devices",
+    "name": "字幕つき案内ポスト V7",
+    "shortName": "字幕つき案内ポスト V7"
+  },
+  "H_A_008": {
+    "kind": "devices",
+    "name": "棚卸しスレート S8",
+    "shortName": "棚卸しスレート S8"
+  },
+  "H_A_009": {
+    "kind": "devices",
+    "name": "小展示フレーム K9",
+    "shortName": "小展示フレーム K9"
+  },
+  "H_A_010": {
+    "kind": "devices",
+    "name": "管理棚ベース S10",
+    "shortName": "管理棚ベース S10"
+  },
+  "H_A_011": {
+    "kind": "devices",
+    "name": "店先カード K11",
+    "shortName": "店先カード K11"
+  },
+  "H_A_012": {
+    "kind": "devices",
+    "name": "園芸記録トランク G12",
+    "shortName": "園芸記録トランク G12"
+  },
+  "H_A_013": {
+    "kind": "devices",
+    "name": "案内レール V13",
+    "shortName": "案内レール V13"
+  },
+  "H_A_014": {
+    "kind": "devices",
+    "name": "作品棚フレーム K14",
+    "shortName": "作品棚フレーム K14"
+  },
+  "H_A_015": {
+    "kind": "devices",
+    "name": "名札サーバー T15",
+    "shortName": "名札サーバー T15"
+  },
+  "H_A_016": {
+    "kind": "devices",
+    "name": "夜間案内ランタン V16",
+    "shortName": "夜間案内ランタン V16"
+  },
+  "H_A_017": {
+    "kind": "devices",
+    "name": "貸出植物札 G17",
+    "shortName": "貸出植物札 G17"
+  },
+  "H_A_018": {
+    "kind": "devices",
+    "name": "棚番オフィス S18",
+    "shortName": "棚番オフィス S18"
+  },
+  "H_A_019": {
+    "kind": "devices",
+    "name": "資料棚パネル S19",
+    "shortName": "資料棚パネル S19"
+  },
+  "H_A_020": {
+    "kind": "devices",
+    "name": "巡回展示トランク K20",
+    "shortName": "巡回展示トランク K20"
+  },
+  "CALL01": {
+    "kind": "events",
+    "name": "最初の納品",
+    "shortName": "最初の納品"
+  },
+  "CALL02": {
+    "kind": "events",
+    "name": "スマホの仕事",
+    "shortName": "スマホの仕事"
+  },
+  "CALL03": {
+    "kind": "events",
+    "name": "SD端末と残すもの",
+    "shortName": "SD端末と残すもの"
+  },
+  "CALL04": {
+    "kind": "events",
+    "name": "DVDと仕事の見せ方",
+    "shortName": "DVDと仕事の見せ方"
+  },
+  "CALL05": {
+    "kind": "events",
+    "name": "最後の一件",
+    "shortName": "最後の一件"
+  },
+  "CALL06": {
+    "kind": "events",
+    "name": "次のキャリアへ",
+    "shortName": "次のキャリアへ"
+  },
+  "END_FREE": {
+    "kind": "endings",
+    "name": "ひとまず、机を離れる",
+    "shortName": "ひとまず、机を離れる"
+  },
+  "END_TRAINING": {
+    "kind": "endings",
+    "name": "一人前の仕事人",
+    "shortName": "一人前の仕事人"
+  },
+  "END_WHITE": {
+    "kind": "endings",
+    "name": "正式な診断担当",
+    "shortName": "正式な診断担当"
+  },
+  "END_INDEPENDENT": {
+    "kind": "endings",
+    "name": "小さな店の看板",
+    "shortName": "小さな店の看板"
+  },
+  "END_RESEARCH": {
+    "kind": "endings",
+    "name": "不具合を、標準から直す",
+    "shortName": "不具合を、標準から直す"
+  },
+  "END_SUCCESSOR": {
+    "kind": "endings",
+    "name": "この工房の、次の主任",
+    "shortName": "この工房の、次の主任"
+  },
+  "END_ROAMER": {
+    "kind": "endings",
+    "name": "工具箱ひとつの旅",
+    "shortName": "工具箱ひとつの旅"
+  }
+}

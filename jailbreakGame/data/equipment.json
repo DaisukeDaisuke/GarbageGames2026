@@ -1,0 +1,242 @@
+[
+  {
+    "id": "M01",
+    "name": "観察レンズ",
+    "price": 0,
+    "rank": 1,
+    "duration": 600,
+    "description": "端末の札、OS、端子、画面を拡大する",
+    "limits": "小さい文字を読む補助。基本情報を有料診断で隠さない",
+    "art": {
+      "sheet": "equipment",
+      "index": 0,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M02",
+    "name": "外部画面ドック",
+    "price": 220,
+    "rank": 1,
+    "duration": 600,
+    "description": "作業台でドックをクリックして接続し、外部モニターに端末画面を映す",
+    "limits": "画面不良でも起動している端末を操作できる。本体画面は修理しない。output設定とも別",
+    "art": {
+      "sheet": "equipment",
+      "index": 1,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M03",
+    "name": "USB-A/C変換器",
+    "price": 180,
+    "rank": 2,
+    "duration": 600,
+    "description": "端末のUSB口へ置き、反対側へ媒体を差す",
+    "limits": "USB-C口の端末にUSB-A媒体を接続できる。変えるのは形状だけで、OS対応は増えない",
+    "art": {
+      "sheet": "equipment",
+      "index": 2,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M04",
+    "name": "バックアップ装置",
+    "price": 480,
+    "rank": 2,
+    "duration": 1200,
+    "description": "起動中端末から保存対象を選び、退避または復元する",
+    "limits": "初期化を含む解法でデータを戻す。解除だけなら不要。起動不能からは新規退避不可",
+    "art": {
+      "sheet": "equipment",
+      "index": 3,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M05",
+    "name": "リカバリー装置",
+    "price": 680,
+    "rank": 3,
+    "duration": 2400,
+    "description": "同版の標準または開発用イメージを選んで再適用",
+    "limits": "起動不能を直す。開発用は3権限を開くが、毎回費用とデータ消去を伴う",
+    "art": {
+      "sheet": "equipment",
+      "index": 4,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M06",
+    "name": "読取専用救出機",
+    "price": 820,
+    "rank": 3,
+    "duration": 1800,
+    "description": "起動不能端末から読取可能なデータ・アプリ・設定を選択して退避する",
+    "limits": "M05前のデータ救出。起動・解除・画面修理・復元はしない",
+    "art": {
+      "sheet": "equipment",
+      "index": 5,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M07",
+    "name": "詳細診断機",
+    "price": 420,
+    "rank": 3,
+    "duration": 600,
+    "description": "現在状態と手持ち道具を照合し、互換性と不足条件を一覧にする",
+    "limits": "長い案件の比較を省力化。無料の状態表示と検品だけでも解ける",
+    "art": {
+      "sheet": "equipment",
+      "index": 6,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M08",
+    "name": "メディア複製器",
+    "price": 540,
+    "rank": 3,
+    "duration": 600,
+    "description": "所有PoCを同形状の第2媒体へ複製。商品ごと最大2個",
+    "limits": "M12で一方の端末へ差したまま保留し、同じPoCを別案件に使う時の省力化。機材だけで未購入PoCは増えない",
+    "art": {
+      "sheet": "equipment",
+      "index": 7,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M09",
+    "name": "オフライン更新箱",
+    "price": 920,
+    "rank": 4,
+    "duration": 2000,
+    "description": "端末を選び、許可された次版へ更新する",
+    "limits": "端末の外部通信禁止案件を更新できる。正規更新同様に3権限は閉じる",
+    "art": {
+      "sheet": "equipment",
+      "index": 8,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M10",
+    "name": "機能検査台",
+    "price": 760,
+    "rank": 4,
+    "duration": 600,
+    "description": "表示、外部出力、アプリ起動、書出しなどを選び試運転する",
+    "limits": "複数条件の動作を見る演出と整理。検査ボタンを押した事実を合格条件にしない",
+    "art": {
+      "sheet": "equipment",
+      "index": 9,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M11",
+    "name": "作業記録台",
+    "price": 980,
+    "rank": 4,
+    "duration": 600,
+    "description": "成功案件の工程をレシピとして保存し、対応条件を表示する",
+    "limits": "同じ版と条件での再作業を短縮。違う版へ無条件に適用しない",
+    "art": {
+      "sheet": "equipment",
+      "index": 10,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M12",
+    "name": "追加受付棚",
+    "price": 1200,
+    "rank": 4,
+    "duration": 600,
+    "description": "案件を保留し、もう一件を机へ出す。受付上限2件",
+    "limits": "端末と挿入媒体の状態を別保存。背景処理や自動売上は生まない",
+    "art": {
+      "sheet": "equipment",
+      "index": 11,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M13",
+    "name": "設定転写機",
+    "price": 1100,
+    "rank": 5,
+    "duration": 600,
+    "description": "契約に添付されたプリセットを正規移行モードで適用",
+    "limits": "featureを開かず指定設定へ変更可。添付のない任意値は作れず、権限自体も解除できない",
+    "art": {
+      "sheet": "equipment",
+      "index": 12,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M14",
+    "name": "メディア収納棚",
+    "price": 380,
+    "rank": 2,
+    "duration": 600,
+    "description": "取り出し一覧を形状、OS、版、使用中で絞る",
+    "limits": "多数の媒体を整理。初期の説明書一覧でも取り出せる",
+    "art": {
+      "sheet": "equipment",
+      "index": 13,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M15",
+    "name": "一括処理台",
+    "price": 1600,
+    "rank": 5,
+    "duration": 600,
+    "description": "M11の照合済みレシピを、必要媒体を差した後に順次実行する",
+    "limits": "既知工程の画面移動を省く。購入・消去・版変更の確認を飛ばさない",
+    "art": {
+      "sheet": "equipment",
+      "index": 14,
+      "columns": 4,
+      "rows": 4
+    }
+  },
+  {
+    "id": "M16",
+    "name": "返却検品トレー",
+    "price": 360,
+    "rank": 2,
+    "duration": 600,
+    "description": "検品、媒体の取出し、返却確認を一画面にまとめる",
+    "limits": "繰返し操作を軽減。無料検品より合格条件を緩めない",
+    "art": {
+      "sheet": "equipment",
+      "index": 15,
+      "columns": 4,
+      "rows": 4
+    }
+  }
+]

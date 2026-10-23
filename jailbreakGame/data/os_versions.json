@@ -1,0 +1,79 @@
+[
+  {
+    "id": "KomaOS:1.0",
+    "family": "KomaOS",
+    "version": "1.0",
+    "next": "1.1",
+    "format": "KomaOS:format1"
+  },
+  {
+    "id": "KomaOS:1.1",
+    "family": "KomaOS",
+    "version": "1.1",
+    "next": "2.0",
+    "format": "KomaOS:format1"
+  },
+  {
+    "id": "KomaOS:2.0",
+    "family": "KomaOS",
+    "version": "2.0",
+    "next": null,
+    "format": "KomaOS:format1"
+  },
+  {
+    "id": "MiraOS:1.0",
+    "family": "MiraOS",
+    "version": "1.0",
+    "next": "1.1",
+    "format": "MiraOS:format1"
+  },
+  {
+    "id": "MiraOS:1.1",
+    "family": "MiraOS",
+    "version": "1.1",
+    "next": null,
+    "format": "MiraOS:format1"
+  },
+  {
+    "id": "FolioOS:1.0",
+    "family": "FolioOS",
+    "version": "1.0",
+    "next": "1.1",
+    "format": "FolioOS:format1"
+  },
+  {
+    "id": "FolioOS:1.1",
+    "family": "FolioOS",
+    "version": "1.1",
+    "next": null,
+    "format": "FolioOS:format1"
+  },
+  {
+    "id": "ReelOS:1.0",
+    "family": "ReelOS",
+    "version": "1.0",
+    "next": "1.1",
+    "format": "ReelOS:format1"
+  },
+  {
+    "id": "ReelOS:1.1",
+    "family": "ReelOS",
+    "version": "1.1",
+    "next": null,
+    "format": "ReelOS:format1"
+  },
+  {
+    "id": "HearthOS:1.0",
+    "family": "HearthOS",
+    "version": "1.0",
+    "next": "1.1",
+    "format": "HearthOS:format1"
+  },
+  {
+    "id": "HearthOS:1.1",
+    "family": "HearthOS",
+    "version": "1.1",
+    "next": null,
+    "format": "HearthOS:format1"
+  }
+]

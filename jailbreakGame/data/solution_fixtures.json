@@ -1,0 +1,1698 @@
+[
+  {
+    "job_id": "JOB_E_001",
+    "routes": [
+      {
+        "id": "JOB_E_001:1",
+        "dsl": "P01"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 887
+    }
+  },
+  {
+    "job_id": "JOB_E_002",
+    "routes": [
+      {
+        "id": "JOB_E_002:1",
+        "dsl": "dock P02"
+      },
+      {
+        "id": "JOB_E_002:2",
+        "dsl": "dock S:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 895
+    }
+  },
+  {
+    "job_id": "JOB_E_003",
+    "routes": [
+      {
+        "id": "JOB_E_003:1",
+        "dsl": "P04"
+      },
+      {
+        "id": "JOB_E_003:2",
+        "dsl": "S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 904
+    }
+  },
+  {
+    "job_id": "JOB_E_004",
+    "routes": [
+      {
+        "id": "JOB_E_004:1",
+        "dsl": "P06 theme=custom"
+      },
+      {
+        "id": "JOB_E_004:2",
+        "dsl": "S:feature theme=custom"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 913
+    }
+  },
+  {
+    "job_id": "JOB_E_005",
+    "routes": [
+      {
+        "id": "JOB_E_005:1",
+        "dsl": "P06 output=external"
+      },
+      {
+        "id": "JOB_E_005:2",
+        "dsl": "S:feature output=external"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 922
+    }
+  },
+  {
+    "job_id": "JOB_E_006",
+    "routes": [
+      {
+        "id": "JOB_E_006:1",
+        "dsl": "P02 +写真整理"
+      },
+      {
+        "id": "JOB_E_006:2",
+        "dsl": "S:install +写真整理"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 931
+    }
+  },
+  {
+    "job_id": "JOB_E_007",
+    "routes": [
+      {
+        "id": "JOB_E_007:1",
+        "dsl": "P02 +筆記 L:install"
+      },
+      {
+        "id": "JOB_E_007:2",
+        "dsl": "S:install +筆記 L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 940
+    }
+  },
+  {
+    "job_id": "JOB_E_008",
+    "routes": [
+      {
+        "id": "JOB_E_008:1",
+        "dsl": "P02 +作品閲覧 U"
+      },
+      {
+        "id": "JOB_E_008:2",
+        "dsl": "U P05 +作品閲覧 L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 949
+    }
+  },
+  {
+    "job_id": "JOB_E_009",
+    "routes": [
+      {
+        "id": "JOB_E_009:1",
+        "dsl": "P05 +音声メモ"
+      },
+      {
+        "id": "JOB_E_009:2",
+        "dsl": "S:install +音声メモ"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 958
+    }
+  },
+  {
+    "job_id": "JOB_E_010",
+    "routes": [
+      {
+        "id": "JOB_E_010:1",
+        "dsl": "P01 P02 +管理アプリ"
+      },
+      {
+        "id": "JOB_E_010:2",
+        "dsl": "S:root+install +管理アプリ"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 967
+    }
+  },
+  {
+    "job_id": "JOB_E_011",
+    "routes": [
+      {
+        "id": "JOB_E_011:1",
+        "dsl": "dock P01"
+      },
+      {
+        "id": "JOB_E_011:2",
+        "dsl": "screen P01"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 976
+    }
+  },
+  {
+    "job_id": "JOB_E_012",
+    "routes": [
+      {
+        "id": "JOB_E_012:1",
+        "dsl": "screen P02 +作品閲覧"
+      },
+      {
+        "id": "JOB_E_012:2",
+        "dsl": "screen S:install +作品閲覧"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 985
+    }
+  },
+  {
+    "job_id": "JOB_E_013",
+    "routes": [
+      {
+        "id": "JOB_E_013:1",
+        "dsl": "P07 content=custom L:feature"
+      },
+      {
+        "id": "JOB_E_013:2",
+        "dsl": "S:feature content=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 994
+    }
+  },
+  {
+    "job_id": "JOB_E_014",
+    "routes": [
+      {
+        "id": "JOB_E_014:1",
+        "dsl": "P02 +写真整理 P06 export=local"
+      },
+      {
+        "id": "JOB_E_014:2",
+        "dsl": "S:install+feature +写真整理 export=local"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1003
+    }
+  },
+  {
+    "job_id": "JOB_E_015",
+    "routes": [
+      {
+        "id": "JOB_E_015:1",
+        "dsl": "fix P01"
+      },
+      {
+        "id": "JOB_E_015:2",
+        "dsl": "fix S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1012
+    }
+  },
+  {
+    "job_id": "JOB_E_016",
+    "routes": [
+      {
+        "id": "JOB_E_016:1",
+        "dsl": "P04 P05 P07"
+      },
+      {
+        "id": "JOB_E_016:2",
+        "dsl": "S:root+install+feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1021
+    }
+  },
+  {
+    "job_id": "JOB_E_017",
+    "routes": [
+      {
+        "id": "JOB_E_017:1",
+        "dsl": "P06 theme=custom U"
+      },
+      {
+        "id": "JOB_E_017:2",
+        "dsl": "U P06 theme=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1030
+    }
+  },
+  {
+    "job_id": "JOB_E_018",
+    "routes": [
+      {
+        "id": "JOB_E_018:1",
+        "dsl": "P02 -写真整理 L:install"
+      },
+      {
+        "id": "JOB_E_018:2",
+        "dsl": "S:install -写真整理 L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1039
+    }
+  },
+  {
+    "job_id": "JOB_E_019",
+    "routes": [
+      {
+        "id": "JOB_E_019:1",
+        "dsl": "P06 schedule=custom U"
+      },
+      {
+        "id": "JOB_E_019:2",
+        "dsl": "U P07 schedule=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1048
+    }
+  },
+  {
+    "job_id": "JOB_E_020",
+    "routes": [
+      {
+        "id": "JOB_E_020:1",
+        "dsl": "+作品閲覧 content=custom L:all"
+      },
+      {
+        "id": "JOB_E_020:2",
+        "dsl": "+作品閲覧 content=custom U"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1057
+    }
+  },
+  {
+    "job_id": "JOB_D_001",
+    "routes": [
+      {
+        "id": "JOB_D_001:1",
+        "dsl": "P03"
+      },
+      {
+        "id": "JOB_D_001:2",
+        "dsl": "S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1069
+    }
+  },
+  {
+    "job_id": "JOB_D_002",
+    "routes": [
+      {
+        "id": "JOB_D_002:1",
+        "dsl": "P08"
+      },
+      {
+        "id": "JOB_D_002:2",
+        "dsl": "S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1077
+    }
+  },
+  {
+    "job_id": "JOB_D_003",
+    "routes": [
+      {
+        "id": "JOB_D_003:1",
+        "dsl": "P09 +筆記"
+      },
+      {
+        "id": "JOB_D_003:2",
+        "dsl": "S:install +筆記"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1085
+    }
+  },
+  {
+    "job_id": "JOB_D_004",
+    "routes": [
+      {
+        "id": "JOB_D_004:1",
+        "dsl": "P10 +写真整理 L:install"
+      },
+      {
+        "id": "JOB_D_004:2",
+        "dsl": "S:install +写真整理 L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1093
+    }
+  },
+  {
+    "job_id": "JOB_D_005",
+    "routes": [
+      {
+        "id": "JOB_D_005:1",
+        "dsl": "P10 -手帳 L:install"
+      },
+      {
+        "id": "JOB_D_005:2",
+        "dsl": "S:install -手帳 L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1101
+    }
+  },
+  {
+    "job_id": "JOB_D_006",
+    "routes": [
+      {
+        "id": "JOB_D_006:1",
+        "dsl": "P11 theme=custom L:feature"
+      },
+      {
+        "id": "JOB_D_006:2",
+        "dsl": "S:feature theme=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1109
+    }
+  },
+  {
+    "job_id": "JOB_D_007",
+    "routes": [
+      {
+        "id": "JOB_D_007:1",
+        "dsl": "P12 output=external"
+      },
+      {
+        "id": "JOB_D_007:2",
+        "dsl": "S:feature output=external"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1117
+    }
+  },
+  {
+    "job_id": "JOB_D_008",
+    "routes": [
+      {
+        "id": "JOB_D_008:1",
+        "dsl": "P11 export=local L:feature"
+      },
+      {
+        "id": "JOB_D_008:2",
+        "dsl": "S:feature export=local L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1125
+    }
+  },
+  {
+    "job_id": "JOB_D_009",
+    "routes": [
+      {
+        "id": "JOB_D_009:1",
+        "dsl": "P12 schedule=custom content=custom"
+      },
+      {
+        "id": "JOB_D_009:2",
+        "dsl": "S:feature schedule=custom content=custom"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1133
+    }
+  },
+  {
+    "job_id": "JOB_D_010",
+    "routes": [
+      {
+        "id": "JOB_D_010:1",
+        "dsl": "P09 +管理アプリ P03"
+      },
+      {
+        "id": "JOB_D_010:2",
+        "dsl": "S:root+install +管理アプリ"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1141
+    }
+  },
+  {
+    "job_id": "JOB_D_011",
+    "routes": [
+      {
+        "id": "JOB_D_011:1",
+        "dsl": "P03 P09 P11 +管理アプリ +展示再生 content=custom"
+      },
+      {
+        "id": "JOB_D_011:2",
+        "dsl": "S:root+install+feature +管理アプリ +展示再生 content=custom"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1149
+    }
+  },
+  {
+    "job_id": "JOB_D_012",
+    "routes": [
+      {
+        "id": "JOB_D_012:1",
+        "dsl": "P09 +作品閲覧 U"
+      },
+      {
+        "id": "JOB_D_012:2",
+        "dsl": "U P10 +作品閲覧 L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1157
+    }
+  },
+  {
+    "job_id": "JOB_D_013",
+    "routes": [
+      {
+        "id": "JOB_D_013:1",
+        "dsl": "P11 profile=custom U"
+      },
+      {
+        "id": "JOB_D_013:2",
+        "dsl": "U P12 profile=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1165
+    }
+  },
+  {
+    "job_id": "JOB_D_014",
+    "routes": [
+      {
+        "id": "JOB_D_014:1",
+        "dsl": "dock P03"
+      },
+      {
+        "id": "JOB_D_014:2",
+        "dsl": "screen P03"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1173
+    }
+  },
+  {
+    "job_id": "JOB_D_015",
+    "routes": [
+      {
+        "id": "JOB_D_015:1",
+        "dsl": "content=custom L:all"
+      },
+      {
+        "id": "JOB_D_015:2",
+        "dsl": "content=custom U"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1181
+    }
+  },
+  {
+    "job_id": "JOB_D_016",
+    "routes": [
+      {
+        "id": "JOB_D_016:1",
+        "dsl": "fix P08"
+      },
+      {
+        "id": "JOB_D_016:2",
+        "dsl": "fix S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1189
+    }
+  },
+  {
+    "job_id": "JOB_D_017",
+    "routes": [
+      {
+        "id": "JOB_D_017:1",
+        "dsl": "L:root P10 +在庫メモ"
+      },
+      {
+        "id": "JOB_D_017:2",
+        "dsl": "S:install +在庫メモ L:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1197
+    }
+  },
+  {
+    "job_id": "JOB_D_018",
+    "routes": [
+      {
+        "id": "JOB_D_018:1",
+        "dsl": "P08 P12 output=external"
+      },
+      {
+        "id": "JOB_D_018:2",
+        "dsl": "S:root+feature output=external"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1205
+    }
+  },
+  {
+    "job_id": "JOB_D_019",
+    "routes": [
+      {
+        "id": "JOB_D_019:1",
+        "dsl": "P09 +字幕 schedule=custom L:install L:feature"
+      },
+      {
+        "id": "JOB_D_019:2",
+        "dsl": "S:install +字幕 schedule=custom L:install L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1213
+    }
+  },
+  {
+    "job_id": "JOB_D_020",
+    "routes": [
+      {
+        "id": "JOB_D_020:1",
+        "dsl": "adapter P02 +作品閲覧 P06 theme=custom L:install L:feature"
+      },
+      {
+        "id": "JOB_D_020:2",
+        "dsl": "S:install+feature +作品閲覧 theme=custom L:install L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1221
+    }
+  },
+  {
+    "job_id": "JOB_C_001",
+    "routes": [
+      {
+        "id": "JOB_C_001:1",
+        "dsl": "P13"
+      },
+      {
+        "id": "JOB_C_001:2",
+        "dsl": "S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1232
+    }
+  },
+  {
+    "job_id": "JOB_C_002",
+    "routes": [
+      {
+        "id": "JOB_C_002:1",
+        "dsl": "P14"
+      },
+      {
+        "id": "JOB_C_002:2",
+        "dsl": "S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1243
+    }
+  },
+  {
+    "job_id": "JOB_C_003",
+    "routes": [
+      {
+        "id": "JOB_C_003:1",
+        "dsl": "P15 +筆記"
+      },
+      {
+        "id": "JOB_C_003:2",
+        "dsl": "S:install +筆記"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1254
+    }
+  },
+  {
+    "job_id": "JOB_C_004",
+    "routes": [
+      {
+        "id": "JOB_C_004:1",
+        "dsl": "P17 theme=custom L:feature"
+      },
+      {
+        "id": "JOB_C_004:2",
+        "dsl": "S:feature theme=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1265
+    }
+  },
+  {
+    "job_id": "JOB_C_005",
+    "routes": [
+      {
+        "id": "JOB_C_005:1",
+        "dsl": "P18 export=local"
+      },
+      {
+        "id": "JOB_C_005:2",
+        "dsl": "S:feature export=local"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1276
+    }
+  },
+  {
+    "job_id": "JOB_C_006",
+    "routes": [
+      {
+        "id": "JOB_C_006:1",
+        "dsl": "P15 +展示再生 P17 output=external L:install L:feature"
+      },
+      {
+        "id": "JOB_C_006:2",
+        "dsl": "B:data,apps X+ R:data,apps +展示再生 output=external L:all"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1287
+    }
+  },
+  {
+    "job_id": "JOB_C_007",
+    "routes": [
+      {
+        "id": "JOB_C_007:1",
+        "dsl": "P16 -展示再生 L:install"
+      },
+      {
+        "id": "JOB_C_007:2",
+        "dsl": "S:install -展示再生 L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1298
+    }
+  },
+  {
+    "job_id": "JOB_C_008",
+    "routes": [
+      {
+        "id": "JOB_C_008:1",
+        "dsl": "P13 P15 +管理アプリ L:install"
+      },
+      {
+        "id": "JOB_C_008:2",
+        "dsl": "S:root+install +管理アプリ L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1309
+    }
+  },
+  {
+    "job_id": "JOB_C_009",
+    "routes": [
+      {
+        "id": "JOB_C_009:1",
+        "dsl": "U P16"
+      },
+      {
+        "id": "JOB_C_009:2",
+        "dsl": "U S:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1320
+    }
+  },
+  {
+    "job_id": "JOB_C_010",
+    "routes": [
+      {
+        "id": "JOB_C_010:1",
+        "dsl": "P17 theme=custom U"
+      },
+      {
+        "id": "JOB_C_010:2",
+        "dsl": "U S:feature theme=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1331
+    }
+  },
+  {
+    "job_id": "JOB_C_011",
+    "routes": [
+      {
+        "id": "JOB_C_011:1",
+        "dsl": "X"
+      },
+      {
+        "id": "JOB_C_011:2",
+        "dsl": "fix"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1342
+    }
+  },
+  {
+    "job_id": "JOB_C_012",
+    "routes": [
+      {
+        "id": "JOB_C_012:1",
+        "dsl": "Q:data,apps X R:data,apps"
+      },
+      {
+        "id": "JOB_C_012:2",
+        "dsl": "fix"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1353
+    }
+  },
+  {
+    "job_id": "JOB_C_013",
+    "routes": [
+      {
+        "id": "JOB_C_013:1",
+        "dsl": "Q:data,apps X+ R:data,apps L:install L:feature"
+      },
+      {
+        "id": "JOB_C_013:2",
+        "dsl": "fix P14"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1364
+    }
+  },
+  {
+    "job_id": "JOB_C_014",
+    "routes": [
+      {
+        "id": "JOB_C_014:1",
+        "dsl": "P13 P15 P17"
+      },
+      {
+        "id": "JOB_C_014:2",
+        "dsl": "X+"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1375
+    }
+  },
+  {
+    "job_id": "JOB_C_015",
+    "routes": [
+      {
+        "id": "JOB_C_015:1",
+        "dsl": "P15 +写真整理 P17 export=local"
+      },
+      {
+        "id": "JOB_C_015:2",
+        "dsl": "B:data X+ R:data +写真整理 export=local L:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1386
+    }
+  },
+  {
+    "job_id": "JOB_C_016",
+    "routes": [
+      {
+        "id": "JOB_C_016:1",
+        "dsl": "P14 P16"
+      },
+      {
+        "id": "JOB_C_016:2",
+        "dsl": "S:root+install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1397
+    }
+  },
+  {
+    "job_id": "JOB_C_017",
+    "routes": [
+      {
+        "id": "JOB_C_017:1",
+        "dsl": "fix P17 profile=custom"
+      },
+      {
+        "id": "JOB_C_017:2",
+        "dsl": "fix S:feature profile=custom"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1408
+    }
+  },
+  {
+    "job_id": "JOB_C_018",
+    "routes": [
+      {
+        "id": "JOB_C_018:1",
+        "dsl": "dock P17 output=external L:feature"
+      },
+      {
+        "id": "JOB_C_018:2",
+        "dsl": "screen P17 output=external L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1419
+    }
+  },
+  {
+    "job_id": "JOB_C_019",
+    "routes": [
+      {
+        "id": "JOB_C_019:1",
+        "dsl": "P16 -在庫メモ +手帳 +筆記 P18 schedule=custom L:install L:feature"
+      },
+      {
+        "id": "JOB_C_019:2",
+        "dsl": "S:install+feature -在庫メモ +手帳 +筆記 schedule=custom L:install L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1430
+    }
+  },
+  {
+    "job_id": "JOB_C_020",
+    "routes": [
+      {
+        "id": "JOB_C_020:1",
+        "dsl": "Q:data,apps X+ R:data,apps +管理アプリ L:install L:feature"
+      },
+      {
+        "id": "JOB_C_020:2",
+        "dsl": "Q:data,apps X R:data,apps P13 P15 +管理アプリ L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1441
+    }
+  },
+  {
+    "job_id": "JOB_B_001",
+    "routes": [
+      {
+        "id": "JOB_B_001:1",
+        "dsl": "P19"
+      },
+      {
+        "id": "JOB_B_001:2",
+        "dsl": "S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1455
+    }
+  },
+  {
+    "job_id": "JOB_B_002",
+    "routes": [
+      {
+        "id": "JOB_B_002:1",
+        "dsl": "P20"
+      },
+      {
+        "id": "JOB_B_002:2",
+        "dsl": "S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1466
+    }
+  },
+  {
+    "job_id": "JOB_B_003",
+    "routes": [
+      {
+        "id": "JOB_B_003:1",
+        "dsl": "P21 +字幕"
+      },
+      {
+        "id": "JOB_B_003:2",
+        "dsl": "S:install +字幕"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1477
+    }
+  },
+  {
+    "job_id": "JOB_B_004",
+    "routes": [
+      {
+        "id": "JOB_B_004:1",
+        "dsl": "P22 +字幕 P24 output=external L:install L:feature"
+      },
+      {
+        "id": "JOB_B_004:2",
+        "dsl": "S:install+feature +字幕 output=external L:install L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1488
+    }
+  },
+  {
+    "job_id": "JOB_B_005",
+    "routes": [
+      {
+        "id": "JOB_B_005:1",
+        "dsl": "P23 content=custom L:feature"
+      },
+      {
+        "id": "JOB_B_005:2",
+        "dsl": "S:feature content=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1499
+    }
+  },
+  {
+    "job_id": "JOB_B_006",
+    "routes": [
+      {
+        "id": "JOB_B_006:1",
+        "dsl": "P20 P22 +管理アプリ"
+      },
+      {
+        "id": "JOB_B_006:2",
+        "dsl": "S:root+install +管理アプリ"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1510
+    }
+  },
+  {
+    "job_id": "JOB_B_007",
+    "routes": [
+      {
+        "id": "JOB_B_007:1",
+        "dsl": "U P20"
+      },
+      {
+        "id": "JOB_B_007:2",
+        "dsl": "O S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1521
+    }
+  },
+  {
+    "job_id": "JOB_B_008",
+    "routes": [
+      {
+        "id": "JOB_B_008:1",
+        "dsl": "O P24 schedule=custom"
+      },
+      {
+        "id": "JOB_B_008:2",
+        "dsl": "O B:data X+ R:data schedule=custom L:root L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1532
+    }
+  },
+  {
+    "job_id": "JOB_B_009",
+    "routes": [
+      {
+        "id": "JOB_B_009:1",
+        "dsl": "fix P21 +字幕 L:install"
+      },
+      {
+        "id": "JOB_B_009:2",
+        "dsl": "Q:data X+ R:data +字幕 L:all"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1543
+    }
+  },
+  {
+    "job_id": "JOB_B_010",
+    "routes": [
+      {
+        "id": "JOB_B_010:1",
+        "dsl": "fix P19"
+      },
+      {
+        "id": "JOB_B_010:2",
+        "dsl": "X+ L:install L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1554
+    }
+  },
+  {
+    "job_id": "JOB_B_011",
+    "routes": [
+      {
+        "id": "JOB_B_011:1",
+        "dsl": "dock P22 +字幕 L:install"
+      },
+      {
+        "id": "JOB_B_011:2",
+        "dsl": "screen P22 +字幕 L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1565
+    }
+  },
+  {
+    "job_id": "JOB_B_012",
+    "routes": [
+      {
+        "id": "JOB_B_012:1",
+        "dsl": "P21 -在庫メモ L:root L:install"
+      },
+      {
+        "id": "JOB_B_012:2",
+        "dsl": "S:install -在庫メモ L:root L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1576
+    }
+  },
+  {
+    "job_id": "JOB_B_013",
+    "routes": [
+      {
+        "id": "JOB_B_013:1",
+        "dsl": "P23 content=custom L:feature"
+      },
+      {
+        "id": "JOB_B_013:2",
+        "dsl": "X+ content=custom L:all"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1587
+    }
+  },
+  {
+    "job_id": "JOB_B_014",
+    "routes": [
+      {
+        "id": "JOB_B_014:1",
+        "dsl": "P21 +作品閲覧 P23 profile=custom L:install L:feature"
+      },
+      {
+        "id": "JOB_B_014:2",
+        "dsl": "S:install+feature +作品閲覧 profile=custom L:install L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1598
+    }
+  },
+  {
+    "job_id": "JOB_B_015",
+    "routes": [
+      {
+        "id": "JOB_B_015:1",
+        "dsl": "B:作品 X R:作品 P19"
+      },
+      {
+        "id": "JOB_B_015:2",
+        "dsl": "B:作品 X+ R:作品 L:install L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1609
+    }
+  },
+  {
+    "job_id": "JOB_B_016",
+    "routes": [
+      {
+        "id": "JOB_B_016:1",
+        "dsl": "U"
+      },
+      {
+        "id": "JOB_B_016:2",
+        "dsl": "O"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1620
+    }
+  },
+  {
+    "job_id": "JOB_B_017",
+    "routes": [
+      {
+        "id": "JOB_B_017:1",
+        "dsl": "theme=custom profile=custom L:root L:feature"
+      },
+      {
+        "id": "JOB_B_017:2",
+        "dsl": "B:data,apps X+ R:data,apps theme=custom profile=custom L:all"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1631
+    }
+  },
+  {
+    "job_id": "JOB_B_018",
+    "routes": [
+      {
+        "id": "JOB_B_018:1",
+        "dsl": "fix P24 export=local"
+      },
+      {
+        "id": "JOB_B_018:2",
+        "dsl": "fix S:feature export=local"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1642
+    }
+  },
+  {
+    "job_id": "JOB_B_019",
+    "routes": [
+      {
+        "id": "JOB_B_019:1",
+        "dsl": "-管理アプリ P24 content=custom schedule=custom L:all"
+      },
+      {
+        "id": "JOB_B_019:2",
+        "dsl": "-管理アプリ S:feature content=custom schedule=custom L:all"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1653
+    }
+  },
+  {
+    "job_id": "JOB_B_020",
+    "routes": [
+      {
+        "id": "JOB_B_020:1",
+        "dsl": "P20 P22 P24 +管理アプリ +字幕 content=custom schedule=custom"
+      },
+      {
+        "id": "JOB_B_020:2",
+        "dsl": "B:data,apps X+ R:data,apps +管理アプリ +字幕 content=custom schedule=custom"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1664
+    }
+  },
+  {
+    "job_id": "JOB_A_001",
+    "routes": [
+      {
+        "id": "JOB_A_001:1",
+        "dsl": "P25"
+      },
+      {
+        "id": "JOB_A_001:2",
+        "dsl": "S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1678
+    }
+  },
+  {
+    "job_id": "JOB_A_002",
+    "routes": [
+      {
+        "id": "JOB_A_002:1",
+        "dsl": "P26"
+      },
+      {
+        "id": "JOB_A_002:2",
+        "dsl": "S:root"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1688
+    }
+  },
+  {
+    "job_id": "JOB_A_003",
+    "routes": [
+      {
+        "id": "JOB_A_003:1",
+        "dsl": "P27 +在庫メモ L:install"
+      },
+      {
+        "id": "JOB_A_003:2",
+        "dsl": "S:install +在庫メモ L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1698
+    }
+  },
+  {
+    "job_id": "JOB_A_004",
+    "routes": [
+      {
+        "id": "JOB_A_004:1",
+        "dsl": "P30 theme=custom L:feature"
+      },
+      {
+        "id": "JOB_A_004:2",
+        "dsl": "S:feature theme=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1708
+    }
+  },
+  {
+    "job_id": "JOB_A_005",
+    "routes": [
+      {
+        "id": "JOB_A_005:1",
+        "dsl": "P29 theme=custom content=custom profile=custom L:feature"
+      },
+      {
+        "id": "JOB_A_005:2",
+        "dsl": "preset"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1718
+    }
+  },
+  {
+    "job_id": "JOB_A_006",
+    "routes": [
+      {
+        "id": "JOB_A_006:1",
+        "dsl": "P30 schedule=custom"
+      },
+      {
+        "id": "JOB_A_006:2",
+        "dsl": "B:data,apps,settings X+ R:data,apps,settings schedule=custom L:root L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1728
+    }
+  },
+  {
+    "job_id": "JOB_A_007",
+    "routes": [
+      {
+        "id": "JOB_A_007:1",
+        "dsl": "P28 +字幕 P30 output=external L:install L:feature"
+      },
+      {
+        "id": "JOB_A_007:2",
+        "dsl": "S:install+feature +字幕 output=external L:install L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1738
+    }
+  },
+  {
+    "job_id": "JOB_A_008",
+    "routes": [
+      {
+        "id": "JOB_A_008:1",
+        "dsl": "P29 export=local L:feature"
+      },
+      {
+        "id": "JOB_A_008:2",
+        "dsl": "S:feature export=local L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1748
+    }
+  },
+  {
+    "job_id": "JOB_A_009",
+    "routes": [
+      {
+        "id": "JOB_A_009:1",
+        "dsl": "fix"
+      },
+      {
+        "id": "JOB_A_009:2",
+        "dsl": "Q:data,apps,settings X R:data,apps,settings"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1758
+    }
+  },
+  {
+    "job_id": "JOB_A_010",
+    "routes": [
+      {
+        "id": "JOB_A_010:1",
+        "dsl": "X+ +管理アプリ L:feature"
+      },
+      {
+        "id": "JOB_A_010:2",
+        "dsl": "fix S:root+install +管理アプリ"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1768
+    }
+  },
+  {
+    "job_id": "JOB_A_011",
+    "routes": [
+      {
+        "id": "JOB_A_011:1",
+        "dsl": "P29 theme=custom content=custom U"
+      },
+      {
+        "id": "JOB_A_011:2",
+        "dsl": "O preset"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1778
+    }
+  },
+  {
+    "job_id": "JOB_A_012",
+    "routes": [
+      {
+        "id": "JOB_A_012:1",
+        "dsl": "U P26 P28 +管理アプリ"
+      },
+      {
+        "id": "JOB_A_012:2",
+        "dsl": "U S:root+install +管理アプリ"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1788
+    }
+  },
+  {
+    "job_id": "JOB_A_013",
+    "routes": [
+      {
+        "id": "JOB_A_013:1",
+        "dsl": "P28 -展示再生 L:install"
+      },
+      {
+        "id": "JOB_A_013:2",
+        "dsl": "S:install -展示再生 L:install"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1798
+    }
+  },
+  {
+    "job_id": "JOB_A_014",
+    "routes": [
+      {
+        "id": "JOB_A_014:1",
+        "dsl": "P27 +作品閲覧 +字幕 P29 theme=custom content=custom L:install L:feature"
+      },
+      {
+        "id": "JOB_A_014:2",
+        "dsl": "B:data,apps,settings X+ R:data,apps,settings +作品閲覧 +字幕 theme=custom content=custom L:all"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1808
+    }
+  },
+  {
+    "job_id": "JOB_A_015",
+    "routes": [
+      {
+        "id": "JOB_A_015:1",
+        "dsl": "dock P30 profile=custom L:feature"
+      },
+      {
+        "id": "JOB_A_015:2",
+        "dsl": "screen S:feature profile=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1818
+    }
+  },
+  {
+    "job_id": "JOB_A_016",
+    "routes": [
+      {
+        "id": "JOB_A_016:1",
+        "dsl": "P30 schedule=custom content=custom L:feature"
+      },
+      {
+        "id": "JOB_A_016:2",
+        "dsl": "preset"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1828
+    }
+  },
+  {
+    "job_id": "JOB_A_017",
+    "routes": [
+      {
+        "id": "JOB_A_017:1",
+        "dsl": "theme=standard profile=factory L:all"
+      },
+      {
+        "id": "JOB_A_017:2",
+        "dsl": "preset L:all"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1838
+    }
+  },
+  {
+    "job_id": "JOB_A_018",
+    "routes": [
+      {
+        "id": "JOB_A_018:1",
+        "dsl": "P30 profile=custom L:feature"
+      },
+      {
+        "id": "JOB_A_018:2",
+        "dsl": "S:feature profile=custom L:feature"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1848
+    }
+  },
+  {
+    "job_id": "JOB_A_019",
+    "routes": [
+      {
+        "id": "JOB_A_019:1",
+        "dsl": "fix preset"
+      },
+      {
+        "id": "JOB_A_019:2",
+        "dsl": "Q:data,apps,settings X R:data,apps,settings preset"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1858
+    }
+  },
+  {
+    "job_id": "JOB_A_020",
+    "routes": [
+      {
+        "id": "JOB_A_020:1",
+        "dsl": "Q:data,apps X R:data,apps O P28 +作品閲覧 L:install preset"
+      },
+      {
+        "id": "JOB_A_020:2",
+        "dsl": "Q:data,apps,settings X+ R:data,apps,settings +作品閲覧 theme=custom content=custom O"
+      }
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1868
+    }
+  }
+]

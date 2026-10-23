@@ -1,0 +1,1447 @@
+[
+  {
+    "id": "JOB_C_001",
+    "grade": "C",
+    "rank": 3,
+    "n": 1,
+    "title": "予定表を管理できるように",
+    "from": "町内会書記・野津",
+    "body": "町内会の電子手帳を引き継ぎました。予定は読めますが、管理者向けの整理画面だけ開けません。今月の予定と過去の議事メモを残したまま、私が管理できる状態にしてください。前任者の画面配置には慣れているので、アプリの追加やOSの入れ替えまでは頼みません。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 600,
+    "hardware_model_id": "H_C_001",
+    "data": [
+      "予定",
+      "議事メモ"
+    ],
+    "keep": [
+      "予定",
+      "議事メモ"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "version": "1.0",
+      "apps": [
+        "手帳"
+      ]
+    },
+    "forbid": [
+      "update",
+      "appInstall"
+    ],
+    "routes": [
+      "P13",
+      "S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1232
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-256e27f19f3ed5e1",
+    "decision_signature": "DS-851fcc32602ddf5a"
+  },
+  {
+    "id": "JOB_C_002",
+    "grade": "C",
+    "rank": 3,
+    "n": 2,
+    "title": "同じ手帳なのに前のパッケージが効かない",
+    "from": "学習室受付・小金",
+    "body": "受付用に似た大きさの電子手帳を買い足したところ、こちらはFolioOS 1.1でした。管理者画面を使えるようにしたいのですが、前の端末と同じ手順では進まなかったそうです。予約記録は既に入っています。古い版へ戻さず、この版のまま管理者制限だけを外してください。",
+    "family": "FolioOS",
+    "version": "1.1",
+    "reward": 660,
+    "hardware_model_id": "H_C_002",
+    "data": [
+      "予約記録"
+    ],
+    "keep": [
+      "予約記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "手帳"
+      ]
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "P14",
+      "S:root"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [
+      "JOB_C_001"
+    ],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1243
+    },
+    "decision_family": "unlock_only",
+    "decision_tags": [
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-147aa22f75ddb4e3",
+    "decision_signature": "DS-5483342890456b70"
+  },
+  {
+    "id": "JOB_C_003",
+    "grade": "C",
+    "rank": 3,
+    "n": 3,
+    "title": "読書メモだけ足してください",
+    "from": "読書会・石渡",
+    "body": "読書タブレットに「筆記」を入れ、読んだ本の感想を書きたいです。今ある「作品閲覧」と文書は消さないでください。管理者として使う予定はないので、管理者制限は作業中も外さないでほしいです。アプリ追加の制限は今後自分で追加できるよう解除したままでお願いします。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 620,
+    "hardware_model_id": "H_C_003",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "作品閲覧"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        true,
+        false
+      ],
+      "apps": [
+        "筆記",
+        "作品閲覧"
+      ]
+    },
+    "forbid": [
+      "root"
+    ],
+    "routes": [
+      "P15 +筆記",
+      "S:install +筆記"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1254
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "never_root",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-0f4bd9e94b579a75",
+    "decision_signature": "DS-49744d70ef68d3d9"
+  },
+  {
+    "id": "JOB_C_004",
+    "grade": "C",
+    "rank": 3,
+    "n": 4,
+    "title": "読みやすい配色にして鍵を戻す",
+    "from": "古書店店主・三橋",
+    "body": "店の読書タブレットを見やすい配色にしたいです。添付の指定配色へ変更したら、編集メニューはもう閉じてください。来店した人が触るので、設定を自由に変えられる状態で返されると困ります。蔵書の文書と「作品閲覧」はそのまま使えるように残してください。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 640,
+    "hardware_model_id": "H_C_004",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "作品閲覧"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "作品閲覧"
+      ],
+      "settings": {
+        "theme": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P17 theme=custom L:feature",
+      "S:feature theme=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1265
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-2178c26db5ac3014",
+    "decision_signature": "DS-e14c8e5e444cd120"
+  },
+  {
+    "id": "JOB_C_005",
+    "grade": "C",
+    "rank": 3,
+    "n": 5,
+    "title": "写真を端末の中だけに閉じ込めないで",
+    "from": "散歩写真会・余田",
+    "body": "散歩で使っている記録カメラから、撮った写真を手元の機器へ渡せるようにしたいです。外へ送る設定はローカル出力だけにして、写真そのものは残してください。毎回工房へ頼むのも大変なので、出力の設定メニューは今後も私が変更できる状態で返していただけると助かります。",
+    "family": "FolioOS",
+    "version": "1.1",
+    "reward": 700,
+    "hardware_model_id": "H_C_005",
+    "data": [
+      "写真"
+    ],
+    "keep": [
+      "写真"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        true
+      ],
+      "settings": {
+        "export": "local"
+      }
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "P18 export=local",
+      "S:feature export=local"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1276
+    },
+    "decision_family": "settings_relock",
+    "decision_tags": [
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-0c1a621d33e50059",
+    "decision_signature": "DS-69ad5abde47046d6"
+  },
+  {
+    "id": "JOB_C_006",
+    "grade": "C",
+    "rank": 3,
+    "n": 6,
+    "title": "会場の画面へ作品を映したい",
+    "from": "小さな展示会・浜尾",
+    "body": "読書タブレットを展示会へ持っていきます。作品は既に入っているので、「展示再生」を追加して会場の画面へ出せるようにしてください。当日は係員が操作するだけです。準備が終わったらアプリ追加と設定編集は閉じて、作品と今ある閲覧アプリは残してください。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 800,
+    "hardware_model_id": "H_C_006",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "作品閲覧"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "展示再生",
+        "作品閲覧"
+      ],
+      "settings": {
+        "output": "external"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P15 +展示再生 P17 output=external L:install L:feature",
+      "B:data,apps X+ R:data,apps +展示再生 output=external L:all"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1287
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-9ae0aa4b9f168e41",
+    "decision_signature": "DS-181b9e0ca4d23ea1"
+  },
+  {
+    "id": "JOB_C_007",
+    "grade": "C",
+    "rank": 3,
+    "n": 7,
+    "title": "見本アプリだけ片付けたい",
+    "from": "筆記教室・若松",
+    "body": "練習用の電子手帳から「展示再生」を外してください。使うのは「筆記」だけです。ただし生徒の文書や筆記のアプリは残して、作業後はまたアプリを追加・削除できない状態へ戻してください。自分で初期化すると必要なものまで消しそうで、今回だけお願いすることにしました。",
+    "family": "FolioOS",
+    "version": "1.1",
+    "reward": 680,
+    "hardware_model_id": "H_C_007",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "筆記",
+        "展示再生"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "筆記"
+      ],
+      "remove": [
+        "展示再生"
+      ]
+    },
+    "forbid": [
+      "erase"
+    ],
+    "routes": [
+      "P16 -展示再生 L:install",
+      "S:install -展示再生 L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1298
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "never_erase",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-75ae2343b10482d6",
+    "decision_signature": "DS-5b00281e26a39dc1"
+  },
+  {
+    "id": "JOB_C_008",
+    "grade": "C",
+    "rank": 3,
+    "n": 8,
+    "title": "管理アプリは使う、追加は閉じる",
+    "from": "共同工房台帳係・守谷",
+    "body": "作業記録を整理するため、電子手帳で「管理アプリ」を使えるようにしたいです。これは管理者権限が必要だと案内にありました。今の手帳アプリと記録は残してください。導入後はこれ以上アプリが増えないよう追加制限を戻しても、管理アプリ自体は動く状態にしてほしいです。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 820,
+    "hardware_model_id": "H_C_008",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "version": "1.0",
+      "apps": [
+        "管理アプリ",
+        "手帳"
+      ]
+    },
+    "forbid": [
+      "erase",
+      "update"
+    ],
+    "routes": [
+      "P13 P15 +管理アプリ L:install",
+      "S:root+install +管理アプリ L:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1309
+    },
+    "decision_family": "app_change",
+    "decision_tags": [
+      "app_change",
+      "relock",
+      "never_erase",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root",
+      "install"
+    ],
+    "decision_structure": "STRUCT-f6d1077e7bde198d",
+    "decision_signature": "DS-41fe70af6c8f0eec"
+  },
+  {
+    "id": "JOB_C_009",
+    "grade": "C",
+    "rank": 3,
+    "n": 9,
+    "title": "新版にしてからアプリを追加できるように",
+    "from": "音声記録係・柴崎",
+    "body": "音声メモ端末をFolioOS 1.1へ更新したうえで、これからアプリを追加できるようにしてください。更新前に解除しても更新で戻ると聞いたので、返却時の状態を確認してほしいです。今の音声メモアプリと録音記録は必要です。管理者や設定編集の権限はなくても困りません。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 780,
+    "hardware_model_id": "H_C_009",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "音声メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        true,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "音声メモ"
+      ]
+    },
+    "forbid": [],
+    "routes": [
+      "U P16",
+      "U S:install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1320
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "install"
+    ],
+    "decision_structure": "STRUCT-292c504dc90dae69",
+    "decision_signature": "DS-752fc79c7ddecb62"
+  },
+  {
+    "id": "JOB_C_010",
+    "grade": "C",
+    "rank": 3,
+    "n": 10,
+    "title": "更新前の設定でも引き継げますか",
+    "from": "読書室・千鳥",
+    "body": "読書タブレットをFolioOS 1.1へ更新し、添付の読みやすい配色にしてください。設定を先に変えるか後に変えるかはお任せします。返却後は利用者が設定を触れないようにしたいです。文書と閲覧アプリは使い続けるので、その二つが消えないことだけは確認をお願いします。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 760,
+    "hardware_model_id": "H_C_010",
+    "data": [
+      "文書"
+    ],
+    "keep": [
+      "文書"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "作品閲覧"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "作品閲覧"
+      ],
+      "settings": {
+        "theme": "custom"
+      }
+    },
+    "forbid": [],
+    "routes": [
+      "P17 theme=custom U",
+      "U S:feature theme=custom L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1331
+    },
+    "decision_family": "os_update",
+    "decision_tags": [
+      "version_change",
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-00781d0467ab6a11",
+    "decision_signature": "DS-5b000fb525f77e4f"
+  },
+  {
+    "id": "JOB_C_011",
+    "grade": "C",
+    "rank": 3,
+    "n": 11,
+    "title": "中身はいらないので起動する手帳に",
+    "from": "中古道具店・浪岡",
+    "body": "買い取った電子手帳が起動しません。中身は前の展示用データなので、消して構いません。普通に起動するFolioOS 1.0の手帳として返してほしいです。管理者、アプリ追加、設定編集は全部閉じた状態がよく、特殊な作業用端末にしていただく必要はありません。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 700,
+    "hardware_model_id": "H_C_011",
+    "data": [
+      "文書"
+    ],
+    "keep": [],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "展示再生"
+      ],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.0"
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "X",
+      "fix"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1342
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery"
+    ],
+    "creditable_axes": [],
+    "decision_structure": "STRUCT-6c308a1a2a9bcbad",
+    "decision_signature": "DS-d0551e7e3e018545"
+  },
+  {
+    "id": "JOB_C_012",
+    "grade": "C",
+    "rank": 3,
+    "n": 12,
+    "title": "起動しなくても録音は返してください",
+    "from": "口述史の会・新里",
+    "body": "聞き取りに使っていた音声メモ端末が起動しなくなりました。録音記録と音声メモアプリが戻るなら、途中で初期化しても構いません。OSは今の1.1を維持してください。特別な権限は不要で、以前と同じく録音を聴ける普通の端末に戻ることを希望します。",
+    "family": "FolioOS",
+    "version": "1.1",
+    "reward": 900,
+    "hardware_model_id": "H_C_012",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "音声メモ"
+      ],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "音声メモ"
+      ]
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "Q:data,apps X R:data,apps",
+      "fix"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1353
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "preserve_data"
+    ],
+    "creditable_axes": [],
+    "decision_structure": "STRUCT-2f97a03981f66799",
+    "decision_signature": "DS-2b0881fb8242bbb6"
+  },
+  {
+    "id": "JOB_C_013",
+    "grade": "C",
+    "rank": 3,
+    "n": 13,
+    "title": "写真を救って管理者制限も外したい",
+    "from": "記録写真係・倉石",
+    "body": "記録カメラが起動しなくなりました。撮影済みの写真は残してください。直ったら管理者向けの管理画面も使いたいので、管理者制限だけ解除をお願いします。初期化してから写真を戻す方法でも構いませんが、OSの版は変えず、アプリ追加や設定編集は閉じておいてください。",
+    "family": "FolioOS",
+    "version": "1.1",
+    "reward": 980,
+    "hardware_model_id": "H_C_013",
+    "data": [
+      "写真"
+    ],
+    "keep": [
+      "写真"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "写真整理"
+      ],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "写真整理"
+      ]
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "Q:data,apps X+ R:data,apps L:install L:feature",
+      "fix P14"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1364
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root"
+    ],
+    "decision_structure": "STRUCT-a41b479cbbe38647",
+    "decision_signature": "DS-f1761db958865635"
+  },
+  {
+    "id": "JOB_C_014",
+    "grade": "C",
+    "rank": 3,
+    "n": 14,
+    "title": "空の実験用タブレットを作りたい",
+    "from": "工作同好会・真部",
+    "body": "この読書タブレットを自分たちの実験用にします。管理者、アプリ追加、設定編集を全部使えるようにしてください。今入っている文書やアプリには用がないので、残っていても消えていても構いません。新しいOSを試す目的ではないため、FolioOS 1.0のままお願いします。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 880,
+    "hardware_model_id": "H_C_014",
+    "data": [
+      "文書"
+    ],
+    "keep": [],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "作品閲覧"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        true
+      ],
+      "version": "1.0"
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "P13 P15 P17",
+      "X+"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1375
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-d61b7cc944385d00",
+    "decision_signature": "DS-572cfd352dcd7d29"
+  },
+  {
+    "id": "JOB_C_015",
+    "grade": "C",
+    "rank": 3,
+    "n": 15,
+    "title": "持ち出せない記録を端末内で整理する",
+    "from": "資料室担当・緑川",
+    "body": "資料室の記録カメラに「写真整理」を入れ、ローカル出力も有効にしてください。作業中のネット接続は認められていません。写真が最後に全部戻るなら初期化は構いませんが、OSは変えないでください。管理者権限は不要です。アプリ追加と出力設定は後から私が触れる状態を希望します。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 920,
+    "hardware_model_id": "H_C_015",
+    "data": [
+      "写真"
+    ],
+    "keep": [
+      "写真"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        true,
+        true
+      ],
+      "version": "1.0",
+      "apps": [
+        "写真整理"
+      ],
+      "settings": {
+        "export": "local"
+      }
+    },
+    "forbid": [
+      "network",
+      "update"
+    ],
+    "routes": [
+      "P15 +写真整理 P17 export=local",
+      "B:data X+ R:data +写真整理 export=local L:root"
+    ],
+    "network": false,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1386
+    },
+    "decision_family": "offline",
+    "decision_tags": [
+      "offline",
+      "app_change",
+      "settings_change",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-fb54dfb179da9fb3",
+    "decision_signature": "DS-871c1937c47fae7c"
+  },
+  {
+    "id": "JOB_C_016",
+    "grade": "C",
+    "rank": 3,
+    "n": 16,
+    "title": "返ってくればよい、ではありません",
+    "from": "記録保管係・市原",
+    "body": "電子手帳の記録を管理するため、管理者制限とアプリ追加制限を外してください。ただし記録は最終的に戻ればよいのではなく、作業中も一度も消さないことが条件です。バックアップしてから初期化する方法は認められません。設定編集の制限とOSの版はそのままでお願いします。",
+    "family": "FolioOS",
+    "version": "1.1",
+    "reward": 860,
+    "hardware_model_id": "H_C_016",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        true,
+        false
+      ],
+      "version": "1.1",
+      "apps": [
+        "手帳"
+      ]
+    },
+    "forbid": [
+      "erase",
+      "update"
+    ],
+    "routes": [
+      "P14 P16",
+      "S:root+install"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": true,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1397
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "never_erase",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "root",
+      "install"
+    ],
+    "decision_structure": "STRUCT-22852e31636a8ef8",
+    "decision_signature": "DS-6688fdcaefd2f562"
+  },
+  {
+    "id": "JOB_C_017",
+    "grade": "C",
+    "rank": 3,
+    "n": 17,
+    "title": "修復後も設定を変え続けたい",
+    "from": "朗読会・橘",
+    "body": "音声メモ端末が起動しなくなり、再生用の設定も変更できません。録音は作業中も消さずに直してください。修復後はプリセットを自分で調整したいので、指定のプリセットへ変えたうえで設定編集を開けたままにしてほしいです。管理者とアプリ追加の制限はそのままで構いません。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 960,
+    "hardware_model_id": "H_C_017",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "音声メモ"
+      ],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        true
+      ],
+      "version": "1.0",
+      "apps": [
+        "音声メモ"
+      ],
+      "settings": {
+        "profile": "custom"
+      }
+    },
+    "forbid": [
+      "erase",
+      "update"
+    ],
+    "routes": [
+      "fix P17 profile=custom",
+      "fix S:feature profile=custom"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1408
+    },
+    "decision_family": "data_recovery",
+    "decision_tags": [
+      "recovery",
+      "settings_change",
+      "relock",
+      "never_erase",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-99f0aa711c7da004",
+    "decision_signature": "DS-faa56ffa16177b2c"
+  },
+  {
+    "id": "JOB_C_018",
+    "grade": "C",
+    "rank": 3,
+    "n": 18,
+    "title": "画面は外へ出せれば十分です",
+    "from": "展示棚管理・能登",
+    "body": "展示用の読書タブレットは内蔵画面だけ映りません。最終的に外部の画面へ作品を出せれば、内蔵画面が直らなくても構いません。既存の作品と閲覧アプリは残してください。出力先を変更したら設定編集を閉じて、普段の展示中に触ってしまわないようにしてほしいです。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 840,
+    "hardware_model_id": "H_C_018",
+    "data": [
+      "作品"
+    ],
+    "keep": [
+      "作品"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "作品閲覧"
+      ],
+      "operational": true,
+      "display": false
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "作品閲覧"
+      ],
+      "settings": {
+        "output": "external"
+      }
+    },
+    "forbid": [
+      "update"
+    ],
+    "routes": [
+      "dock P17 output=external L:feature",
+      "screen P17 output=external L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1419
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "screen_fault",
+      "settings_change",
+      "relock",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "feature"
+    ],
+    "decision_structure": "STRUCT-c89b4be7c6668ab0",
+    "decision_signature": "DS-fb70a0b8cd96ea15"
+  },
+  {
+    "id": "JOB_C_019",
+    "grade": "C",
+    "rank": 3,
+    "n": 19,
+    "title": "貸出用の一式を整えて閉じる",
+    "from": "市民講座受付・尾花",
+    "body": "貸出用の電子手帳に「手帳」と「筆記」を入れて、添付の予定設定に合わせてください。管理者権限は作業中も付けないでください。準備が済んだら、アプリ追加と設定編集は閉じて返してほしいです。今の講座記録は必要ですが、既存の「在庫メモ」は邪魔なので削除をお願いします。",
+    "family": "FolioOS",
+    "version": "1.1",
+    "reward": 940,
+    "hardware_model_id": "H_C_019",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "在庫メモ"
+      ],
+      "operational": true,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "apps": [
+        "手帳",
+        "筆記"
+      ],
+      "remove": [
+        "在庫メモ"
+      ],
+      "settings": {
+        "schedule": "custom"
+      }
+    },
+    "forbid": [
+      "root",
+      "update"
+    ],
+    "routes": [
+      "P16 -在庫メモ +手帳 +筆記 P18 schedule=custom L:install L:feature",
+      "S:install+feature -在庫メモ +手帳 +筆記 schedule=custom L:install L:feature"
+    ],
+    "network": true,
+    "preset": false,
+    "beforeBackup": false,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1430
+    },
+    "decision_family": "compound_validation",
+    "decision_tags": [
+      "app_change",
+      "settings_change",
+      "relock",
+      "never_root",
+      "preserve_data",
+      "compound"
+    ],
+    "creditable_axes": [
+      "install",
+      "feature"
+    ],
+    "decision_structure": "STRUCT-3e840b8c8a850a52",
+    "decision_signature": "DS-fb6c9c5fb5519ac8"
+  },
+  {
+    "id": "JOB_C_020",
+    "grade": "C",
+    "rank": 3,
+    "n": 20,
+    "title": "ネットに出せない故障端末を管理用に",
+    "from": "私設資料庫・瀬田",
+    "body": "電子手帳が起動しません。資料庫の決まりでネット接続はできませんが、記録が戻るなら初期化は許可します。修復後は「管理アプリ」を使えるようにしてください。OSは1.0のままで、追加のアプリ導入と設定編集は閉じて返してください。記録を救ってから作業する順でお願いします。",
+    "family": "FolioOS",
+    "version": "1.0",
+    "reward": 980,
+    "hardware_model_id": "H_C_020",
+    "data": [
+      "記録"
+    ],
+    "keep": [
+      "記録"
+    ],
+    "initial": {
+      "s": [
+        false,
+        false,
+        false
+      ],
+      "settings": {},
+      "apps": [
+        "手帳"
+      ],
+      "operational": false,
+      "display": true
+    },
+    "goal": {
+      "s": [
+        true,
+        false,
+        false
+      ],
+      "version": "1.0",
+      "apps": [
+        "管理アプリ",
+        "手帳"
+      ]
+    },
+    "forbid": [
+      "network",
+      "update"
+    ],
+    "routes": [
+      "Q:data,apps X+ R:data,apps +管理アプリ L:install L:feature",
+      "Q:data,apps X R:data,apps P13 P15 +管理アプリ L:install"
+    ],
+    "network": false,
+    "preset": false,
+    "beforeBackup": true,
+    "priorGradeCount": 0,
+    "evaluation": false,
+    "prerequisites": [],
+    "source": {
+      "document": "docs/reference-v3.1.md",
+      "line": 1441
+    },
+    "decision_family": "offline",
+    "decision_tags": [
+      "offline",
+      "recovery",
+      "app_change",
+      "relock",
+      "backup_before_erase",
+      "preserve_data"
+    ],
+    "creditable_axes": [
+      "root",
+      "install"
+    ],
+    "decision_structure": "STRUCT-5fdb21439496a082",
+    "decision_signature": "DS-7f6b395839c0e2d0"
+  }
+]

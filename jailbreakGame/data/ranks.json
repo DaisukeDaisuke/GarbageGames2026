@@ -1,0 +1,52 @@
+[
+  {
+    "id": "E",
+    "grade": "E",
+    "rank": 1,
+    "quota": 1,
+    "start": 0,
+    "end": 1,
+    "family": "KomaOS",
+    "grant": 0
+  },
+  {
+    "id": "D",
+    "grade": "D",
+    "rank": 2,
+    "quota": 1,
+    "start": 1,
+    "end": 2,
+    "family": "MiraOS",
+    "grant": 200
+  },
+  {
+    "id": "C",
+    "grade": "C",
+    "rank": 3,
+    "quota": 1,
+    "start": 2,
+    "end": 3,
+    "family": "FolioOS",
+    "grant": 400
+  },
+  {
+    "id": "B",
+    "grade": "B",
+    "rank": 4,
+    "quota": 1,
+    "start": 3,
+    "end": 4,
+    "family": "ReelOS",
+    "grant": 600
+  },
+  {
+    "id": "A",
+    "grade": "A",
+    "rank": 5,
+    "quota": 1,
+    "start": 4,
+    "end": 5,
+    "family": "HearthOS",
+    "grant": 800
+  }
+]
